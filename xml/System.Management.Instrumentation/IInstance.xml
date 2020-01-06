@@ -1,4 +1,4 @@
-﻿<Type Name="IInstance" FullName="System.Management.Instrumentation.IInstance">
+<Type Name="IInstance" FullName="System.Management.Instrumentation.IInstance">
   <TypeSignature Language="C#" Value="public interface IInstance" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IInstance" />
   <TypeSignature Language="DocId" Value="T:System.Management.Instrumentation.IInstance" />
@@ -38,7 +38,8 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets a value indicating whether instances of classes that implement this interface are visible through management instrumentation.</summary>
-        <value><see langword="true" /> if instances of classes that implement this interface are visible through management instrumentation; otherwise, <see langword="false" />.</value>
+        <value>
+          <see langword="true" /> if instances of classes that implement this interface are visible through management instrumentation; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

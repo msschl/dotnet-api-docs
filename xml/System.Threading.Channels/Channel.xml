@@ -1,4 +1,4 @@
-﻿<Type Name="Channel" FullName="System.Threading.Channels.Channel">
+<Type Name="Channel" FullName="System.Threading.Channels.Channel">
   <TypeSignature Language="C#" Value="public static class Channel" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit Channel extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Threading.Channels.Channel" />
@@ -8,6 +8,8 @@
   <AssemblyInfo>
     <AssemblyName>System.Threading.Channels</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.1.0</AssemblyVersion>
+    <AssemblyVersion>4.0.2.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -29,6 +31,8 @@
       <AssemblyInfo>
         <AssemblyName>System.Threading.Channels</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Channels.Channel&lt;T&gt;</ReturnType>
@@ -44,8 +48,7 @@
         <param name="capacity">The maximum number of items the channel may store.</param>
         <summary>Creates a channel with the specified maximum capacity.</summary>
         <returns>The created channel.</returns>
-        <remarks>
-            Channels created with this method apply the <see cref="F:System.Threading.Channels.BoundedChannelFullMode.Wait" />
+        <remarks>Channels created with this method apply the <see cref="F:System.Threading.Channels.BoundedChannelFullMode.Wait" />
             behavior and prohibit continuations from running synchronously.
         </remarks>
       </Docs>
@@ -61,6 +64,8 @@
       <AssemblyInfo>
         <AssemblyName>System.Threading.Channels</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Channels.Channel&lt;T&gt;</ReturnType>
@@ -90,6 +95,8 @@
       <AssemblyInfo>
         <AssemblyName>System.Threading.Channels</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Channels.Channel&lt;T&gt;</ReturnType>
@@ -99,7 +106,7 @@
       </TypeParameters>
       <Parameters />
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
+        <typeparam name="T">The type of data in the channel.</typeparam>
         <summary>Creates an unbounded channel usable by any number of readers and writers concurrently.</summary>
         <returns>The created channel.</returns>
         <remarks>To be added.</remarks>
@@ -116,6 +123,8 @@
       <AssemblyInfo>
         <AssemblyName>System.Threading.Channels</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Channels.Channel&lt;T&gt;</ReturnType>

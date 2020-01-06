@@ -1,4 +1,4 @@
-﻿<Type Name="ScriptManager" FullName="System.Web.UI.ScriptManager">
+<Type Name="ScriptManager" FullName="System.Web.UI.ScriptManager">
   <TypeSignature Language="C#" Value="public class ScriptManager : System.Web.UI.Control, System.Web.UI.IPostBackDataHandler, System.Web.UI.IPostBackEventHandler" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi ScriptManager extends System.Web.UI.Control implements class System.Web.UI.IPostBackDataHandler, class System.Web.UI.IPostBackEventHandler" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.ScriptManager" />
@@ -22,22 +22,22 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+    <Attribute>
       <AttributeName>System.ComponentModel.DefaultProperty("Scripts")</AttributeName>
     </Attribute>
     <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
       <AttributeName>System.ComponentModel.Designer("System.Web.UI.Design.ScriptManagerDesigner, System.Web.Extensions.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35")</AttributeName>
     </Attribute>
-    <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+    <Attribute>
       <AttributeName>System.Drawing.ToolboxBitmap(typeof(EmbeddedResourceFinder), "System.Web.Resources.ScriptManager.bmp")</AttributeName>
     </Attribute>
-    <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+    <Attribute>
       <AttributeName>System.Web.UI.NonVisualControl</AttributeName>
     </Attribute>
-    <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+    <Attribute>
       <AttributeName>System.Web.UI.ParseChildren(true)</AttributeName>
     </Attribute>
-    <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+    <Attribute>
       <AttributeName>System.Web.UI.PersistChildren(false)</AttributeName>
     </Attribute>
     <Attribute FrameworkAlternate="netframework-3.5">
@@ -83,7 +83,7 @@
   
 -   Provide access to ASP.NET authentication, role, and profile application services from client script by registering these services with the <xref:System.Web.UI.ScriptManager> control.  
   
--   Enable culture-specific display of ECMAScript (JavaScript) , , and  functions in the browser.  
+-   Enable culture-specific display of ECMAScript (JavaScript) , , and [String](https://msdn.microsoft.com/library/517a1992-3295-484e-9b9c-07ebfd8fe4db) functions in the browser.  
   
 -   Access localization resources for embedded script files or for stand-alone script files by using the <xref:System.Web.UI.ScriptReferenceBase.ResourceUICultures%2A> property of the <xref:System.Web.UI.ScriptReference> control.  
   
@@ -124,8 +124,8 @@
   
 |Method|Definition|  
 |------------|----------------|  
-|<xref:System.Web.UI.ScriptManager.RegisterScriptControl%2A>|Registers a server control that implements the <xref:System.Web.UI.IScriptControl> interface that is used to define a  client object. The <xref:System.Web.UI.ScriptManager> control renders script that supports the client object.|  
-|<xref:System.Web.UI.ScriptManager.RegisterExtenderControl%2A>|Registers a server control that implements the <xref:System.Web.UI.IExtenderControl> interface that is used to define a  client object. The <xref:System.Web.UI.ScriptManager> control renders script that supports the client object.|  
+|<xref:System.Web.UI.ScriptManager.RegisterScriptControl%2A>|Registers a server control that implements the <xref:System.Web.UI.IScriptControl> interface that is used to define a [Sys.Component](https://msdn.microsoft.com/library/6fba3595-e425-4e48-b4e9-fc16a0272381) client object. The <xref:System.Web.UI.ScriptManager> control renders script that supports the client object.|  
+|<xref:System.Web.UI.ScriptManager.RegisterExtenderControl%2A>|Registers a server control that implements the <xref:System.Web.UI.IExtenderControl> interface that is used to define a [Sys.Component](https://msdn.microsoft.com/library/6fba3595-e425-4e48-b4e9-fc16a0272381) client object. The <xref:System.Web.UI.ScriptManager> control renders script that supports the client object.|  
   
 ### Registering Partial-Page Update Compatible Scripts  
  You can use the following methods to register script files that are not dependent on the Microsoft Ajax Library but that are compatible with <xref:System.Web.UI.UpdatePanel> controls. These methods correspond to similar methods of the <xref:System.Web.UI.ClientScriptManager> control. If you are rendering script for use inside an <xref:System.Web.UI.UpdatePanel> control, make sure that you call the methods of the <xref:System.Web.UI.ScriptManager> control.  
@@ -260,14 +260,14 @@
   
  **Handling Partial-Page Update Errors and Registering Script**  
   
- The following example shows how to provide custom error handling during partial-page updates. By default, when an error occurs during partial-page updates, a JavaScript message box is displayed. This example demonstrates how to use custom error handling by providing a handler for the <xref:System.Web.UI.ScriptManager.AsyncPostBackError> event, and by setting the <xref:System.Web.UI.ScriptManager.AsyncPostBackErrorMessage%2A> property in the event handler. You can also set the <xref:System.Web.UI.ScriptManager.AllowCustomErrorsRedirect%2A> property to specify how the custom errors section of the Web.config file is used when an error occurs during partial-page updates. In this example, the default value of the <xref:System.Web.UI.ScriptManager.AllowCustomErrorsRedirect%2A> property is used. This means that if the Web.config file contains a  element, that element determines how errors are displayed. For more information, see [customErrors Element (ASP.NET Settings Schema)](https://msdn.microsoft.com/library/288c32e2-df1f-4548-abda-de6b4cb989a6).  
+ The following example shows how to provide custom error handling during partial-page updates. By default, when an error occurs during partial-page updates, a JavaScript message box is displayed. This example demonstrates how to use custom error handling by providing a handler for the <xref:System.Web.UI.ScriptManager.AsyncPostBackError> event, and by setting the <xref:System.Web.UI.ScriptManager.AsyncPostBackErrorMessage%2A> property in the event handler. You can also set the <xref:System.Web.UI.ScriptManager.AllowCustomErrorsRedirect%2A> property to specify how the custom errors section of the Web.config file is used when an error occurs during partial-page updates. In this example, the default value of the <xref:System.Web.UI.ScriptManager.AllowCustomErrorsRedirect%2A> property is used. This means that if the Web.config file contains a [customErrors](https://msdn.microsoft.com/library/6c3b53ec-00df-4967-b0fb-351c02867650) element, that element determines how errors are displayed. For more information, see [customErrors Element (ASP.NET Settings Schema)](https://msdn.microsoft.com/library/288c32e2-df1f-4548-abda-de6b4cb989a6).  
   
  [!code-aspx-csharp[System.Web.UI.ScriptManager.OnAsyncPostBackError#1](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.ScriptManager.OnAsyncPostBackError/CS/default.aspx#1)]
  [!code-aspx-vb[System.Web.UI.ScriptManager.OnAsyncPostBackError#1](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.UI.ScriptManager.OnAsyncPostBackError/VB/default.aspx#1)]  
   
  **Globalizing the Date and Time That Are Displayed in the Browser**  
   
- The following example shows how to set the <xref:System.Web.UI.ScriptManager.EnableScriptGlobalization%2A> property so that client script can display a culture-specific date and time in the browser. In the example, the `Culture` attribute of the  directive is set to `auto`. As a result, the first language that is specified in the current browser settings determines the culture and UI culture for the page. For more information, see [How to: Set the Culture and UI Culture for ASP.NET Web Page Globalization](https://msdn.microsoft.com/library/76091f86-f967-4687-a40f-de87bd8cc9a0).  
+ The following example shows how to set the <xref:System.Web.UI.ScriptManager.EnableScriptGlobalization%2A> property so that client script can display a culture-specific date and time in the browser. In the example, the `Culture` attribute of the [@ Page](https://msdn.microsoft.com/library/f06cf9e5-22bb-461d-8b8f-549e53ff40a4) directive is set to `auto`. As a result, the first language that is specified in the current browser settings determines the culture and UI culture for the page. For more information, see [How to: Set the Culture and UI Culture for ASP.NET Web Page Globalization](https://msdn.microsoft.com/library/76091f86-f967-4687-a40f-de87bd8cc9a0).  
   
  [!code-aspx-csharp[System.Web.UI.ScriptManager.EnableScriptGlobalization#1](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.ScriptManager.EnableScriptGlobalization/CS/default.aspx#1)]
  [!code-aspx-vb[System.Web.UI.ScriptManager.EnableScriptGlobalization#1](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.UI.ScriptManager.EnableScriptGlobalization/VB/default.aspx#1)]  
@@ -539,10 +539,10 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.ComponentModel.Category("Behavior")</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.ComponentModel.DefaultValue(true)</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0">
@@ -584,7 +584,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.ComponentModel.Category("Action")</AttributeName>
         </Attribute>
       </Attributes>
@@ -627,10 +627,10 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.ComponentModel.Category("Behavior")</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0">
@@ -679,7 +679,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -720,10 +720,10 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.ComponentModel.Category("Behavior")</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.ComponentModel.DefaultValue(90)</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0">
@@ -753,19 +753,19 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.ComponentModel.Category("Behavior")</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.ComponentModel.MergableProperty(false)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
         </Attribute>
       </Attributes>
@@ -809,10 +809,10 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.ComponentModel.Category("Behavior")</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0">
@@ -842,19 +842,19 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.ComponentModel.Category("Behavior")</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.ComponentModel.MergableProperty(false)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
         </Attribute>
       </Attributes>
@@ -888,16 +888,16 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.ComponentModel.Category("Appearance")</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.ComponentModel.Editor(typeof(System.Web.UI.Design.UrlEditor), typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.Web.UI.UrlProperty</AttributeName>
         </Attribute>
       </Attributes>
@@ -1001,10 +1001,10 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.ComponentModel.Category("Behavior")</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0">
@@ -1042,10 +1042,10 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.ComponentModel.Category("Behavior")</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0">
@@ -1088,10 +1088,10 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.ComponentModel.Category("Behavior")</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.ComponentModel.DefaultValue(true)</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0">
@@ -1134,10 +1134,10 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.ComponentModel.Category("Behavior")</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0">
@@ -1155,7 +1155,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When the <xref:System.Web.UI.ScriptManager.EnableScriptGlobalization%2A> property is set to `true`, globalized ECMAScript (JavaScript) functions such as the  method display culture-specific information. The culture can be set in the browser, in server code, or in the Web site's configuration file.  
+ When the <xref:System.Web.UI.ScriptManager.EnableScriptGlobalization%2A> property is set to `true`, globalized ECMAScript (JavaScript) functions such as the `Date.localeFormat` method display culture-specific information. The culture can be set in the browser, in server code, or in the Web site's configuration file.  
   
  ]]></format>
         </remarks>
@@ -1176,10 +1176,10 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.ComponentModel.Category("Behavior")</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.ComponentModel.DefaultValue(true)</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0">
@@ -1224,10 +1224,10 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.ComponentModel.Category("Behavior")</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.ComponentModel.DefaultValue(true)</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0">
@@ -1260,6 +1260,7 @@
       <MemberSignature Language="C#" Value="public static System.Web.UI.ScriptManager GetCurrent (System.Web.UI.Page page);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Web.UI.ScriptManager GetCurrent(class System.Web.UI.Page page) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptManager.GetCurrent(System.Web.UI.Page)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetCurrent (page As System.Web.UI.Page) As System.Web.UI.ScriptManager" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Web::UI::ScriptManager ^ GetCurrent(System::Web::UI::Page ^ page);" />
       <MemberSignature Language="F#" Value="static member GetCurrent : System.Web.UI.Page -&gt; System.Web.UI.ScriptManager" Usage="System.Web.UI.ScriptManager.GetCurrent page" />
       <MemberType>Method</MemberType>
@@ -1558,7 +1559,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -1575,14 +1576,14 @@
 ## Remarks  
  The <xref:System.Web.UI.ScriptManager.IsDebuggingEnabled%2A> property returns `false` when any one of the following conditions is true:  
   
--   In the  element of the configuration file, the `retail` attribute is set to `true`. This overrides all other settings.  
+-   In the [deployment](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ms228298(v%3dvs.100)) element of the configuration file, the `retail` attribute is set to `true`. This overrides all other settings.  
   
 -   The <xref:System.Web.UI.ScriptManager.ScriptMode%2A> property is set to `Auto` or to `Inherit`, and debugging is not enabled in the `compilation` section of the application-root Web.config file.  
   
 -   The <xref:System.Web.UI.ScriptManager.ScriptMode%2A> property is set to `Release`.  
   
     > [!NOTE]
-    >  The `debug` attribute of the  directive does not affect Ajax-enabled ASP.NET applications. The <xref:System.Web.UI.ScriptManager> control uses only the settings in the Web.config file and in its <xref:System.Web.UI.ScriptManager.IsDebuggingEnabled%2A> and <xref:System.Web.UI.ScriptManager.ScriptMode%2A> properties to determine whether to render debug scripts.  
+    >  The `debug` attribute of the [@ Page](https://msdn.microsoft.com/library/f06cf9e5-22bb-461d-8b8f-549e53ff40a4) directive does not affect Ajax-enabled ASP.NET applications. The <xref:System.Web.UI.ScriptManager> control uses only the settings in the Web.config file and in its <xref:System.Web.UI.ScriptManager.IsDebuggingEnabled%2A> and <xref:System.Web.UI.ScriptManager.ScriptMode%2A> properties to determine whether to render debug scripts.  
   
  For more information, see [Debugging and Tracing Ajax Applications Overview](https://msdn.microsoft.com/library/92684ea0-7bb4-4a34-9203-3aa6394ce375).  
   
@@ -1609,7 +1610,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0">
@@ -1648,7 +1649,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0">
@@ -1726,10 +1727,10 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.ComponentModel.Category("Behavior")</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.ComponentModel.DefaultValue(true)</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0">
@@ -1752,7 +1753,7 @@
 ## Remarks  
  The <xref:System.Web.UI.ScriptManager.LoadScriptsBeforeUI%2A> property determines how scripts in the <xref:System.Web.UI.ScriptManager.Scripts%2A> collection are loaded relative to the markup for the page UI.  
   
- When the <xref:System.Web.UI.ScriptManager.LoadScriptsBeforeUI%2A> property is `true`, a `script` element is rendered before the page's UI markup is loaded. In this scenario, if UI elements are defined in scripts, the UI will be fully functional when it loads. However, if the script accesses UI elements in the markup for which instances have not yet been created, an error might occur. To make sure that UI elements are loaded before you access them, handle the  event of the  class.  
+ When the <xref:System.Web.UI.ScriptManager.LoadScriptsBeforeUI%2A> property is `true`, a `script` element is rendered before the page's UI markup is loaded. In this scenario, if UI elements are defined in scripts, the UI will be fully functional when it loads. However, if the script accesses UI elements in the markup for which instances have not yet been created, an error might occur. To make sure that UI elements are loaded before you access them, handle the `load` event of the `Sys.Application` class.  
   
  When the <xref:System.Web.UI.ScriptManager.LoadScriptsBeforeUI%2A> property is `false`, a `script` element is rendered after the page's UI markup is rendered. In this scenario, the UI loads more quickly, but it might not be fully functional if scripts that define additional UI elements have not finished loading.  
   
@@ -1778,7 +1779,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.ComponentModel.Category("Action")</AttributeName>
         </Attribute>
       </Attributes>
@@ -1981,19 +1982,19 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.ComponentModel.Category("Behavior")</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.ComponentModel.MergableProperty(false)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
         </Attribute>
       </Attributes>
@@ -2103,6 +2104,7 @@
       <MemberSignature Language="C#" Value="public static void RegisterArrayDeclaration (System.Web.UI.Control control, string arrayName, string arrayValue);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RegisterArrayDeclaration(class System.Web.UI.Control control, string arrayName, string arrayValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptManager.RegisterArrayDeclaration(System.Web.UI.Control,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub RegisterArrayDeclaration (control As System.Web.UI.Control, arrayName As String, arrayValue As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RegisterArrayDeclaration(System::Web::UI::Control ^ control, System::String ^ arrayName, System::String ^ arrayValue);" />
       <MemberSignature Language="F#" Value="static member RegisterArrayDeclaration : System.Web.UI.Control * string * string -&gt; unit" Usage="System.Web.UI.ScriptManager.RegisterArrayDeclaration (control, arrayName, arrayValue)" />
       <MemberType>Method</MemberType>
@@ -2152,6 +2154,7 @@
       <MemberSignature Language="C#" Value="public static void RegisterArrayDeclaration (System.Web.UI.Page page, string arrayName, string arrayValue);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RegisterArrayDeclaration(class System.Web.UI.Page page, string arrayName, string arrayValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptManager.RegisterArrayDeclaration(System.Web.UI.Page,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub RegisterArrayDeclaration (page As System.Web.UI.Page, arrayName As String, arrayValue As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RegisterArrayDeclaration(System::Web::UI::Page ^ page, System::String ^ arrayName, System::String ^ arrayValue);" />
       <MemberSignature Language="F#" Value="static member RegisterArrayDeclaration : System.Web.UI.Page * string * string -&gt; unit" Usage="System.Web.UI.ScriptManager.RegisterArrayDeclaration (page, arrayName, arrayValue)" />
       <MemberType>Method</MemberType>
@@ -2192,6 +2195,7 @@
       <MemberSignature Language="C#" Value="public void RegisterAsyncPostBackControl (System.Web.UI.Control control);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RegisterAsyncPostBackControl(class System.Web.UI.Control control) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptManager.RegisterAsyncPostBackControl(System.Web.UI.Control)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RegisterAsyncPostBackControl (control As System.Web.UI.Control)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RegisterAsyncPostBackControl(System::Web::UI::Control ^ control);" />
       <MemberSignature Language="F#" Value="abstract member RegisterAsyncPostBackControl : System.Web.UI.Control -&gt; unit&#xA;override this.RegisterAsyncPostBackControl : System.Web.UI.Control -&gt; unit" Usage="scriptManager.RegisterAsyncPostBackControl control" />
       <MemberType>Method</MemberType>
@@ -2241,8 +2245,8 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="control" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentException">
-          The page is registered as an asynchronous postback control.
+        <exception cref="T:System.ArgumentException">The page is registered as an asynchronous postback control.
+
 -or-
 
 The registered control does not implement the <see cref="T:System.Web.UI.INamingContainer" />, <see cref="T:System.Web.UI.IPostBackDataHandler" />, or <see cref="T:System.Web.UI.IPostBackEventHandler" /> interfaces.</exception>
@@ -2263,6 +2267,7 @@ The registered control does not implement the <see cref="T:System.Web.UI.INaming
       <MemberSignature Language="C#" Value="public static void RegisterClientScriptBlock (System.Web.UI.Control control, Type type, string key, string script, bool addScriptTags);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RegisterClientScriptBlock(class System.Web.UI.Control control, class System.Type type, string key, string script, bool addScriptTags) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptManager.RegisterClientScriptBlock(System.Web.UI.Control,System.Type,System.String,System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub RegisterClientScriptBlock (control As System.Web.UI.Control, type As Type, key As String, script As String, addScriptTags As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RegisterClientScriptBlock(System::Web::UI::Control ^ control, Type ^ type, System::String ^ key, System::String ^ script, bool addScriptTags);" />
       <MemberSignature Language="F#" Value="static member RegisterClientScriptBlock : System.Web.UI.Control * Type * string * string * bool -&gt; unit" Usage="System.Web.UI.ScriptManager.RegisterClientScriptBlock (control, type, key, script, addScriptTags)" />
       <MemberType>Method</MemberType>
@@ -2327,6 +2332,7 @@ The registered control does not implement the <see cref="T:System.Web.UI.INaming
       <MemberSignature Language="C#" Value="public static void RegisterClientScriptBlock (System.Web.UI.Page page, Type type, string key, string script, bool addScriptTags);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RegisterClientScriptBlock(class System.Web.UI.Page page, class System.Type type, string key, string script, bool addScriptTags) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptManager.RegisterClientScriptBlock(System.Web.UI.Page,System.Type,System.String,System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub RegisterClientScriptBlock (page As System.Web.UI.Page, type As Type, key As String, script As String, addScriptTags As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RegisterClientScriptBlock(System::Web::UI::Page ^ page, Type ^ type, System::String ^ key, System::String ^ script, bool addScriptTags);" />
       <MemberSignature Language="F#" Value="static member RegisterClientScriptBlock : System.Web.UI.Page * Type * string * string * bool -&gt; unit" Usage="System.Web.UI.ScriptManager.RegisterClientScriptBlock (page, type, key, script, addScriptTags)" />
       <MemberType>Method</MemberType>
@@ -2384,6 +2390,7 @@ The registered control does not implement the <see cref="T:System.Web.UI.INaming
       <MemberSignature Language="C#" Value="public static void RegisterClientScriptInclude (System.Web.UI.Control control, Type type, string key, string url);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RegisterClientScriptInclude(class System.Web.UI.Control control, class System.Type type, string key, string url) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptManager.RegisterClientScriptInclude(System.Web.UI.Control,System.Type,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub RegisterClientScriptInclude (control As System.Web.UI.Control, type As Type, key As String, url As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RegisterClientScriptInclude(System::Web::UI::Control ^ control, Type ^ type, System::String ^ key, System::String ^ url);" />
       <MemberSignature Language="F#" Value="static member RegisterClientScriptInclude : System.Web.UI.Control * Type * string * string -&gt; unit" Usage="System.Web.UI.ScriptManager.RegisterClientScriptInclude (control, type, key, url)" />
       <MemberType>Method</MemberType>
@@ -2452,6 +2459,7 @@ The registered control does not implement the <see cref="T:System.Web.UI.INaming
       <MemberSignature Language="C#" Value="public static void RegisterClientScriptInclude (System.Web.UI.Page page, Type type, string key, string url);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RegisterClientScriptInclude(class System.Web.UI.Page page, class System.Type type, string key, string url) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptManager.RegisterClientScriptInclude(System.Web.UI.Page,System.Type,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub RegisterClientScriptInclude (page As System.Web.UI.Page, type As Type, key As String, url As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RegisterClientScriptInclude(System::Web::UI::Page ^ page, Type ^ type, System::String ^ key, System::String ^ url);" />
       <MemberSignature Language="F#" Value="static member RegisterClientScriptInclude : System.Web.UI.Page * Type * string * string -&gt; unit" Usage="System.Web.UI.ScriptManager.RegisterClientScriptInclude (page, type, key, url)" />
       <MemberType>Method</MemberType>
@@ -2512,6 +2520,7 @@ The registered control does not implement the <see cref="T:System.Web.UI.INaming
       <MemberSignature Language="C#" Value="public static void RegisterClientScriptResource (System.Web.UI.Control control, Type type, string resourceName);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RegisterClientScriptResource(class System.Web.UI.Control control, class System.Type type, string resourceName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptManager.RegisterClientScriptResource(System.Web.UI.Control,System.Type,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub RegisterClientScriptResource (control As System.Web.UI.Control, type As Type, resourceName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RegisterClientScriptResource(System::Web::UI::Control ^ control, Type ^ type, System::String ^ resourceName);" />
       <MemberSignature Language="F#" Value="static member RegisterClientScriptResource : System.Web.UI.Control * Type * string -&gt; unit" Usage="System.Web.UI.ScriptManager.RegisterClientScriptResource (control, type, resourceName)" />
       <MemberType>Method</MemberType>
@@ -2564,6 +2573,7 @@ The registered control does not implement the <see cref="T:System.Web.UI.INaming
       <MemberSignature Language="C#" Value="public static void RegisterClientScriptResource (System.Web.UI.Page page, Type type, string resourceName);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RegisterClientScriptResource(class System.Web.UI.Page page, class System.Type type, string resourceName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptManager.RegisterClientScriptResource(System.Web.UI.Page,System.Type,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub RegisterClientScriptResource (page As System.Web.UI.Page, type As Type, resourceName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RegisterClientScriptResource(System::Web::UI::Page ^ page, Type ^ type, System::String ^ resourceName);" />
       <MemberSignature Language="F#" Value="static member RegisterClientScriptResource : System.Web.UI.Page * Type * string -&gt; unit" Usage="System.Web.UI.ScriptManager.RegisterClientScriptResource (page, type, resourceName)" />
       <MemberType>Method</MemberType>
@@ -2617,6 +2627,7 @@ The registered control does not implement the <see cref="T:System.Web.UI.INaming
       <MemberSignature Language="C#" Value="public void RegisterDataItem (System.Web.UI.Control control, string dataItem);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RegisterDataItem(class System.Web.UI.Control control, string dataItem) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptManager.RegisterDataItem(System.Web.UI.Control,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RegisterDataItem (control As System.Web.UI.Control, dataItem As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RegisterDataItem(System::Web::UI::Control ^ control, System::String ^ dataItem);" />
       <MemberSignature Language="F#" Value="member this.RegisterDataItem : System.Web.UI.Control * string -&gt; unit" Usage="scriptManager.RegisterDataItem (control, dataItem)" />
       <MemberType>Method</MemberType>
@@ -2649,7 +2660,7 @@ The registered control does not implement the <see cref="T:System.Web.UI.INaming
   
  The <xref:System.Web.UI.ScriptManager.RegisterDataItem%2A> method can be called only during an asynchronous postback. To determine whether a postback is asynchronous, use the <xref:System.Web.UI.ScriptManager.IsInAsyncPostBack%2A> property. This method invokes the overload that takes a parameter named `isJsonSerialized` that is set to `false`. When the `isJsonSerialized` parameter is set to `false`, the string is not serialized as JavaScript Object Notation (JSON). For more information about the JSON format, see the [Introducing JSON](https://go.microsoft.com/fwlink/?LinkId=77297) Web site.  
   
- The data items that are registered with the <xref:System.Web.UI.ScriptManager.RegisterDataItem%2A> method can be accessed in client script during the , , and  events of the  object. When you handle these events, the custom data is passed in an event argument object. For example, if you provide a handler for the  event, the custom data is passed in the  class, which exposes a  property.  
+ The data items that are registered with the <xref:System.Web.UI.ScriptManager.RegisterDataItem%2A> method can be accessed in client script during the `pageLoading`, `pageLoaded`, and `endRequest` events of the `PageRequestManager` object. When you handle these events, the custom data is passed in an event argument object. For example, if you provide a handler for the `pageLoading` event, the custom data is passed in the `PageLoadingEventArgs` class, which exposes a  property.  
   
    
   
@@ -2676,6 +2687,7 @@ The registered control does not implement the <see cref="T:System.Web.UI.INaming
       <MemberSignature Language="C#" Value="public void RegisterDataItem (System.Web.UI.Control control, string dataItem, bool isJsonSerialized);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RegisterDataItem(class System.Web.UI.Control control, string dataItem, bool isJsonSerialized) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptManager.RegisterDataItem(System.Web.UI.Control,System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RegisterDataItem (control As System.Web.UI.Control, dataItem As String, isJsonSerialized As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RegisterDataItem(System::Web::UI::Control ^ control, System::String ^ dataItem, bool isJsonSerialized);" />
       <MemberSignature Language="F#" Value="member this.RegisterDataItem : System.Web.UI.Control * string * bool -&gt; unit" Usage="scriptManager.RegisterDataItem (control, dataItem, isJsonSerialized)" />
       <MemberType>Method</MemberType>
@@ -2704,16 +2716,16 @@ The registered control does not implement the <see cref="T:System.Web.UI.INaming
 ## Remarks  
  You use the <xref:System.Web.UI.ScriptManager.RegisterDataItem%2A> method to send data from the server to the client during asynchronous postbacks, regardless of whether the control receiving the data is inside an <xref:System.Web.UI.UpdatePanel> control.  
   
- If the `dataItem` parameter that you register for `control` is not serialized as JSON, set the `isJsonSerialized` parameter to `false`. This avoids the need to use the  function for each string that is sent to the client. For more information about the JSON format, see the [Introducing JSON](https://go.microsoft.com/fwlink/?LinkId=77297) Web site.  
+ If the `dataItem` parameter that you register for `control` is not serialized as JSON, set the `isJsonSerialized` parameter to `false`. This avoids the need to use the `eval` function for each string that is sent to the client. For more information about the JSON format, see the [Introducing JSON](https://go.microsoft.com/fwlink/?LinkId=77297) Web site.  
   
  The <xref:System.Web.UI.ScriptManager.RegisterDataItem%2A> method can be called only during an asynchronous postback. To determine whether a postback is asynchronous, use the <xref:System.Web.UI.ScriptManager.IsInAsyncPostBack%2A> property.  
   
- The data items that are registered by using the <xref:System.Web.UI.ScriptManager.RegisterDataItem%2A> method can be accessed in client script during the , , and  events of the  object. When you handle these events, the custom data is passed in an event argument object. For example, if you provide a handler for the  event, the custom data is passed in the  class, which exposes a  property.  
+ The data items that are registered by using the <xref:System.Web.UI.ScriptManager.RegisterDataItem%2A> method can be accessed in client script during the `pageLoading`, `pageLoaded`, and `endRequest` events of the `PageRequestManager` object. When you handle these events, the custom data is passed in an event argument object. For example, if you provide a handler for the `pageLoading` event, the custom data is passed in the `PageLoadingEventArgs` class, which exposes a  property.  
   
    
   
 ## Examples  
- The following example shows how to send data to two <xref:System.Web.UI.WebControls.Label> controls on a page during an asynchronous postback. The <xref:System.Web.UI.WebControls.Label> controls are not inside an <xref:System.Web.UI.UpdatePanel> control. This example shows the overload that does not take the `isJsonSerialized` parameter. Otherwise, the procedure for retrieving the  property of the  object is the same as if you did not use that overload.  
+ The following example shows how to send data to two <xref:System.Web.UI.WebControls.Label> controls on a page during an asynchronous postback. The <xref:System.Web.UI.WebControls.Label> controls are not inside an <xref:System.Web.UI.UpdatePanel> control. This example shows the overload that does not take the `isJsonSerialized` parameter. Otherwise, the procedure for retrieving the `dataItems` property of the `PageLoadingEventArgs` object is the same as if you did not use that overload.  
   
 > [!NOTE]
 >  The data that is sent in this example is for illustration only. In a real-world application, you would use the <xref:System.Web.UI.ScriptManager.RegisterDataItem%2A> method to send custom data from the server. For example, you could use the data item to send information about whether to hide or show client elements that are not inside an <xref:System.Web.UI.UpdatePanel> control.  
@@ -2735,6 +2747,7 @@ The registered control does not implement the <see cref="T:System.Web.UI.INaming
       <MemberSignature Language="C#" Value="public void RegisterDispose (System.Web.UI.Control control, string disposeScript);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RegisterDispose(class System.Web.UI.Control control, string disposeScript) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptManager.RegisterDispose(System.Web.UI.Control,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RegisterDispose (control As System.Web.UI.Control, disposeScript As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RegisterDispose(System::Web::UI::Control ^ control, System::String ^ disposeScript);" />
       <MemberSignature Language="F#" Value="member this.RegisterDispose : System.Web.UI.Control * string -&gt; unit" Usage="scriptManager.RegisterDispose (control, disposeScript)" />
       <MemberType>Method</MemberType>
@@ -2767,7 +2780,7 @@ The registered control does not implement the <see cref="T:System.Web.UI.INaming
   
  The <xref:System.Web.UI.ScriptManager.RegisterDispose%2A> method can be called multiple times for a control. Multiple scripts are aggregated. The order of disposing scripts matches the order in which the scripts were registered.  
   
- If you register a `dispose` script for a control that is not in an <xref:System.Web.UI.UpdatePanel> control, an exception is thrown. The `dispose` script is called between the  and  events of the  class.  
+ If you register a `dispose` script for a control that is not in an <xref:System.Web.UI.UpdatePanel> control, an exception is thrown. The `dispose` script is called between the `pageLoading` and `pageLoaded` events of the `PageRequestManager` class.  
   
  ]]></format>
         </remarks>
@@ -2790,6 +2803,7 @@ The registered control does not implement the <see cref="T:System.Web.UI.INaming
       <MemberSignature Language="C#" Value="public static void RegisterExpandoAttribute (System.Web.UI.Control control, string controlId, string attributeName, string attributeValue, bool encode);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RegisterExpandoAttribute(class System.Web.UI.Control control, string controlId, string attributeName, string attributeValue, bool encode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptManager.RegisterExpandoAttribute(System.Web.UI.Control,System.String,System.String,System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub RegisterExpandoAttribute (control As System.Web.UI.Control, controlId As String, attributeName As String, attributeValue As String, encode As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RegisterExpandoAttribute(System::Web::UI::Control ^ control, System::String ^ controlId, System::String ^ attributeName, System::String ^ attributeValue, bool encode);" />
       <MemberSignature Language="F#" Value="static member RegisterExpandoAttribute : System.Web.UI.Control * string * string * string * bool -&gt; unit" Usage="System.Web.UI.ScriptManager.RegisterExpandoAttribute (control, controlId, attributeName, attributeValue, encode)" />
       <MemberType>Method</MemberType>
@@ -2925,6 +2939,7 @@ The registered control does not implement the <see cref="T:System.Web.UI.INaming
       <MemberSignature Language="C#" Value="public static void RegisterHiddenField (System.Web.UI.Control control, string hiddenFieldName, string hiddenFieldInitialValue);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RegisterHiddenField(class System.Web.UI.Control control, string hiddenFieldName, string hiddenFieldInitialValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptManager.RegisterHiddenField(System.Web.UI.Control,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub RegisterHiddenField (control As System.Web.UI.Control, hiddenFieldName As String, hiddenFieldInitialValue As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RegisterHiddenField(System::Web::UI::Control ^ control, System::String ^ hiddenFieldName, System::String ^ hiddenFieldInitialValue);" />
       <MemberSignature Language="F#" Value="static member RegisterHiddenField : System.Web.UI.Control * string * string -&gt; unit" Usage="System.Web.UI.ScriptManager.RegisterHiddenField (control, hiddenFieldName, hiddenFieldInitialValue)" />
       <MemberType>Method</MemberType>
@@ -2976,6 +2991,7 @@ The registered control does not implement the <see cref="T:System.Web.UI.INaming
       <MemberSignature Language="C#" Value="public static void RegisterHiddenField (System.Web.UI.Page page, string hiddenFieldName, string hiddenFieldInitialValue);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RegisterHiddenField(class System.Web.UI.Page page, string hiddenFieldName, string hiddenFieldInitialValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptManager.RegisterHiddenField(System.Web.UI.Page,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub RegisterHiddenField (page As System.Web.UI.Page, hiddenFieldName As String, hiddenFieldInitialValue As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RegisterHiddenField(System::Web::UI::Page ^ page, System::String ^ hiddenFieldName, System::String ^ hiddenFieldInitialValue);" />
       <MemberSignature Language="F#" Value="static member RegisterHiddenField : System.Web.UI.Page * string * string -&gt; unit" Usage="System.Web.UI.ScriptManager.RegisterHiddenField (page, hiddenFieldName, hiddenFieldInitialValue)" />
       <MemberType>Method</MemberType>
@@ -3029,6 +3045,7 @@ The registered control does not implement the <see cref="T:System.Web.UI.INaming
       <MemberSignature Language="C#" Value="public static void RegisterNamedClientScriptResource (System.Web.UI.Control control, string resourceName);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RegisterNamedClientScriptResource(class System.Web.UI.Control control, string resourceName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptManager.RegisterNamedClientScriptResource(System.Web.UI.Control,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub RegisterNamedClientScriptResource (control As System.Web.UI.Control, resourceName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RegisterNamedClientScriptResource(System::Web::UI::Control ^ control, System::String ^ resourceName);" />
       <MemberSignature Language="F#" Value="static member RegisterNamedClientScriptResource : System.Web.UI.Control * string -&gt; unit" Usage="System.Web.UI.ScriptManager.RegisterNamedClientScriptResource (control, resourceName)" />
       <MemberType>Method</MemberType>
@@ -3040,8 +3057,8 @@ The registered control does not implement the <see cref="T:System.Web.UI.INaming
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="control" Type="System.Web.UI.Control" />
-        <Parameter Name="resourceName" Type="System.String" />
+        <Parameter Name="control" Type="System.Web.UI.Control" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="resourceName" Type="System.String" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="control">The control that is registering the script.</param>
@@ -3054,6 +3071,7 @@ The registered control does not implement the <see cref="T:System.Web.UI.INaming
       <MemberSignature Language="C#" Value="public static void RegisterNamedClientScriptResource (System.Web.UI.Page page, string resourceName);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RegisterNamedClientScriptResource(class System.Web.UI.Page page, string resourceName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptManager.RegisterNamedClientScriptResource(System.Web.UI.Page,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub RegisterNamedClientScriptResource (page As System.Web.UI.Page, resourceName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RegisterNamedClientScriptResource(System::Web::UI::Page ^ page, System::String ^ resourceName);" />
       <MemberSignature Language="F#" Value="static member RegisterNamedClientScriptResource : System.Web.UI.Page * string -&gt; unit" Usage="System.Web.UI.ScriptManager.RegisterNamedClientScriptResource (page, resourceName)" />
       <MemberType>Method</MemberType>
@@ -3065,8 +3083,8 @@ The registered control does not implement the <see cref="T:System.Web.UI.INaming
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="page" Type="System.Web.UI.Page" />
-        <Parameter Name="resourceName" Type="System.String" />
+        <Parameter Name="page" Type="System.Web.UI.Page" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="resourceName" Type="System.String" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="page">The page object that is registering the script.</param>
@@ -3088,6 +3106,7 @@ The registered control does not implement the <see cref="T:System.Web.UI.INaming
       <MemberSignature Language="C#" Value="public static void RegisterOnSubmitStatement (System.Web.UI.Control control, Type type, string key, string script);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RegisterOnSubmitStatement(class System.Web.UI.Control control, class System.Type type, string key, string script) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptManager.RegisterOnSubmitStatement(System.Web.UI.Control,System.Type,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub RegisterOnSubmitStatement (control As System.Web.UI.Control, type As Type, key As String, script As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RegisterOnSubmitStatement(System::Web::UI::Control ^ control, Type ^ type, System::String ^ key, System::String ^ script);" />
       <MemberSignature Language="F#" Value="static member RegisterOnSubmitStatement : System.Web.UI.Control * Type * string * string -&gt; unit" Usage="System.Web.UI.ScriptManager.RegisterOnSubmitStatement (control, type, key, script)" />
       <MemberType>Method</MemberType>
@@ -3145,6 +3164,7 @@ The registered control does not implement the <see cref="T:System.Web.UI.INaming
       <MemberSignature Language="C#" Value="public static void RegisterOnSubmitStatement (System.Web.UI.Page page, Type type, string key, string script);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RegisterOnSubmitStatement(class System.Web.UI.Page page, class System.Type type, string key, string script) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptManager.RegisterOnSubmitStatement(System.Web.UI.Page,System.Type,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub RegisterOnSubmitStatement (page As System.Web.UI.Page, type As Type, key As String, script As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RegisterOnSubmitStatement(System::Web::UI::Page ^ page, Type ^ type, System::String ^ key, System::String ^ script);" />
       <MemberSignature Language="F#" Value="static member RegisterOnSubmitStatement : System.Web.UI.Page * Type * string * string -&gt; unit" Usage="System.Web.UI.ScriptManager.RegisterOnSubmitStatement (page, type, key, script)" />
       <MemberType>Method</MemberType>
@@ -3196,6 +3216,7 @@ The registered control does not implement the <see cref="T:System.Web.UI.INaming
       <MemberSignature Language="C#" Value="public void RegisterPostBackControl (System.Web.UI.Control control);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RegisterPostBackControl(class System.Web.UI.Control control) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptManager.RegisterPostBackControl(System.Web.UI.Control)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RegisterPostBackControl (control As System.Web.UI.Control)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RegisterPostBackControl(System::Web::UI::Control ^ control);" />
       <MemberSignature Language="F#" Value="abstract member RegisterPostBackControl : System.Web.UI.Control -&gt; unit&#xA;override this.RegisterPostBackControl : System.Web.UI.Control -&gt; unit" Usage="scriptManager.RegisterPostBackControl control" />
       <MemberType>Method</MemberType>
@@ -3380,6 +3401,7 @@ The registered control does not implement the <see cref="T:System.Web.UI.INaming
       <MemberSignature Language="C#" Value="public static void RegisterStartupScript (System.Web.UI.Control control, Type type, string key, string script, bool addScriptTags);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RegisterStartupScript(class System.Web.UI.Control control, class System.Type type, string key, string script, bool addScriptTags) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptManager.RegisterStartupScript(System.Web.UI.Control,System.Type,System.String,System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub RegisterStartupScript (control As System.Web.UI.Control, type As Type, key As String, script As String, addScriptTags As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RegisterStartupScript(System::Web::UI::Control ^ control, Type ^ type, System::String ^ key, System::String ^ script, bool addScriptTags);" />
       <MemberSignature Language="F#" Value="static member RegisterStartupScript : System.Web.UI.Control * Type * string * string * bool -&gt; unit" Usage="System.Web.UI.ScriptManager.RegisterStartupScript (control, type, key, script, addScriptTags)" />
       <MemberType>Method</MemberType>
@@ -3438,6 +3460,7 @@ The registered control does not implement the <see cref="T:System.Web.UI.INaming
       <MemberSignature Language="C#" Value="public static void RegisterStartupScript (System.Web.UI.Page page, Type type, string key, string script, bool addScriptTags);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RegisterStartupScript(class System.Web.UI.Page page, class System.Type type, string key, string script, bool addScriptTags) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptManager.RegisterStartupScript(System.Web.UI.Page,System.Type,System.String,System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub RegisterStartupScript (page As System.Web.UI.Page, type As Type, key As String, script As String, addScriptTags As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RegisterStartupScript(System::Web::UI::Page ^ page, Type ^ type, System::String ^ key, System::String ^ script, bool addScriptTags);" />
       <MemberSignature Language="F#" Value="static member RegisterStartupScript : System.Web.UI.Page * Type * string * string * bool -&gt; unit" Usage="System.Web.UI.ScriptManager.RegisterStartupScript (page, type, key, script, addScriptTags)" />
       <MemberType>Method</MemberType>
@@ -3508,7 +3531,7 @@ The registered control does not implement the <see cref="T:System.Web.UI.INaming
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
-          <para>When overriding this method, call the base <see cref="M:System.Web.UI.ScriptManager.Render(System.Web.UI.HtmlTextWriter)" /> method so that the client script that defines the  class is rendered on the page.</para>
+          <para>When overriding this method, call the base <see cref="M:System.Web.UI.ScriptManager.Render(System.Web.UI.HtmlTextWriter)" /> method so that the client script that defines the `Sys.WebForms.PageRequestManager` class is rendered on the page.</para>
         </block>
         <altmember cref="M:System.Web.UI.Control.Render(System.Web.UI.HtmlTextWriter)" />
       </Docs>
@@ -3527,7 +3550,7 @@ The registered control does not implement the <see cref="T:System.Web.UI.INaming
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.ComponentModel.Category("Action")</AttributeName>
         </Attribute>
       </Attributes>
@@ -3553,7 +3576,7 @@ The registered control does not implement the <see cref="T:System.Web.UI.INaming
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.ComponentModel.Category("Action")</AttributeName>
         </Attribute>
       </Attributes>
@@ -3586,19 +3609,19 @@ The registered control does not implement the <see cref="T:System.Web.UI.INaming
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.ComponentModel.Category("Behavior")</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.ComponentModel.MergableProperty(false)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
         </Attribute>
       </Attributes>
@@ -3640,10 +3663,10 @@ The registered control does not implement the <see cref="T:System.Web.UI.INaming
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.ComponentModel.Category("Behavior")</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0">
@@ -3666,13 +3689,13 @@ The registered control does not implement the <see cref="T:System.Web.UI.INaming
   
 |Value|Definition|  
 |-----------|----------------|  
-|<xref:System.Web.UI.ScriptMode.Auto>|Debug versions of client script libraries are used in the Web page when the `retail` attribute of the  configuration element is set to `false`. Otherwise, the release versions of client script libraries are used.|  
+|<xref:System.Web.UI.ScriptMode.Auto>|Debug versions of client script libraries are used in the Web page when the `retail` attribute of the [deployment](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ms228298(v%3dvs.100)) configuration element is set to `false`. Otherwise, the release versions of client script libraries are used.|  
 |<xref:System.Web.UI.ScriptMode.Inherit>|When applied to the <xref:System.Web.UI.ScriptManager.ScriptMode%2A> property of the <xref:System.Web.UI.ScriptManager> object, this value is the same as <xref:System.Web.UI.ScriptMode.Auto>.|  
-|<xref:System.Web.UI.ScriptMode.Debug>|Debug versions of client script libraries are used in the Web page unless the `retail` attribute of the  configuration element is set to `true`.|  
-|<xref:System.Web.UI.ScriptMode.Release>|Release versions of client script libraries are used in the Web page unless the `retail` attribute of the  configuration element is set to `false`.|  
+|<xref:System.Web.UI.ScriptMode.Debug>|Debug versions of client script libraries are used in the Web page unless the `retail` attribute of the [deployment](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ms228298(v%3dvs.100)) configuration element is set to `true`.|  
+|<xref:System.Web.UI.ScriptMode.Release>|Release versions of client script libraries are used in the Web page unless the `retail` attribute of the [deployment](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ms228298(v%3dvs.100)) configuration element is set to `false`.|  
   
 > [!NOTE]
->  The `debug` attribute of the  directive does not affect Ajax-enabled ASP.NET applications. The <xref:System.Web.UI.ScriptManager> control uses only the settings in the Web.config file and in its <xref:System.Web.UI.ScriptManager.IsDebuggingEnabled%2A> and <xref:System.Web.UI.ScriptManager.ScriptMode%2A> properties to determine whether to render debug scripts.  
+>  The `debug` attribute of the [@ Page](https://msdn.microsoft.com/library/f06cf9e5-22bb-461d-8b8f-549e53ff40a4) directive does not affect Ajax-enabled ASP.NET applications. The <xref:System.Web.UI.ScriptManager> control uses only the settings in the Web.config file and in its <xref:System.Web.UI.ScriptManager.IsDebuggingEnabled%2A> and <xref:System.Web.UI.ScriptManager.ScriptMode%2A> properties to determine whether to render debug scripts.  
   
  For more information, see [Debugging and Tracing Ajax Applications Overview](https://msdn.microsoft.com/library/92684ea0-7bb4-4a34-9203-3aa6394ce375).  
   
@@ -3696,10 +3719,10 @@ The registered control does not implement the <see cref="T:System.Web.UI.INaming
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.ComponentModel.Category("Behavior")</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
@@ -3804,22 +3827,22 @@ ScriptManager.ScriptResourceMapping.AddDefinition("jquery", Nothing, myScriptRes
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.ComponentModel.Category("Behavior")</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
           <AttributeName>System.ComponentModel.Editor("System.Web.UI.Design.CollectionEditorBase, System.Web.Extensions.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.ComponentModel.MergableProperty(false)</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-3.5">
           <AttributeName>System.ComponentModel.Editor("System.Web.UI.Design.CollectionEditorBase, System.Web.Extensions.Design, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
         </Attribute>
       </Attributes>
@@ -3869,22 +3892,22 @@ ScriptManager.ScriptResourceMapping.AddDefinition("jquery", Nothing, myScriptRes
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.ComponentModel.Category("Behavior")</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
           <AttributeName>System.ComponentModel.Editor("System.Web.UI.Design.ServiceReferenceCollectionEditor, System.Web.Extensions.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.ComponentModel.MergableProperty(false)</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-3.5">
           <AttributeName>System.ComponentModel.Editor("System.Web.UI.Design.CollectionEditorBase, System.Web.Extensions.Design, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
         </Attribute>
       </Attributes>
@@ -3967,6 +3990,7 @@ ScriptManager.ScriptResourceMapping.AddDefinition("jquery", Nothing, myScriptRes
       <MemberSignature Language="C#" Value="public void SetFocus (System.Web.UI.Control control);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetFocus(class System.Web.UI.Control control) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptManager.SetFocus(System.Web.UI.Control)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetFocus (control As System.Web.UI.Control)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetFocus(System::Web::UI::Control ^ control);" />
       <MemberSignature Language="F#" Value="member this.SetFocus : System.Web.UI.Control -&gt; unit" Usage="scriptManager.SetFocus control" />
       <MemberType>Method</MemberType>
@@ -4012,10 +4036,10 @@ ScriptManager.ScriptResourceMapping.AddDefinition("jquery", Nothing, myScriptRes
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.ComponentModel.DefaultValue(true)</AttributeName>
         </Attribute>
       </Attributes>
@@ -4600,13 +4624,13 @@ ScriptManager.ScriptResourceMapping.AddDefinition("jquery", Nothing, myScriptRes
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>

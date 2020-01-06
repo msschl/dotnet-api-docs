@@ -1,4 +1,4 @@
-﻿<Type Name="Export&lt;T&gt;" FullName="System.Composition.Export&lt;T&gt;">
+<Type Name="Export&lt;T&gt;" FullName="System.Composition.Export&lt;T&gt;">
   <TypeSignature Language="C#" Value="public sealed class Export&lt;T&gt; : IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit Export`1&lt;T&gt; extends System.Object implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Composition.Export`1" />
@@ -10,6 +10,8 @@
     <AssemblyVersion>1.0.31.0</AssemblyVersion>
     <AssemblyVersion>1.0.32.0</AssemblyVersion>
     <AssemblyVersion>1.0.33.0</AssemblyVersion>
+    <AssemblyVersion>1.0.34.0</AssemblyVersion>
+    <AssemblyVersion>1.0.35.0</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="T" />
@@ -25,7 +27,8 @@
   <Docs>
     <typeparam name="T">The type of the instance.</typeparam>
     <summary>A reference that allows the graph of parts associated with an exported instance to be released.</summary>
-    <remarks></remarks>
+    <remarks>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -41,6 +44,8 @@
         <AssemblyVersion>1.0.31.0</AssemblyVersion>
         <AssemblyVersion>1.0.32.0</AssemblyVersion>
         <AssemblyVersion>1.0.33.0</AssemblyVersion>
+        <AssemblyVersion>1.0.34.0</AssemblyVersion>
+        <AssemblyVersion>1.0.35.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="value" Type="T" />
@@ -50,7 +55,8 @@
         <param name="value">The exported instance.</param>
         <param name="disposeAction">An action that will dispose the exported instance.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Composition.Export`1" /> class.</summary>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -69,6 +75,8 @@
         <AssemblyVersion>1.0.31.0</AssemblyVersion>
         <AssemblyVersion>1.0.32.0</AssemblyVersion>
         <AssemblyVersion>1.0.33.0</AssemblyVersion>
+        <AssemblyVersion>1.0.34.0</AssemblyVersion>
+        <AssemblyVersion>1.0.35.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -76,7 +84,8 @@
       <Parameters />
       <Docs>
         <summary>Disposes the exported instance.</summary>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Value">
@@ -92,6 +101,8 @@
         <AssemblyVersion>1.0.31.0</AssemblyVersion>
         <AssemblyVersion>1.0.32.0</AssemblyVersion>
         <AssemblyVersion>1.0.33.0</AssemblyVersion>
+        <AssemblyVersion>1.0.34.0</AssemblyVersion>
+        <AssemblyVersion>1.0.35.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>
@@ -99,7 +110,8 @@
       <Docs>
         <summary>Gets the exported value.</summary>
         <value>The exported value.</value>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
   </Members>

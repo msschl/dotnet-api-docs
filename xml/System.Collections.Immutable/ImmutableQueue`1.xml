@@ -1,4 +1,4 @@
-﻿<Type Name="ImmutableQueue&lt;T&gt;" FullName="System.Collections.Immutable.ImmutableQueue&lt;T&gt;">
+<Type Name="ImmutableQueue&lt;T&gt;" FullName="System.Collections.Immutable.ImmutableQueue&lt;T&gt;">
   <TypeSignature Language="C#" Value="public sealed class ImmutableQueue&lt;T&gt; : System.Collections.Generic.IEnumerable&lt;T&gt;, System.Collections.Immutable.IImmutableQueue&lt;T&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ImmutableQueue`1&lt;T&gt; extends System.Object implements class System.Collections.Generic.IEnumerable`1&lt;!T&gt;, class System.Collections.IEnumerable, class System.Collections.Immutable.IImmutableQueue`1&lt;!T&gt;" />
   <TypeSignature Language="DocId" Value="T:System.Collections.Immutable.ImmutableQueue`1" />
@@ -7,10 +7,13 @@
   <TypeSignature Language="F#" Value="type ImmutableQueue&lt;'T&gt; = class&#xA;    interface seq&lt;'T&gt;&#xA;    interface IEnumerable&#xA;    interface IImmutableQueue&lt;'T&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Collections.Immutable</AssemblyName>
+    <AssemblyVersion>1.1.37.0</AssemblyVersion>
     <AssemblyVersion>1.2.0.0</AssemblyVersion>
     <AssemblyVersion>1.2.1.0</AssemblyVersion>
     <AssemblyVersion>1.2.2.0</AssemblyVersion>
     <AssemblyVersion>1.2.3.0</AssemblyVersion>
+    <AssemblyVersion>1.2.4.0</AssemblyVersion>
+    <AssemblyVersion>1.2.5.0</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="T" />
@@ -30,10 +33,10 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1">
+    <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;dotnet-uwp-10.0">
       <AttributeName>System.Diagnostics.DebuggerDisplay("IsEmpty = {IsEmpty}")</AttributeName>
     </Attribute>
-    <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1">
+    <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;dotnet-uwp-10.0">
       <AttributeName>System.Diagnostics.DebuggerTypeProxy(typeof(System.Collections.Immutable.ImmutableQueueDebuggerProxy`1))</AttributeName>
     </Attribute>
   </Attributes>
@@ -56,10 +59,13 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
+        <AssemblyVersion>1.2.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableQueue&lt;T&gt;</ReturnType>
@@ -81,10 +87,13 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
+        <AssemblyVersion>1.2.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableQueue&lt;T&gt;</ReturnType>
@@ -92,8 +101,9 @@
       <Parameters />
       <Docs>
         <summary>Removes the element at the beginning of the immutable queue, and returns the new queue.</summary>
-        <returns>The new immutable queue; never <c>null</c>.</returns>
+        <returns>The new immutable queue; never <see langword="null" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">The queue is empty.</exception>
       </Docs>
     </Member>
     <Member MemberName="Dequeue">
@@ -102,14 +112,17 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableQueue`1.Dequeue(`0@)" />
       <MemberSignature Language="VB.NET" Value="Public Function Dequeue (ByRef value As T) As ImmutableQueue(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Immutable::ImmutableQueue&lt;T&gt; ^ Dequeue([Runtime::InteropServices::Out] T % value);" />
-      <MemberSignature Language="F#" Value="member this.Dequeue :  -&gt; System.Collections.Immutable.ImmutableQueue&lt;'T&gt;" Usage="immutableQueue.Dequeue value" />
+      <MemberSignature Language="F#" Value="member this.Dequeue : 'T -&gt; System.Collections.Immutable.ImmutableQueue&lt;'T&gt;" Usage="immutableQueue.Dequeue value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
+        <AssemblyVersion>1.2.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableQueue&lt;T&gt;</ReturnType>
@@ -122,6 +135,7 @@
         <summary>Removes the item at the beginning of the immutable queue, and returns the new queue.</summary>
         <returns>The new immutable queue with the beginning element removed.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">The queue is empty.</exception>
       </Docs>
     </Member>
     <Member MemberName="Empty">
@@ -134,10 +148,13 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
+        <AssemblyVersion>1.2.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableQueue&lt;T&gt;</ReturnType>
@@ -158,10 +175,13 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
+        <AssemblyVersion>1.2.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableQueue&lt;T&gt;</ReturnType>
@@ -186,10 +206,13 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
+        <AssemblyVersion>1.2.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableQueue&lt;T&gt;+Enumerator</ReturnType>
@@ -214,10 +237,13 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
+        <AssemblyVersion>1.2.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -244,10 +270,13 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
+        <AssemblyVersion>1.2.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>
@@ -257,33 +286,37 @@
         <summary>Returns the element at the beginning of the immutable queue without removing it.</summary>
         <returns>The element at the beginning of the queue.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">The queue is empty.</exception>
       </Docs>
     </Member>
     <Member MemberName="PeekRef">
-      <MemberSignature Language="C#" Value="public T&amp; PeekRef ();" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance T&amp; modreq(System.Runtime.InteropServices.InAttribute) PeekRef() cil managed" />
+      <MemberSignature Language="C#" Value="public ref readonly T PeekRef ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !T PeekRef() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableQueue`1.PeekRef" />
-      <MemberSignature Language="VB.NET" Value="Public Function PeekRef () As T&amp;" />
+      <MemberSignature Language="VB.NET" Value="Public Function PeekRef () As T" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; T&amp; ^ PeekRef();" />
-      <MemberSignature Language="F#" Value="member this.PeekRef : unit -&gt; T&amp;" Usage="immutableQueue.PeekRef " />
+      <MemberSignature Language="F#" Value="member this.PeekRef : unit -&gt; 'T" Usage="immutableQueue.PeekRef " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
+        <AssemblyVersion>1.2.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue RefType="Readonly">
         <ReturnType>T</ReturnType>
         <Attributes>
-          <Attribute FrameworkAlternate="netcore-2.1">
+          <Attribute FrameworkAlternate="netcore-2.2">
             <AttributeName>System.Runtime.CompilerServices.IsReadOnly</AttributeName>
           </Attribute>
         </Attributes>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets a read-only reference to the element at the front of the queue.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">The queue is empty.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.Generic.IEnumerable&lt;T&gt;.GetEnumerator">
@@ -298,10 +331,13 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
+        <AssemblyVersion>1.2.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerator&lt;T&gt;</ReturnType>
@@ -332,10 +368,13 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
+        <AssemblyVersion>1.2.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.IEnumerator</ReturnType>
@@ -366,10 +405,13 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
+        <AssemblyVersion>1.2.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.IImmutableQueue&lt;T&gt;</ReturnType>
@@ -400,10 +442,13 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
+        <AssemblyVersion>1.2.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.IImmutableQueue&lt;T&gt;</ReturnType>
@@ -411,7 +456,7 @@
       <Parameters />
       <Docs>
         <summary>Removes the element at the beginning of the immutable queue, and returns the new queue.</summary>
-        <returns>The new immutable queue; never <c>null</c>.</returns>
+        <returns>The new immutable queue; never <see langword="null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -434,10 +479,13 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
+        <AssemblyVersion>1.2.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.IImmutableQueue&lt;T&gt;</ReturnType>

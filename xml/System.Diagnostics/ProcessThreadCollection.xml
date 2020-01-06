@@ -1,4 +1,4 @@
-﻿<Type Name="ProcessThreadCollection" FullName="System.Diagnostics.ProcessThreadCollection">
+<Type Name="ProcessThreadCollection" FullName="System.Diagnostics.ProcessThreadCollection">
   <TypeSignature Language="C#" Value="public class ProcessThreadCollection : System.Collections.ReadOnlyCollectionBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ProcessThreadCollection extends System.Collections.ReadOnlyCollectionBase" />
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.ProcessThreadCollection" />
@@ -10,6 +10,7 @@
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
     <AssemblyVersion>4.2.0.0</AssemblyVersion>
     <AssemblyVersion>4.2.1.0</AssemblyVersion>
+    <AssemblyVersion>4.2.2.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
@@ -21,12 +22,14 @@
   <AssemblyInfo>
     <AssemblyName>netstandard</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
     <BaseTypeName FrameworkAlternate="netframework-4.5">System.Collections.ReadOnlyCollectionBase</BaseTypeName>
   </Base>
-  <Interfaces></Interfaces>
+  <Interfaces>
+  </Interfaces>
   <Docs>
     <summary>Provides a strongly typed collection of <see cref="T:System.Diagnostics.ProcessThread" /> objects.</summary>
     <remarks>To be added.</remarks>
@@ -54,6 +57,7 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -65,6 +69,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
@@ -90,6 +95,7 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -101,6 +107,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="processThreads" Type="System.Diagnostics.ProcessThread[]" />
@@ -124,6 +131,7 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -135,6 +143,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -176,7 +185,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="collection" Type="System.Collections.Generic.IEnumerable&lt;System.Diagnostics.ProcessThread&gt;" />
+        <Parameter Name="collection" Type="System.Collections.Generic.IEnumerable&lt;System.Diagnostics.ProcessThread&gt;" Index="0" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8" />
       </Parameters>
       <Docs>
         <param name="collection">To be added.</param>
@@ -244,7 +253,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="item" Type="System.Diagnostics.ProcessThread" />
+        <Parameter Name="item" Type="System.Diagnostics.ProcessThread" Index="0" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8" />
       </Parameters>
       <Docs>
         <param name="item">To be added.</param>
@@ -280,8 +289,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="item" Type="System.Diagnostics.ProcessThread" />
-        <Parameter Name="comparer" Type="System.Collections.Generic.IComparer&lt;System.Diagnostics.ProcessThread&gt;" />
+        <Parameter Name="item" Type="System.Diagnostics.ProcessThread" Index="0" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8" />
+        <Parameter Name="comparer" Type="System.Collections.Generic.IComparer&lt;System.Diagnostics.ProcessThread&gt;" Index="1" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8" />
       </Parameters>
       <Docs>
         <param name="item">To be added.</param>
@@ -318,10 +327,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="index" Type="System.Int32" />
-        <Parameter Name="count" Type="System.Int32" />
-        <Parameter Name="item" Type="System.Diagnostics.ProcessThread" />
-        <Parameter Name="comparer" Type="System.Collections.Generic.IComparer&lt;System.Diagnostics.ProcessThread&gt;" />
+        <Parameter Name="index" Type="System.Int32" Index="0" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8" />
+        <Parameter Name="count" Type="System.Int32" Index="1" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8" />
+        <Parameter Name="item" Type="System.Diagnostics.ProcessThread" Index="2" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8" />
+        <Parameter Name="comparer" Type="System.Collections.Generic.IComparer&lt;System.Diagnostics.ProcessThread&gt;" Index="3" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8" />
       </Parameters>
       <Docs>
         <param name="index">To be added.</param>
@@ -410,6 +419,7 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -421,6 +431,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -473,7 +484,7 @@
         <TypeParameter Name="TOutput" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="converter" Type="System.Converter&lt;System.Diagnostics.ProcessThread,TOutput&gt;" />
+        <Parameter Name="converter" Type="System.Converter&lt;System.Diagnostics.ProcessThread,TOutput&gt;" Index="0" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8" />
       </Parameters>
       <Docs>
         <typeparam name="TOutput">To be added.</typeparam>
@@ -510,7 +521,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="array" Type="System.Diagnostics.ProcessThread[]" />
+        <Parameter Name="array" Type="System.Diagnostics.ProcessThread[]" Index="0" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8" />
       </Parameters>
       <Docs>
         <param name="array">To be added.</param>
@@ -531,6 +542,7 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -542,6 +554,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -584,10 +597,10 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="index" Type="System.Int32" />
-        <Parameter Name="array" Type="System.Diagnostics.ProcessThread[]" />
-        <Parameter Name="arrayIndex" Type="System.Int32" />
-        <Parameter Name="count" Type="System.Int32" />
+        <Parameter Name="index" Type="System.Int32" Index="0" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8" />
+        <Parameter Name="array" Type="System.Diagnostics.ProcessThread[]" Index="1" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8" />
+        <Parameter Name="arrayIndex" Type="System.Int32" Index="2" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8" />
+        <Parameter Name="count" Type="System.Int32" Index="3" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8" />
       </Parameters>
       <Docs>
         <param name="index">To be added.</param>
@@ -655,7 +668,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="match" Type="System.Predicate&lt;System.Diagnostics.ProcessThread&gt;" />
+        <Parameter Name="match" Type="System.Predicate&lt;System.Diagnostics.ProcessThread&gt;" Index="0" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8" />
       </Parameters>
       <Docs>
         <param name="match">To be added.</param>
@@ -691,7 +704,7 @@
         <ReturnType>System.Diagnostics.ProcessThread</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="match" Type="System.Predicate&lt;System.Diagnostics.ProcessThread&gt;" />
+        <Parameter Name="match" Type="System.Predicate&lt;System.Diagnostics.ProcessThread&gt;" Index="0" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8" />
       </Parameters>
       <Docs>
         <param name="match">To be added.</param>
@@ -727,7 +740,7 @@
         <ReturnType>System.Collections.Generic.List&lt;System.Diagnostics.ProcessThread&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="match" Type="System.Predicate&lt;System.Diagnostics.ProcessThread&gt;" />
+        <Parameter Name="match" Type="System.Predicate&lt;System.Diagnostics.ProcessThread&gt;" Index="0" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8" />
       </Parameters>
       <Docs>
         <param name="match">To be added.</param>
@@ -763,7 +776,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="match" Type="System.Predicate&lt;System.Diagnostics.ProcessThread&gt;" />
+        <Parameter Name="match" Type="System.Predicate&lt;System.Diagnostics.ProcessThread&gt;" Index="0" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8" />
       </Parameters>
       <Docs>
         <param name="match">To be added.</param>
@@ -799,8 +812,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="startIndex" Type="System.Int32" />
-        <Parameter Name="match" Type="System.Predicate&lt;System.Diagnostics.ProcessThread&gt;" />
+        <Parameter Name="startIndex" Type="System.Int32" Index="0" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8" />
+        <Parameter Name="match" Type="System.Predicate&lt;System.Diagnostics.ProcessThread&gt;" Index="1" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8" />
       </Parameters>
       <Docs>
         <param name="startIndex">To be added.</param>
@@ -837,9 +850,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="startIndex" Type="System.Int32" />
-        <Parameter Name="count" Type="System.Int32" />
-        <Parameter Name="match" Type="System.Predicate&lt;System.Diagnostics.ProcessThread&gt;" />
+        <Parameter Name="startIndex" Type="System.Int32" Index="0" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8" />
+        <Parameter Name="count" Type="System.Int32" Index="1" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8" />
+        <Parameter Name="match" Type="System.Predicate&lt;System.Diagnostics.ProcessThread&gt;" Index="2" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8" />
       </Parameters>
       <Docs>
         <param name="startIndex">To be added.</param>
@@ -877,7 +890,7 @@
         <ReturnType>System.Diagnostics.ProcessThread</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="match" Type="System.Predicate&lt;System.Diagnostics.ProcessThread&gt;" />
+        <Parameter Name="match" Type="System.Predicate&lt;System.Diagnostics.ProcessThread&gt;" Index="0" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8" />
       </Parameters>
       <Docs>
         <param name="match">To be added.</param>
@@ -913,7 +926,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="match" Type="System.Predicate&lt;System.Diagnostics.ProcessThread&gt;" />
+        <Parameter Name="match" Type="System.Predicate&lt;System.Diagnostics.ProcessThread&gt;" Index="0" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8" />
       </Parameters>
       <Docs>
         <param name="match">To be added.</param>
@@ -949,8 +962,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="startIndex" Type="System.Int32" />
-        <Parameter Name="match" Type="System.Predicate&lt;System.Diagnostics.ProcessThread&gt;" />
+        <Parameter Name="startIndex" Type="System.Int32" Index="0" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8" />
+        <Parameter Name="match" Type="System.Predicate&lt;System.Diagnostics.ProcessThread&gt;" Index="1" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8" />
       </Parameters>
       <Docs>
         <param name="startIndex">To be added.</param>
@@ -987,9 +1000,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="startIndex" Type="System.Int32" />
-        <Parameter Name="count" Type="System.Int32" />
-        <Parameter Name="match" Type="System.Predicate&lt;System.Diagnostics.ProcessThread&gt;" />
+        <Parameter Name="startIndex" Type="System.Int32" Index="0" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8" />
+        <Parameter Name="count" Type="System.Int32" Index="1" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8" />
+        <Parameter Name="match" Type="System.Predicate&lt;System.Diagnostics.ProcessThread&gt;" Index="2" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8" />
       </Parameters>
       <Docs>
         <param name="startIndex">To be added.</param>
@@ -1027,7 +1040,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="action" Type="System.Action&lt;System.Diagnostics.ProcessThread&gt;" />
+        <Parameter Name="action" Type="System.Action&lt;System.Diagnostics.ProcessThread&gt;" Index="0" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8" />
       </Parameters>
       <Docs>
         <param name="action">To be added.</param>
@@ -1093,8 +1106,8 @@
         <ReturnType>System.Collections.Generic.List&lt;System.Diagnostics.ProcessThread&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="index" Type="System.Int32" />
-        <Parameter Name="count" Type="System.Int32" />
+        <Parameter Name="index" Type="System.Int32" Index="0" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8" />
+        <Parameter Name="count" Type="System.Int32" Index="1" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8" />
       </Parameters>
       <Docs>
         <param name="index">To be added.</param>
@@ -1117,6 +1130,7 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1128,6 +1142,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -1169,8 +1184,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="item" Type="System.Diagnostics.ProcessThread" />
-        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="item" Type="System.Diagnostics.ProcessThread" Index="0" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8" />
+        <Parameter Name="index" Type="System.Int32" Index="1" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8" />
       </Parameters>
       <Docs>
         <param name="item">To be added.</param>
@@ -1207,9 +1222,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="item" Type="System.Diagnostics.ProcessThread" />
-        <Parameter Name="index" Type="System.Int32" />
-        <Parameter Name="count" Type="System.Int32" />
+        <Parameter Name="item" Type="System.Diagnostics.ProcessThread" Index="0" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8" />
+        <Parameter Name="index" Type="System.Int32" Index="1" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8" />
+        <Parameter Name="count" Type="System.Int32" Index="2" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8" />
       </Parameters>
       <Docs>
         <param name="item">To be added.</param>
@@ -1233,6 +1248,7 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1244,6 +1260,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1286,8 +1303,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="index" Type="System.Int32" />
-        <Parameter Name="collection" Type="System.Collections.Generic.IEnumerable&lt;System.Diagnostics.ProcessThread&gt;" />
+        <Parameter Name="index" Type="System.Int32" Index="0" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8" />
+        <Parameter Name="collection" Type="System.Collections.Generic.IEnumerable&lt;System.Diagnostics.ProcessThread&gt;" Index="1" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8" />
       </Parameters>
       <Docs>
         <param name="index">To be added.</param>
@@ -1309,6 +1326,7 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1320,6 +1338,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Diagnostics.ProcessThread</ReturnType>
@@ -1361,7 +1380,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="item" Type="System.Diagnostics.ProcessThread" />
+        <Parameter Name="item" Type="System.Diagnostics.ProcessThread" Index="0" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8" />
       </Parameters>
       <Docs>
         <param name="item">To be added.</param>
@@ -1397,8 +1416,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="item" Type="System.Diagnostics.ProcessThread" />
-        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="item" Type="System.Diagnostics.ProcessThread" Index="0" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8" />
+        <Parameter Name="index" Type="System.Int32" Index="1" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8" />
       </Parameters>
       <Docs>
         <param name="item">To be added.</param>
@@ -1435,9 +1454,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="item" Type="System.Diagnostics.ProcessThread" />
-        <Parameter Name="index" Type="System.Int32" />
-        <Parameter Name="count" Type="System.Int32" />
+        <Parameter Name="item" Type="System.Diagnostics.ProcessThread" Index="0" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8" />
+        <Parameter Name="index" Type="System.Int32" Index="1" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8" />
+        <Parameter Name="count" Type="System.Int32" Index="2" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8" />
       </Parameters>
       <Docs>
         <param name="item">To be added.</param>
@@ -1461,6 +1480,7 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1472,6 +1492,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1512,7 +1533,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="match" Type="System.Predicate&lt;System.Diagnostics.ProcessThread&gt;" />
+        <Parameter Name="match" Type="System.Predicate&lt;System.Diagnostics.ProcessThread&gt;" Index="0" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8" />
       </Parameters>
       <Docs>
         <param name="match">To be added.</param>
@@ -1548,7 +1569,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="index" Type="System.Int32" Index="0" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8" />
       </Parameters>
       <Docs>
         <param name="index">To be added.</param>
@@ -1583,8 +1604,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="index" Type="System.Int32" />
-        <Parameter Name="count" Type="System.Int32" />
+        <Parameter Name="index" Type="System.Int32" Index="0" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8" />
+        <Parameter Name="count" Type="System.Int32" Index="1" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8" />
       </Parameters>
       <Docs>
         <param name="index">To be added.</param>
@@ -1652,8 +1673,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="index" Type="System.Int32" />
-        <Parameter Name="count" Type="System.Int32" />
+        <Parameter Name="index" Type="System.Int32" Index="0" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8" />
+        <Parameter Name="count" Type="System.Int32" Index="1" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8" />
       </Parameters>
       <Docs>
         <param name="index">To be added.</param>
@@ -1721,7 +1742,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="comparer" Type="System.Collections.Generic.IComparer&lt;System.Diagnostics.ProcessThread&gt;" />
+        <Parameter Name="comparer" Type="System.Collections.Generic.IComparer&lt;System.Diagnostics.ProcessThread&gt;" Index="0" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8" />
       </Parameters>
       <Docs>
         <param name="comparer">To be added.</param>
@@ -1756,7 +1777,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="comparison" Type="System.Comparison&lt;System.Diagnostics.ProcessThread&gt;" />
+        <Parameter Name="comparison" Type="System.Comparison&lt;System.Diagnostics.ProcessThread&gt;" Index="0" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8" />
       </Parameters>
       <Docs>
         <param name="comparison">To be added.</param>
@@ -1791,9 +1812,9 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="index" Type="System.Int32" />
-        <Parameter Name="count" Type="System.Int32" />
-        <Parameter Name="comparer" Type="System.Collections.Generic.IComparer&lt;System.Diagnostics.ProcessThread&gt;" />
+        <Parameter Name="index" Type="System.Int32" Index="0" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8" />
+        <Parameter Name="count" Type="System.Int32" Index="1" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8" />
+        <Parameter Name="comparer" Type="System.Collections.Generic.IComparer&lt;System.Diagnostics.ProcessThread&gt;" Index="2" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8" />
       </Parameters>
       <Docs>
         <param name="index">To be added.</param>
@@ -1826,8 +1847,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="array" Type="System.Array" />
-        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="array" Type="System.Array" Index="0" FrameworkAlternate="netcore-1.0;netcore-1.1" />
+        <Parameter Name="index" Type="System.Int32" Index="1" FrameworkAlternate="netcore-1.0;netcore-1.1" />
       </Parameters>
       <Docs>
         <param name="array">To be added.</param>
@@ -1988,7 +2009,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="match" Type="System.Predicate&lt;System.Diagnostics.ProcessThread&gt;" />
+        <Parameter Name="match" Type="System.Predicate&lt;System.Diagnostics.ProcessThread&gt;" Index="0" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8" />
       </Parameters>
       <Docs>
         <param name="match">To be added.</param>

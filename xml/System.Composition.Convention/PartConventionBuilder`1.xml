@@ -1,4 +1,4 @@
-﻿<Type Name="PartConventionBuilder&lt;T&gt;" FullName="System.Composition.Convention.PartConventionBuilder&lt;T&gt;">
+<Type Name="PartConventionBuilder&lt;T&gt;" FullName="System.Composition.Convention.PartConventionBuilder&lt;T&gt;">
   <TypeSignature Language="C#" Value="public class PartConventionBuilder&lt;T&gt; : System.Composition.Convention.PartConventionBuilder" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PartConventionBuilder`1&lt;T&gt; extends System.Composition.Convention.PartConventionBuilder" />
   <TypeSignature Language="DocId" Value="T:System.Composition.Convention.PartConventionBuilder`1" />
@@ -10,6 +10,8 @@
     <AssemblyVersion>1.0.31.0</AssemblyVersion>
     <AssemblyVersion>1.0.32.0</AssemblyVersion>
     <AssemblyVersion>1.0.33.0</AssemblyVersion>
+    <AssemblyVersion>1.0.34.0</AssemblyVersion>
+    <AssemblyVersion>1.0.35.0</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="T" />
@@ -21,7 +23,8 @@
   <Docs>
     <typeparam name="T">The type of the part.</typeparam>
     <summary>Configures a type as a Managed Extensibility Framework (MEF) part, with strongly typed return values.</summary>
-    <remarks></remarks>
+    <remarks>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="ExportProperty">
@@ -37,6 +40,8 @@
         <AssemblyVersion>1.0.31.0</AssemblyVersion>
         <AssemblyVersion>1.0.32.0</AssemblyVersion>
         <AssemblyVersion>1.0.33.0</AssemblyVersion>
+        <AssemblyVersion>1.0.34.0</AssemblyVersion>
+        <AssemblyVersion>1.0.35.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Composition.Convention.PartConventionBuilder&lt;T&gt;</ReturnType>
@@ -48,7 +53,8 @@
         <param name="propertySelector">A function that selects the property to export.</param>
         <summary>Exports a specified property.</summary>
         <returns>An object that can be used to further configure the part.</returns>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ExportProperty">
@@ -64,6 +70,8 @@
         <AssemblyVersion>1.0.31.0</AssemblyVersion>
         <AssemblyVersion>1.0.32.0</AssemblyVersion>
         <AssemblyVersion>1.0.33.0</AssemblyVersion>
+        <AssemblyVersion>1.0.34.0</AssemblyVersion>
+        <AssemblyVersion>1.0.35.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Composition.Convention.PartConventionBuilder&lt;T&gt;</ReturnType>
@@ -77,8 +85,9 @@
         <param name="exportConfiguration">An action that configures the exported property.</param>
         <summary>Exports a specified property with the specified configuration.</summary>
         <returns>An object that can be used to further configure the part.</returns>
-        <remarks></remarks>
-        <exception cref="T:System.Argument">The <paramref name="propertySelector" /> expression must be a <see cref="T:System.Linq.Expressions.MemberExpression" /> for accessing a property.</exception>
+        <remarks>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The <paramref name="propertySelector" /> expression must be a <see cref="T:System.Linq.Expressions.MemberExpression" /> for accessing a property.</exception>
       </Docs>
     </Member>
     <Member MemberName="ExportProperty&lt;TContract&gt;">
@@ -94,6 +103,8 @@
         <AssemblyVersion>1.0.31.0</AssemblyVersion>
         <AssemblyVersion>1.0.32.0</AssemblyVersion>
         <AssemblyVersion>1.0.33.0</AssemblyVersion>
+        <AssemblyVersion>1.0.34.0</AssemblyVersion>
+        <AssemblyVersion>1.0.35.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Composition.Convention.PartConventionBuilder&lt;T&gt;</ReturnType>
@@ -109,8 +120,9 @@
         <param name="propertySelector">A function that selects the property to export.</param>
         <summary>Exports a specified property as a specified contract type.</summary>
         <returns>An object that can be used to further configure the part.</returns>
-        <remarks></remarks>
-        <exception cref="T:System.Argument">The <paramref name="propertySelector" /> expression must be a <see cref="T:System.Linq.Expressions.MemberExpression" /> for accessing a property.</exception>
+        <remarks>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The <paramref name="propertySelector" /> expression must be a <see cref="T:System.Linq.Expressions.MemberExpression" /> for accessing a property.</exception>
       </Docs>
     </Member>
     <Member MemberName="ExportProperty&lt;TContract&gt;">
@@ -126,6 +138,8 @@
         <AssemblyVersion>1.0.31.0</AssemblyVersion>
         <AssemblyVersion>1.0.32.0</AssemblyVersion>
         <AssemblyVersion>1.0.33.0</AssemblyVersion>
+        <AssemblyVersion>1.0.34.0</AssemblyVersion>
+        <AssemblyVersion>1.0.35.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Composition.Convention.PartConventionBuilder&lt;T&gt;</ReturnType>
@@ -143,7 +157,8 @@
         <param name="exportConfiguration">An action that configures the exported property.</param>
         <summary>Exports a specified property as a specified contract type by using the specified configuration.</summary>
         <returns>An object that can be used to further configure the part.</returns>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ImportProperty">
@@ -159,6 +174,8 @@
         <AssemblyVersion>1.0.31.0</AssemblyVersion>
         <AssemblyVersion>1.0.32.0</AssemblyVersion>
         <AssemblyVersion>1.0.33.0</AssemblyVersion>
+        <AssemblyVersion>1.0.34.0</AssemblyVersion>
+        <AssemblyVersion>1.0.35.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Composition.Convention.PartConventionBuilder&lt;T&gt;</ReturnType>
@@ -170,7 +187,8 @@
         <param name="propertySelector">A function that selects the property to import.</param>
         <summary>Imports a specified property.</summary>
         <returns>An object that can be used to further configure the part.</returns>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ImportProperty">
@@ -186,6 +204,8 @@
         <AssemblyVersion>1.0.31.0</AssemblyVersion>
         <AssemblyVersion>1.0.32.0</AssemblyVersion>
         <AssemblyVersion>1.0.33.0</AssemblyVersion>
+        <AssemblyVersion>1.0.34.0</AssemblyVersion>
+        <AssemblyVersion>1.0.35.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Composition.Convention.PartConventionBuilder&lt;T&gt;</ReturnType>
@@ -199,8 +219,9 @@
         <param name="importConfiguration">An action that configures the imported property.</param>
         <summary>Imports a specified property by using the specified configuration.</summary>
         <returns>An object that can be used to further configure the part.</returns>
-        <remarks></remarks>
-        <exception cref="T:System.Argument">The <paramref name="propertySelector" /> expression must be a <see cref="T:System.Linq.Expressions.MemberExpression" /> for accessing a property.</exception>
+        <remarks>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The <paramref name="propertySelector" /> expression must be a <see cref="T:System.Linq.Expressions.MemberExpression" /> for accessing a property.</exception>
       </Docs>
     </Member>
     <Member MemberName="ImportProperty&lt;TContract&gt;">
@@ -216,6 +237,8 @@
         <AssemblyVersion>1.0.31.0</AssemblyVersion>
         <AssemblyVersion>1.0.32.0</AssemblyVersion>
         <AssemblyVersion>1.0.33.0</AssemblyVersion>
+        <AssemblyVersion>1.0.34.0</AssemblyVersion>
+        <AssemblyVersion>1.0.35.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Composition.Convention.PartConventionBuilder&lt;T&gt;</ReturnType>
@@ -231,7 +254,8 @@
         <param name="propertySelector">A function that selects the property to import.</param>
         <summary>Imports a specified property with the specified contract type.</summary>
         <returns>An object that can be used to further configure the part.</returns>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ImportProperty&lt;TContract&gt;">
@@ -247,6 +271,8 @@
         <AssemblyVersion>1.0.31.0</AssemblyVersion>
         <AssemblyVersion>1.0.32.0</AssemblyVersion>
         <AssemblyVersion>1.0.33.0</AssemblyVersion>
+        <AssemblyVersion>1.0.34.0</AssemblyVersion>
+        <AssemblyVersion>1.0.35.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Composition.Convention.PartConventionBuilder&lt;T&gt;</ReturnType>
@@ -264,8 +290,9 @@
         <param name="importConfiguration">An action that configures the imported property.</param>
         <summary>Imports a specified property with the specified contract type and configuration.</summary>
         <returns>An object that can be used to further configure the part.</returns>
-        <remarks></remarks>
-        <exception cref="T:System.Argument">The <paramref name="propertySelector" /> expression must be a <see cref="T:System.Linq.Expressions.MemberExpression" /> for accessing a property.</exception>
+        <remarks>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The <paramref name="propertySelector" /> expression must be a <see cref="T:System.Linq.Expressions.MemberExpression" /> for accessing a property.</exception>
       </Docs>
     </Member>
     <Member MemberName="NotifyImportsSatisfied">
@@ -281,6 +308,8 @@
         <AssemblyVersion>1.0.31.0</AssemblyVersion>
         <AssemblyVersion>1.0.32.0</AssemblyVersion>
         <AssemblyVersion>1.0.33.0</AssemblyVersion>
+        <AssemblyVersion>1.0.34.0</AssemblyVersion>
+        <AssemblyVersion>1.0.35.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Composition.Convention.PartConventionBuilder&lt;T&gt;</ReturnType>
@@ -292,8 +321,9 @@
         <param name="methodSelector">An action that selects the method to call.</param>
         <summary>Selects a method to be called when composition is complete.</summary>
         <returns>An object that can be used to further configure the part.</returns>
-        <remarks></remarks>
-        <exception cref="T:System.Argument">The <paramref name="methodSelector" /> expression must be a <see langword="void" /> method with no arguments.</exception>
+        <remarks>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The <paramref name="methodSelector" /> expression must be a <see langword="void" /> method with no arguments.</exception>
       </Docs>
     </Member>
     <Member MemberName="SelectConstructor">
@@ -309,6 +339,8 @@
         <AssemblyVersion>1.0.31.0</AssemblyVersion>
         <AssemblyVersion>1.0.32.0</AssemblyVersion>
         <AssemblyVersion>1.0.33.0</AssemblyVersion>
+        <AssemblyVersion>1.0.34.0</AssemblyVersion>
+        <AssemblyVersion>1.0.35.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Composition.Convention.PartConventionBuilder&lt;T&gt;</ReturnType>
@@ -319,9 +351,10 @@
       <Docs>
         <param name="constructorSelector">A function that selects a constructor.</param>
         <summary>Selects a constructor to be used in composition.</summary>
-        <returns>An object that can be used to further configure the part. </returns>
-        <remarks></remarks>
-        <exception cref="T:System.Argument">The <paramref name="constructorSelector" /> expression must use the <see langword="new" /> operator.</exception>
+        <returns>An object that can be used to further configure the part.</returns>
+        <remarks>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The <paramref name="constructorSelector" /> expression must use the <see langword="new" /> operator.</exception>
       </Docs>
     </Member>
   </Members>

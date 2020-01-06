@@ -1,4 +1,4 @@
-﻿<Type Name="PEReaderExtensions" FullName="System.Reflection.Metadata.PEReaderExtensions">
+<Type Name="PEReaderExtensions" FullName="System.Reflection.Metadata.PEReaderExtensions">
   <TypeSignature Language="C#" Value="public static class PEReaderExtensions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit PEReaderExtensions extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.PEReaderExtensions" />
@@ -7,17 +7,20 @@
   <TypeSignature Language="F#" Value="type PEReaderExtensions = class" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Metadata</AssemblyName>
+    <AssemblyVersion>1.0.22.0</AssemblyVersion>
     <AssemblyVersion>1.3.0.0</AssemblyVersion>
     <AssemblyVersion>1.4.1.0</AssemblyVersion>
     <AssemblyVersion>1.4.2.0</AssemblyVersion>
     <AssemblyVersion>1.4.3.0</AssemblyVersion>
+    <AssemblyVersion>1.4.4.0</AssemblyVersion>
+    <AssemblyVersion>1.4.5.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2">
+    <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;dotnet-uwp-10.0;netcore-3.0;netcore-3.1">
       <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
     </Attribute>
     <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1">
@@ -38,10 +41,13 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.0.22.0</AssemblyVersion>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
         <AssemblyVersion>1.4.1.0</AssemblyVersion>
         <AssemblyVersion>1.4.2.0</AssemblyVersion>
         <AssemblyVersion>1.4.3.0</AssemblyVersion>
+        <AssemblyVersion>1.4.4.0</AssemblyVersion>
+        <AssemblyVersion>1.4.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Reflection.Metadata.MetadataReader</ReturnType>
@@ -50,10 +56,22 @@
         <Parameter Name="peReader" Type="System.Reflection.PortableExecutable.PEReader" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="peReader">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="peReader">The current <see cref="T:System.Reflection.PortableExecutable.PEReader" /> instance.</param>
+        <summary>Gets a <see cref="T:System.Reflection.Metadata.MetadataReader" /> from a <see cref="T:System.Reflection.PortableExecutable.PEReader" />.</summary>
+        <returns>A metdata reader.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+The caller must keep the <xref:System.Reflection.PortableExecutable.PEReader> alive and undisposed throughout the lifetime of the metadata reader.
+
+          ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="peReader" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.PlatformNotSupportedException">The current platform is big-endian.</exception>
+        <exception cref="T:System.IO.IOException">IO error while reading from the underlying stream.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetMetadataReader">
@@ -65,10 +83,13 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.0.22.0</AssemblyVersion>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
         <AssemblyVersion>1.4.1.0</AssemblyVersion>
         <AssemblyVersion>1.4.2.0</AssemblyVersion>
         <AssemblyVersion>1.4.3.0</AssemblyVersion>
+        <AssemblyVersion>1.4.4.0</AssemblyVersion>
+        <AssemblyVersion>1.4.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Reflection.Metadata.MetadataReader</ReturnType>
@@ -78,11 +99,23 @@
         <Parameter Name="options" Type="System.Reflection.Metadata.MetadataReaderOptions" />
       </Parameters>
       <Docs>
-        <param name="peReader">To be added.</param>
-        <param name="options">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="peReader">The current <see cref="T:System.Reflection.PortableExecutable.PEReader" /> instance.</param>
+        <param name="options">An  enumeration value indicating the metadata reading configuration.</param>
+        <summary>Gets a  metadata reader with the specified metadata reading configuration from a <see cref="T:System.Reflection.PortableExecutable.PEReader" />.</summary>
+        <returns>A  metadata reader with the specified metadata reading configuration.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+The caller must keep the <xref:System.Reflection.PortableExecutable.PEReader> alive and undisposed throughout the lifetime of the metadata reader.
+
+          ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="peReader" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.PlatformNotSupportedException">The current platform is big-endian.</exception>
+        <exception cref="T:System.IO.IOException">IO error while reading from the underlying stream.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetMetadataReader">
@@ -94,10 +127,13 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.0.22.0</AssemblyVersion>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
         <AssemblyVersion>1.4.1.0</AssemblyVersion>
         <AssemblyVersion>1.4.2.0</AssemblyVersion>
         <AssemblyVersion>1.4.3.0</AssemblyVersion>
+        <AssemblyVersion>1.4.4.0</AssemblyVersion>
+        <AssemblyVersion>1.4.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Reflection.Metadata.MetadataReader</ReturnType>
@@ -108,12 +144,25 @@
         <Parameter Name="utf8Decoder" Type="System.Reflection.Metadata.MetadataStringDecoder" />
       </Parameters>
       <Docs>
-        <param name="peReader">To be added.</param>
-        <param name="options">To be added.</param>
-        <param name="utf8Decoder">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="peReader">The current <see cref="T:System.Reflection.PortableExecutable.PEReader" /> instance.</param>
+        <param name="options">An enumeration value indicating the metadata reading configuration.</param>
+        <param name="utf8Decoder">A metadata string decoder with the encoding configuration.</param>
+        <summary>Gets a metadata reader with the specified metadata reading configuration and encoding configuration from a <see cref="T:System.Reflection.PortableExecutable.PEReader" />.</summary>
+        <returns>&gt;A metadata reader with the specified metadata reading configuration and encoding configuration.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+The caller must keep the <xref:System.Reflection.PortableExecutable.PEReader> undisposed throughout the lifetime of the metadata reader.
+
+          ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="peReader" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">The encoding of <paramref name="utf8Decoder" /> is not <see cref="T:System.Text.UTF8Encoding" />.</exception>
+        <exception cref="T:System.PlatformNotSupportedException">The current platform is big-endian.</exception>
+        <exception cref="T:System.IO.IOException">IO error while reading from the underlying stream.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetMethodBody">
@@ -125,10 +174,13 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.0.22.0</AssemblyVersion>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
         <AssemblyVersion>1.4.1.0</AssemblyVersion>
         <AssemblyVersion>1.4.2.0</AssemblyVersion>
         <AssemblyVersion>1.4.3.0</AssemblyVersion>
+        <AssemblyVersion>1.4.4.0</AssemblyVersion>
+        <AssemblyVersion>1.4.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Reflection.Metadata.MethodBodyBlock</ReturnType>
@@ -138,11 +190,16 @@
         <Parameter Name="relativeVirtualAddress" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="peReader">To be added.</param>
-        <param name="relativeVirtualAddress">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="peReader">The current <see cref="T:System.Reflection.PortableExecutable.PEReader" /> instance.</param>
+        <param name="relativeVirtualAddress">The Relative Virtual Address (RVA).</param>
+        <summary>Returns a body block of a method with the specified Relative Virtual Address (RVA);</summary>
+        <returns>A method block body instance.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="peReader" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.BadImageFormatException">The body is not found in the metadata or is invalid.</exception>
+        <exception cref="T:System.InvalidOperationException">The section where the method is stored is not available.</exception>
+        <exception cref="T:System.IO.IOException">IO error occurred while reading from the underlying stream.</exception>
       </Docs>
     </Member>
   </Members>

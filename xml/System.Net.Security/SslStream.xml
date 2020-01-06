@@ -1,4 +1,4 @@
-﻿<Type Name="SslStream" FullName="System.Net.Security.SslStream">
+<Type Name="SslStream" FullName="System.Net.Security.SslStream">
   <TypeSignature Language="C#" Value="public class SslStream : System.Net.Security.AuthenticatedStream" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SslStream extends System.Net.Security.AuthenticatedStream implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Net.Security.SslStream" />
@@ -10,6 +10,7 @@
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
     <AssemblyVersion>4.1.1.0</AssemblyVersion>
+    <AssemblyVersion>4.1.2.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
@@ -20,6 +21,7 @@
   <AssemblyInfo>
     <AssemblyName>netstandard</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Net.Security.AuthenticatedStream</BaseTypeName>
@@ -79,14 +81,16 @@
 ## Examples  
  The following code example demonstrates creating an <xref:System.Net.Sockets.TcpListener> that uses the <xref:System.Net.Security.SslStream> class to communicate with clients.  
   
- [!code-cpp[NclSslServerSync#0](~/samples/snippets/cpp/VS_Snippets_Remoting/NclSslServerSync/CPP/NclSslServerSync.cpp#0)]
- [!code-csharp[NclSslServerSync#0](~/samples/snippets/csharp/VS_Snippets_Remoting/NclSslServerSync/CS/serversync.cs#0)]  
+[!code-cpp[NclSslServerSync#0](~/samples/snippets/cpp/VS_Snippets_Remoting/NclSslServerSync/CPP/NclSslServerSync.cpp#0)]
+[!code-csharp[NclSslServerSync#0](~/samples/snippets/csharp/VS_Snippets_Remoting/NclSslServerSync/CS/serversync.cs#0)]  
+[!code-vb[NclSslServerSync#0](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NclSslServerSync/VB/serversync.vb#0)]
   
  The following code example demonstrates creating a <xref:System.Net.Sockets.TcpClient> that uses the <xref:System.Net.Security.SslStream> class to communicate with a server.  
   
  [!code-cpp[NclSslClientSync#0](~/samples/snippets/cpp/VS_Snippets_Remoting/NclSslClientSync/CPP/clientsync.cpp#0)]
  [!code-csharp[NclSslClientSync#0](~/samples/snippets/csharp/VS_Snippets_Remoting/NclSslClientSync/CS/clientsync.cs#0)]  
-  
+ [!code-vb[NclSslClientSync#0](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NclSslClientSync/VB/clientsync.vb#0)]
+
  ]]></format>
     </remarks>
     <altmember cref="T:System.Net.Security.NegotiateStream" />
@@ -125,6 +129,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -135,6 +140,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
@@ -184,6 +190,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -194,6 +201,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
@@ -225,7 +233,8 @@
   
  [!code-cpp[NclSslServerSync#1](~/samples/snippets/cpp/VS_Snippets_Remoting/NclSslServerSync/CPP/NclSslServerSync.cpp#1)]
  [!code-csharp[NclSslServerSync#1](~/samples/snippets/csharp/VS_Snippets_Remoting/NclSslServerSync/CS/serversync.cs#1)]  
-  
+ [!code-vb[NclSslServerSync#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NclSslServerSync/VB/serversync.vb#1)] 
+ 
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -255,6 +264,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -265,6 +275,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
@@ -308,6 +319,7 @@
   
  [!code-cpp[NclSslClientSync#4](~/samples/snippets/cpp/VS_Snippets_Remoting/NclSslClientSync/CPP/clientsync.cpp#4)]
  [!code-csharp[NclSslClientSync#4](~/samples/snippets/csharp/VS_Snippets_Remoting/NclSslClientSync/CS/clientsync.cs#4)]  
+ [!code-vb[NclSslClientSync#4](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NclSslClientSync/VB/clientsync.vb#4)]
   
  ]]></format>
         </remarks>
@@ -338,6 +350,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -348,6 +361,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
@@ -392,7 +406,8 @@
   
  [!code-cpp[NclSslClientAsync#6](~/samples/snippets/cpp/VS_Snippets_Remoting/NclSslClientAsync/CPP/NclSslClientAsync.cpp#6)]
  [!code-csharp[NclSslClientAsync#6](~/samples/snippets/csharp/VS_Snippets_Remoting/NclSslClientAsync/CS/clientasync.cs#6)]  
-  
+ [!code-vb[NclSslClientAsync#6](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NclSslClientAsync/VB/clientasync.vb#6)]  
+
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
@@ -421,6 +436,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -430,6 +446,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
@@ -437,11 +454,11 @@
         </Attribute>
       </Attributes>
       <Parameters>
-        <Parameter Name="innerStream" Type="System.IO.Stream" />
-        <Parameter Name="leaveInnerStreamOpen" Type="System.Boolean" />
-        <Parameter Name="userCertificateValidationCallback" Type="System.Net.Security.RemoteCertificateValidationCallback" />
-        <Parameter Name="userCertificateSelectionCallback" Type="System.Net.Security.LocalCertificateSelectionCallback" />
-        <Parameter Name="encryptionPolicy" Type="System.Net.Security.EncryptionPolicy" />
+        <Parameter Name="innerStream" Type="System.IO.Stream" Index="0" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="leaveInnerStreamOpen" Type="System.Boolean" Index="1" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="userCertificateValidationCallback" Type="System.Net.Security.RemoteCertificateValidationCallback" Index="2" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="userCertificateSelectionCallback" Type="System.Net.Security.LocalCertificateSelectionCallback" Index="3" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="encryptionPolicy" Type="System.Net.Security.EncryptionPolicy" Index="4" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="innerStream">A <see cref="T:System.IO.Stream" /> object used by the <see cref="T:System.Net.Security.SslStream" /> for sending and receiving data.</param>
@@ -506,17 +523,19 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="targetHost" Type="System.String" />
+        <Parameter Name="targetHost" Type="System.String" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1;netcore-3.1" />
       </Parameters>
       <Docs>
         <param name="targetHost">The name of the server that shares this <see cref="T:System.Net.Security.SslStream" />.</param>
@@ -564,17 +583,19 @@
         <AssemblyName>System.Net.Security</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="targetHost" Type="System.String" />
-        <Parameter Name="clientCertificates" Type="System.Security.Cryptography.X509Certificates.X509CertificateCollection" />
-        <Parameter Name="checkCertificateRevocation" Type="System.Boolean" />
+        <Parameter Name="targetHost" Type="System.String" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.1;netcore-3.1" />
+        <Parameter Name="clientCertificates" Type="System.Security.Cryptography.X509Certificates.X509CertificateCollection" Index="1" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.1;netcore-3.1" />
+        <Parameter Name="checkCertificateRevocation" Type="System.Boolean" Index="2" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.1;netcore-3.1" />
       </Parameters>
       <Docs>
         <param name="targetHost">The name of the server that will share this <see cref="T:System.Net.Security.SslStream" />.</param>
@@ -618,20 +639,22 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="targetHost" Type="System.String" />
-        <Parameter Name="clientCertificates" Type="System.Security.Cryptography.X509Certificates.X509CertificateCollection" />
-        <Parameter Name="enabledSslProtocols" Type="System.Security.Authentication.SslProtocols" />
-        <Parameter Name="checkCertificateRevocation" Type="System.Boolean" />
+        <Parameter Name="targetHost" Type="System.String" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1;netcore-3.1" />
+        <Parameter Name="clientCertificates" Type="System.Security.Cryptography.X509Certificates.X509CertificateCollection" Index="1" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1;netcore-3.1" />
+        <Parameter Name="enabledSslProtocols" Type="System.Security.Authentication.SslProtocols" Index="2" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1;netcore-3.1" />
+        <Parameter Name="checkCertificateRevocation" Type="System.Boolean" Index="3" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1;netcore-3.1" />
       </Parameters>
       <Docs>
         <param name="targetHost">The name of the server that will share this <see cref="T:System.Net.Security.SslStream" />.</param>
@@ -682,6 +705,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -691,12 +715,13 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="targetHost" Type="System.String" />
+        <Parameter Name="targetHost" Type="System.String" Index="0" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="targetHost">The name of the server that shares this <see cref="T:System.Net.Security.SslStream" />.</param>
@@ -730,18 +755,21 @@
       </Docs>
     </Member>
     <Member MemberName="AuthenticateAsClientAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task AuthenticateAsClientAsync (System.Net.Security.SslClientAuthenticationOptions sslClientAuthenticationOptions, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task AuthenticateAsClientAsync (System.Net.Security.SslClientAuthenticationOptions sslClientAuthenticationOptions, System.Threading.CancellationToken cancellationToken);" FrameworkAlternate="netcore-2.1;netcore-2.2;netstandard-2.1" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task AuthenticateAsClientAsync(class System.Net.Security.SslClientAuthenticationOptions sslClientAuthenticationOptions, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Security.SslStream.AuthenticateAsClientAsync(System.Net.Security.SslClientAuthenticationOptions,System.Threading.CancellationToken)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task ^ AuthenticateAsClientAsync(System::Net::Security::SslClientAuthenticationOptions ^ sslClientAuthenticationOptions, System::Threading::CancellationToken cancellationToken);" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task ^ AuthenticateAsClientAsync(System::Net::Security::SslClientAuthenticationOptions ^ sslClientAuthenticationOptions, System::Threading::CancellationToken cancellationToken);" FrameworkAlternate="netcore-2.1;netcore-2.2;netstandard-2.1" />
       <MemberSignature Language="F#" Value="member this.AuthenticateAsClientAsync : System.Net.Security.SslClientAuthenticationOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="sslStream.AuthenticateAsClientAsync (sslClientAuthenticationOptions, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task AuthenticateAsClientAsync (System.Net.Security.SslClientAuthenticationOptions sslClientAuthenticationOptions, System.Threading.CancellationToken cancellationToken = null);" FrameworkAlternate="netcore-3.0;netcore-3.1" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -750,8 +778,8 @@
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="sslClientAuthenticationOptions" Type="System.Net.Security.SslClientAuthenticationOptions" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+        <Parameter Name="sslClientAuthenticationOptions" Type="System.Net.Security.SslClientAuthenticationOptions" Index="0" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0;netstandard-2.1;netcore-3.1" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="1" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0;netstandard-2.1;netcore-3.1" />
       </Parameters>
       <Docs>
         <param name="sslClientAuthenticationOptions">To be added.</param>
@@ -777,17 +805,19 @@
         <AssemblyName>System.Net.Security</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="targetHost" Type="System.String" />
-        <Parameter Name="clientCertificates" Type="System.Security.Cryptography.X509Certificates.X509CertificateCollection" />
-        <Parameter Name="checkCertificateRevocation" Type="System.Boolean" />
+        <Parameter Name="targetHost" Type="System.String" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.1;netcore-3.1" />
+        <Parameter Name="clientCertificates" Type="System.Security.Cryptography.X509Certificates.X509CertificateCollection" Index="1" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.1;netcore-3.1" />
+        <Parameter Name="checkCertificateRevocation" Type="System.Boolean" Index="2" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.1;netcore-3.1" />
       </Parameters>
       <Docs>
         <param name="targetHost">The name of the server that will share this <see cref="T:System.Net.Security.SslStream" />.</param>
@@ -828,6 +858,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -837,15 +868,16 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="targetHost" Type="System.String" />
-        <Parameter Name="clientCertificates" Type="System.Security.Cryptography.X509Certificates.X509CertificateCollection" />
-        <Parameter Name="enabledSslProtocols" Type="System.Security.Authentication.SslProtocols" />
-        <Parameter Name="checkCertificateRevocation" Type="System.Boolean" />
+        <Parameter Name="targetHost" Type="System.String" Index="0" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="clientCertificates" Type="System.Security.Cryptography.X509Certificates.X509CertificateCollection" Index="1" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="enabledSslProtocols" Type="System.Security.Authentication.SslProtocols" Index="2" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="checkCertificateRevocation" Type="System.Boolean" Index="3" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="targetHost">The name of the server that will share this <see cref="T:System.Net.Security.SslStream" />.</param>
@@ -901,11 +933,13 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
@@ -916,7 +950,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="serverCertificate" Type="System.Security.Cryptography.X509Certificates.X509Certificate" />
+        <Parameter Name="serverCertificate" Type="System.Security.Cryptography.X509Certificates.X509Certificate" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1;netcore-3.1" />
       </Parameters>
       <Docs>
         <param name="serverCertificate">The certificate used to authenticate the server.</param>
@@ -965,23 +999,25 @@
         <AssemblyName>System.Net.Security</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="serverCertificate" Type="System.Security.Cryptography.X509Certificates.X509Certificate" />
-        <Parameter Name="clientCertificateRequired" Type="System.Boolean" />
-        <Parameter Name="checkCertificateRevocation" Type="System.Boolean" />
+        <Parameter Name="serverCertificate" Type="System.Security.Cryptography.X509Certificates.X509Certificate" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.1;netcore-3.1" />
+        <Parameter Name="clientCertificateRequired" Type="System.Boolean" Index="1" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.1;netcore-3.1" />
+        <Parameter Name="checkCertificateRevocation" Type="System.Boolean" Index="2" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.1;netcore-3.1" />
       </Parameters>
       <Docs>
         <param name="serverCertificate">The X509Certificate used to authenticate the server.</param>
         <param name="clientCertificateRequired">A <see cref="T:System.Boolean" /> value that specifies whether the client is asked for a certificate for authentication. Note that this is only a request -- if no certificate is provided, the server still accepts the connection request.</param>
         <param name="checkCertificateRevocation">A <see cref="T:System.Boolean" /> value that specifies whether the certificate revocation list is checked during authentication.</param>
-        <summary>Called by servers to authenticate the server and optionally the client in a client-server connection using the specified certificates and requirements, and using the sytem default security protocol.</summary>
+        <summary>Called by servers to authenticate the server and optionally the client in a client-server connection using the specified certificates and requirements, and using the system default security protocol.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1030,20 +1066,22 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="serverCertificate" Type="System.Security.Cryptography.X509Certificates.X509Certificate" />
-        <Parameter Name="clientCertificateRequired" Type="System.Boolean" />
-        <Parameter Name="enabledSslProtocols" Type="System.Security.Authentication.SslProtocols" />
-        <Parameter Name="checkCertificateRevocation" Type="System.Boolean" />
+        <Parameter Name="serverCertificate" Type="System.Security.Cryptography.X509Certificates.X509Certificate" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1;netcore-3.1" />
+        <Parameter Name="clientCertificateRequired" Type="System.Boolean" Index="1" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1;netcore-3.1" />
+        <Parameter Name="enabledSslProtocols" Type="System.Security.Authentication.SslProtocols" Index="2" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1;netcore-3.1" />
+        <Parameter Name="checkCertificateRevocation" Type="System.Boolean" Index="3" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1;netcore-3.1" />
       </Parameters>
       <Docs>
         <param name="serverCertificate">The X509Certificate used to authenticate the server.</param>
@@ -1107,6 +1145,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1116,12 +1155,13 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="serverCertificate" Type="System.Security.Cryptography.X509Certificates.X509Certificate" />
+        <Parameter Name="serverCertificate" Type="System.Security.Cryptography.X509Certificates.X509Certificate" Index="0" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="serverCertificate">The certificate used to authenticate the server.</param>
@@ -1156,18 +1196,21 @@
       </Docs>
     </Member>
     <Member MemberName="AuthenticateAsServerAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task AuthenticateAsServerAsync (System.Net.Security.SslServerAuthenticationOptions sslServerAuthenticationOptions, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task AuthenticateAsServerAsync (System.Net.Security.SslServerAuthenticationOptions sslServerAuthenticationOptions, System.Threading.CancellationToken cancellationToken);" FrameworkAlternate="netcore-2.1;netcore-2.2;netstandard-2.1" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task AuthenticateAsServerAsync(class System.Net.Security.SslServerAuthenticationOptions sslServerAuthenticationOptions, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Security.SslStream.AuthenticateAsServerAsync(System.Net.Security.SslServerAuthenticationOptions,System.Threading.CancellationToken)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task ^ AuthenticateAsServerAsync(System::Net::Security::SslServerAuthenticationOptions ^ sslServerAuthenticationOptions, System::Threading::CancellationToken cancellationToken);" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task ^ AuthenticateAsServerAsync(System::Net::Security::SslServerAuthenticationOptions ^ sslServerAuthenticationOptions, System::Threading::CancellationToken cancellationToken);" FrameworkAlternate="netcore-2.1;netcore-2.2;netstandard-2.1" />
       <MemberSignature Language="F#" Value="member this.AuthenticateAsServerAsync : System.Net.Security.SslServerAuthenticationOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="sslStream.AuthenticateAsServerAsync (sslServerAuthenticationOptions, cancellationToken)" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task AuthenticateAsServerAsync (System.Net.Security.SslServerAuthenticationOptions sslServerAuthenticationOptions, System.Threading.CancellationToken cancellationToken = null);" FrameworkAlternate="netcore-3.0;netcore-3.1" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1176,8 +1219,8 @@
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="sslServerAuthenticationOptions" Type="System.Net.Security.SslServerAuthenticationOptions" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+        <Parameter Name="sslServerAuthenticationOptions" Type="System.Net.Security.SslServerAuthenticationOptions" Index="0" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0;netstandard-2.1;netcore-3.1" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="1" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0;netstandard-2.1;netcore-3.1" />
       </Parameters>
       <Docs>
         <param name="sslServerAuthenticationOptions">To be added.</param>
@@ -1203,17 +1246,19 @@
         <AssemblyName>System.Net.Security</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="serverCertificate" Type="System.Security.Cryptography.X509Certificates.X509Certificate" />
-        <Parameter Name="clientCertificateRequired" Type="System.Boolean" />
-        <Parameter Name="checkCertificateRevocation" Type="System.Boolean" />
+        <Parameter Name="serverCertificate" Type="System.Security.Cryptography.X509Certificates.X509Certificate" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.1;netcore-3.1" />
+        <Parameter Name="clientCertificateRequired" Type="System.Boolean" Index="1" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.1;netcore-3.1" />
+        <Parameter Name="checkCertificateRevocation" Type="System.Boolean" Index="2" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.1;netcore-3.1" />
       </Parameters>
       <Docs>
         <param name="serverCertificate">The X509Certificate used to authenticate the server.</param>
@@ -1249,6 +1294,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1258,15 +1304,16 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="serverCertificate" Type="System.Security.Cryptography.X509Certificates.X509Certificate" />
-        <Parameter Name="clientCertificateRequired" Type="System.Boolean" />
-        <Parameter Name="enabledSslProtocols" Type="System.Security.Authentication.SslProtocols" />
-        <Parameter Name="checkCertificateRevocation" Type="System.Boolean" />
+        <Parameter Name="serverCertificate" Type="System.Security.Cryptography.X509Certificates.X509Certificate" Index="0" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="clientCertificateRequired" Type="System.Boolean" Index="1" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="enabledSslProtocols" Type="System.Security.Authentication.SslProtocols" Index="2" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="checkCertificateRevocation" Type="System.Boolean" Index="3" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="serverCertificate">The X509Certificate used to authenticate the server.</param>
@@ -1324,19 +1371,21 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IAsyncResult</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="targetHost" Type="System.String" />
-        <Parameter Name="asyncCallback" Type="System.AsyncCallback" />
-        <Parameter Name="asyncState" Type="System.Object" />
+        <Parameter Name="targetHost" Type="System.String" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1;netcore-3.1" />
+        <Parameter Name="asyncCallback" Type="System.AsyncCallback" Index="1" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1;netcore-3.1" />
+        <Parameter Name="asyncState" Type="System.Object" Index="2" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1;netcore-3.1" />
       </Parameters>
       <Docs>
         <param name="targetHost">The name of the server that shares this <see cref="T:System.Net.Security.SslStream" />.</param>
@@ -1392,19 +1441,21 @@
         <AssemblyName>System.Net.Security</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IAsyncResult</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="targetHost" Type="System.String" />
-        <Parameter Name="clientCertificates" Type="System.Security.Cryptography.X509Certificates.X509CertificateCollection" />
-        <Parameter Name="checkCertificateRevocation" Type="System.Boolean" />
-        <Parameter Name="asyncCallback" Type="System.AsyncCallback" />
-        <Parameter Name="asyncState" Type="System.Object" />
+        <Parameter Name="targetHost" Type="System.String" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.1;netcore-3.1" />
+        <Parameter Name="clientCertificates" Type="System.Security.Cryptography.X509Certificates.X509CertificateCollection" Index="1" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.1;netcore-3.1" />
+        <Parameter Name="checkCertificateRevocation" Type="System.Boolean" Index="2" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.1;netcore-3.1" />
+        <Parameter Name="asyncCallback" Type="System.AsyncCallback" Index="3" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.1;netcore-3.1" />
+        <Parameter Name="asyncState" Type="System.Object" Index="4" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.1;netcore-3.1" />
       </Parameters>
       <Docs>
         <param name="targetHost">The name of the server that shares this <see cref="T:System.Net.Security.SslStream" />.</param>
@@ -1469,22 +1520,24 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IAsyncResult</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="targetHost" Type="System.String" />
-        <Parameter Name="clientCertificates" Type="System.Security.Cryptography.X509Certificates.X509CertificateCollection" />
-        <Parameter Name="enabledSslProtocols" Type="System.Security.Authentication.SslProtocols" />
-        <Parameter Name="checkCertificateRevocation" Type="System.Boolean" />
-        <Parameter Name="asyncCallback" Type="System.AsyncCallback" />
-        <Parameter Name="asyncState" Type="System.Object" />
+        <Parameter Name="targetHost" Type="System.String" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1;netcore-3.1" />
+        <Parameter Name="clientCertificates" Type="System.Security.Cryptography.X509Certificates.X509CertificateCollection" Index="1" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1;netcore-3.1" />
+        <Parameter Name="enabledSslProtocols" Type="System.Security.Authentication.SslProtocols" Index="2" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1;netcore-3.1" />
+        <Parameter Name="checkCertificateRevocation" Type="System.Boolean" Index="3" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1;netcore-3.1" />
+        <Parameter Name="asyncCallback" Type="System.AsyncCallback" Index="4" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1;netcore-3.1" />
+        <Parameter Name="asyncState" Type="System.Object" Index="5" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1;netcore-3.1" />
       </Parameters>
       <Docs>
         <param name="targetHost">The name of the server that shares this <see cref="T:System.Net.Security.SslStream" />.</param>
@@ -1570,11 +1623,13 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
@@ -1585,9 +1640,9 @@
         <ReturnType>System.IAsyncResult</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="serverCertificate" Type="System.Security.Cryptography.X509Certificates.X509Certificate" />
-        <Parameter Name="asyncCallback" Type="System.AsyncCallback" />
-        <Parameter Name="asyncState" Type="System.Object" />
+        <Parameter Name="serverCertificate" Type="System.Security.Cryptography.X509Certificates.X509Certificate" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1;netcore-3.1" />
+        <Parameter Name="asyncCallback" Type="System.AsyncCallback" Index="1" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1;netcore-3.1" />
+        <Parameter Name="asyncState" Type="System.Object" Index="2" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1;netcore-3.1" />
       </Parameters>
       <Docs>
         <param name="serverCertificate">The X509Certificate used to authenticate the server.</param>
@@ -1642,19 +1697,21 @@
         <AssemblyName>System.Net.Security</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IAsyncResult</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="serverCertificate" Type="System.Security.Cryptography.X509Certificates.X509Certificate" />
-        <Parameter Name="clientCertificateRequired" Type="System.Boolean" />
-        <Parameter Name="checkCertificateRevocation" Type="System.Boolean" />
-        <Parameter Name="asyncCallback" Type="System.AsyncCallback" />
-        <Parameter Name="asyncState" Type="System.Object" />
+        <Parameter Name="serverCertificate" Type="System.Security.Cryptography.X509Certificates.X509Certificate" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.1;netcore-3.1" />
+        <Parameter Name="clientCertificateRequired" Type="System.Boolean" Index="1" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.1;netcore-3.1" />
+        <Parameter Name="checkCertificateRevocation" Type="System.Boolean" Index="2" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.1;netcore-3.1" />
+        <Parameter Name="asyncCallback" Type="System.AsyncCallback" Index="3" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.1;netcore-3.1" />
+        <Parameter Name="asyncState" Type="System.Object" Index="4" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.1;netcore-3.1" />
       </Parameters>
       <Docs>
         <param name="serverCertificate">The X509Certificate used to authenticate the server.</param>
@@ -1715,22 +1772,24 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IAsyncResult</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="serverCertificate" Type="System.Security.Cryptography.X509Certificates.X509Certificate" />
-        <Parameter Name="clientCertificateRequired" Type="System.Boolean" />
-        <Parameter Name="enabledSslProtocols" Type="System.Security.Authentication.SslProtocols" />
-        <Parameter Name="checkCertificateRevocation" Type="System.Boolean" />
-        <Parameter Name="asyncCallback" Type="System.AsyncCallback" />
-        <Parameter Name="asyncState" Type="System.Object" />
+        <Parameter Name="serverCertificate" Type="System.Security.Cryptography.X509Certificates.X509Certificate" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1;netcore-3.1" />
+        <Parameter Name="clientCertificateRequired" Type="System.Boolean" Index="1" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1;netcore-3.1" />
+        <Parameter Name="enabledSslProtocols" Type="System.Security.Authentication.SslProtocols" Index="2" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1;netcore-3.1" />
+        <Parameter Name="checkCertificateRevocation" Type="System.Boolean" Index="3" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1;netcore-3.1" />
+        <Parameter Name="asyncCallback" Type="System.AsyncCallback" Index="4" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1;netcore-3.1" />
+        <Parameter Name="asyncState" Type="System.Object" Index="5" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1;netcore-3.1" />
       </Parameters>
       <Docs>
         <param name="serverCertificate">The X509Certificate used to authenticate the server.</param>
@@ -1794,21 +1853,23 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IAsyncResult</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="buffer" Type="System.Byte[]" />
-        <Parameter Name="offset" Type="System.Int32" />
-        <Parameter Name="count" Type="System.Int32" />
-        <Parameter Name="asyncCallback" Type="System.AsyncCallback" />
-        <Parameter Name="asyncState" Type="System.Object" />
+        <Parameter Name="buffer" Type="System.Byte[]" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1;netcore-3.1" />
+        <Parameter Name="offset" Type="System.Int32" Index="1" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1;netcore-3.1" />
+        <Parameter Name="count" Type="System.Int32" Index="2" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1;netcore-3.1" />
+        <Parameter Name="asyncCallback" Type="System.AsyncCallback" Index="3" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1;netcore-3.1" />
+        <Parameter Name="asyncState" Type="System.Object" Index="4" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1;netcore-3.1" />
       </Parameters>
       <Docs>
         <param name="buffer">A <see cref="T:System.Byte" /> array that receives the bytes read from the stream.</param>
@@ -1839,29 +1900,33 @@
   
  [!code-cpp[NclSslClientAsync#8](~/samples/snippets/cpp/VS_Snippets_Remoting/NclSslClientAsync/CPP/NclSslClientAsync.cpp#8)]
  [!code-csharp[NclSslClientAsync#8](~/samples/snippets/csharp/VS_Snippets_Remoting/NclSslClientAsync/CS/clientasync.cs#8)]  
-  
+ [!code-vb[NclSslClientAsync#8](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NclSslClientAsync/VB/clientasync.vb#8)]  
+
  [!code-cpp[NclSslClientAsync#4](~/samples/snippets/cpp/VS_Snippets_Remoting/NclSslClientAsync/CPP/NclSslClientAsync.cpp#4)]
- [!code-csharp[NclSslClientAsync#4](~/samples/snippets/csharp/VS_Snippets_Remoting/NclSslClientAsync/CS/clientasync.cs#4)]  
+ [!code-csharp[NclSslClientAsync#4](~/samples/snippets/csharp/VS_Snippets_Remoting/NclSslClientAsync/CS/clientasync.cs#4)] 
+ [!code-vb[NclSslClientAsync#4](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NclSslClientAsync/VB/clientasync.vb#4)]  
+
   
  The following method is called when the read completes.  
   
  [!code-cpp[NclSslClientAsync#5](~/samples/snippets/cpp/VS_Snippets_Remoting/NclSslClientAsync/CPP/NclSslClientAsync.cpp#5)]
  [!code-csharp[NclSslClientAsync#5](~/samples/snippets/csharp/VS_Snippets_Remoting/NclSslClientAsync/CS/clientasync.cs#5)]  
-  
+ [!code-vb[NclSslClientAsync#5](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NclSslClientAsync/VB/clientasync.vb#5)]  
+
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="buffer" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">
-          <paramref name="offset" />
-          <paramref name="&lt;" />
-          <paramref name="0" />.  
+          <paramref name="offset" /> is less than zero.
+
+-or-
+
+<paramref name="offset" /> is greater than the length of <paramref name="buffer" />.  
+
+-or-  
   
- <paramref name="-or-" /><paramref name="offset" /> &gt; the length of <paramref name="buffer" />.  
-  
- -or-  
-  
- <paramref name="offset" /> + count &gt; the length of <paramref name="buffer" />.</exception>
+ <paramref name="offset" /> + count is greater than the length of <paramref name="buffer" />.</exception>
         <exception cref="T:System.IO.IOException">The read operation failed.  
   
  -or-  
@@ -1891,21 +1956,23 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IAsyncResult</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="buffer" Type="System.Byte[]" />
-        <Parameter Name="offset" Type="System.Int32" />
-        <Parameter Name="count" Type="System.Int32" />
-        <Parameter Name="asyncCallback" Type="System.AsyncCallback" />
-        <Parameter Name="asyncState" Type="System.Object" />
+        <Parameter Name="buffer" Type="System.Byte[]" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1;netcore-3.1" />
+        <Parameter Name="offset" Type="System.Int32" Index="1" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1;netcore-3.1" />
+        <Parameter Name="count" Type="System.Int32" Index="2" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1;netcore-3.1" />
+        <Parameter Name="asyncCallback" Type="System.AsyncCallback" Index="3" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1;netcore-3.1" />
+        <Parameter Name="asyncState" Type="System.Object" Index="4" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1;netcore-3.1" />
       </Parameters>
       <Docs>
         <param name="buffer">A <see cref="T:System.Byte" /> array that supplies the bytes to be written to the stream.</param>
@@ -1929,15 +1996,15 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="buffer" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">
-          <paramref name="offset" />
-          <paramref name="&lt;" />
-          <paramref name="0" />.  
+          <paramref name="offset" /> is less than zero.
   
- <paramref name="-or-" /><paramref name="offset" /> &gt; the length of <paramref name="buffer" />.  
+-or-
+          
+<paramref name="offset" /> is greater than the length of <paramref name="buffer" />.  
   
- -or-  
+-or-
   
- <paramref name="offset" /> + count &gt; the length of <paramref name="buffer" />.</exception>
+ <paramref name="offset" /> + count is greater than the length of <paramref name="buffer" />.</exception>
         <exception cref="T:System.IO.IOException">The write operation failed.</exception>
         <exception cref="T:System.NotSupportedException">There is already a write operation in progress.</exception>
         <exception cref="T:System.ObjectDisposedException">This object has been closed.</exception>
@@ -1960,6 +2027,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1970,6 +2038,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -1991,9 +2060,10 @@
 ## Examples  
  The following code example demonstrates displaying the value of this property.  
   
- [!code-cpp[NclSslServerSync#5](~/samples/snippets/cpp/VS_Snippets_Remoting/NclSslServerSync/CPP/NclSslServerSync.cpp#5)]
- [!code-csharp[NclSslServerSync#5](~/samples/snippets/csharp/VS_Snippets_Remoting/NclSslServerSync/CS/serversync.cs#5)]  
-  
+[!code-cpp[NclSslServerSync#5](~/samples/snippets/cpp/VS_Snippets_Remoting/NclSslServerSync/CPP/NclSslServerSync.cpp#5)]
+[!code-csharp[NclSslServerSync#5](~/samples/snippets/csharp/VS_Snippets_Remoting/NclSslServerSync/CS/serversync.cs#5)]  
+[!code-vb[NclSslServerSync#5](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NclSslServerSync/VB/serversync.vb#5)]
+
  ]]></format>
         </remarks>
       </Docs>
@@ -2011,6 +2081,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2021,6 +2092,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -2058,6 +2130,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2068,6 +2141,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -2089,8 +2163,9 @@
 ## Examples  
  The following code example demonstrates displaying the value of this property.  
   
- [!code-cpp[NclSslServerSync#5](~/samples/snippets/cpp/VS_Snippets_Remoting/NclSslServerSync/CPP/NclSslServerSync.cpp#5)]
- [!code-csharp[NclSslServerSync#5](~/samples/snippets/csharp/VS_Snippets_Remoting/NclSslServerSync/CS/serversync.cs#5)]  
+[!code-cpp[NclSslServerSync#5](~/samples/snippets/cpp/VS_Snippets_Remoting/NclSslServerSync/CPP/NclSslServerSync.cpp#5)]
+[!code-csharp[NclSslServerSync#5](~/samples/snippets/csharp/VS_Snippets_Remoting/NclSslServerSync/CS/serversync.cs#5)]  
+[!code-vb[NclSslServerSync#5](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NclSslServerSync/VB/serversync.vb#5)]
   
  ]]></format>
         </remarks>
@@ -2112,6 +2187,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2122,6 +2198,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -2143,8 +2220,9 @@
 ## Examples  
  The following code example demonstrates displaying the value of this property.  
   
- [!code-cpp[NclSslServerSync#5](~/samples/snippets/cpp/VS_Snippets_Remoting/NclSslServerSync/CPP/NclSslServerSync.cpp#5)]
- [!code-csharp[NclSslServerSync#5](~/samples/snippets/csharp/VS_Snippets_Remoting/NclSslServerSync/CS/serversync.cs#5)]  
+[!code-cpp[NclSslServerSync#5](~/samples/snippets/cpp/VS_Snippets_Remoting/NclSslServerSync/CPP/NclSslServerSync.cpp#5)]
+[!code-csharp[NclSslServerSync#5](~/samples/snippets/csharp/VS_Snippets_Remoting/NclSslServerSync/CS/serversync.cs#5)]  
+[!code-vb[NclSslServerSync#5](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NclSslServerSync/VB/serversync.vb#5)]
   
  ]]></format>
         </remarks>
@@ -2166,6 +2244,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2176,6 +2255,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -2195,8 +2275,9 @@
 ## Examples  
  The following code example demonstrates displaying the value of this property.  
   
- [!code-cpp[NclSslServerSync#5](~/samples/snippets/cpp/VS_Snippets_Remoting/NclSslServerSync/CPP/NclSslServerSync.cpp#5)]
- [!code-csharp[NclSslServerSync#5](~/samples/snippets/csharp/VS_Snippets_Remoting/NclSslServerSync/CS/serversync.cs#5)]  
+[!code-cpp[NclSslServerSync#5](~/samples/snippets/cpp/VS_Snippets_Remoting/NclSslServerSync/CPP/NclSslServerSync.cpp#5)]
+[!code-csharp[NclSslServerSync#5](~/samples/snippets/csharp/VS_Snippets_Remoting/NclSslServerSync/CS/serversync.cs#5)]  
+[!code-vb[NclSslServerSync#5](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NclSslServerSync/VB/serversync.vb#5)]
   
  ]]></format>
         </remarks>
@@ -2218,6 +2299,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2228,6 +2310,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Authentication.CipherAlgorithmType</ReturnType>
@@ -2248,8 +2331,9 @@
 ## Examples  
  The following code example displays the cryptography settings for the specified stream.  
   
- [!code-cpp[NclSslServerSync#3](~/samples/snippets/cpp/VS_Snippets_Remoting/NclSslServerSync/CPP/NclSslServerSync.cpp#3)]
- [!code-csharp[NclSslServerSync#3](~/samples/snippets/csharp/VS_Snippets_Remoting/NclSslServerSync/CS/serversync.cs#3)]  
+[!code-cpp[NclSslServerSync#3](~/samples/snippets/cpp/VS_Snippets_Remoting/NclSslServerSync/CPP/NclSslServerSync.cpp#3)]
+[!code-csharp[NclSslServerSync#3](~/samples/snippets/csharp/VS_Snippets_Remoting/NclSslServerSync/CS/serversync.cs#3)]  
+[!code-vb[NclSslServerSync#3](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NclSslServerSync/VB/serversync.vb#3)]
   
  ]]></format>
         </remarks>
@@ -2272,6 +2356,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2282,6 +2367,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -2318,8 +2404,9 @@
 ## Examples  
  The following code example displays the cryptography settings for the specified stream.  
   
- [!code-cpp[NclSslServerSync#3](~/samples/snippets/cpp/VS_Snippets_Remoting/NclSslServerSync/CPP/NclSslServerSync.cpp#3)]
- [!code-csharp[NclSslServerSync#3](~/samples/snippets/csharp/VS_Snippets_Remoting/NclSslServerSync/CS/serversync.cs#3)]  
+[!code-cpp[NclSslServerSync#3](~/samples/snippets/cpp/VS_Snippets_Remoting/NclSslServerSync/CPP/NclSslServerSync.cpp#3)]
+[!code-csharp[NclSslServerSync#3](~/samples/snippets/csharp/VS_Snippets_Remoting/NclSslServerSync/CS/serversync.cs#3)]  
+[!code-vb[NclSslServerSync#3](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NclSslServerSync/VB/serversync.vb#3)]
   
  ]]></format>
         </remarks>
@@ -2342,17 +2429,19 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="disposing" Type="System.Boolean" />
+        <Parameter Name="disposing" Type="System.Boolean" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1;netcore-3.1" />
       </Parameters>
       <Docs>
         <param name="disposing">
@@ -2376,6 +2465,47 @@
         </block>
       </Docs>
     </Member>
+    <Member MemberName="DisposeAsync">
+      <MemberSignature Language="C#" Value="public override System.Threading.Tasks.ValueTask DisposeAsync ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance valuetype System.Threading.Tasks.ValueTask DisposeAsync() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.Security.SslStream.DisposeAsync" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function DisposeAsync () As ValueTask" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Threading::Tasks::ValueTask DisposeAsync();" />
+      <MemberSignature Language="F#" Value="override this.DisposeAsync : unit -&gt; System.Threading.Tasks.ValueTask" Usage="sslStream.DisposeAsync " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Security</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.ValueTask</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Asynchronously releases the unmanaged and managed resources used by the <see cref="T:System.Net.Security.SslStream" />.</summary>
+        <returns>A task that represents the asynchronous dispose operation.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method enables you to perform a resource-intensive dispose operation without blocking the main thread. 
+
+ This method also disposes the inner stream when <xref:System.Net.Security.AuthenticatedStream.LeaveInnerStreamOpen> is `false`; otherwise, the inner stream is just flushed.
+ 
+ Calling `DisposeAsync` allows the resources used by the <xref:System.Net.Security.SslStream> to be reallocated for other purposes. For more information, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md).
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
     <Member MemberName="EndAuthenticateAsClient">
       <MemberSignature Language="C#" Value="public virtual void EndAuthenticateAsClient (IAsyncResult asyncResult);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EndAuthenticateAsClient(class System.IAsyncResult asyncResult) cil managed" />
@@ -2396,17 +2526,19 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="asyncResult" Type="System.IAsyncResult" />
+        <Parameter Name="asyncResult" Type="System.IAsyncResult" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1;netcore-3.1" />
       </Parameters>
       <Docs>
         <param name="asyncResult">An <see cref="T:System.IAsyncResult" /> instance returned by a call to <see cref="Overload:System.Net.Security.SslStream.BeginAuthenticateAsClient" />.</param>
@@ -2451,17 +2583,19 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="asyncResult" Type="System.IAsyncResult" />
+        <Parameter Name="asyncResult" Type="System.IAsyncResult" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1;netcore-3.1" />
       </Parameters>
       <Docs>
         <param name="asyncResult">An <see cref="T:System.IAsyncResult" /> instance returned by a call to <see cref="Overload:System.Net.Security.SslStream.BeginAuthenticateAsClient" />.</param>
@@ -2506,17 +2640,19 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="asyncResult" Type="System.IAsyncResult" />
+        <Parameter Name="asyncResult" Type="System.IAsyncResult" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1;netcore-3.1" />
       </Parameters>
       <Docs>
         <param name="asyncResult">An <see cref="T:System.IAsyncResult" /> instance returned by a call to <see cref="M:System.Net.Security.SslStream.BeginRead(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)" /></param>
@@ -2539,15 +2675,15 @@
   
  [!code-cpp[NclSslClientAsync#5](~/samples/snippets/cpp/VS_Snippets_Remoting/NclSslClientAsync/CPP/NclSslClientAsync.cpp#5)]
  [!code-csharp[NclSslClientAsync#5](~/samples/snippets/csharp/VS_Snippets_Remoting/NclSslClientAsync/CS/clientasync.cs#5)]  
-  
+ [!code-vb[NclSslClientAsync#5](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NclSslClientAsync/VB/clientasync.vb#5)]  
+
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="asyncResult" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="asyncResult" /> was not created by a call to <see cref="M:System.Net.Security.SslStream.BeginRead(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)" />.</exception>
-        <exception cref="T:System.InvalidOperationException">
-          There is no pending read operation to complete.
+        <exception cref="T:System.InvalidOperationException">There is no pending read operation to complete.
 
 -or-
 
@@ -2575,17 +2711,19 @@ Authentication has not occurred.</exception>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="asyncResult" Type="System.IAsyncResult" />
+        <Parameter Name="asyncResult" Type="System.IAsyncResult" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1;netcore-3.1" />
       </Parameters>
       <Docs>
         <param name="asyncResult">An <see cref="T:System.IAsyncResult" /> instance returned by a call to <see cref="M:System.Net.Security.SslStream.BeginWrite(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)" /></param>
@@ -2614,8 +2752,7 @@ Authentication has not occurred.</exception>
           <paramref name="asyncResult" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="asyncResult" /> was not created by a call to <see cref="M:System.Net.Security.SslStream.BeginWrite(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)" />.</exception>
-        <exception cref="T:System.InvalidOperationException">
-          There is no pending write operation to complete.
+        <exception cref="T:System.InvalidOperationException">There is no pending write operation to complete.
 
 -or-
 
@@ -2639,6 +2776,7 @@ Authentication has not occurred.</exception>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2649,6 +2787,7 @@ Authentication has not occurred.</exception>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -2669,7 +2808,8 @@ Authentication has not occurred.</exception>
   
  [!code-cpp[NclSslClientSync#5](~/samples/snippets/cpp/VS_Snippets_Remoting/NclSslClientSync/CPP/clientsync.cpp#5)]
  [!code-csharp[NclSslClientSync#5](~/samples/snippets/csharp/VS_Snippets_Remoting/NclSslClientSync/CS/clientsync.cs#5)]  
-  
+ [!code-vb[NclSslClientSync#5](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NclSslClientSync/VB/clientsync.vb#5)]
+
  ]]></format>
         </remarks>
       </Docs>
@@ -2685,9 +2825,11 @@ Authentication has not occurred.</exception>
         <AssemblyName>System.Net.Security</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2696,7 +2838,7 @@ Authentication has not occurred.</exception>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netstandard-2.1;netcore-3.1" />
       </Parameters>
       <Docs>
         <param name="cancellationToken">To be added.</param>
@@ -2721,6 +2863,7 @@ Authentication has not occurred.</exception>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2731,6 +2874,7 @@ Authentication has not occurred.</exception>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Authentication.HashAlgorithmType</ReturnType>
@@ -2749,8 +2893,9 @@ Authentication has not occurred.</exception>
 ## Examples  
  The following code example displays the cryptography settings for the specified stream.  
   
- [!code-cpp[NclSslServerSync#3](~/samples/snippets/cpp/VS_Snippets_Remoting/NclSslServerSync/CPP/NclSslServerSync.cpp#3)]
- [!code-csharp[NclSslServerSync#3](~/samples/snippets/csharp/VS_Snippets_Remoting/NclSslServerSync/CS/serversync.cs#3)]  
+[!code-cpp[NclSslServerSync#3](~/samples/snippets/cpp/VS_Snippets_Remoting/NclSslServerSync/CPP/NclSslServerSync.cpp#3)]
+[!code-csharp[NclSslServerSync#3](~/samples/snippets/csharp/VS_Snippets_Remoting/NclSslServerSync/CS/serversync.cs#3)]  
+[!code-vb[NclSslServerSync#3](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NclSslServerSync/VB/serversync.vb#3)]
   
  ]]></format>
         </remarks>
@@ -2773,6 +2918,7 @@ Authentication has not occurred.</exception>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2783,6 +2929,7 @@ Authentication has not occurred.</exception>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -2801,8 +2948,9 @@ Authentication has not occurred.</exception>
 ## Examples  
  The following code example displays the cryptography settings for the specified stream.  
   
- [!code-cpp[NclSslServerSync#3](~/samples/snippets/cpp/VS_Snippets_Remoting/NclSslServerSync/CPP/NclSslServerSync.cpp#3)]
- [!code-csharp[NclSslServerSync#3](~/samples/snippets/csharp/VS_Snippets_Remoting/NclSslServerSync/CS/serversync.cs#3)]  
+[!code-cpp[NclSslServerSync#3](~/samples/snippets/cpp/VS_Snippets_Remoting/NclSslServerSync/CPP/NclSslServerSync.cpp#3)]
+[!code-csharp[NclSslServerSync#3](~/samples/snippets/csharp/VS_Snippets_Remoting/NclSslServerSync/CS/serversync.cs#3)]  
+[!code-vb[NclSslServerSync#3](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NclSslServerSync/VB/serversync.vb#3)]
   
  ]]></format>
         </remarks>
@@ -2824,6 +2972,7 @@ Authentication has not occurred.</exception>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2834,6 +2983,7 @@ Authentication has not occurred.</exception>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -2853,8 +3003,9 @@ Authentication has not occurred.</exception>
 ## Examples  
  The following code example demonstrates displaying the value of this property.  
   
- [!code-cpp[NclSslServerSync#4](~/samples/snippets/cpp/VS_Snippets_Remoting/NclSslServerSync/CPP/NclSslServerSync.cpp#4)]
- [!code-csharp[NclSslServerSync#4](~/samples/snippets/csharp/VS_Snippets_Remoting/NclSslServerSync/CS/serversync.cs#4)]  
+[!code-cpp[NclSslServerSync#4](~/samples/snippets/cpp/VS_Snippets_Remoting/NclSslServerSync/CPP/NclSslServerSync.cpp#4)]
+[!code-csharp[NclSslServerSync#4](~/samples/snippets/csharp/VS_Snippets_Remoting/NclSslServerSync/CS/serversync.cs#4)]  
+[!code-vb[NclSslServerSync#4](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NclSslServerSync/VB/serversync.vb#4)]
   
  ]]></format>
         </remarks>
@@ -2876,6 +3027,7 @@ Authentication has not occurred.</exception>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2886,6 +3038,7 @@ Authentication has not occurred.</exception>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -2905,8 +3058,9 @@ Authentication has not occurred.</exception>
 ## Examples  
  The following code example demonstrates displaying the value of this property.  
   
- [!code-cpp[NclSslServerSync#4](~/samples/snippets/cpp/VS_Snippets_Remoting/NclSslServerSync/CPP/NclSslServerSync.cpp#4)]
- [!code-csharp[NclSslServerSync#4](~/samples/snippets/csharp/VS_Snippets_Remoting/NclSslServerSync/CS/serversync.cs#4)]  
+[!code-cpp[NclSslServerSync#4](~/samples/snippets/cpp/VS_Snippets_Remoting/NclSslServerSync/CPP/NclSslServerSync.cpp#4)]
+[!code-csharp[NclSslServerSync#4](~/samples/snippets/csharp/VS_Snippets_Remoting/NclSslServerSync/CS/serversync.cs#4)]  
+[!code-vb[NclSslServerSync#4](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NclSslServerSync/VB/serversync.vb#4)]
   
  ]]></format>
         </remarks>
@@ -2928,6 +3082,7 @@ Authentication has not occurred.</exception>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2938,6 +3093,7 @@ Authentication has not occurred.</exception>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -2957,8 +3113,9 @@ Authentication has not occurred.</exception>
 ## Examples  
  The following code example demonstrates displaying the value of this property.  
   
- [!code-cpp[NclSslServerSync#4](~/samples/snippets/cpp/VS_Snippets_Remoting/NclSslServerSync/CPP/NclSslServerSync.cpp#4)]
- [!code-csharp[NclSslServerSync#4](~/samples/snippets/csharp/VS_Snippets_Remoting/NclSslServerSync/CS/serversync.cs#4)]  
+[!code-cpp[NclSslServerSync#4](~/samples/snippets/cpp/VS_Snippets_Remoting/NclSslServerSync/CPP/NclSslServerSync.cpp#4)]
+[!code-csharp[NclSslServerSync#4](~/samples/snippets/csharp/VS_Snippets_Remoting/NclSslServerSync/CS/serversync.cs#4)]  
+[!code-vb[NclSslServerSync#4](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NclSslServerSync/VB/serversync.vb#4)]
   
  ]]></format>
         </remarks>
@@ -2982,6 +3139,7 @@ Authentication has not occurred.</exception>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2992,6 +3150,7 @@ Authentication has not occurred.</exception>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -3013,9 +3172,10 @@ Authentication has not occurred.</exception>
 ## Examples  
  The following code example demonstrates displaying the value of this property.  
   
- [!code-cpp[NclSslServerSync#4](~/samples/snippets/cpp/VS_Snippets_Remoting/NclSslServerSync/CPP/NclSslServerSync.cpp#4)]
- [!code-csharp[NclSslServerSync#4](~/samples/snippets/csharp/VS_Snippets_Remoting/NclSslServerSync/CS/serversync.cs#4)]  
-  
+[!code-cpp[NclSslServerSync#4](~/samples/snippets/cpp/VS_Snippets_Remoting/NclSslServerSync/CPP/NclSslServerSync.cpp#4)]
+[!code-csharp[NclSslServerSync#4](~/samples/snippets/csharp/VS_Snippets_Remoting/NclSslServerSync/CS/serversync.cs#4)]  
+[!code-vb[NclSslServerSync#4](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NclSslServerSync/VB/serversync.vb#4)]
+ 
  ]]></format>
         </remarks>
       </Docs>
@@ -3036,6 +3196,7 @@ Authentication has not occurred.</exception>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3046,6 +3207,7 @@ Authentication has not occurred.</exception>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -3065,8 +3227,9 @@ Authentication has not occurred.</exception>
 ## Examples  
  The following code example demonstrates displaying the value of this property.  
   
- [!code-cpp[NclSslServerSync#4](~/samples/snippets/cpp/VS_Snippets_Remoting/NclSslServerSync/CPP/NclSslServerSync.cpp#4)]
- [!code-csharp[NclSslServerSync#4](~/samples/snippets/csharp/VS_Snippets_Remoting/NclSslServerSync/CS/serversync.cs#4)]  
+[!code-cpp[NclSslServerSync#4](~/samples/snippets/cpp/VS_Snippets_Remoting/NclSslServerSync/CPP/NclSslServerSync.cpp#4)]
+[!code-csharp[NclSslServerSync#4](~/samples/snippets/csharp/VS_Snippets_Remoting/NclSslServerSync/CS/serversync.cs#4)]  
+[!code-vb[NclSslServerSync#4](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NclSslServerSync/VB/serversync.vb#4)]
   
  ]]></format>
         </remarks>
@@ -3088,6 +3251,7 @@ Authentication has not occurred.</exception>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3098,6 +3262,7 @@ Authentication has not occurred.</exception>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Authentication.ExchangeAlgorithmType</ReturnType>
@@ -3118,8 +3283,9 @@ Authentication has not occurred.</exception>
 ## Examples  
  The following code example displays the cryptography settings for the specified stream.  
   
- [!code-cpp[NclSslServerSync#3](~/samples/snippets/cpp/VS_Snippets_Remoting/NclSslServerSync/CPP/NclSslServerSync.cpp#3)]
- [!code-csharp[NclSslServerSync#3](~/samples/snippets/csharp/VS_Snippets_Remoting/NclSslServerSync/CS/serversync.cs#3)]  
+[!code-cpp[NclSslServerSync#3](~/samples/snippets/cpp/VS_Snippets_Remoting/NclSslServerSync/CPP/NclSslServerSync.cpp#3)]
+[!code-csharp[NclSslServerSync#3](~/samples/snippets/csharp/VS_Snippets_Remoting/NclSslServerSync/CS/serversync.cs#3)]  
+[!code-vb[NclSslServerSync#3](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NclSslServerSync/VB/serversync.vb#3)]
   
  ]]></format>
         </remarks>
@@ -3141,6 +3307,7 @@ Authentication has not occurred.</exception>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3151,6 +3318,7 @@ Authentication has not occurred.</exception>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -3179,9 +3347,10 @@ Authentication has not occurred.</exception>
 ## Examples  
  The following code example displays the cryptography settings for the specified stream.  
   
- [!code-cpp[NclSslServerSync#3](~/samples/snippets/cpp/VS_Snippets_Remoting/NclSslServerSync/CPP/NclSslServerSync.cpp#3)]
- [!code-csharp[NclSslServerSync#3](~/samples/snippets/csharp/VS_Snippets_Remoting/NclSslServerSync/CS/serversync.cs#3)]  
-  
+[!code-cpp[NclSslServerSync#3](~/samples/snippets/cpp/VS_Snippets_Remoting/NclSslServerSync/CPP/NclSslServerSync.cpp#3)]
+[!code-csharp[NclSslServerSync#3](~/samples/snippets/csharp/VS_Snippets_Remoting/NclSslServerSync/CS/serversync.cs#3)]  
+[!code-vb[NclSslServerSync#3](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NclSslServerSync/VB/serversync.vb#3)]  
+
  ]]></format>
         </remarks>
       </Docs>
@@ -3202,6 +3371,7 @@ Authentication has not occurred.</exception>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3212,6 +3382,7 @@ Authentication has not occurred.</exception>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int64</ReturnType>
@@ -3246,6 +3417,7 @@ Authentication has not occurred.</exception>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3256,6 +3428,7 @@ Authentication has not occurred.</exception>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.X509Certificates.X509Certificate</ReturnType>
@@ -3269,8 +3442,9 @@ Authentication has not occurred.</exception>
 ## Examples  
  The following code example demonstrates displaying the certificate returned by this property.  
   
- [!code-cpp[NclSslServerSync#6](~/samples/snippets/cpp/VS_Snippets_Remoting/NclSslServerSync/CPP/NclSslServerSync.cpp#6)]
- [!code-csharp[NclSslServerSync#6](~/samples/snippets/csharp/VS_Snippets_Remoting/NclSslServerSync/CS/serversync.cs#6)]  
+[!code-cpp[NclSslServerSync#6](~/samples/snippets/cpp/VS_Snippets_Remoting/NclSslServerSync/CPP/NclSslServerSync.cpp#6)]
+[!code-csharp[NclSslServerSync#6](~/samples/snippets/csharp/VS_Snippets_Remoting/NclSslServerSync/CS/serversync.cs#6)]  
+[!code-vb[NclSslServerSync#6](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NclSslServerSync/VB/serversync.vb#6)]
   
  ]]></format>
         </remarks>
@@ -3288,9 +3462,11 @@ Authentication has not occurred.</exception>
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3302,6 +3478,48 @@ Authentication has not occurred.</exception>
         <summary>To be added.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NegotiatedCipherSuite">
+      <MemberSignature Language="C#" Value="public virtual System.Net.Security.TlsCipherSuite NegotiatedCipherSuite { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Net.Security.TlsCipherSuite NegotiatedCipherSuite" />
+      <MemberSignature Language="DocId" Value="P:System.Net.Security.SslStream.NegotiatedCipherSuite" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property NegotiatedCipherSuite As TlsCipherSuite" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Net::Security::TlsCipherSuite NegotiatedCipherSuite { System::Net::Security::TlsCipherSuite get(); };" />
+      <MemberSignature Language="F#" Value="member this.NegotiatedCipherSuite : System.Net.Security.TlsCipherSuite" Usage="System.Net.Security.SslStream.NegotiatedCipherSuite" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Security</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netcore-3.0;netcore-3.1">
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Net.Security.TlsCipherSuite</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the cipher suite which was negotiated for this connection.</summary>
+        <value>One of the enumeration values that identifies the cipher suite which was negotiated for this connection.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks
+
+This property gets the cipher suite that is going to be used in the communication between a client and server by the underlying SSL/TLS implementation. It is only available after a successful call to <xref:System.Net.Security.SslStream.AuthenticateAsServer%2A> or <xref:System.Net.Security.SslStream.AuthenticateAsClient%2A>.
+
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The property was accessed before the completion of the authentication process or the authentication process failed.</exception>
       </Docs>
     </Member>
     <Member MemberName="Position">
@@ -3317,6 +3535,7 @@ Authentication has not occurred.</exception>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3327,6 +3546,7 @@ Authentication has not occurred.</exception>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int64</ReturnType>
@@ -3365,6 +3585,7 @@ Authentication has not occurred.</exception>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3375,6 +3596,7 @@ Authentication has not occurred.</exception>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -3407,25 +3629,182 @@ Authentication has not occurred.</exception>
   
  [!code-cpp[NclSslClientSync#6](~/samples/snippets/cpp/VS_Snippets_Remoting/NclSslClientSync/CPP/clientsync.cpp#6)]
  [!code-csharp[NclSslClientSync#6](~/samples/snippets/csharp/VS_Snippets_Remoting/NclSslClientSync/CS/clientsync.cs#6)]  
-  
+ [!code-vb[NclSslClientSync#6](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NclSslClientSync/VB/clientsync.vb#6)]
+
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="buffer" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">
-          <paramref name="offset" />
-          <paramref name="&lt;" />
-          <paramref name="0" />.  
+          <paramref name="offset" /> is less than zero.
   
- <paramref name="-or-" /><paramref name="offset" /> &gt; the length of <paramref name="buffer" />.  
-  
- -or-  
-  
- <paramref name="offset" /> + count &gt; the length of <paramref name="buffer" />.</exception>
+-or-
+
+<paramref name="offset" /> is greater than the length of <paramref name="buffer" />.  
+
+-or-  
+
+ <paramref name="offset" /> + count is greater than the length of <paramref name="buffer" />.</exception>
         <exception cref="T:System.IO.IOException">The read operation failed. Check the inner exception, if present to determine the cause of the failure.</exception>
         <exception cref="T:System.NotSupportedException">There is already a read operation in progress.</exception>
         <exception cref="T:System.ObjectDisposedException">This object has been closed.</exception>
         <exception cref="T:System.InvalidOperationException">Authentication has not occurred.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadAsync">
+      <MemberSignature Language="C#" Value="public override System.Threading.Tasks.ValueTask&lt;int&gt; ReadAsync (Memory&lt;byte&gt; buffer, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance valuetype System.Threading.Tasks.ValueTask`1&lt;int32&gt; ReadAsync(valuetype System.Memory`1&lt;unsigned int8&gt; buffer, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.Security.SslStream.ReadAsync(System.Memory{System.Byte},System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="override this.ReadAsync : Memory&lt;byte&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.ValueTask&lt;int&gt;" Usage="sslStream.ReadAsync (buffer, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Security</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.ValueTask&lt;System.Int32&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="buffer" Type="System.Memory&lt;System.Byte&gt;" Index="0" FrameworkAlternate="netcore-3.0;netstandard-2.1;netcore-3.1" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="1" FrameworkAlternate="netcore-3.0;netstandard-2.1;netcore-3.1" />
+      </Parameters>
+      <Docs>
+        <param name="buffer">The buffer that receives the bytes read from this stream.</param>
+        <param name="cancellationToken">The token to monitor for cancellation requests.</param>
+        <summary>Asynchronously reads data from this stream and stores it in the specified memory range.</summary>
+        <returns>A task that represents the asynchronous read operation. The value of its <see cref="P:System.Threading.Tasks.ValueTask`1.Result" /> property contains the total number of bytes read into <paramref name="buffer" />. When there is no more data to be read, returns 0.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method reads as much data as is available into the `buffer`. 
+ 
+ You cannot perform multiple simultaneous read operations.  
+  
+ You cannot call this method until you have successfully authenticated.
+
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">Authentication has not occurred.</exception>
+        <exception cref="T:System.IO.IOException">The read operation failed. Check the inner exception, if it is present, to determine the cause of the failure.</exception>
+        <exception cref="T:System.NotSupportedException">There is already a read operation in progress.</exception>
+        <exception cref="T:System.ObjectDisposedException">This object has been closed.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadAsync">
+      <MemberSignature Language="C#" Value="public override System.Threading.Tasks.Task&lt;int&gt; ReadAsync (byte[] buffer, int offset, int count, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task`1&lt;int32&gt; ReadAsync(unsigned int8[] buffer, int32 offset, int32 count, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.Security.SslStream.ReadAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Threading::Tasks::Task&lt;int&gt; ^ ReadAsync(cli::array &lt;System::Byte&gt; ^ buffer, int offset, int count, System::Threading::CancellationToken cancellationToken);" />
+      <MemberSignature Language="F#" Value="override this.ReadAsync : byte[] * int * int * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;int&gt;" Usage="sslStream.ReadAsync (buffer, offset, count, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Security</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Int32&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="buffer" Type="System.Byte[]" Index="0" FrameworkAlternate="netcore-3.0;netstandard-2.1;netcore-3.1" />
+        <Parameter Name="offset" Type="System.Int32" Index="1" FrameworkAlternate="netcore-3.0;netstandard-2.1;netcore-3.1" />
+        <Parameter Name="count" Type="System.Int32" Index="2" FrameworkAlternate="netcore-3.0;netstandard-2.1;netcore-3.1" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="3" FrameworkAlternate="netcore-3.0;netstandard-2.1;netcore-3.1" />
+      </Parameters>
+      <Docs>
+        <param name="buffer">The buffer that receives the bytes read from this stream.</param>
+        <param name="offset">The zero-based location in <paramref name="buffer" /> at which to begin storing the data read from this stream.</param>
+        <param name="count">The maximum number of bytes to read from this stream.</param>
+        <param name="cancellationToken">The token to monitor for cancellation requests.</param>
+        <summary>Asynchronously reads data from this stream and stores it in the specified range of a byte array.</summary>
+        <returns>A task that represents the asynchronous read operation. The value of its <see cref="P:System.Threading.Tasks.Task`1.Result" /> property contains the total number of bytes read into <paramref name="buffer" />. When there is no more data to be read, returns 0.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The method reads a maximum of `count` bytes from the stream and stores them in `buffer` beginning at `offset`. 
+ 
+ You cannot perform multiple simultaneous read operations.  
+  
+ You cannot call this method until you have successfully authenticated.
+
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="buffer" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="offset" /> is less than 0.  
+  
+ -or-  
+  
+ <paramref name="count" /> is less than 0.
+  
+ -or-  
+  
+ <paramref name="count" /> is greater than the length of <paramref name="buffer" /> minus <paramref name="offset" />.</exception>
+        <exception cref="T:System.InvalidOperationException">Authentication has not occurred.</exception>
+        <exception cref="T:System.IO.IOException">The read operation failed. Check the inner exception, if it is present, to determine the cause of the failure.</exception>
+        <exception cref="T:System.NotSupportedException">There is already a read operation in progress.</exception>
+        <exception cref="T:System.ObjectDisposedException">This object has been closed.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadByte">
+      <MemberSignature Language="C#" Value="public override int ReadByte ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 ReadByte() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.Security.SslStream.ReadByte" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ReadByte () As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int ReadByte();" />
+      <MemberSignature Language="F#" Value="override this.ReadByte : unit -&gt; int" Usage="sslStream.ReadByte " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Security</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Reads a byte from the <see cref="T:System.Net.Security.SslStream" /> and advances the position within the stream by one byte, or returns -1 if at the end of the stream.</summary>
+        <returns>The unsigned byte cast to an <see langword="Int32" />, or -1 if at the end of the stream.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks   
+ You cannot perform multiple simultaneous read operations.  
+  
+ You cannot call this method until you have successfully authenticated.
+
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">Authentication has not occurred.</exception>
+        <exception cref="T:System.IO.IOException">The read operation failed. Check the inner exception, if present to determine the cause of the failure.</exception>
+        <exception cref="T:System.NotSupportedException">There is already a read operation in progress.</exception>
+        <exception cref="T:System.ObjectDisposedException">This object has been closed.</exception>
       </Docs>
     </Member>
     <Member MemberName="ReadTimeout">
@@ -3444,6 +3823,7 @@ Authentication has not occurred.</exception>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3454,13 +3834,14 @@ Authentication has not occurred.</exception>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the amount of time a read operation blocks waiting for data.</summary>
-        <value>The amount of time that elapses before a synchronous read operation fails.</value>
+        <summary>Gets or sets the amount of time, expressed in milliseconds, a read operation blocks waiting for data.</summary>
+        <value>The amount of time, in milliseconds, that elapses before a synchronous read operation fails.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -3474,8 +3855,9 @@ Authentication has not occurred.</exception>
 ## Examples  
  The following code example demonstrates setting the value of this property.  
   
- [!code-cpp[NclSslServerSync#1](~/samples/snippets/cpp/VS_Snippets_Remoting/NclSslServerSync/CPP/NclSslServerSync.cpp#1)]
- [!code-csharp[NclSslServerSync#1](~/samples/snippets/csharp/VS_Snippets_Remoting/NclSslServerSync/CS/serversync.cs#1)]  
+[!code-cpp[NclSslServerSync#1](~/samples/snippets/cpp/VS_Snippets_Remoting/NclSslServerSync/CPP/NclSslServerSync.cpp#1)]
+[!code-csharp[NclSslServerSync#1](~/samples/snippets/csharp/VS_Snippets_Remoting/NclSslServerSync/CS/serversync.cs#1)]  
+[!code-vb[NclSslServerSync#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NclSslServerSync/VB/serversync.vb#1)]
   
  ]]></format>
         </remarks>
@@ -3497,6 +3879,7 @@ Authentication has not occurred.</exception>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3507,6 +3890,7 @@ Authentication has not occurred.</exception>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.X509Certificates.X509Certificate</ReturnType>
@@ -3520,8 +3904,9 @@ Authentication has not occurred.</exception>
 ## Examples  
  The following code example demonstrates displaying the certificate returned by this property.  
   
- [!code-cpp[NclSslServerSync#6](~/samples/snippets/cpp/VS_Snippets_Remoting/NclSslServerSync/CPP/NclSslServerSync.cpp#6)]
- [!code-csharp[NclSslServerSync#6](~/samples/snippets/csharp/VS_Snippets_Remoting/NclSslServerSync/CS/serversync.cs#6)]  
+[!code-cpp[NclSslServerSync#6](~/samples/snippets/cpp/VS_Snippets_Remoting/NclSslServerSync/CPP/NclSslServerSync.cpp#6)]
+[!code-csharp[NclSslServerSync#6](~/samples/snippets/csharp/VS_Snippets_Remoting/NclSslServerSync/CS/serversync.cs#6)]  
+[!code-vb[NclSslServerSync#6](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NclSslServerSync/VB/serversync.vb#6)]
   
  ]]></format>
         </remarks>
@@ -3541,6 +3926,7 @@ Authentication has not occurred.</exception>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3551,6 +3937,7 @@ Authentication has not occurred.</exception>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int64</ReturnType>
@@ -3591,6 +3978,7 @@ Authentication has not occurred.</exception>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3601,6 +3989,7 @@ Authentication has not occurred.</exception>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -3637,9 +4026,11 @@ Authentication has not occurred.</exception>
         <AssemblyName>System.Net.Security</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -3667,6 +4058,7 @@ Authentication has not occurred.</exception>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3677,6 +4069,7 @@ Authentication has not occurred.</exception>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Authentication.SslProtocols</ReturnType>
@@ -3695,8 +4088,9 @@ Authentication has not occurred.</exception>
 ## Examples  
  The following example displays the security properties of the specified stream.  
   
- [!code-cpp[NclSslServerSync#3](~/samples/snippets/cpp/VS_Snippets_Remoting/NclSslServerSync/CPP/NclSslServerSync.cpp#3)]
- [!code-csharp[NclSslServerSync#3](~/samples/snippets/csharp/VS_Snippets_Remoting/NclSslServerSync/CS/serversync.cs#3)]  
+[!code-cpp[NclSslServerSync#3](~/samples/snippets/cpp/VS_Snippets_Remoting/NclSslServerSync/CPP/NclSslServerSync.cpp#3)]
+[!code-csharp[NclSslServerSync#3](~/samples/snippets/csharp/VS_Snippets_Remoting/NclSslServerSync/CS/serversync.cs#3)]  
+[!code-vb[NclSslServerSync#3](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NclSslServerSync/VB/serversync.vb#3)]
   
  ]]></format>
         </remarks>
@@ -3718,6 +4112,7 @@ Authentication has not occurred.</exception>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3728,6 +4123,7 @@ Authentication has not occurred.</exception>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.TransportContext</ReturnType>
@@ -3752,11 +4148,13 @@ Authentication has not occurred.</exception>
     </MemberGroup>
     <Member MemberName="Write">
       <MemberSignature Language="C#" Value="public void Write (byte[] buffer);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Write(unsigned int8[] buffer) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Write(unsigned int8[] buffer) cil managed" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1" />
       <MemberSignature Language="DocId" Value="M:System.Net.Security.SslStream.Write(System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub Write (buffer As Byte())" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Write(cli::array &lt;System::Byte&gt; ^ buffer);" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Write(cli::array &lt;System::Byte&gt; ^ buffer);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1" />
       <MemberSignature Language="F#" Value="override this.Write : byte[] -&gt; unit" Usage="sslStream.Write buffer" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Write(unsigned int8[] buffer) cil managed" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Write(cli::array &lt;System::Byte&gt; ^ buffer);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Mono.Net.Security.IMonoSslStream.Write(System.Byte[])</InterfaceMember>
@@ -3766,6 +4164,7 @@ Authentication has not occurred.</exception>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3776,6 +4175,7 @@ Authentication has not occurred.</exception>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -3801,8 +4201,9 @@ Authentication has not occurred.</exception>
 ## Examples  
  The following code example demonstrates writing to an authenticated <xref:System.Net.Security.SslStream>.  
   
- [!code-cpp[NclSslServerSync#1](~/samples/snippets/cpp/VS_Snippets_Remoting/NclSslServerSync/CPP/NclSslServerSync.cpp#1)]
- [!code-csharp[NclSslServerSync#1](~/samples/snippets/csharp/VS_Snippets_Remoting/NclSslServerSync/CS/serversync.cs#1)]  
+[!code-cpp[NclSslServerSync#1](~/samples/snippets/cpp/VS_Snippets_Remoting/NclSslServerSync/CPP/NclSslServerSync.cpp#1)]
+[!code-csharp[NclSslServerSync#1](~/samples/snippets/csharp/VS_Snippets_Remoting/NclSslServerSync/CS/serversync.cs#1)]  
+[!code-vb[NclSslServerSync#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NclSslServerSync/VB/serversync.vb#1)]
   
  ]]></format>
         </remarks>
@@ -3830,6 +4231,7 @@ Authentication has not occurred.</exception>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3840,6 +4242,7 @@ Authentication has not occurred.</exception>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -3869,19 +4272,128 @@ Authentication has not occurred.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="buffer" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">
-          <paramref name="offset" />
-          <paramref name="&lt;" />
-          <paramref name="0" />.  
-  
- <paramref name="-or-" /><paramref name="offset" /> &gt; the length of <paramref name="buffer" />.  
+          <paramref name="offset" /> is less than zero.
+
+-or-
+
+<paramref name="offset" /> is greater than the length of <paramref name="buffer" />.  
   
  -or-  
   
- <paramref name="offset" /> + count &gt; the length of <paramref name="buffer" />.</exception>
+ <paramref name="offset" /> + count is greater than the length of <paramref name="buffer" />.</exception>
         <exception cref="T:System.IO.IOException">The write operation failed.</exception>
         <exception cref="T:System.NotSupportedException">There is already a write operation in progress.</exception>
         <exception cref="T:System.ObjectDisposedException">This object has been closed.</exception>
         <exception cref="T:System.InvalidOperationException">Authentication has not occurred.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteAsync">
+      <MemberSignature Language="C#" Value="public override System.Threading.Tasks.ValueTask WriteAsync (ReadOnlyMemory&lt;byte&gt; buffer, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance valuetype System.Threading.Tasks.ValueTask WriteAsync(valuetype System.ReadOnlyMemory`1&lt;unsigned int8&gt; buffer, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.Security.SslStream.WriteAsync(System.ReadOnlyMemory{System.Byte},System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="override this.WriteAsync : ReadOnlyMemory&lt;byte&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.ValueTask" Usage="sslStream.WriteAsync (buffer, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Security</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.ValueTask</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="buffer" Type="System.ReadOnlyMemory&lt;System.Byte&gt;" Index="0" FrameworkAlternate="netcore-3.0;netstandard-2.1;netcore-3.1" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="1" FrameworkAlternate="netcore-3.0;netstandard-2.1;netcore-3.1" />
+      </Parameters>
+      <Docs>
+        <param name="buffer">The data to write to the underlying stream.</param>
+        <param name="cancellationToken">The token to monitor for cancellation requests.</param>
+        <summary>Asynchronously writes data to the underlying stream from a read-only byte memory range.</summary>
+        <returns>A task that represents the asynchronous write operation.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+You cannot call this method until you have successfully authenticated. 
+
+The <xref:System.Net.Security.SslStream> class does not support multiple simultaneous write operations.
+
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">Authentication has not occurred.</exception>
+        <exception cref="T:System.IO.IOException">The write operation failed.</exception>
+        <exception cref="T:System.NotSupportedException">There is already a write operation in progress.</exception>
+        <exception cref="T:System.ObjectDisposedException">This object has been closed.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteAsync">
+      <MemberSignature Language="C#" Value="public override System.Threading.Tasks.Task WriteAsync (byte[] buffer, int offset, int count, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task WriteAsync(unsigned int8[] buffer, int32 offset, int32 count, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.Security.SslStream.WriteAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Threading::Tasks::Task ^ WriteAsync(cli::array &lt;System::Byte&gt; ^ buffer, int offset, int count, System::Threading::CancellationToken cancellationToken);" />
+      <MemberSignature Language="F#" Value="override this.WriteAsync : byte[] * int * int * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="sslStream.WriteAsync (buffer, offset, count, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Security</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="buffer" Type="System.Byte[]" Index="0" FrameworkAlternate="netcore-3.0;netstandard-2.1;netcore-3.1" />
+        <Parameter Name="offset" Type="System.Int32" Index="1" FrameworkAlternate="netcore-3.0;netstandard-2.1;netcore-3.1" />
+        <Parameter Name="count" Type="System.Int32" Index="2" FrameworkAlternate="netcore-3.0;netstandard-2.1;netcore-3.1" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="3" FrameworkAlternate="netcore-3.0;netstandard-2.1;netcore-3.1" />
+      </Parameters>
+      <Docs>
+        <param name="buffer">The data to write to the underlying stream.</param>
+        <param name="offset">The location in <paramref name="buffer" /> from which to start writing data.</param>
+        <param name="count">The number of bytes to write to the underlying stream.</param>
+        <param name="cancellationToken">The token to monitor for cancellation requests.</param>
+        <summary>Asynchronously writes data to the underlying stream from the specified range of a byte array.</summary>
+        <returns>A task that represents the asynchronous write operation.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+You cannot call this method until you have successfully authenticated. 
+
+The <xref:System.Net.Security.SslStream> class does not support multiple simultaneous write operations.
+
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="buffer" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="offset" /> is less than 0.  
+  
+ -or-  
+  
+ <paramref name="count" /> is less than 0.
+  
+ -or-  
+  
+ <paramref name="count" /> is greater than the length of <paramref name="buffer" /> minus <paramref name="offset" />.</exception>
+        <exception cref="T:System.InvalidOperationException">Authentication has not occurred.</exception>
+        <exception cref="T:System.IO.IOException">The write operation failed.</exception>
+        <exception cref="T:System.NotSupportedException">There is already a write operation in progress.</exception>
+        <exception cref="T:System.ObjectDisposedException">This object has been closed.</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteTimeout">
@@ -3900,6 +4412,7 @@ Authentication has not occurred.</exception>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3910,6 +4423,7 @@ Authentication has not occurred.</exception>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -3930,8 +4444,9 @@ Authentication has not occurred.</exception>
 ## Examples  
  The following code example demonstrates setting the value of this property.  
   
- [!code-cpp[NclSslServerSync#1](~/samples/snippets/cpp/VS_Snippets_Remoting/NclSslServerSync/CPP/NclSslServerSync.cpp#1)]
- [!code-csharp[NclSslServerSync#1](~/samples/snippets/csharp/VS_Snippets_Remoting/NclSslServerSync/CS/serversync.cs#1)]  
+[!code-cpp[NclSslServerSync#1](~/samples/snippets/cpp/VS_Snippets_Remoting/NclSslServerSync/CPP/NclSslServerSync.cpp#1)]
+[!code-csharp[NclSslServerSync#1](~/samples/snippets/csharp/VS_Snippets_Remoting/NclSslServerSync/CS/serversync.cs#1)]  
+[!code-vb[NclSslServerSync#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NclSslServerSync/VB/serversync.vb#1)]
   
  ]]></format>
         </remarks>

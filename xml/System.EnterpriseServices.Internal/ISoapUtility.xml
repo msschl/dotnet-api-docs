@@ -1,4 +1,4 @@
-﻿<Type Name="ISoapUtility" FullName="System.EnterpriseServices.Internal.ISoapUtility">
+<Type Name="ISoapUtility" FullName="System.EnterpriseServices.Internal.ISoapUtility">
   <TypeSignature Language="C#" Value="public interface ISoapUtility" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ISoapUtility" />
   <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.Internal.ISoapUtility" />
@@ -13,7 +13,7 @@
   </AssemblyInfo>
   <Interfaces />
   <Attributes>
-    <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+    <Attribute>
       <AttributeName>System.Runtime.InteropServices.Guid("5AC4CB7E-F89F-429b-926B-C7F940936BF4")</AttributeName>
     </Attribute>
   </Attributes>
@@ -39,7 +39,7 @@
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.Internal.ISoapUtility.GetServerBinPath(System.String,System.String,System.String,System.String@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetServerBinPath (rootWebServer As String, inBaseUrl As String, inVirtualRoot As String, ByRef binPath As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetServerBinPath(System::String ^ rootWebServer, System::String ^ inBaseUrl, System::String ^ inVirtualRoot, [Runtime::InteropServices::Out] System::String ^ % binPath);" />
-      <MemberSignature Language="F#" Value="abstract member GetServerBinPath : string * string * string *  -&gt; unit" Usage="iSoapUtility.GetServerBinPath (rootWebServer, inBaseUrl, inVirtualRoot, binPath)" />
+      <MemberSignature Language="F#" Value="abstract member GetServerBinPath : string * string * string * string -&gt; unit" Usage="iSoapUtility.GetServerBinPath (rootWebServer, inBaseUrl, inVirtualRoot, binPath)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -48,7 +48,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.Runtime.InteropServices.DispId(2)</AttributeName>
         </Attribute>
       </Attributes>
@@ -79,7 +79,7 @@
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.Internal.ISoapUtility.GetServerPhysicalPath(System.String,System.String,System.String,System.String@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetServerPhysicalPath (rootWebServer As String, inBaseUrl As String, inVirtualRoot As String, ByRef physicalPath As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetServerPhysicalPath(System::String ^ rootWebServer, System::String ^ inBaseUrl, System::String ^ inVirtualRoot, [Runtime::InteropServices::Out] System::String ^ % physicalPath);" />
-      <MemberSignature Language="F#" Value="abstract member GetServerPhysicalPath : string * string * string *  -&gt; unit" Usage="iSoapUtility.GetServerPhysicalPath (rootWebServer, inBaseUrl, inVirtualRoot, physicalPath)" />
+      <MemberSignature Language="F#" Value="abstract member GetServerPhysicalPath : string * string * string * string -&gt; unit" Usage="iSoapUtility.GetServerPhysicalPath (rootWebServer, inBaseUrl, inVirtualRoot, physicalPath)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -88,7 +88,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.Runtime.InteropServices.DispId(1)</AttributeName>
         </Attribute>
       </Attributes>
@@ -128,7 +128,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.Runtime.InteropServices.DispId(3)</AttributeName>
         </Attribute>
       </Attributes>

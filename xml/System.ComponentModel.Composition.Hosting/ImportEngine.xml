@@ -1,4 +1,4 @@
-﻿<Type Name="ImportEngine" FullName="System.ComponentModel.Composition.Hosting.ImportEngine">
+<Type Name="ImportEngine" FullName="System.ComponentModel.Composition.Hosting.ImportEngine">
   <TypeSignature Language="C#" Value="public class ImportEngine : IDisposable, System.ComponentModel.Composition.ICompositionService" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ImportEngine extends System.Object implements class System.ComponentModel.Composition.ICompositionService, class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Composition.Hosting.ImportEngine" />
@@ -111,8 +111,8 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="sourceProvider" Type="System.ComponentModel.Composition.Hosting.ExportProvider" />
-        <Parameter Name="compositionOptions" Type="System.ComponentModel.Composition.Hosting.CompositionOptions" />
+        <Parameter Name="sourceProvider" Type="System.ComponentModel.Composition.Hosting.ExportProvider" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;dotnet-plat-ext-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="compositionOptions" Type="System.ComponentModel.Composition.Hosting.CompositionOptions" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;dotnet-plat-ext-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="sourceProvider">The <see cref="T:System.ComponentModel.Composition.Hosting.ExportProvider" /> that provides the <see cref="T:System.ComponentModel.Composition.Hosting.ImportEngine" /> access to <see cref="T:System.ComponentModel.Composition.Primitives.Export" /> objects.</param>
@@ -218,6 +218,10 @@
         <param name="atomicComposition">The composition transaction to use, or <see langword="null" /> for no composition transaction.</param>
         <summary>Previews all the required imports for the specified part to make sure that they can be satisfied, without actually setting them.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ComponentModel.Composition.CompositionException">
+                An error occurred during previewing, and <paramref name="atomicComposition" /> is <see langword="null" />. <see cref="P:System.ComponentModel.Composition.CompositionException.Errors" /> will contain a collection of errors that occurred. The pre-existing composition is in an unknown state, depending on the errors that occurred.</exception>
+        <exception cref="T:System.ComponentModel.Composition.ChangeRejectedException">An error occurred during previewing, and <paramref name="atomicComposition" /> is not <see langword="null" />. <see cref="P:System.ComponentModel.Composition.CompositionException.Errors" /> will contain a collection of errors that occurred. The pre-existing composition remains in valid state.</exception>
+        <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.ComponentModel.Composition.Hosting.ImportEngine" /> has been disposed.</exception>
       </Docs>
     </Member>
     <Member MemberName="ReleaseImports">
@@ -269,6 +273,16 @@
         <param name="part">The part to satisfy the imports of.</param>
         <summary>Satisfies the imports of the specified part.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="part" /> is <see langword="null" />.
+            </exception>
+        <exception cref="T:System.ComponentModel.Composition.CompositionException">
+                An error occurred during composition. <see cref="P:System.ComponentModel.Composition.CompositionException.Errors" /> will
+                contain a collection of errors that occurred.
+            </exception>
+        <exception cref="T:System.ObjectDisposedException">
+                The <see cref="T:System.ComponentModel.Composition.Hosting.ImportEngine" /> has been disposed.
+            </exception>
       </Docs>
     </Member>
     <Member MemberName="SatisfyImportsOnce">
@@ -297,6 +311,16 @@
         <param name="part">The part to satisfy the imports of.</param>
         <summary>Satisfies the imports of the specified part without registering them for recomposition.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="part" /> is <see langword="null" />.
+            </exception>
+        <exception cref="T:System.ComponentModel.Composition.CompositionException">
+                An error occurred during composition. <see cref="P:System.ComponentModel.Composition.CompositionException.Errors" /> will
+                contain a collection of errors that occurred.
+            </exception>
+        <exception cref="T:System.ObjectDisposedException">
+                The <see cref="T:System.ComponentModel.Composition.ICompositionService" /> has been disposed.
+            </exception>
       </Docs>
     </Member>
   </Members>

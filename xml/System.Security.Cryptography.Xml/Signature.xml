@@ -1,4 +1,4 @@
-﻿<Type Name="Signature" FullName="System.Security.Cryptography.Xml.Signature">
+<Type Name="Signature" FullName="System.Security.Cryptography.Xml.Signature">
   <TypeSignature Language="C#" Value="public class Signature" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi Signature extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.Xml.Signature" />
@@ -15,6 +15,8 @@
     <AssemblyName>System.Security.Cryptography.Xml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
+    <AssemblyVersion>4.0.2.0</AssemblyVersion>
+    <AssemblyVersion>4.0.3.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -26,9 +28,9 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Security.Cryptography.Xml.Signature> class represents the <`Signature`> element of an XML signature defined by the XML digital signature specification. The <`Signature`> element is the root element of an XML digital signature. The <xref:System.Security.Cryptography.Xml.Signature.SignedInfo%2A>, <xref:System.Security.Cryptography.Xml.Signature.SignatureValue%2A>, <xref:System.Security.Cryptography.Xml.Signature.KeyInfo%2A>, and <xref:System.Security.Cryptography.Xml.Signature.ObjectList%2A> properties encapsulate the subelements of the <`Signature`> element.  
+ The <xref:System.Security.Cryptography.Xml.Signature> class represents the `<Signature>` element of an XML signature defined by the XML digital signature specification. The `<Signature>` element is the root element of an XML digital signature. The <xref:System.Security.Cryptography.Xml.Signature.SignedInfo%2A>, <xref:System.Security.Cryptography.Xml.Signature.SignatureValue%2A>, <xref:System.Security.Cryptography.Xml.Signature.KeyInfo%2A>, and <xref:System.Security.Cryptography.Xml.Signature.ObjectList%2A> properties encapsulate the subelements of the `<Signature>` element.  
   
- For more information about the <`Signature`> element, see the W3C specification at www.w3.org/TR/xmldsig-core/.  
+ For more information about the `<Signature>` element, see the [W3C specification](https://www.w3.org/TR/xmldsig-core/).  
   
    
   
@@ -67,6 +69,8 @@
         <AssemblyName>System.Security.Cryptography.Xml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -109,6 +113,8 @@
         <AssemblyName>System.Security.Cryptography.Xml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -148,6 +154,8 @@
         <AssemblyName>System.Security.Cryptography.Xml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.XmlElement</ReturnType>
@@ -183,6 +191,8 @@
         <AssemblyName>System.Security.Cryptography.Xml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -219,6 +229,8 @@
         <AssemblyName>System.Security.Cryptography.Xml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.Xml.KeyInfo</ReturnType>
@@ -230,9 +242,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Security.Cryptography.Xml.Signature.KeyInfo%2A> property uses a <xref:System.Security.Cryptography.Xml.KeyInfo> object to represent the <`KeyInfo`> element of an XML digital signature.  
+ The <xref:System.Security.Cryptography.Xml.Signature.KeyInfo%2A> property uses a <xref:System.Security.Cryptography.Xml.KeyInfo> object to represent the `<KeyInfo>` element of an XML digital signature.  
   
- For more information about XML digital signatures, see the W3C specification at www.w3.org/TR/xmldsig-core/.  
+ For more information about XML digital signatures, see the [W3C specification](https://www.w3.org/TR/xmldsig-core/).  
   
    
   
@@ -272,6 +284,8 @@
         <AssemblyName>System.Security.Cryptography.Xml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -310,6 +324,8 @@
         <AssemblyName>System.Security.Cryptography.Xml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.IList</ReturnType>
@@ -321,11 +337,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Security.Cryptography.Xml.Signature.ObjectList%2A> property uses a collection of <xref:System.Security.Cryptography.Xml.DataObject> objects to represent the <`Object`> tag of an XML digital signature.  
+ The <xref:System.Security.Cryptography.Xml.Signature.ObjectList%2A> property uses a collection of <xref:System.Security.Cryptography.Xml.DataObject> objects to represent the `<Object>` tag of an XML digital signature.  
   
  You can also add a <xref:System.Security.Cryptography.Xml.DataObject> to this collection using the <xref:System.Security.Cryptography.Xml.Signature.AddObject%2A> method.  
   
- For more information about XML digital signatures, see the W3C specification at www.w3.org/TR/xmldsig-core/.  
+ For more information about XML digital signatures, see the [W3C specification](https://www.w3.org/TR/xmldsig-core/).  
   
  ]]></format>
         </remarks>
@@ -350,6 +366,8 @@
         <AssemblyName>System.Security.Cryptography.Xml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Byte[]</ReturnType>
@@ -361,9 +379,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Security.Cryptography.Xml.Signature.SignatureValue%2A> property uses a byte array to represent the <`SignatureValue`> element of an XML digital signature contained within.  
+ The <xref:System.Security.Cryptography.Xml.Signature.SignatureValue%2A> property uses a byte array to represent the `<SignatureValue>` element of an XML digital signature contained within.  
   
- For more information about XML digital signatures, see the W3C specification at www.w3.org/TR/xmldsig-core/.  
+ For more information about XML digital signatures, see the [W3C specification](https://www.w3.org/TR/xmldsig-core/).  
   
  ]]></format>
         </remarks>
@@ -388,6 +406,8 @@
         <AssemblyName>System.Security.Cryptography.Xml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.Xml.SignedInfo</ReturnType>
@@ -399,9 +419,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Security.Cryptography.Xml.Signature.SignedInfo%2A> property uses the <xref:System.Security.Cryptography.Xml.SignedInfo> class to represent the <`SignedInfo`> element of an XML digital signature contained within.  
+ The <xref:System.Security.Cryptography.Xml.Signature.SignedInfo%2A> property uses the <xref:System.Security.Cryptography.Xml.SignedInfo> class to represent the `<SignedInfo>` element of an XML digital signature contained within.  
   
- For more information about XML digital signatures, see the W3C specification at www.w3.org/TR/xmldsig-core/.  
+ For more information about XML digital signatures, see the [W3C specification](https://www.w3.org/TR/xmldsig-core/).  
   
    
   

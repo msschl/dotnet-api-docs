@@ -1,4 +1,4 @@
-﻿<Type Name="ImmutableSortedSet&lt;T&gt;" FullName="System.Collections.Immutable.ImmutableSortedSet&lt;T&gt;">
+<Type Name="ImmutableSortedSet&lt;T&gt;" FullName="System.Collections.Immutable.ImmutableSortedSet&lt;T&gt;">
   <TypeSignature Language="C#" Value="public sealed class ImmutableSortedSet&lt;T&gt; : System.Collections.Generic.ICollection&lt;T&gt;, System.Collections.Generic.IEnumerable&lt;T&gt;, System.Collections.Generic.IList&lt;T&gt;, System.Collections.Generic.IReadOnlyCollection&lt;T&gt;, System.Collections.Generic.IReadOnlyList&lt;T&gt;, System.Collections.Generic.ISet&lt;T&gt;, System.Collections.IList, System.Collections.Immutable.IImmutableSet&lt;T&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ImmutableSortedSet`1&lt;T&gt; extends System.Object implements class System.Collections.Generic.ICollection`1&lt;!T&gt;, class System.Collections.Generic.IEnumerable`1&lt;!T&gt;, class System.Collections.Generic.IList`1&lt;!T&gt;, class System.Collections.Generic.IReadOnlyCollection`1&lt;!T&gt;, class System.Collections.Generic.IReadOnlyList`1&lt;!T&gt;, class System.Collections.Generic.ISet`1&lt;!T&gt;, class System.Collections.ICollection, class System.Collections.IEnumerable, class System.Collections.IList, class System.Collections.Immutable.IImmutableSet`1&lt;!T&gt;" />
   <TypeSignature Language="DocId" Value="T:System.Collections.Immutable.ImmutableSortedSet`1" />
@@ -7,10 +7,13 @@
   <TypeSignature Language="F#" Value="type ImmutableSortedSet&lt;'T&gt; = class&#xA;    interface ICollection&lt;'T&gt;&#xA;    interface seq&lt;'T&gt;&#xA;    interface IEnumerable&#xA;    interface IList&lt;'T&gt;&#xA;    interface IReadOnlyCollection&lt;'T&gt;&#xA;    interface IReadOnlyList&lt;'T&gt;&#xA;    interface ISet&lt;'T&gt;&#xA;    interface ICollection&#xA;    interface IList&#xA;    interface IImmutableSet&lt;'T&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Collections.Immutable</AssemblyName>
+    <AssemblyVersion>1.1.37.0</AssemblyVersion>
     <AssemblyVersion>1.2.0.0</AssemblyVersion>
     <AssemblyVersion>1.2.1.0</AssemblyVersion>
     <AssemblyVersion>1.2.2.0</AssemblyVersion>
     <AssemblyVersion>1.2.3.0</AssemblyVersion>
+    <AssemblyVersion>1.2.4.0</AssemblyVersion>
+    <AssemblyVersion>1.2.5.0</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="T" />
@@ -51,26 +54,28 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1">
+    <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;dotnet-uwp-10.0">
       <AttributeName>System.Diagnostics.DebuggerDisplay("Count = {Count}")</AttributeName>
     </Attribute>
-    <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1">
+    <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;dotnet-uwp-10.0">
       <AttributeName>System.Diagnostics.DebuggerTypeProxy(typeof(System.Collections.Immutable.ImmutableSortedSetDebuggerProxy`1))</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
     <typeparam name="T">The type of elements in the set.</typeparam>
-    <summary>Represents an immutable sorted set implementation.  
-  
- **NuGet package**: <see href="https://www.nuget.org/packages/System.Collections.Immutable/">System.Collections.Immutable</see> (<see href="https://docs.microsoft.com/dotnet/api/system.collections.immutable?#remarks">about immutable collections and how to install</see>)</summary>
+    <summary>Represents an immutable sorted set implementation.
+
+**NuGet package**: <see href="https://www.nuget.org/packages/System.Collections.Immutable/">System.Collections.Immutable</see> (<see href="https://docs.microsoft.com/dotnet/api/system.collections.immutable?#remarks">about immutable collections and how to install</see>)
+    </summary>
     <remarks>
-      <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Create a new immutable sorted set that is prepopulated with items by using the <xref:System.Collections.Immutable.ImmutableSortedSet.CreateRange%2A> method. When you manipulate an immutable set with methods such as <xref:System.Collections.Immutable.ImmutableSortedSet%601.Add%2A>, <xref:System.Collections.Immutable.ImmutableSortedSet%601.Reverse%2A> or <xref:System.Collections.Immutable.ImmutableSortedSet%601.Remove%2A>, a copy of the original sorted set is made, manipulations applied and a new immutable sorted set is returned.  
-  
- If you need to perform multiple operations on an immutable collection, to increase efficiency you can copy the <xref:System.Collections.Immutable.ImmutableSortedSet%601> to a <xref:System.Collections.Immutable.ImmutableSortedSet%601.Builder>, using the <xref:System.Collections.Immutable.ImmutableSortedSet%601.ToBuilder%2A> method, manipulate the set and make it immutable again using the <xref:System.Collections.Immutable.ImmutableSortedSet%601.Builder.ToImmutable%2A> method. This will not change the original immutable sorted set.  
-  
+      <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+Create a new immutable sorted set that is prepopulated with items by using the <xref:System.Collections.Immutable.ImmutableSortedSet.CreateRange%2A> method. When you manipulate an immutable set with methods such as <xref:System.Collections.Immutable.ImmutableSortedSet%601.Add%2A>, <xref:System.Collections.Immutable.ImmutableSortedSet%601.Reverse%2A> or <xref:System.Collections.Immutable.ImmutableSortedSet%601.Remove%2A>, a copy of the original sorted set is made, manipulations applied and a new immutable sorted set is returned.
+
+If you need to perform multiple operations on an immutable collection, to increase efficiency you can copy the <xref:System.Collections.Immutable.ImmutableSortedSet%601> to a <xref:System.Collections.Immutable.ImmutableSortedSet%601.Builder>, using the <xref:System.Collections.Immutable.ImmutableSortedSet%601.ToBuilder%2A> method, manipulate the set and make it immutable again using the <xref:System.Collections.Immutable.ImmutableSortedSet%601.Builder.ToImmutable%2A> method. This will not change the original immutable sorted set.
+
  ]]></format>
     </remarks>
     <threadsafe>This type is thread safe.</threadsafe>
@@ -86,10 +91,13 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
+        <AssemblyVersion>1.2.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableSortedSet&lt;T&gt;</ReturnType>
@@ -102,11 +110,14 @@
         <summary>Adds the specified value to this immutable sorted set.</summary>
         <returns>A new set with the element added, or this set if the element is already in this set.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- **NuGet package**: <see href="https://www.nuget.org/packages/System.Collections.Immutable/">System.Collections.Immutable</see> (<see href="https://docs.microsoft.com/dotnet/api/system.collections.immutable?#remarks">about immutable collections and how to install</see>)  
-  
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+[System.Collections.Immutable NuGet package](https://www.nuget.org/packages/System.Collections.Immutable/)
+
+[About immutable collections and how to install](https://docs.microsoft.com/dotnet/api/system.collections.immutable?#remarks)
+
  ]]></format>
         </remarks>
       </Docs>
@@ -121,10 +132,13 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
+        <AssemblyVersion>1.2.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableSortedSet&lt;T&gt;</ReturnType>
@@ -134,11 +148,14 @@
         <summary>Removes all elements from the immutable sorted set.</summary>
         <returns>An empty set with the elements removed.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- **NuGet package**: <see href="https://www.nuget.org/packages/System.Collections.Immutable/">System.Collections.Immutable</see> (<see href="https://docs.microsoft.com/dotnet/api/system.collections.immutable?#remarks">about immutable collections and how to install</see>)  
-  
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+[System.Collections.Immutable NuGet package](https://www.nuget.org/packages/System.Collections.Immutable/)
+
+[About immutable collections and how to install](https://docs.microsoft.com/dotnet/api/system.collections.immutable?#remarks)
+
  ]]></format>
         </remarks>
       </Docs>
@@ -157,10 +174,13 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
+        <AssemblyVersion>1.2.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -174,11 +194,14 @@
         <returns>
           <see langword="true" /> if the set contains the specified value; otherwise, <see langword="false" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- **NuGet package**: <see href="https://www.nuget.org/packages/System.Collections.Immutable/">System.Collections.Immutable</see> (<see href="https://docs.microsoft.com/dotnet/api/system.collections.immutable?#remarks">about immutable collections and how to install</see>)  
-  
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+[System.Collections.Immutable NuGet package](https://www.nuget.org/packages/System.Collections.Immutable/)
+
+[About immutable collections and how to install](https://docs.microsoft.com/dotnet/api/system.collections.immutable?#remarks)
+
  ]]></format>
         </remarks>
       </Docs>
@@ -198,10 +221,13 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
+        <AssemblyVersion>1.2.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -210,11 +236,14 @@
         <summary>Gets the number of elements in the immutable sorted set.</summary>
         <value>The number of elements in the immutable sorted set.</value>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- **NuGet package**: <see href="https://www.nuget.org/packages/System.Collections.Immutable/">System.Collections.Immutable</see> (<see href="https://docs.microsoft.com/dotnet/api/system.collections.immutable?#remarks">about immutable collections and how to install</see>)  
-  
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+[System.Collections.Immutable NuGet package](https://www.nuget.org/packages/System.Collections.Immutable/)
+
+[About immutable collections and how to install](https://docs.microsoft.com/dotnet/api/system.collections.immutable?#remarks)
+
  ]]></format>
         </remarks>
       </Docs>
@@ -229,10 +258,13 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
+        <AssemblyVersion>1.2.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableSortedSet&lt;T&gt;</ReturnType>
@@ -252,10 +284,13 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
+        <AssemblyVersion>1.2.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableSortedSet&lt;T&gt;</ReturnType>
@@ -268,29 +303,38 @@
         <summary>Removes a specified set of items from this immutable sorted set.</summary>
         <returns>A new set with the items removed; or the original set if none of the items were in the set.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- **NuGet package**: <see href="https://www.nuget.org/packages/System.Collections.Immutable/">System.Collections.Immutable</see> (<see href="https://docs.microsoft.com/dotnet/api/system.collections.immutable?#remarks">about immutable collections and how to install</see>)  
-  
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+[System.Collections.Immutable NuGet package](https://www.nuget.org/packages/System.Collections.Immutable/)
+
+[About immutable collections and how to install](https://docs.microsoft.com/dotnet/api/system.collections.immutable?#remarks)
+
  ]]></format>
         </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
       <MemberSignature Language="C#" Value="public System.Collections.Immutable.ImmutableSortedSet&lt;T&gt;.Enumerator GetEnumerator ();" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Collections.Immutable.ImmutableSortedSet`1/Enumerator&lt;!T&gt; GetEnumerator() cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Collections.Immutable.ImmutableSortedSet`1/Enumerator&lt;!T&gt; GetEnumerator() cil managed" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableSortedSet`1.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As ImmutableSortedSet(Of T).Enumerator" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Immutable::ImmutableSortedSet&lt;T&gt;::Enumerator GetEnumerator();" />
-      <MemberSignature Language="F#" Value="member this.GetEnumerator : unit -&gt; System.Collections.Immutable.ImmutableSortedSet&lt;'T&gt;.Enumerator" Usage="immutableSortedSet.GetEnumerator " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::Immutable::ImmutableSortedSet&lt;T&gt;::Enumerator GetEnumerator();" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.Immutable.ImmutableSortedSet&lt;'T&gt;.Enumerator&#xA;override this.GetEnumerator : unit -&gt; System.Collections.Immutable.ImmutableSortedSet&lt;'T&gt;.Enumerator" Usage="immutableSortedSet.GetEnumerator " FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Collections.Immutable.ImmutableSortedSet`1/Enumerator&lt;!T&gt; GetEnumerator() cil managed" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Immutable::ImmutableSortedSet&lt;T&gt;::Enumerator GetEnumerator();" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1" />
+      <MemberSignature Language="F#" Value="member this.GetEnumerator : unit -&gt; System.Collections.Immutable.ImmutableSortedSet&lt;'T&gt;.Enumerator" Usage="immutableSortedSet.GetEnumerator " FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
+        <AssemblyVersion>1.2.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableSortedSet&lt;T&gt;+Enumerator</ReturnType>
@@ -300,15 +344,17 @@
         <summary>Returns an enumerator that iterates through the immutable sorted set.</summary>
         <returns>An enumerator that can be used to iterate through the set.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
 > [!CAUTION]
->  When you  use this enumerator as a value type (that is, when it isn't boxed), do not copy it by assigning it to a second variable or by passing it to another method. When this enumerator is disposed of, it returns a mutable reference type stack to a resource pool, and if the value type enumerator is copied (which can easily happen unintentionally if you pass the value around), there is a risk that a stack that has already been returned to the resource pool may still be in use by one of the enumerator copies, leading to data corruption and exceptions.  
-  
- **NuGet package**: <see href="https://www.nuget.org/packages/System.Collections.Immutable/">System.Collections.Immutable</see> (<see href="https://docs.microsoft.com/dotnet/api/system.collections.immutable?#remarks">about immutable collections and how to install</see>)  
-  
+>  When you  use this enumerator as a value type (that is, when it isn't boxed), do not copy it by assigning it to a second variable or by passing it to another method. When this enumerator is disposed of, it returns a mutable reference type stack to a resource pool, and if the value type enumerator is copied (which can easily happen unintentionally if you pass the value around), there is a risk that a stack that has already been returned to the resource pool may still be in use by one of the enumerator copies, leading to data corruption and exceptions.
+
+[System.Collections.Immutable NuGet package](https://www.nuget.org/packages/System.Collections.Immutable/)
+
+[About immutable collections and how to install](https://docs.microsoft.com/dotnet/api/system.collections.immutable?#remarks)
+
  ]]></format>
         </remarks>
       </Docs>
@@ -326,10 +372,13 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
+        <AssemblyVersion>1.2.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -342,11 +391,14 @@
         <summary>Gets the position within this immutable sorted set that the specified value appears in.</summary>
         <returns>The index of the specified <paramref name="item" /> in the sorted set, if <paramref name="item" /> is found. If <paramref name="item" /> is not found and is less than one or more elements in this set, this method returns a negative number that is the bitwise complement of the index of the first element that is larger than value. If <paramref name="item" /> is not found and is greater than any of the elements in the set, this method returns a negative number that is the bitwise complement of the index of the last element plus 1.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- **NuGet package**: <see href="https://www.nuget.org/packages/System.Collections.Immutable/">System.Collections.Immutable</see> (<see href="https://docs.microsoft.com/dotnet/api/system.collections.immutable?#remarks">about immutable collections and how to install</see>)  
-  
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+[System.Collections.Immutable NuGet package](https://www.nuget.org/packages/System.Collections.Immutable/)
+
+[About immutable collections and how to install](https://docs.microsoft.com/dotnet/api/system.collections.immutable?#remarks)
+
  ]]></format>
         </remarks>
       </Docs>
@@ -361,10 +413,13 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
+        <AssemblyVersion>1.2.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableSortedSet&lt;T&gt;</ReturnType>
@@ -377,11 +432,14 @@
         <summary>Creates an immutable sorted set that contains elements that exist both in this set and in the specified set.</summary>
         <returns>A new immutable sorted set that contains any elements that exist in both sets.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- **NuGet package**: <see href="https://www.nuget.org/packages/System.Collections.Immutable/">System.Collections.Immutable</see> (<see href="https://docs.microsoft.com/dotnet/api/system.collections.immutable?#remarks">about immutable collections and how to install</see>)  
-  
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+[System.Collections.Immutable NuGet package](https://www.nuget.org/packages/System.Collections.Immutable/)
+
+[About immutable collections and how to install](https://docs.microsoft.com/dotnet/api/system.collections.immutable?#remarks)
+
  ]]></format>
         </remarks>
       </Docs>
@@ -396,10 +454,13 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
+        <AssemblyVersion>1.2.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -409,11 +470,14 @@
         <value>
           <see langword="true" /> if this set is empty; otherwise, <see langword="false" />.</value>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- **NuGet package**: <see href="https://www.nuget.org/packages/System.Collections.Immutable/">System.Collections.Immutable</see> (<see href="https://docs.microsoft.com/dotnet/api/system.collections.immutable?#remarks">about immutable collections and how to install</see>)  
-  
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+[System.Collections.Immutable NuGet package](https://www.nuget.org/packages/System.Collections.Immutable/)
+
+[About immutable collections and how to install](https://docs.microsoft.com/dotnet/api/system.collections.immutable?#remarks)
+
  ]]></format>
         </remarks>
       </Docs>
@@ -432,10 +496,13 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
+        <AssemblyVersion>1.2.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -449,13 +516,15 @@
         <returns>
           <see langword="true" /> if the current set is a proper subset of <paramref name="other" />; otherwise, <see langword="false" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- An empty set is a proper subset of any other collection. Therefore, this method returns `true` if the current set is empty, unless the `other` collection is also empty.  
-  
- **NuGet package**: <see href="https://www.nuget.org/packages/System.Collections.Immutable/">System.Collections.Immutable</see> (<see href="https://docs.microsoft.com/dotnet/api/system.collections.immutable?#remarks">about immutable collections and how to install</see>)  
-  
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+An empty set is a proper subset of any other collection. Therefore, this method returns `true` if the current set is empty, unless the `other` collection is also empty.
+
+[System.Collections.Immutable NuGet package](https://www.nuget.org/packages/System.Collections.Immutable/)
+
+[About immutable collections and how to install](https://docs.microsoft.com/dotnet/api/system.collections.immutable?#remarks)
+
  ]]></format>
         </remarks>
       </Docs>
@@ -474,10 +543,13 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
+        <AssemblyVersion>1.2.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -491,13 +563,16 @@
         <returns>
           <see langword="true" /> if the current set is a proper superset of <paramref name="other" />; otherwise, <see langword="false" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- An empty set is a proper superset of any other collection. Therefore, this method returns `true` if the collection represented by the `other` parameter is empty, unless the current set is also empty.  
-  
- **NuGet package**: <see href="https://www.nuget.org/packages/System.Collections.Immutable/">System.Collections.Immutable</see> (<see href="https://docs.microsoft.com/dotnet/api/system.collections.immutable?#remarks">about immutable collections and how to install</see>)  
-  
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+An empty set is a proper superset of any other collection. Therefore, this method returns `true` if the collection represented by the `other` parameter is empty, unless the current set is also empty.
+
+[System.Collections.Immutable NuGet package](https://www.nuget.org/packages/System.Collections.Immutable/)
+
+[About immutable collections and how to install](https://docs.microsoft.com/dotnet/api/system.collections.immutable?#remarks)
+
  ]]></format>
         </remarks>
       </Docs>
@@ -516,10 +591,13 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
+        <AssemblyVersion>1.2.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -533,13 +611,16 @@
         <returns>
           <see langword="true" /> if the current set is a subset of <paramref name="other" />; otherwise, <see langword="false" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- An empty set is a subset of any other set, including another empty set. Therefore, this method returns `true` if the current set is empty, even if the `other` collection is also empty.  
-  
- **NuGet package**: <see href="https://www.nuget.org/packages/System.Collections.Immutable/">System.Collections.Immutable</see> (<see href="https://docs.microsoft.com/dotnet/api/system.collections.immutable?#remarks">about immutable collections and how to install</see>)  
-  
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+An empty set is a subset of any other set, including another empty set. Therefore, this method returns `true` if the current set is empty, even if the `other` collection is also empty.
+
+[System.Collections.Immutable NuGet package](https://www.nuget.org/packages/System.Collections.Immutable/)
+
+[About immutable collections and how to install](https://docs.microsoft.com/dotnet/api/system.collections.immutable?#remarks)
+
  ]]></format>
         </remarks>
       </Docs>
@@ -558,10 +639,13 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
+        <AssemblyVersion>1.2.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -575,13 +659,16 @@
         <returns>
           <see langword="true" /> if the current set is a superset of <paramref name="other" />; otherwise, <see langword="false" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- All collections, including empty sets, are supersets of an empty set. Therefore, this method returns `true` if the collection represented by the `other` parameter is empty, even if the current sorted set is empty.  
-  
- **NuGet package**: <see href="https://www.nuget.org/packages/System.Collections.Immutable/">System.Collections.Immutable</see> (<see href="https://docs.microsoft.com/dotnet/api/system.collections.immutable?#remarks">about immutable collections and how to install</see>)  
-  
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+All collections, including empty sets, are supersets of an empty set. Therefore, this method returns `true` if the collection represented by the `other` parameter is empty, even if the current sorted set is empty.
+
+[System.Collections.Immutable NuGet package](https://www.nuget.org/packages/System.Collections.Immutable/)
+
+[About immutable collections and how to install](https://docs.microsoft.com/dotnet/api/system.collections.immutable?#remarks)
+
  ]]></format>
         </remarks>
       </Docs>
@@ -599,10 +686,13 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
+        <AssemblyVersion>1.2.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>
@@ -615,42 +705,47 @@
         <summary>Gets the element of the immutable sorted set at the given index.</summary>
         <value>The element at the given index.</value>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- **NuGet package**: <see href="https://www.nuget.org/packages/System.Collections.Immutable/">System.Collections.Immutable</see> (<see href="https://docs.microsoft.com/dotnet/api/system.collections.immutable?#remarks">about immutable collections and how to install</see>)  
-  
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+[System.Collections.Immutable NuGet package](https://www.nuget.org/packages/System.Collections.Immutable/)
+
+[About immutable collections and how to install](https://docs.microsoft.com/dotnet/api/system.collections.immutable?#remarks)
+
  ]]></format>
         </remarks>
       </Docs>
     </Member>
     <Member MemberName="ItemRef">
-      <MemberSignature Language="C#" Value="public T&amp; ItemRef (int index);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance T&amp; modreq(System.Runtime.InteropServices.InAttribute) ItemRef(int32 index) cil managed" />
+      <MemberSignature Language="C#" Value="public ref readonly T ItemRef (int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !T ItemRef(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableSortedSet`1.ItemRef(System.Int32)" />
-      <MemberSignature Language="VB.NET" Value="Public Function ItemRef (index As Integer) As T&amp;" />
+      <MemberSignature Language="VB.NET" Value="Public Function ItemRef (index As Integer) As T" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; T&amp; ^ ItemRef(int index);" />
-      <MemberSignature Language="F#" Value="member this.ItemRef : int -&gt; T&amp;" Usage="immutableSortedSet.ItemRef index" />
+      <MemberSignature Language="F#" Value="member this.ItemRef : int -&gt; 'T" Usage="immutableSortedSet.ItemRef index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
+        <AssemblyVersion>1.2.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue RefType="Readonly">
         <ReturnType>T</ReturnType>
         <Attributes>
-          <Attribute FrameworkAlternate="netcore-2.2">
+          <Attribute FrameworkAlternate="netcore-2.1">
             <AttributeName>System.Runtime.CompilerServices.IsReadOnly</AttributeName>
           </Attribute>
         </Attributes>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="index" Type="System.Int32" Index="0" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="index">The 0-based index of the element in the set to return.</param>
+        <summary>Gets a read-only reference of the element of the set at the given <paramref name="index" />.</summary>
+        <returns>A read-only reference of the element at the given position.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -664,10 +759,13 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
+        <AssemblyVersion>1.2.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IComparer&lt;T&gt;</ReturnType>
@@ -676,11 +774,14 @@
         <summary>Gets the comparer used to sort keys in the immutable sorted set.</summary>
         <value>The comparer used to sort keys.</value>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- **NuGet package**: <see href="https://www.nuget.org/packages/System.Collections.Immutable/">System.Collections.Immutable</see> (<see href="https://docs.microsoft.com/dotnet/api/system.collections.immutable?#remarks">about immutable collections and how to install</see>)  
-  
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+[System.Collections.Immutable NuGet package](https://www.nuget.org/packages/System.Collections.Immutable/)
+
+[About immutable collections and how to install](https://docs.microsoft.com/dotnet/api/system.collections.immutable?#remarks)
+
  ]]></format>
         </remarks>
       </Docs>
@@ -695,10 +796,13 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
+        <AssemblyVersion>1.2.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>
@@ -707,11 +811,14 @@
         <summary>Gets the maximum value in the immutable sorted set, as defined by the comparer.</summary>
         <value>The maximum value in the set.</value>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- **NuGet package**: <see href="https://www.nuget.org/packages/System.Collections.Immutable/">System.Collections.Immutable</see> (<see href="https://docs.microsoft.com/dotnet/api/system.collections.immutable?#remarks">about immutable collections and how to install</see>)  
-  
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+[System.Collections.Immutable NuGet package](https://www.nuget.org/packages/System.Collections.Immutable/)
+
+[About immutable collections and how to install](https://docs.microsoft.com/dotnet/api/system.collections.immutable?#remarks)
+
  ]]></format>
         </remarks>
       </Docs>
@@ -726,10 +833,13 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
+        <AssemblyVersion>1.2.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>
@@ -738,11 +848,14 @@
         <summary>Gets the minimum value in the immutable sorted set, as defined by the comparer.</summary>
         <value>The minimum value in the set.</value>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- **NuGet package**: <see href="https://www.nuget.org/packages/System.Collections.Immutable/">System.Collections.Immutable</see> (<see href="https://docs.microsoft.com/dotnet/api/system.collections.immutable?#remarks">about immutable collections and how to install</see>)  
-  
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+[System.Collections.Immutable NuGet package](https://www.nuget.org/packages/System.Collections.Immutable/)
+
+[About immutable collections and how to install](https://docs.microsoft.com/dotnet/api/system.collections.immutable?#remarks)
+
  ]]></format>
         </remarks>
       </Docs>
@@ -761,10 +874,13 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
+        <AssemblyVersion>1.2.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -778,11 +894,14 @@
         <returns>
           <see langword="true" /> if the current set and <paramref name="other" /> share at least one common element; otherwise, <see langword="false" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- **NuGet package**: <see href="https://www.nuget.org/packages/System.Collections.Immutable/">System.Collections.Immutable</see> (<see href="https://docs.microsoft.com/dotnet/api/system.collections.immutable?#remarks">about immutable collections and how to install</see>)  
-  
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+[System.Collections.Immutable NuGet package](https://www.nuget.org/packages/System.Collections.Immutable/)
+
+[About immutable collections and how to install](https://docs.microsoft.com/dotnet/api/system.collections.immutable?#remarks)
+
  ]]></format>
         </remarks>
       </Docs>
@@ -797,10 +916,13 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
+        <AssemblyVersion>1.2.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableSortedSet&lt;T&gt;</ReturnType>
@@ -813,11 +935,14 @@
         <summary>Removes the specified value from this immutable sorted set.</summary>
         <returns>A new immutable sorted set with the element removed, or this set if the element was not found in the set.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- **NuGet package**: <see href="https://www.nuget.org/packages/System.Collections.Immutable/">System.Collections.Immutable</see> (<see href="https://docs.microsoft.com/dotnet/api/system.collections.immutable?#remarks">about immutable collections and how to install</see>)  
-  
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+[System.Collections.Immutable NuGet package](https://www.nuget.org/packages/System.Collections.Immutable/)
+
+[About immutable collections and how to install](https://docs.microsoft.com/dotnet/api/system.collections.immutable?#remarks)
+
  ]]></format>
         </remarks>
       </Docs>
@@ -832,10 +957,13 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
+        <AssemblyVersion>1.2.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerable&lt;T&gt;</ReturnType>
@@ -845,11 +973,14 @@
         <summary>Returns an <see cref="T:System.Collections.Generic.IEnumerable`1" /> that iterates over this immutable sorted set in reverse order.</summary>
         <returns>An enumerator that iterates over the immutable sorted set in reverse order.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- **NuGet package**: <see href="https://www.nuget.org/packages/System.Collections.Immutable/">System.Collections.Immutable</see> (<see href="https://docs.microsoft.com/dotnet/api/system.collections.immutable?#remarks">about immutable collections and how to install</see>)  
-  
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+[System.Collections.Immutable NuGet package](https://www.nuget.org/packages/System.Collections.Immutable/)
+
+[About immutable collections and how to install](https://docs.microsoft.com/dotnet/api/system.collections.immutable?#remarks)
+
  ]]></format>
         </remarks>
       </Docs>
@@ -868,10 +999,13 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
+        <AssemblyVersion>1.2.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -885,11 +1019,14 @@
         <returns>
           <see langword="true" /> if the sets are equal; otherwise, <see langword="false" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- **NuGet package**: <see href="https://www.nuget.org/packages/System.Collections.Immutable/">System.Collections.Immutable</see> (<see href="https://docs.microsoft.com/dotnet/api/system.collections.immutable?#remarks">about immutable collections and how to install</see>)  
-  
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+[System.Collections.Immutable NuGet package](https://www.nuget.org/packages/System.Collections.Immutable/)
+
+[About immutable collections and how to install](https://docs.microsoft.com/dotnet/api/system.collections.immutable?#remarks)
+
  ]]></format>
         </remarks>
       </Docs>
@@ -904,10 +1041,13 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
+        <AssemblyVersion>1.2.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableSortedSet&lt;T&gt;</ReturnType>
@@ -920,11 +1060,14 @@
         <summary>Creates an immutable sorted set that contains elements that exist either in this set or in a given sequence, but not both.</summary>
         <returns>The new immutable sorted set.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- **NuGet package**: <see href="https://www.nuget.org/packages/System.Collections.Immutable/">System.Collections.Immutable</see> (<see href="https://docs.microsoft.com/dotnet/api/system.collections.immutable?#remarks">about immutable collections and how to install</see>)  
-  
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+[System.Collections.Immutable NuGet package](https://www.nuget.org/packages/System.Collections.Immutable/)
+
+[About immutable collections and how to install](https://docs.microsoft.com/dotnet/api/system.collections.immutable?#remarks)
+
  ]]></format>
         </remarks>
       </Docs>
@@ -941,10 +1084,13 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
+        <AssemblyVersion>1.2.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -956,13 +1102,16 @@
         <param name="item">The value to add.</param>
         <summary>Adds the specified value to the collection.</summary>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableSortedSet%601> instance is cast to an <xref:System.Collections.Generic.ICollection%601> interface.  
-  
- **NuGet package**: <see href="https://www.nuget.org/packages/System.Collections.Immutable/">System.Collections.Immutable</see> (<see href="https://docs.microsoft.com/dotnet/api/system.collections.immutable?#remarks">about immutable collections and how to install</see>)  
-  
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableSortedSet%601> instance is cast to an <xref:System.Collections.Generic.ICollection%601> interface.
+
+[System.Collections.Immutable NuGet package](https://www.nuget.org/packages/System.Collections.Immutable/)
+
+[About immutable collections and how to install](https://docs.microsoft.com/dotnet/api/system.collections.immutable?#remarks)
+
  ]]></format>
         </remarks>
       </Docs>
@@ -979,10 +1128,13 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
+        <AssemblyVersion>1.2.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -991,13 +1143,16 @@
       <Docs>
         <summary>Removes all the items from the collection.</summary>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableSortedSet%601> instance is cast to an <xref:System.Collections.Generic.ICollection%601> interface.  
-  
- **NuGet package**: <see href="https://www.nuget.org/packages/System.Collections.Immutable/">System.Collections.Immutable</see> (<see href="https://docs.microsoft.com/dotnet/api/system.collections.immutable?#remarks">about immutable collections and how to install</see>)  
-  
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableSortedSet%601> instance is cast to an <xref:System.Collections.Generic.ICollection%601> interface.
+
+[System.Collections.Immutable NuGet package](https://www.nuget.org/packages/System.Collections.Immutable/)
+
+[About immutable collections and how to install](https://docs.microsoft.com/dotnet/api/system.collections.immutable?#remarks)
+
  ]]></format>
         </remarks>
       </Docs>
@@ -1014,10 +1169,13 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
+        <AssemblyVersion>1.2.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1031,13 +1189,16 @@
         <param name="arrayIndex">The zero-based index in <paramref name="array" /> at which copying begins.</param>
         <summary>Copies the elements of the collection to an array, starting at a particular array index.</summary>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableSortedSet%601> instance is cast to an <xref:System.Collections.Generic.ICollection%601> interface.  
-  
- **NuGet package**: <see href="https://www.nuget.org/packages/System.Collections.Immutable/">System.Collections.Immutable</see> (<see href="https://docs.microsoft.com/dotnet/api/system.collections.immutable?#remarks">about immutable collections and how to install</see>)  
-  
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableSortedSet%601> instance is cast to an <xref:System.Collections.Generic.ICollection%601> interface.
+
+[System.Collections.Immutable NuGet package](https://www.nuget.org/packages/System.Collections.Immutable/)
+
+[About immutable collections and how to install](https://docs.microsoft.com/dotnet/api/system.collections.immutable?#remarks)
+
  ]]></format>
         </remarks>
       </Docs>
@@ -1055,10 +1216,13 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
+        <AssemblyVersion>1.2.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -1081,10 +1245,13 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
+        <AssemblyVersion>1.2.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -1098,13 +1265,16 @@
         <returns>
           <see langword="true" /> if <paramref name="item" /> was successfully removed from the collection; otherwise, <see langword="false" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableSortedSet%601> instance is cast to an <xref:System.Collections.Generic.ICollection%601> interface.  
-  
- **NuGet package**: <see href="https://www.nuget.org/packages/System.Collections.Immutable/">System.Collections.Immutable</see> (<see href="https://docs.microsoft.com/dotnet/api/system.collections.immutable?#remarks">about immutable collections and how to install</see>)  
-  
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableSortedSet%601> instance is cast to an <xref:System.Collections.Generic.ICollection%601> interface.
+
+[System.Collections.Immutable NuGet package](https://www.nuget.org/packages/System.Collections.Immutable/)
+
+[About immutable collections and how to install](https://docs.microsoft.com/dotnet/api/system.collections.immutable?#remarks)
+
  ]]></format>
         </remarks>
       </Docs>
@@ -1121,10 +1291,13 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
+        <AssemblyVersion>1.2.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerator&lt;T&gt;</ReturnType>
@@ -1134,13 +1307,16 @@
         <summary>Returns an enumerator that iterates through the collection.</summary>
         <returns>An enumerator that can be used to iterate through the collection.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableSortedSet%601> instance is cast to an <xref:System.Collections.Generic.IEnumerable%601> interface.  
-  
- **NuGet package**: <see href="https://www.nuget.org/packages/System.Collections.Immutable/">System.Collections.Immutable</see> (<see href="https://docs.microsoft.com/dotnet/api/system.collections.immutable?#remarks">about immutable collections and how to install</see>)  
-  
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableSortedSet%601> instance is cast to an <xref:System.Collections.Generic.IEnumerable%601> interface.
+
+[System.Collections.Immutable NuGet package](https://www.nuget.org/packages/System.Collections.Immutable/)
+
+[About immutable collections and how to install](https://docs.microsoft.com/dotnet/api/system.collections.immutable?#remarks)
+
  ]]></format>
         </remarks>
       </Docs>
@@ -1157,10 +1333,13 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
+        <AssemblyVersion>1.2.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1174,13 +1353,16 @@
         <param name="item">The object to insert into the set.</param>
         <summary>Inserts an item in the set at the specified index.</summary>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableSortedSet%601> instance is cast to an <xref:System.Collections.Generic.IList%601> interface.  
-  
- **NuGet package**: <see href="https://www.nuget.org/packages/System.Collections.Immutable/">System.Collections.Immutable</see> (<see href="https://docs.microsoft.com/dotnet/api/system.collections.immutable?#remarks">about immutable collections and how to install</see>)  
-  
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableSortedSet%601> instance is cast to an <xref:System.Collections.Generic.IList%601> interface.
+
+[System.Collections.Immutable NuGet package](https://www.nuget.org/packages/System.Collections.Immutable/)
+
+[About immutable collections and how to install](https://docs.microsoft.com/dotnet/api/system.collections.immutable?#remarks)
+
  ]]></format>
         </remarks>
       </Docs>
@@ -1198,10 +1380,13 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
+        <AssemblyVersion>1.2.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>
@@ -1228,10 +1413,13 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
+        <AssemblyVersion>1.2.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1243,13 +1431,16 @@
         <param name="index">The zero-based index of the item to remove.</param>
         <summary>Removes the  item at the specified index.</summary>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableSortedSet%601> instance is cast to an <xref:System.Collections.Generic.IList%601> interface.  
-  
- **NuGet package**: <see href="https://www.nuget.org/packages/System.Collections.Immutable/">System.Collections.Immutable</see> (<see href="https://docs.microsoft.com/dotnet/api/system.collections.immutable?#remarks">about immutable collections and how to install</see>)  
-  
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableSortedSet%601> instance is cast to an <xref:System.Collections.Generic.IList%601> interface.
+
+[System.Collections.Immutable NuGet package](https://www.nuget.org/packages/System.Collections.Immutable/)
+
+[About immutable collections and how to install](https://docs.microsoft.com/dotnet/api/system.collections.immutable?#remarks)
+
  ]]></format>
         </remarks>
       </Docs>
@@ -1266,10 +1457,13 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
+        <AssemblyVersion>1.2.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -1283,13 +1477,16 @@
         <returns>
           <see langword="true" /> if the element is added to the set; <see langword="false" /> if the element is already in the set.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableSortedSet%601> instance is cast to an <xref:System.Collections.Generic.ISet%601> interface.  
-  
- **NuGet package**: <see href="https://www.nuget.org/packages/System.Collections.Immutable/">System.Collections.Immutable</see> (<see href="https://docs.microsoft.com/dotnet/api/system.collections.immutable?#remarks">about immutable collections and how to install</see>)  
-  
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableSortedSet%601> instance is cast to an <xref:System.Collections.Generic.ISet%601> interface.
+
+[System.Collections.Immutable NuGet package](https://www.nuget.org/packages/System.Collections.Immutable/)
+
+[About immutable collections and how to install](https://docs.microsoft.com/dotnet/api/system.collections.immutable?#remarks)
+
  ]]></format>
         </remarks>
       </Docs>
@@ -1306,10 +1503,13 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
+        <AssemblyVersion>1.2.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1321,13 +1521,16 @@
         <param name="other">The collection of items to remove from the set.</param>
         <summary>Removes all elements in the specified collection from the current set.</summary>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableSortedSet%601> instance is cast to an <xref:System.Collections.Generic.ISet%601> interface.  
-  
- **NuGet package**: <see href="https://www.nuget.org/packages/System.Collections.Immutable/">System.Collections.Immutable</see> (<see href="https://docs.microsoft.com/dotnet/api/system.collections.immutable?#remarks">about immutable collections and how to install</see>)  
-  
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableSortedSet%601> instance is cast to an <xref:System.Collections.Generic.ISet%601> interface.
+
+[System.Collections.Immutable NuGet package](https://www.nuget.org/packages/System.Collections.Immutable/)
+
+[About immutable collections and how to install](https://docs.microsoft.com/dotnet/api/system.collections.immutable?#remarks)
+
  ]]></format>
         </remarks>
       </Docs>
@@ -1344,10 +1547,13 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
+        <AssemblyVersion>1.2.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1357,15 +1563,18 @@
       </Parameters>
       <Docs>
         <param name="other">The collection to compare to the current set.</param>
-        <summary>Modifies the current set so that it contains only elements that are also in a specified collection</summary>
+        <summary>Modifies the current set so that it contains only elements that are also in a specified collection.</summary>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableSortedSet%601> instance is cast to an <xref:System.Collections.Generic.ISet%601> interface.  
-  
- **NuGet package**: <see href="https://www.nuget.org/packages/System.Collections.Immutable/">System.Collections.Immutable</see> (<see href="https://docs.microsoft.com/dotnet/api/system.collections.immutable?#remarks">about immutable collections and how to install</see>)  
-  
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableSortedSet%601> instance is cast to an <xref:System.Collections.Generic.ISet%601> interface.
+
+[System.Collections.Immutable NuGet package](https://www.nuget.org/packages/System.Collections.Immutable/)
+
+[About immutable collections and how to install](https://docs.microsoft.com/dotnet/api/system.collections.immutable?#remarks)
+
  ]]></format>
         </remarks>
       </Docs>
@@ -1382,10 +1591,13 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
+        <AssemblyVersion>1.2.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1397,13 +1609,16 @@
         <param name="other">The collection to compare to the current set.</param>
         <summary>Modifies the current set so that it contains only elements that are present either in the current set or in the specified collection, but not both.</summary>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableSortedSet%601> instance is cast to an <xref:System.Collections.Generic.ISet%601> interface.  
-  
- **NuGet package**: <see href="https://www.nuget.org/packages/System.Collections.Immutable/">System.Collections.Immutable</see> (<see href="https://docs.microsoft.com/dotnet/api/system.collections.immutable?#remarks">about immutable collections and how to install</see>)  
-  
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableSortedSet%601> instance is cast to an <xref:System.Collections.Generic.ISet%601> interface.
+
+[System.Collections.Immutable NuGet package](https://www.nuget.org/packages/System.Collections.Immutable/)
+
+[About immutable collections and how to install](https://docs.microsoft.com/dotnet/api/system.collections.immutable?#remarks)
+
  ]]></format>
         </remarks>
       </Docs>
@@ -1420,10 +1635,13 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
+        <AssemblyVersion>1.2.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1435,13 +1653,16 @@
         <param name="other">The collection to compare to the current set.</param>
         <summary>Modifies the current set so that it contains all elements that are present in either the current set or the specified collection.</summary>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableSortedSet%601> instance is cast to an <xref:System.Collections.Generic.ISet%601> interface.  
-  
- **NuGet package**: <see href="https://www.nuget.org/packages/System.Collections.Immutable/">System.Collections.Immutable</see> (<see href="https://docs.microsoft.com/dotnet/api/system.collections.immutable?#remarks">about immutable collections and how to install</see>)  
-  
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableSortedSet%601> instance is cast to an <xref:System.Collections.Generic.ISet%601> interface.
+
+[System.Collections.Immutable NuGet package](https://www.nuget.org/packages/System.Collections.Immutable/)
+
+[About immutable collections and how to install](https://docs.microsoft.com/dotnet/api/system.collections.immutable?#remarks)
+
  ]]></format>
         </remarks>
       </Docs>
@@ -1457,10 +1678,13 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
+        <AssemblyVersion>1.2.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1474,13 +1698,16 @@
         <param name="index">The zero-based index in <paramref name="array" /> at which copying begins.</param>
         <summary>Copies the elements of the set to an array, starting at a particular array index.</summary>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableSortedSet%601> instance is cast to an <xref:System.Collections.ICollection> interface.  
-  
- **NuGet package**: <see href="https://www.nuget.org/packages/System.Collections.Immutable/">System.Collections.Immutable</see> (<see href="https://docs.microsoft.com/dotnet/api/system.collections.immutable?#remarks">about immutable collections and how to install</see>)  
-  
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableSortedSet%601> instance is cast to an <xref:System.Collections.ICollection> interface.
+
+[System.Collections.Immutable NuGet package](https://www.nuget.org/packages/System.Collections.Immutable/)
+
+[About immutable collections and how to install](https://docs.microsoft.com/dotnet/api/system.collections.immutable?#remarks)
+
  ]]></format>
         </remarks>
       </Docs>
@@ -1498,13 +1725,16 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
+        <AssemblyVersion>1.2.5.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1">
+        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;dotnet-uwp-10.0">
           <AttributeName>System.Diagnostics.DebuggerBrowsable(System.Diagnostics.DebuggerBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
@@ -1530,13 +1760,16 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
+        <AssemblyVersion>1.2.5.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1">
+        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;dotnet-uwp-10.0">
           <AttributeName>System.Diagnostics.DebuggerBrowsable(System.Diagnostics.DebuggerBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
@@ -1561,10 +1794,13 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
+        <AssemblyVersion>1.2.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.IEnumerator</ReturnType>
@@ -1574,13 +1810,16 @@
         <summary>Returns an enumerator that iterates through a collection.</summary>
         <returns>An enumerator object that can be used to iterate through the collection.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableSortedSet%601> instance is cast to an <xref:System.Collections.IEnumerable> interface.  
-  
- **NuGet package**: <see href="https://www.nuget.org/packages/System.Collections.Immutable/">System.Collections.Immutable</see> (<see href="https://docs.microsoft.com/dotnet/api/system.collections.immutable?#remarks">about immutable collections and how to install</see>)  
-  
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableSortedSet%601> instance is cast to an <xref:System.Collections.IEnumerable> interface.
+
+[System.Collections.Immutable NuGet package](https://www.nuget.org/packages/System.Collections.Immutable/)
+
+[About immutable collections and how to install](https://docs.microsoft.com/dotnet/api/system.collections.immutable?#remarks)
+
  ]]></format>
         </remarks>
       </Docs>
@@ -1597,10 +1836,13 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
+        <AssemblyVersion>1.2.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -1613,13 +1855,16 @@
         <summary>Adds an item to the set.</summary>
         <returns>The position into which the new element was inserted, or -1 to indicate that the item was not inserted into the collection.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableSortedSet%601> instance is cast to an <xref:System.Collections.IList> interface.  
-  
- **NuGet package**: <see href="https://www.nuget.org/packages/System.Collections.Immutable/">System.Collections.Immutable</see> (<see href="https://docs.microsoft.com/dotnet/api/system.collections.immutable?#remarks">about immutable collections and how to install</see>)  
-  
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableSortedSet%601> instance is cast to an <xref:System.Collections.IList> interface.
+
+[System.Collections.Immutable NuGet package](https://www.nuget.org/packages/System.Collections.Immutable/)
+
+[About immutable collections and how to install](https://docs.microsoft.com/dotnet/api/system.collections.immutable?#remarks)
+
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The set is read-only or has a fixed size.</exception>
@@ -1637,10 +1882,13 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
+        <AssemblyVersion>1.2.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1649,15 +1897,19 @@
       <Docs>
         <summary>Removes all items from the set.</summary>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableSortedSet%601> instance is cast to an <xref:System.Collections.IList> interface.  
-  
- **NuGet package**: <see href="https://www.nuget.org/packages/System.Collections.Immutable/">System.Collections.Immutable</see> (<see href="https://docs.microsoft.com/dotnet/api/system.collections.immutable?#remarks">about immutable collections and how to install</see>)  
-  
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableSortedSet%601> instance is cast to an <xref:System.Collections.IList> interface.
+
+[System.Collections.Immutable NuGet package](https://www.nuget.org/packages/System.Collections.Immutable/)
+
+[About immutable collections and how to install](https://docs.microsoft.com/dotnet/api/system.collections.immutable?#remarks)
+
  ]]></format>
         </remarks>
+        <exception cref="T:System.NotSupportedException">Thrown in all cases.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Contains">
@@ -1672,10 +1924,13 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
+        <AssemblyVersion>1.2.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -1689,13 +1944,16 @@
         <returns>
           <see langword="true" /> if the object is found in the set; otherwise, <see langword="false" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableSortedSet%601> instance is cast to an <xref:System.Collections.IList> interface.  
-  
- **NuGet package**: <see href="https://www.nuget.org/packages/System.Collections.Immutable/">System.Collections.Immutable</see> (<see href="https://docs.microsoft.com/dotnet/api/system.collections.immutable?#remarks">about immutable collections and how to install</see>)  
-  
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableSortedSet%601> instance is cast to an <xref:System.Collections.IList> interface.
+
+[System.Collections.Immutable NuGet package](https://www.nuget.org/packages/System.Collections.Immutable/)
+
+[About immutable collections and how to install](https://docs.microsoft.com/dotnet/api/system.collections.immutable?#remarks)
+
  ]]></format>
         </remarks>
       </Docs>
@@ -1712,10 +1970,13 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
+        <AssemblyVersion>1.2.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -1728,13 +1989,16 @@
         <summary>Determines the index of a specific item in the set.</summary>
         <returns>The index of <paramref name="value" /> if found in the list; otherwise, -1.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableSortedSet%601> instance is cast to an <xref:System.Collections.IList> interface.  
-  
- **NuGet package**: <see href="https://www.nuget.org/packages/System.Collections.Immutable/">System.Collections.Immutable</see> (<see href="https://docs.microsoft.com/dotnet/api/system.collections.immutable?#remarks">about immutable collections and how to install</see>)  
-  
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableSortedSet%601> instance is cast to an <xref:System.Collections.IList> interface.
+
+[System.Collections.Immutable NuGet package](https://www.nuget.org/packages/System.Collections.Immutable/)
+
+[About immutable collections and how to install](https://docs.microsoft.com/dotnet/api/system.collections.immutable?#remarks)
+
  ]]></format>
         </remarks>
       </Docs>
@@ -1751,10 +2015,13 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
+        <AssemblyVersion>1.2.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1768,13 +2035,16 @@
         <param name="value">The object to insert into the set.</param>
         <summary>Inserts an item into the set at the specified index.</summary>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableSortedSet%601> instance is cast to an <xref:System.Collections.IList> interface.  
-  
- **NuGet package**: <see href="https://www.nuget.org/packages/System.Collections.Immutable/">System.Collections.Immutable</see> (<see href="https://docs.microsoft.com/dotnet/api/system.collections.immutable?#remarks">about immutable collections and how to install</see>)  
-  
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableSortedSet%601> instance is cast to an <xref:System.Collections.IList> interface.
+
+[System.Collections.Immutable NuGet package](https://www.nuget.org/packages/System.Collections.Immutable/)
+
+[About immutable collections and how to install](https://docs.microsoft.com/dotnet/api/system.collections.immutable?#remarks)
+
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The set is read-only or has a fixed size.</exception>
@@ -1793,10 +2063,13 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
+        <AssemblyVersion>1.2.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -1821,10 +2094,13 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
+        <AssemblyVersion>1.2.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -1849,10 +2125,13 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
+        <AssemblyVersion>1.2.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
@@ -1880,10 +2159,13 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
+        <AssemblyVersion>1.2.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1895,13 +2177,16 @@
         <param name="value">The object to remove from the set.</param>
         <summary>Removes the first occurrence of a specific object from the set.</summary>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableSortedSet%601> instance is cast to an <xref:System.Collections.IList> interface.  
-  
- **NuGet package**: <see href="https://www.nuget.org/packages/System.Collections.Immutable/">System.Collections.Immutable</see> (<see href="https://docs.microsoft.com/dotnet/api/system.collections.immutable?#remarks">about immutable collections and how to install</see>)  
-  
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableSortedSet%601> instance is cast to an <xref:System.Collections.IList> interface.
+
+[System.Collections.Immutable NuGet package](https://www.nuget.org/packages/System.Collections.Immutable/)
+
+[About immutable collections and how to install](https://docs.microsoft.com/dotnet/api/system.collections.immutable?#remarks)
+
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The set is read-only or has a fixed size.</exception>
@@ -1919,10 +2204,13 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
+        <AssemblyVersion>1.2.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1934,13 +2222,16 @@
         <param name="index">The zero-based index of the item to remove.</param>
         <summary>Removes the item at the specified index of the set.</summary>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableSortedSet%601> instance is cast to an <xref:System.Collections.IList> interface.  
-  
- **NuGet package**: <see href="https://www.nuget.org/packages/System.Collections.Immutable/">System.Collections.Immutable</see> (<see href="https://docs.microsoft.com/dotnet/api/system.collections.immutable?#remarks">about immutable collections and how to install</see>)  
-  
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableSortedSet%601> instance is cast to an <xref:System.Collections.IList> interface.
+
+[System.Collections.Immutable NuGet package](https://www.nuget.org/packages/System.Collections.Immutable/)
+
+[About immutable collections and how to install](https://docs.microsoft.com/dotnet/api/system.collections.immutable?#remarks)
+
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The set is read-only or has a fixed size.</exception>
@@ -1958,10 +2249,13 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
+        <AssemblyVersion>1.2.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.IImmutableSet&lt;T&gt;</ReturnType>
@@ -1974,13 +2268,16 @@
         <summary>Adds the specified element to this immutable set.</summary>
         <returns>A new set with the element added, or this set if the element is already in the set.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableSortedSet%601> instance is cast to an <xref:System.Collections.Immutable.IImmutableSet%601> interface.  
-  
- **NuGet package**: <see href="https://www.nuget.org/packages/System.Collections.Immutable/">System.Collections.Immutable</see> (<see href="https://docs.microsoft.com/dotnet/api/system.collections.immutable?#remarks">about immutable collections and how to install</see>)  
-  
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableSortedSet%601> instance is cast to an <xref:System.Collections.Immutable.IImmutableSet%601> interface.
+
+[System.Collections.Immutable NuGet package](https://www.nuget.org/packages/System.Collections.Immutable/)
+
+[About immutable collections and how to install](https://docs.microsoft.com/dotnet/api/system.collections.immutable?#remarks)
+
  ]]></format>
         </remarks>
       </Docs>
@@ -1997,10 +2294,13 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
+        <AssemblyVersion>1.2.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.IImmutableSet&lt;T&gt;</ReturnType>
@@ -2010,13 +2310,16 @@
         <summary>Retrieves an empty immutable set that has the same sorting and ordering semantics as this instance.</summary>
         <returns>An empty set that has the same sorting and ordering semantics as this instance.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableSortedSet%601> instance is cast to an <xref:System.Collections.Immutable.IImmutableSet%601> interface.  
-  
- **NuGet package**: <see href="https://www.nuget.org/packages/System.Collections.Immutable/">System.Collections.Immutable</see> (<see href="https://docs.microsoft.com/dotnet/api/system.collections.immutable?#remarks">about immutable collections and how to install</see>)  
-  
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableSortedSet%601> instance is cast to an <xref:System.Collections.Immutable.IImmutableSet%601> interface.
+
+[System.Collections.Immutable NuGet package](https://www.nuget.org/packages/System.Collections.Immutable/)
+
+[About immutable collections and how to install](https://docs.microsoft.com/dotnet/api/system.collections.immutable?#remarks)
+
  ]]></format>
         </remarks>
       </Docs>
@@ -2033,10 +2336,13 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
+        <AssemblyVersion>1.2.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.IImmutableSet&lt;T&gt;</ReturnType>
@@ -2049,13 +2355,16 @@
         <summary>Removes the elements in the specified collection from the current immutable set.</summary>
         <returns>The new set with the items removed; or the original set if none of the items were in the set.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableSortedSet%601> instance is cast to an <xref:System.Collections.Immutable.IImmutableSet%601> interface.  
-  
- **NuGet package**: <see href="https://www.nuget.org/packages/System.Collections.Immutable/">System.Collections.Immutable</see> (<see href="https://docs.microsoft.com/dotnet/api/system.collections.immutable?#remarks">about immutable collections and how to install</see>)  
-  
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableSortedSet%601> instance is cast to an <xref:System.Collections.Immutable.IImmutableSet%601> interface.
+
+[System.Collections.Immutable NuGet package](https://www.nuget.org/packages/System.Collections.Immutable/)
+
+[About immutable collections and how to install](https://docs.microsoft.com/dotnet/api/system.collections.immutable?#remarks)
+
  ]]></format>
         </remarks>
       </Docs>
@@ -2072,10 +2381,13 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
+        <AssemblyVersion>1.2.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.IImmutableSet&lt;T&gt;</ReturnType>
@@ -2088,13 +2400,16 @@
         <summary>Creates an immutable set that contains elements that exist in both this set and the specified set.</summary>
         <returns>A new immutable set that contains any elements that exist in both sets.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableSortedSet%601> instance is cast to an <xref:System.Collections.Immutable.IImmutableSet%601> interface.  
-  
- **NuGet package**: <see href="https://www.nuget.org/packages/System.Collections.Immutable/">System.Collections.Immutable</see> (<see href="https://docs.microsoft.com/dotnet/api/system.collections.immutable?#remarks">about immutable collections and how to install</see>)  
-  
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableSortedSet%601> instance is cast to an <xref:System.Collections.Immutable.IImmutableSet%601> interface.
+
+[System.Collections.Immutable NuGet package](https://www.nuget.org/packages/System.Collections.Immutable/)
+
+[About immutable collections and how to install](https://docs.microsoft.com/dotnet/api/system.collections.immutable?#remarks)
+
  ]]></format>
         </remarks>
       </Docs>
@@ -2111,10 +2426,13 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
+        <AssemblyVersion>1.2.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.IImmutableSet&lt;T&gt;</ReturnType>
@@ -2127,13 +2445,16 @@
         <summary>Removes the specified element from this immutable set.</summary>
         <returns>A new set with the specified element removed, or the current set if the element cannot be found in the set.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableSortedSet%601> instance is cast to an <xref:System.Collections.Immutable.IImmutableSet%601> interface.  
-  
- **NuGet package**: <see href="https://www.nuget.org/packages/System.Collections.Immutable/">System.Collections.Immutable</see> (<see href="https://docs.microsoft.com/dotnet/api/system.collections.immutable?#remarks">about immutable collections and how to install</see>)  
-  
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableSortedSet%601> instance is cast to an <xref:System.Collections.Immutable.IImmutableSet%601> interface.
+
+[System.Collections.Immutable NuGet package](https://www.nuget.org/packages/System.Collections.Immutable/)
+
+[About immutable collections and how to install](https://docs.microsoft.com/dotnet/api/system.collections.immutable?#remarks)
+
  ]]></format>
         </remarks>
       </Docs>
@@ -2150,10 +2471,13 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
+        <AssemblyVersion>1.2.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.IImmutableSet&lt;T&gt;</ReturnType>
@@ -2166,13 +2490,16 @@
         <summary>Creates an immutable set that contains only elements that are present either in the current set or in the specified collection, but not both.</summary>
         <returns>A new set that contains the elements that are present only in the current set or in the specified collection, but not both.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableSortedSet%601> instance is cast to an <xref:System.Collections.Immutable.IImmutableSet%601> interface.  
-  
- **NuGet package**: <see href="https://www.nuget.org/packages/System.Collections.Immutable/">System.Collections.Immutable</see> (<see href="https://docs.microsoft.com/dotnet/api/system.collections.immutable?#remarks">about immutable collections and how to install</see>)  
-  
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableSortedSet%601> instance is cast to an <xref:System.Collections.Immutable.IImmutableSet%601> interface.
+
+[System.Collections.Immutable NuGet package](https://www.nuget.org/packages/System.Collections.Immutable/)
+
+[About immutable collections and how to install](https://docs.microsoft.com/dotnet/api/system.collections.immutable?#remarks)
+
  ]]></format>
         </remarks>
       </Docs>
@@ -2189,10 +2516,13 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
+        <AssemblyVersion>1.2.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.IImmutableSet&lt;T&gt;</ReturnType>
@@ -2205,13 +2535,16 @@
         <summary>Creates a new immutable set that contains all elements that are present in either the current set or in the specified collection.</summary>
         <returns>A new immutable set with the items added; or the original set if all the items were already in the set.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableSortedSet%601> instance is cast to an <xref:System.Collections.Immutable.IImmutableSet%601> interface.  
-  
- **NuGet package**: <see href="https://www.nuget.org/packages/System.Collections.Immutable/">System.Collections.Immutable</see> (<see href="https://docs.microsoft.com/dotnet/api/system.collections.immutable?#remarks">about immutable collections and how to install</see>)  
-  
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+This member is an explicit interface member implementation. It can be used only when the <xref:System.Collections.Immutable.ImmutableSortedSet%601> instance is cast to an <xref:System.Collections.Immutable.IImmutableSet%601> interface.
+
+[System.Collections.Immutable NuGet package](https://www.nuget.org/packages/System.Collections.Immutable/)
+
+[About immutable collections and how to install](https://docs.microsoft.com/dotnet/api/system.collections.immutable?#remarks)
+
  ]]></format>
         </remarks>
       </Docs>
@@ -2226,10 +2559,13 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
+        <AssemblyVersion>1.2.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableSortedSet&lt;T&gt;+Builder</ReturnType>
@@ -2239,15 +2575,18 @@
         <summary>Creates a collection that has the same contents as this immutable sorted set that can be efficiently manipulated by using standard mutable interfaces.</summary>
         <returns>The sorted set builder.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If you need to perform multiple operations on an immutable collection, to increase efficiency you can copy the <xref:System.Collections.Immutable.ImmutableSortedSet%601> to a <xref:System.Collections.Immutable.ImmutableSortedSet%601.Builder>, using the <xref:System.Collections.Immutable.ImmutableSortedSet%601.ToBuilder%2A> method, manipulate the set and make it immutable again using the <xref:System.Collections.Immutable.ImmutableSortedSet%601.Builder.ToImmutable%2A> method. This will not change the original immutable sorted set.  
-  
- This is an O(1) operation and results in only a single (small) memory allocation. The mutable collection that is returned is not thread safe.  
-  
- **NuGet package**: <see href="https://www.nuget.org/packages/System.Collections.Immutable/">System.Collections.Immutable</see> (<see href="https://docs.microsoft.com/dotnet/api/system.collections.immutable?#remarks">about immutable collections and how to install</see>)  
-  
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+If you need to perform multiple operations on an immutable collection, to increase efficiency you can copy the <xref:System.Collections.Immutable.ImmutableSortedSet%601> to a <xref:System.Collections.Immutable.ImmutableSortedSet%601.Builder>, using the <xref:System.Collections.Immutable.ImmutableSortedSet%601.ToBuilder%2A> method, manipulate the set and make it immutable again using the <xref:System.Collections.Immutable.ImmutableSortedSet%601.Builder.ToImmutable%2A> method. This will not change the original immutable sorted set.
+
+ This is an O(1) operation and results in only a single (small) memory allocation. The mutable collection that is returned is not thread safe.
+
+[System.Collections.Immutable NuGet package](https://www.nuget.org/packages/System.Collections.Immutable/)
+
+[About immutable collections and how to install](https://docs.microsoft.com/dotnet/api/system.collections.immutable?#remarks)
+
  ]]></format>
         </remarks>
       </Docs>
@@ -2258,17 +2597,20 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableSortedSet`1.TryGetValue(`0,`0@)" />
       <MemberSignature Language="VB.NET" Value="Public Function TryGetValue (equalValue As T, ByRef actualValue As T) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool TryGetValue(T equalValue, [Runtime::InteropServices::Out] T % actualValue);" />
-      <MemberSignature Language="F#" Value="abstract member TryGetValue : 'T *  -&gt; bool&#xA;override this.TryGetValue : 'T *  -&gt; bool" Usage="immutableSortedSet.TryGetValue (equalValue, actualValue)" />
+      <MemberSignature Language="F#" Value="abstract member TryGetValue : 'T * 'T -&gt; bool&#xA;override this.TryGetValue : 'T * 'T -&gt; bool" Usage="immutableSortedSet.TryGetValue (equalValue, actualValue)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Immutable.IImmutableSet`1.TryGetValue(`0,`0@)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
+        <AssemblyVersion>1.2.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -2283,13 +2625,16 @@
         <summary>Searches the set for a given value and returns the equal value it finds, if any.</summary>
         <returns>A value indicating whether the search was successful.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This can be useful when you want to reuse a previously stored reference instead of a newly constructed one (so that more sharing of references can occur) or to look up a value that has more complete data than the value you currently have, although their comparer functions indicate they are equal.  
-  
- **NuGet package**: <see href="https://www.nuget.org/packages/System.Collections.Immutable/">System.Collections.Immutable</see> (<see href="https://docs.microsoft.com/dotnet/api/system.collections.immutable?#remarks">about immutable collections and how to install</see>)  
-  
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+This can be useful when you want to reuse a previously stored reference instead of a newly constructed one (so that more sharing of references can occur) or to look up a value that has more complete data than the value you currently have, although their comparer functions indicate they are equal.
+
+[System.Collections.Immutable NuGet package](https://www.nuget.org/packages/System.Collections.Immutable/)
+
+[About immutable collections and how to install](https://docs.microsoft.com/dotnet/api/system.collections.immutable?#remarks)
+
  ]]></format>
         </remarks>
       </Docs>
@@ -2304,10 +2649,13 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
+        <AssemblyVersion>1.2.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableSortedSet&lt;T&gt;</ReturnType>
@@ -2320,11 +2668,14 @@
         <summary>Adds a given set of items to this immutable sorted set.</summary>
         <returns>The new set with the items added; or the original set if all the items were already in the set.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- **NuGet package**: <see href="https://www.nuget.org/packages/System.Collections.Immutable/">System.Collections.Immutable</see> (<see href="https://docs.microsoft.com/dotnet/api/system.collections.immutable?#remarks">about immutable collections and how to install</see>)  
-  
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+[System.Collections.Immutable NuGet package](https://www.nuget.org/packages/System.Collections.Immutable/)
+
+[About immutable collections and how to install](https://docs.microsoft.com/dotnet/api/system.collections.immutable?#remarks)
+
  ]]></format>
         </remarks>
       </Docs>
@@ -2339,10 +2690,13 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
+        <AssemblyVersion>1.2.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableSortedSet&lt;T&gt;</ReturnType>
@@ -2355,11 +2709,14 @@
         <summary>Returns the immutable sorted set that has the specified key comparer.</summary>
         <returns>The immutable sorted set that has the specified key comparer.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- **NuGet package**: <see href="https://www.nuget.org/packages/System.Collections.Immutable/">System.Collections.Immutable</see> (<see href="https://docs.microsoft.com/dotnet/api/system.collections.immutable?#remarks">about immutable collections and how to install</see>)  
-  
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+[System.Collections.Immutable NuGet package](https://www.nuget.org/packages/System.Collections.Immutable/)
+
+[About immutable collections and how to install](https://docs.microsoft.com/dotnet/api/system.collections.immutable?#remarks)
+
  ]]></format>
         </remarks>
       </Docs>

@@ -1,4 +1,4 @@
-﻿<Type Name="SmoothingMode" FullName="System.Drawing.Drawing2D.SmoothingMode">
+<Type Name="SmoothingMode" FullName="System.Drawing.Drawing2D.SmoothingMode">
   <TypeSignature Language="C#" Value="public enum SmoothingMode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SmoothingMode extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Drawing.Drawing2D.SmoothingMode" />
@@ -15,6 +15,8 @@
     <AssemblyName>System.Drawing.Common</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.1</AssemblyVersion>
+    <AssemblyVersion>4.0.1.0</AssemblyVersion>
+    <AssemblyVersion>4.0.2.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
@@ -25,12 +27,12 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Default, None, and HighSpeed are equivalent and specify rendering without smoothing applied.  
+ `Default`, `None`, and `HighSpeed` are equivalent and specify rendering without smoothing applied.  
   
- AntiAlias and HighQuality are equivalent and specify rendering with smoothing applied.  
+ `AntiAlias` and `HighQuality` are equivalent and specify rendering with smoothing applied.  
   
 > [!NOTE]
->  When the <xref:System.Drawing.Graphics.SmoothingMode%2A?displayProperty=nameWithType> property is specified by using the <xref:System.Drawing.Drawing2D.SmoothingMode.None> enumeration, it does not affect text. To set the text rendering quality, use the <xref:System.Drawing.Graphics.TextRenderingHint%2A?displayProperty=nameWithType> property and the <xref:System.Drawing.Text.TextRenderingHint> enumeration.  
+>  When the <xref:System.Drawing.Graphics.SmoothingMode%2A?displayProperty=nameWithType> property is specified by using the `SmoothingMode` enumeration, it does not affect text. To set the text rendering quality, use the <xref:System.Drawing.Graphics.TextRenderingHint%2A?displayProperty=nameWithType> property and the <xref:System.Drawing.Text.TextRenderingHint> enumeration.  
   
 > [!NOTE]
 >  When the <xref:System.Drawing.Graphics.SmoothingMode%2A?displayProperty=nameWithType> property is specified by using the <xref:System.Drawing.Drawing2D.SmoothingMode> enumeration, it does not affect areas filled by a path gradient brush. Areas filled by using a <xref:System.Drawing.Drawing2D.PathGradientBrush> object are rendered the same way (aliased) regardless of the setting for the <xref:System.Drawing.Graphics.SmoothingMode%2A?displayProperty=nameWithType> property.  
@@ -57,6 +59,8 @@
         <AssemblyName>System.Drawing.Common</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.1</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.SmoothingMode</ReturnType>
@@ -84,6 +88,8 @@
         <AssemblyName>System.Drawing.Common</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.1</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.SmoothingMode</ReturnType>
@@ -111,6 +117,8 @@
         <AssemblyName>System.Drawing.Common</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.1</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.SmoothingMode</ReturnType>
@@ -138,6 +146,8 @@
         <AssemblyName>System.Drawing.Common</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.1</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.SmoothingMode</ReturnType>
@@ -165,6 +175,8 @@
         <AssemblyName>System.Drawing.Common</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.1</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.SmoothingMode</ReturnType>
@@ -192,6 +204,8 @@
         <AssemblyName>System.Drawing.Common</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.1</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.SmoothingMode</ReturnType>

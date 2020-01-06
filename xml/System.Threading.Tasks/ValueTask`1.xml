@@ -1,4 +1,4 @@
-﻿<Type Name="ValueTask&lt;TResult&gt;" FullName="System.Threading.Tasks.ValueTask&lt;TResult&gt;">
+<Type Name="ValueTask&lt;TResult&gt;" FullName="System.Threading.Tasks.ValueTask&lt;TResult&gt;">
   <TypeSignature Language="C#" Value="public struct ValueTask&lt;TResult&gt; : IEquatable&lt;System.Threading.Tasks.ValueTask&lt;TResult&gt;&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit ValueTask`1&lt;TResult&gt; extends System.ValueType implements class System.IEquatable`1&lt;valuetype System.Threading.Tasks.ValueTask`1&lt;!TResult&gt;&gt;" />
   <TypeSignature Language="DocId" Value="T:System.Threading.Tasks.ValueTask`1" />
@@ -14,6 +14,11 @@
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.2.1.0</AssemblyVersion>
+    <AssemblyVersion>4.2.2.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="TResult" />
@@ -27,10 +32,10 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2">
+    <Attribute FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netstandard-2.1;netcore-3.1">
       <AttributeName>System.Runtime.CompilerServices.AsyncMethodBuilder(typeof(System.Runtime.CompilerServices.AsyncValueTaskMethodBuilder`1))</AttributeName>
     </Attribute>
-    <Attribute FrameworkAlternate="netcore-2.1;netcore-2.2">
+    <Attribute FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0;netstandard-2.1;netcore-3.1">
       <AttributeName>System.Runtime.CompilerServices.IsReadOnly</AttributeName>
     </Attribute>
   </Attributes>
@@ -41,16 +46,27 @@
       <format type="text/markdown"><![CDATA[ 
 
 ## Remarks  
+A <xref:System.Threading.Tasks.ValueTask%601> instance may either be awaited or converted to a <xref:System.Threading.Tasks.Task%601> using <xref:System.Threading.Tasks.ValueTask%601.AsTask%2A>. A <xref:System.Threading.Tasks.ValueTask%601> instance may only be awaited once, and consumers may not call <xref:System.Threading.Tasks.ValueTask%601.GetAwaiter> until the instance has completed. If these limitations are unacceptable, convert the <xref:System.Threading.Tasks.ValueTask%601> to a <xref:System.Threading.Tasks.Task%601> by calling <xref:System.Threading.Tasks.ValueTask%601.AsTask%2A>.
+
+The following operations should never be performed on a <xref:System.Threading.Tasks.ValueTask%601> instance:
+
+  - Awaiting the instance multiple times.
+  - Calling <xref:System.Threading.Tasks.ValueTask%601.AsTask%2A> multiple times.
+  - Using `.Result` or `.GetAwaiter().GetResult()` when the operation hasn't yet completed, or using them multiple times.
+  - Using more than one of these techniques to consume the instance.
+
+If you do any of the above, the results are undefined.
+
 A method may return an instance of this value type when it's likely that the result of its operation will be available synchronously, and when it's expected to be invoked so frequently that the cost of allocating a new <xref:System.Threading.Tasks.Task%601> for each call will be prohibitive.   
 
-There are tradeoffs to using a <xref:System.Threading.Tasks.ValueTask%601> instead of a <xref:System.Threading.Tasks.Task%601>. For example, while a <xref:System.Threading.Tasks.ValueTask%601> can help avoid an allocation in the case where the successful result is available synchronously, it also contains two fields, whereas a <xref:System.Threading.Tasks.Task%601> as a reference type is a single field. This means that a method call returns two fields worth of data instead of one, which is more data to copy. It also means, that if a method that returns a <xref:System.Threading.Tasks.ValueTask%601> is awaited within an async method, the state machine for that async method will be larger, because it must store a struct containing two fields instead of a single reference.   
+There are tradeoffs to using a <xref:System.Threading.Tasks.ValueTask%601> instead of a <xref:System.Threading.Tasks.Task%601>. For example, while a <xref:System.Threading.Tasks.ValueTask%601> can help avoid an allocation in the case where the successful result is available synchronously, it also contains multiple fields, whereas a <xref:System.Threading.Tasks.Task%601> as a reference type is a single field. This means that returning a <xref:System.Threading.Tasks.ValueTask%601> from a method results in copying more data. It also means, that if a method that returns a <xref:System.Threading.Tasks.ValueTask%601> is awaited within an async method, the state machine for that async method will be larger, because it must store a struct containing multiple fields instead of a single reference.   
 
 For uses other than consuming the result of an asynchronous operation using await, <xref:System.Threading.Tasks.ValueTask%601> can lead to a more convoluted programming model that requires more allocations. For example, consider a method that could return either a <xref:System.Threading.Tasks.Task%601> with a cached task as a common result or a <xref:System.Threading.Tasks.ValueTask%601>. If the consumer of the result wants to use it as a <xref:System.Threading.Tasks.Task%601> in a method like <xref:System.Threading.Tasks.Task.WhenAll%2A> or <xref:System.Threading.Tasks.Task.WhenAny%2A>, the <xref:System.Threading.Tasks.ValueTask%601> must first be converted to a <xref:System.Threading.Tasks.Task%601> using <xref:System.Threading.Tasks.ValueTask%601.AsTask%2A>, leading to an allocation that would have been avoided if a cached <xref:System.Threading.Tasks.Task%601> had been used in the first place.   
 
-As such, the default choice for any asynchronous method should be to return a <xref:System.Threading.Tasks.Task> or <xref:System.Threading.Tasks.Task%601>. Only if performance analysis proves it worthwhile should a <xref:System.Threading.Tasks.ValueTask%601> be used instead of a <xref:System.Threading.Tasks.Task%601>. There is no non-generic version of <xref:System.Threading.Tasks.ValueTask%601>, as the <xref:System.Threading.Tasks.Task.CompletedTask> property may be used to hand back a successfully completed singleton in the case where a method returning a <xref:System.Threading.Tasks.Task> completes synchronously and successfully.   
+As such, the default choice for any asynchronous method should be to return a <xref:System.Threading.Tasks.Task> or <xref:System.Threading.Tasks.Task%601>. Only if performance analysis proves it worthwhile should a <xref:System.Threading.Tasks.ValueTask%601> be used instead of a <xref:System.Threading.Tasks.Task%601>. The non generic version of <xref:System.Threading.Tasks.ValueTask> is not recommended for most scenarios. The <xref:System.Threading.Tasks.Task.CompletedTask> property should be used to hand back a successfully completed singleton in the case where a method returning a <xref:System.Threading.Tasks.Task> completes synchronously and successfully.
 
 > [!NOTE]
->  The use of the <xref:System.Threading.Tasks.ValueTask%601> type is supported starting with C# 7, and is not supported by any version of Visual Basic.
+>  The use of the <xref:System.Threading.Tasks.ValueTask%601> type is supported starting with C# 7.0, and is not supported by any version of Visual Basic.
  ]]></format>
     </remarks>
   </Docs>
@@ -72,6 +88,11 @@ As such, the default choice for any asynchronous method should be to return a <x
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="task" Type="System.Threading.Tasks.Task&lt;TResult&gt;" />
@@ -79,7 +100,8 @@ As such, the default choice for any asynchronous method should be to return a <x
       <Docs>
         <param name="task">The task.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Threading.Tasks.ValueTask`1" /> class using the supplied task that represents the operation.</summary>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="task" /> argument is <see langword="null" />.</exception>
       </Docs>
     </Member>
@@ -100,6 +122,11 @@ As such, the default choice for any asynchronous method should be to return a <x
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="result" Type="TResult" />
@@ -107,7 +134,8 @@ As such, the default choice for any asynchronous method should be to return a <x
       <Docs>
         <param name="result">The result.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Threading.Tasks.ValueTask`1" /> class using the supplied result of a successful operation.</summary>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -121,18 +149,23 @@ As such, the default choice for any asynchronous method should be to return a <x
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Extensions</AssemblyName>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Parameters>
-        <Parameter Name="source" Type="System.Threading.Tasks.Sources.IValueTaskSource&lt;TResult&gt;" />
-        <Parameter Name="token" Type="System.Int16" />
+        <Parameter Name="source" Type="System.Threading.Tasks.Sources.IValueTaskSource&lt;TResult&gt;" Index="0" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0;netstandard-2.1;netcore-3.1" />
+        <Parameter Name="token" Type="System.Int16" Index="1" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0;netstandard-2.1;netcore-3.1" />
       </Parameters>
       <Docs>
-        <param name="source">To be added.</param>
-        <param name="token">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="source">The source.</param>
+        <param name="token">An opaque value that is passed to the <see cref="T:System.Threading.Tasks.Sources.IValueTaskSource" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Threading.Tasks.ValueTask`1" /> class with a <see cref="T:System.Threading.Tasks.Sources.IValueTaskSource`1" /> object that represents the operation.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -153,6 +186,11 @@ As such, the default choice for any asynchronous method should be to return a <x
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;TResult&gt;</ReturnType>
@@ -161,7 +199,11 @@ As such, the default choice for any asynchronous method should be to return a <x
       <Docs>
         <summary>Retrieves a <see cref="T:System.Threading.Tasks.Task`1" /> object that represents this <see cref="T:System.Threading.Tasks.ValueTask`1" />.</summary>
         <returns>The <see cref="T:System.Threading.Tasks.Task`1" /> object that is wrapped in this <see cref="T:System.Threading.Tasks.ValueTask`1" /> if one exists, or a new <see cref="T:System.Threading.Tasks.Task`1" /> object that represents the result.</returns>
-        <remarks></remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+This method either returns the wrapped task object, if one exists, or it manufactures a new task object to represent the result.
+          ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ConfigureAwait">
@@ -181,6 +223,11 @@ As such, the default choice for any asynchronous method should be to return a <x
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.CompilerServices.ConfiguredValueTaskAwaitable&lt;TResult&gt;</ReturnType>
@@ -193,7 +240,8 @@ As such, the default choice for any asynchronous method should be to return a <x
           <see langword="true" /> to attempt to marshal the continuation back to the captured context; otherwise, <see langword="false" />.</param>
         <summary>Configures an awaiter for this value.</summary>
         <returns>The configured awaiter.</returns>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateAsyncMethodBuilder">
@@ -213,6 +261,9 @@ As such, the default choice for any asynchronous method should be to return a <x
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netcore-2.0">
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
@@ -228,7 +279,8 @@ As such, the default choice for any asynchronous method should be to return a <x
       <Docs>
         <summary>Creates a method builder for use with an async method.</summary>
         <returns>The created builder.</returns>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -248,6 +300,11 @@ As such, the default choice for any asynchronous method should be to return a <x
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -260,7 +317,8 @@ As such, the default choice for any asynchronous method should be to return a <x
         <summary>Determines whether the specified object is equal to the current object.</summary>
         <returns>
           <see langword="true" /> if the specified object is equal to the current object; otherwise, <see langword="false" />.</returns>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -283,6 +341,11 @@ As such, the default choice for any asynchronous method should be to return a <x
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -295,7 +358,8 @@ As such, the default choice for any asynchronous method should be to return a <x
         <summary>Determines whether the specified <see cref="T:System.Threading.Tasks.ValueTask`1" /> object is equal to the current <see cref="T:System.Threading.Tasks.ValueTask`1" /> object.</summary>
         <returns>
           <see langword="true" /> if the specified object is equal to the current object; otherwise, <see langword="false" />.</returns>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetAwaiter">
@@ -315,6 +379,11 @@ As such, the default choice for any asynchronous method should be to return a <x
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.CompilerServices.ValueTaskAwaiter&lt;TResult&gt;</ReturnType>
@@ -323,7 +392,8 @@ As such, the default choice for any asynchronous method should be to return a <x
       <Docs>
         <summary>Creates an awaiter for this value.</summary>
         <returns>The awaiter.</returns>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -343,6 +413,11 @@ As such, the default choice for any asynchronous method should be to return a <x
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -351,7 +426,8 @@ As such, the default choice for any asynchronous method should be to return a <x
       <Docs>
         <summary>Returns the hash code for this instance.</summary>
         <returns>The hash code for the current object.</returns>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsCanceled">
@@ -371,6 +447,11 @@ As such, the default choice for any asynchronous method should be to return a <x
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -379,7 +460,11 @@ As such, the default choice for any asynchronous method should be to return a <x
         <summary>Gets a value that indicates whether this object represents a canceled operation.</summary>
         <value>
           <see langword="true" /> if this object represents a canceled operation; otherwise, <see langword="false" />.</value>
-        <remarks></remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+If the <xref:System.Threading.Tasks.ValueTask`1> is backed by a result or by a <xref:System.Threading.Tasks.Sources.IValueTaskSource`1>, this will always return `false`.  If it's backed by a <xref:System.Threading.Tasks.Task>, it'll return the value of the task's <xref:System.Threading.Tasks.Task.IsCanceled> property.
+          ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsCompleted">
@@ -399,6 +484,11 @@ As such, the default choice for any asynchronous method should be to return a <x
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -407,7 +497,8 @@ As such, the default choice for any asynchronous method should be to return a <x
         <summary>Gets a value that indicates whether this object represents a completed operation.</summary>
         <value>
           <see langword="true" /> if this object represents a completed operation; otherwise, <see langword="false" />.</value>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsCompletedSuccessfully">
@@ -427,6 +518,11 @@ As such, the default choice for any asynchronous method should be to return a <x
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -435,7 +531,8 @@ As such, the default choice for any asynchronous method should be to return a <x
         <summary>Gets a value that indicates whether this object represents a successfully completed operation.</summary>
         <value>
           <see langword="true" /> if this object represents a successfully completed operation; otherwise, <see langword="false" />.</value>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsFaulted">
@@ -455,6 +552,11 @@ As such, the default choice for any asynchronous method should be to return a <x
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -463,7 +565,8 @@ As such, the default choice for any asynchronous method should be to return a <x
         <summary>Gets a value that indicates whether this object represents a failed operation.</summary>
         <value>
           <see langword="true" /> if this object represents a failed operation; otherwise, <see langword="false" />.</value>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
@@ -483,6 +586,11 @@ As such, the default choice for any asynchronous method should be to return a <x
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -497,7 +605,8 @@ As such, the default choice for any asynchronous method should be to return a <x
         <summary>Compares two values for equality.</summary>
         <returns>
           <see langword="true" /> if the two <see cref="T:System.Threading.Tasks.ValueTask`1" /> values are equal; otherwise, <see langword="false" />.</returns>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
@@ -517,6 +626,11 @@ As such, the default choice for any asynchronous method should be to return a <x
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -527,11 +641,12 @@ As such, the default choice for any asynchronous method should be to return a <x
       </Parameters>
       <Docs>
         <param name="left">The first value to compare.</param>
-        <param name="right">The seconed value to compare.</param>
+        <param name="right">The second value to compare.</param>
         <summary>Determines whether two <see cref="T:System.Threading.Tasks.ValueTask`1" /> values are unequal.</summary>
         <returns>
           <see langword="true" /> if the two <see cref="T:System.Threading.Tasks.ValueTask`1" /> values are not equal; otherwise, <see langword="false" />.</returns>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Preserve">
@@ -545,17 +660,22 @@ As such, the default choice for any asynchronous method should be to return a <x
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Extensions</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.ValueTask&lt;TResult&gt;</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets a <see cref="T:System.Threading.Tasks.ValueTask`1" /> that may be used at any point in the future.</summary>
+        <returns>A task object for future use.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -576,6 +696,11 @@ As such, the default choice for any asynchronous method should be to return a <x
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>TResult</ReturnType>
@@ -586,11 +711,10 @@ As such, the default choice for any asynchronous method should be to return a <x
         <remarks>
           <format type="text/markdown"><![CDATA[  
 ## Remarks  
- If this <xref:System.Threading.Tasks.ValueTask%601> wraps a successful result, this property returns it directly.
+This property may only be accessed once, and only after this <xref:System.Threading.Tasks.ValueTask%601> has completed.
 
- If it wraps a <xref:System.Threading.Tasks.Task%601>, the behavior of <xref:System.Threading.Tasks.ValueTask%601.Result%2A> is similar to the behavior of accessing <xref:System.Threading.Tasks.Task%601.Result%2A> on the wrapped task: if the task hasn't completed, accessing the property blocks the calling thread until it completes; if the task has completed successfully, the property returns the result; if the task has faulted or was cancellecd, accessing the property throws an exception. The thrown exception is not wrapped in an <xref:System.AggregateException>, which is different from the behavior of <xref:System.Threading.Tasks.Task%601.Result%2A> in the same situation.
-  
- ]]></format>
+If this <xref:System.Threading.Tasks.ValueTask%601> has completed successfully, this property returns the resulting value. If this <xref:System.Threading.Tasks.ValueTask%601> has faulted, this property raises an exception. The thrown exception is not wrapped in an <xref:System.AggregateException>.
+]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -611,6 +735,11 @@ As such, the default choice for any asynchronous method should be to return a <x
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -619,7 +748,8 @@ As such, the default choice for any asynchronous method should be to return a <x
       <Docs>
         <summary>Returns a string that represents the current object.</summary>
         <returns>A string that represents the current object.</returns>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
   </Members>

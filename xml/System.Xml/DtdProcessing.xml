@@ -1,4 +1,4 @@
-﻿<Type Name="DtdProcessing" FullName="System.Xml.DtdProcessing">
+<Type Name="DtdProcessing" FullName="System.Xml.DtdProcessing">
   <TypeSignature Language="C#" Value="public enum DtdProcessing" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DtdProcessing extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Xml.DtdProcessing" />
@@ -12,6 +12,7 @@
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
     <AssemblyVersion>4.2.0.0</AssemblyVersion>
     <AssemblyVersion>4.2.1.0</AssemblyVersion>
+    <AssemblyVersion>4.2.2.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
@@ -21,6 +22,7 @@
   <AssemblyInfo>
     <AssemblyName>netstandard</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
@@ -31,7 +33,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This enumeration is set on the <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A> property or the <xref:System.Xml.XmlTextReader.DtdProcessing%2A> property.  
+ This enumeration is set on the <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A?displayProperty=nameWithType> property or the <xref:System.Xml.XmlTextReader.DtdProcessing%2A?displayProperty=nameWithType> property.  
   
  ]]></format>
     </remarks>
@@ -52,6 +54,7 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -61,23 +64,14 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.DtdProcessing</ReturnType>
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>Causes the DOCTYPE element to be ignored. No DTD processing occurs.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!IMPORTANT]
->  The DTD/DOCTYPE will be lost on output.  
-  
- ]]></format>
-        </remarks>
+        <summary>Causes the DOCTYPE element to be ignored. No DTD processing occurs, and the DTD/DOCTYPE is lost on output.</summary>
       </Docs>
     </Member>
     <Member MemberName="Parse">
@@ -96,11 +90,13 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.DtdProcessing</ReturnType>
@@ -125,6 +121,7 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -134,6 +131,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.DtdProcessing</ReturnType>

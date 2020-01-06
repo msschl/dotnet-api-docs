@@ -1,4 +1,4 @@
-﻿<Type Name="SoapUtility" FullName="System.EnterpriseServices.Internal.SoapUtility">
+<Type Name="SoapUtility" FullName="System.EnterpriseServices.Internal.SoapUtility">
   <TypeSignature Language="C#" Value="public sealed class SoapUtility : System.EnterpriseServices.Internal.ISoapUtility" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SoapUtility extends System.Object implements class System.EnterpriseServices.Internal.ISoapUtility" />
   <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.Internal.SoapUtility" />
@@ -20,7 +20,7 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+    <Attribute>
       <AttributeName>System.Runtime.InteropServices.Guid("5F9A955F-AA55-4127-A32B-33496AA8A44E")</AttributeName>
     </Attribute>
   </Attributes>
@@ -63,7 +63,7 @@
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.Internal.SoapUtility.GetServerBinPath(System.String,System.String,System.String,System.String@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetServerBinPath (rootWebServer As String, inBaseUrl As String, inVirtualRoot As String, ByRef binPath As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void GetServerBinPath(System::String ^ rootWebServer, System::String ^ inBaseUrl, System::String ^ inVirtualRoot, [Runtime::InteropServices::Out] System::String ^ % binPath);" />
-      <MemberSignature Language="F#" Value="abstract member GetServerBinPath : string * string * string *  -&gt; unit&#xA;override this.GetServerBinPath : string * string * string *  -&gt; unit" Usage="soapUtility.GetServerBinPath (rootWebServer, inBaseUrl, inVirtualRoot, binPath)" />
+      <MemberSignature Language="F#" Value="abstract member GetServerBinPath : string * string * string * string -&gt; unit&#xA;override this.GetServerBinPath : string * string * string * string -&gt; unit" Usage="soapUtility.GetServerBinPath (rootWebServer, inBaseUrl, inVirtualRoot, binPath)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.EnterpriseServices.Internal.ISoapUtility.GetServerBinPath(System.String,System.String,System.String,System.String@)</InterfaceMember>
@@ -102,7 +102,7 @@
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.Internal.SoapUtility.GetServerPhysicalPath(System.String,System.String,System.String,System.String@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetServerPhysicalPath (rootWebServer As String, inBaseUrl As String, inVirtualRoot As String, ByRef physicalPath As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void GetServerPhysicalPath(System::String ^ rootWebServer, System::String ^ inBaseUrl, System::String ^ inVirtualRoot, [Runtime::InteropServices::Out] System::String ^ % physicalPath);" />
-      <MemberSignature Language="F#" Value="abstract member GetServerPhysicalPath : string * string * string *  -&gt; unit&#xA;override this.GetServerPhysicalPath : string * string * string *  -&gt; unit" Usage="soapUtility.GetServerPhysicalPath (rootWebServer, inBaseUrl, inVirtualRoot, physicalPath)" />
+      <MemberSignature Language="F#" Value="abstract member GetServerPhysicalPath : string * string * string * string -&gt; unit&#xA;override this.GetServerPhysicalPath : string * string * string * string -&gt; unit" Usage="soapUtility.GetServerPhysicalPath (rootWebServer, inBaseUrl, inVirtualRoot, physicalPath)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.EnterpriseServices.Internal.ISoapUtility.GetServerPhysicalPath(System.String,System.String,System.String,System.String@)</InterfaceMember>

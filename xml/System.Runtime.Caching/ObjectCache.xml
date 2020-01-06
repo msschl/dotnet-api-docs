@@ -1,4 +1,4 @@
-﻿<Type Name="ObjectCache" FullName="System.Runtime.Caching.ObjectCache">
+<Type Name="ObjectCache" FullName="System.Runtime.Caching.ObjectCache">
   <TypeSignature Language="C#" Value="public abstract class ObjectCache : System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;string,object&gt;&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ObjectCache extends System.Object implements class System.Collections.Generic.IEnumerable`1&lt;valuetype System.Collections.Generic.KeyValuePair`2&lt;string, object&gt;&gt;, class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.Caching.ObjectCache" />
@@ -595,7 +595,7 @@
         <Parameter Name="regionName" Type="System.String" />
         <Parameter Name="keys" Type="System.String[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="dotnet-plat-ext-2.1">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>

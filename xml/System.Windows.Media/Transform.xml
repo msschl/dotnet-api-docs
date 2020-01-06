@@ -1,4 +1,4 @@
-﻿<Type Name="Transform" FullName="System.Windows.Media.Transform">
+<Type Name="Transform" FullName="System.Windows.Media.Transform">
   <TypeSignature Language="C#" Value="public abstract class Transform : System.Windows.Media.GeneralTransform" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit Transform extends System.Windows.Media.GeneralTransform" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Transform" />
@@ -15,13 +15,13 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+    <Attribute>
       <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Windows.Media.TransformConverter))</AttributeName>
     </Attribute>
-    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+    <Attribute>
       <AttributeName>System.Windows.Localizability(System.Windows.LocalizationCategory.None, Readability=System.Windows.Readability.Unreadable)</AttributeName>
     </Attribute>
-    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+    <Attribute>
       <AttributeName>System.Windows.Markup.ValueSerializer(typeof(System.Windows.Media.Converters.TransformValueSerializer))</AttributeName>
     </Attribute>
   </Attributes>
@@ -251,7 +251,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Transform.TryTransform(System.Windows.Point,System.Windows.Point@)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function TryTransform (inPoint As Point, ByRef result As Point) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool TryTransform(System::Windows::Point inPoint, [Runtime::InteropServices::Out] System::Windows::Point % result);" />
-      <MemberSignature Language="F#" Value="override this.TryTransform : System.Windows.Point *  -&gt; bool" Usage="transform.TryTransform (inPoint, result)" />
+      <MemberSignature Language="F#" Value="override this.TryTransform : System.Windows.Point * Point -&gt; bool" Usage="transform.TryTransform (inPoint, result)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

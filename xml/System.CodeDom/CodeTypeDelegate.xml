@@ -1,4 +1,4 @@
-﻿<Type Name="CodeTypeDelegate" FullName="System.CodeDom.CodeTypeDelegate">
+<Type Name="CodeTypeDelegate" FullName="System.CodeDom.CodeTypeDelegate">
   <TypeSignature Language="C#" Value="public class CodeTypeDelegate : System.CodeDom.CodeTypeDeclaration" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit CodeTypeDelegate extends System.CodeDom.CodeTypeDeclaration" />
   <TypeSignature Language="DocId" Value="T:System.CodeDom.CodeTypeDelegate" />
@@ -15,6 +15,8 @@
     <AssemblyName>System.CodeDom</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
+    <AssemblyVersion>4.0.2.0</AssemblyVersion>
+    <AssemblyVersion>4.0.3.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.CodeDom.CodeTypeDeclaration</BaseTypeName>
@@ -37,7 +39,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.CodeDom.CodeTypeDelegate> can be used to declare a delegate type, or event handler. A delegate defines a method signature that can be used by calback methods or event handlers. Delegates can be declared at the namespace level or nested inside other types. Delegates cannot be nested inside other delegates.  
+ <xref:System.CodeDom.CodeTypeDelegate> can be used to declare a delegate type, or event handler. A delegate defines a method signature that can be used by callback methods or event handlers. Delegates can be declared at the namespace level or nested inside other types. Delegates cannot be nested inside other delegates.  
   
  The <xref:System.CodeDom.CodeTypeDelegate.ReturnType%2A> property specifies the data type of the event handler returned by the delegate. The <xref:System.CodeDom.CodeTypeDelegate.Parameters%2A> property contains the parameters for the delegate type.  
   
@@ -85,6 +87,8 @@
         <AssemblyName>System.CodeDom</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -110,6 +114,8 @@
         <AssemblyName>System.CodeDom</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="name" Type="System.String" />
@@ -138,6 +144,8 @@
         <AssemblyName>System.CodeDom</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
@@ -172,6 +180,8 @@
         <AssemblyName>System.CodeDom</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">

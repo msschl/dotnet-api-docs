@@ -1,4 +1,4 @@
-﻿<Type Name="ValueWebSocketReceiveResult" FullName="System.Net.WebSockets.ValueWebSocketReceiveResult">
+<Type Name="ValueWebSocketReceiveResult" FullName="System.Net.WebSockets.ValueWebSocketReceiveResult">
   <TypeSignature Language="C#" Value="public struct ValueWebSocketReceiveResult" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit ValueWebSocketReceiveResult extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.Net.WebSockets.ValueWebSocketReceiveResult" />
@@ -8,18 +8,23 @@
   <AssemblyInfo>
     <AssemblyName>System.Net.WebSockets</AssemblyName>
     <AssemblyVersion>4.1.1.0</AssemblyVersion>
+    <AssemblyVersion>4.1.2.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.ValueType</BaseTypeName>
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute FrameworkAlternate="netcore-2.1;netcore-2.2">
+    <Attribute FrameworkAlternate="netcore-3.0;netcore-2.1;netcore-2.2;netstandard-2.1;netcore-3.1">
       <AttributeName>System.Runtime.CompilerServices.IsReadOnly</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents the result of performing a single <see cref="M:System.Net.WebSockets.WebSocket.ReceiveAsync(System.Memory{System.Byte},System.Threading.CancellationToken)" /> operation on a <see cref="T:System.Net.WebSockets.WebSocket" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -34,6 +39,11 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.WebSockets</AssemblyName>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="count" Type="System.Int32" />
@@ -41,10 +51,11 @@
         <Parameter Name="endOfMessage" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="count">To be added.</param>
-        <param name="messageType">To be added.</param>
-        <param name="endOfMessage">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="count">The number of bytes that the <see cref="T:System.Net.WebSockets.WebSocket" /> received.</param>
+        <param name="messageType">One of the enumeration values that indicates whether the current message is a UTF-8 message or a binary message.</param>
+        <param name="endOfMessage">
+          <see langword="true" /> to indicate the messsage has been received completely; otherwise, <see langword="false" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Net.WebSockets.ValueWebSocketReceiveResult" /> struct. An instance of this struct represents the result of performing a single <c>ReceiveAsync</c> operation on a <see cref="T:System.Net.WebSockets.WebSocket" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -59,13 +70,18 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.WebSockets</AssemblyName>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the number of bytes that the <see cref="T:System.Net.WebSockets.WebSocket" /> received.</summary>
+        <value>The number of bytes that the <see cref="T:System.Net.WebSockets.WebSocket" /> received.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -80,13 +96,19 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.WebSockets</AssemblyName>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets whether the message has been received completely.</summary>
+        <value>
+          <see langword="true" /> if the message was received completely; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -101,13 +123,18 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.WebSockets</AssemblyName>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.WebSockets.WebSocketMessageType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the type of the current message.</summary>
+        <value>One of the enumeration values that specifies if the current message is a UTF-8, binary, or close message.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

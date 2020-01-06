@@ -1,4 +1,4 @@
-﻿<Type Name="TransformManyBlock&lt;TInput,TOutput&gt;" FullName="System.Threading.Tasks.Dataflow.TransformManyBlock&lt;TInput,TOutput&gt;">
+<Type Name="TransformManyBlock&lt;TInput,TOutput&gt;" FullName="System.Threading.Tasks.Dataflow.TransformManyBlock&lt;TInput,TOutput&gt;">
   <TypeSignature Language="C#" Value="public sealed class TransformManyBlock&lt;TInput,TOutput&gt; : System.Threading.Tasks.Dataflow.IPropagatorBlock&lt;TInput,TOutput&gt;, System.Threading.Tasks.Dataflow.IReceivableSourceBlock&lt;TOutput&gt;, System.Threading.Tasks.Dataflow.ISourceBlock&lt;TOutput&gt;, System.Threading.Tasks.Dataflow.ITargetBlock&lt;TInput&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit TransformManyBlock`2&lt;TInput, TOutput&gt; extends System.Object implements class System.Threading.Tasks.Dataflow.IDataflowBlock, class System.Threading.Tasks.Dataflow.IPropagatorBlock`2&lt;!TInput, !TOutput&gt;, class System.Threading.Tasks.Dataflow.IReceivableSourceBlock`1&lt;!TOutput&gt;, class System.Threading.Tasks.Dataflow.ISourceBlock`1&lt;!TOutput&gt;, class System.Threading.Tasks.Dataflow.ITargetBlock`1&lt;!TInput&gt;" />
   <TypeSignature Language="DocId" Value="T:System.Threading.Tasks.Dataflow.TransformManyBlock`2" />
@@ -7,10 +7,13 @@
   <TypeSignature Language="F#" Value="type TransformManyBlock&lt;'Input, 'Output&gt; = class&#xA;    interface IDataflowBlock&#xA;    interface IPropagatorBlock&lt;'Input, 'Output&gt;&#xA;    interface ISourceBlock&lt;'Output&gt;&#xA;    interface ITargetBlock&lt;'Input&gt;&#xA;    interface IReceivableSourceBlock&lt;'Output&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
+    <AssemblyVersion>4.5.25.0</AssemblyVersion>
     <AssemblyVersion>4.6.0.0</AssemblyVersion>
     <AssemblyVersion>4.6.1.0</AssemblyVersion>
     <AssemblyVersion>4.6.2.0</AssemblyVersion>
     <AssemblyVersion>4.6.3.0</AssemblyVersion>
+    <AssemblyVersion>4.6.4.0</AssemblyVersion>
+    <AssemblyVersion>4.6.5.0</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="TInput" />
@@ -37,10 +40,10 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1">
+    <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;dotnet-uwp-10.0">
       <AttributeName>System.Diagnostics.DebuggerDisplay("{DebuggerDisplayContent,nq}")</AttributeName>
     </Attribute>
-    <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1">
+    <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;dotnet-uwp-10.0">
       <AttributeName>System.Diagnostics.DebuggerTypeProxy(typeof(System.Threading.Tasks.Dataflow.TransformManyBlock`2/DebugView))</AttributeName>
     </Attribute>
   </Attributes>
@@ -69,10 +72,13 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
+        <AssemblyVersion>4.5.25.0</AssemblyVersion>
         <AssemblyVersion>4.6.0.0</AssemblyVersion>
         <AssemblyVersion>4.6.1.0</AssemblyVersion>
         <AssemblyVersion>4.6.2.0</AssemblyVersion>
         <AssemblyVersion>4.6.3.0</AssemblyVersion>
+        <AssemblyVersion>4.6.4.0</AssemblyVersion>
+        <AssemblyVersion>4.6.5.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="transform" Type="System.Func&lt;TInput,System.Collections.Generic.IEnumerable&lt;TOutput&gt;&gt;" />
@@ -94,10 +100,13 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
+        <AssemblyVersion>4.5.25.0</AssemblyVersion>
         <AssemblyVersion>4.6.0.0</AssemblyVersion>
         <AssemblyVersion>4.6.1.0</AssemblyVersion>
         <AssemblyVersion>4.6.2.0</AssemblyVersion>
         <AssemblyVersion>4.6.3.0</AssemblyVersion>
+        <AssemblyVersion>4.6.4.0</AssemblyVersion>
+        <AssemblyVersion>4.6.5.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="transform" Type="System.Func&lt;TInput,System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;TOutput&gt;&gt;&gt;" />
@@ -119,10 +128,13 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
+        <AssemblyVersion>4.5.25.0</AssemblyVersion>
         <AssemblyVersion>4.6.0.0</AssemblyVersion>
         <AssemblyVersion>4.6.1.0</AssemblyVersion>
         <AssemblyVersion>4.6.2.0</AssemblyVersion>
         <AssemblyVersion>4.6.3.0</AssemblyVersion>
+        <AssemblyVersion>4.6.4.0</AssemblyVersion>
+        <AssemblyVersion>4.6.5.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="transform" Type="System.Func&lt;TInput,System.Collections.Generic.IEnumerable&lt;TOutput&gt;&gt;" />
@@ -150,10 +162,13 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
+        <AssemblyVersion>4.5.25.0</AssemblyVersion>
         <AssemblyVersion>4.6.0.0</AssemblyVersion>
         <AssemblyVersion>4.6.1.0</AssemblyVersion>
         <AssemblyVersion>4.6.2.0</AssemblyVersion>
         <AssemblyVersion>4.6.3.0</AssemblyVersion>
+        <AssemblyVersion>4.6.4.0</AssemblyVersion>
+        <AssemblyVersion>4.6.5.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="transform" Type="System.Func&lt;TInput,System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;TOutput&gt;&gt;&gt;" />
@@ -184,10 +199,13 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
+        <AssemblyVersion>4.5.25.0</AssemblyVersion>
         <AssemblyVersion>4.6.0.0</AssemblyVersion>
         <AssemblyVersion>4.6.1.0</AssemblyVersion>
         <AssemblyVersion>4.6.2.0</AssemblyVersion>
         <AssemblyVersion>4.6.3.0</AssemblyVersion>
+        <AssemblyVersion>4.6.4.0</AssemblyVersion>
+        <AssemblyVersion>4.6.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -218,10 +236,13 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
+        <AssemblyVersion>4.5.25.0</AssemblyVersion>
         <AssemblyVersion>4.6.0.0</AssemblyVersion>
         <AssemblyVersion>4.6.1.0</AssemblyVersion>
         <AssemblyVersion>4.6.2.0</AssemblyVersion>
         <AssemblyVersion>4.6.3.0</AssemblyVersion>
+        <AssemblyVersion>4.6.4.0</AssemblyVersion>
+        <AssemblyVersion>4.6.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -249,10 +270,13 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
+        <AssemblyVersion>4.5.25.0</AssemblyVersion>
         <AssemblyVersion>4.6.0.0</AssemblyVersion>
         <AssemblyVersion>4.6.1.0</AssemblyVersion>
         <AssemblyVersion>4.6.2.0</AssemblyVersion>
         <AssemblyVersion>4.6.3.0</AssemblyVersion>
+        <AssemblyVersion>4.6.4.0</AssemblyVersion>
+        <AssemblyVersion>4.6.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -283,10 +307,13 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
+        <AssemblyVersion>4.5.25.0</AssemblyVersion>
         <AssemblyVersion>4.6.0.0</AssemblyVersion>
         <AssemblyVersion>4.6.1.0</AssemblyVersion>
         <AssemblyVersion>4.6.2.0</AssemblyVersion>
         <AssemblyVersion>4.6.3.0</AssemblyVersion>
+        <AssemblyVersion>4.6.4.0</AssemblyVersion>
+        <AssemblyVersion>4.6.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IDisposable</ReturnType>
@@ -315,10 +342,13 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
+        <AssemblyVersion>4.5.25.0</AssemblyVersion>
         <AssemblyVersion>4.6.0.0</AssemblyVersion>
         <AssemblyVersion>4.6.1.0</AssemblyVersion>
         <AssemblyVersion>4.6.2.0</AssemblyVersion>
         <AssemblyVersion>4.6.3.0</AssemblyVersion>
+        <AssemblyVersion>4.6.4.0</AssemblyVersion>
+        <AssemblyVersion>4.6.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -340,10 +370,13 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
+        <AssemblyVersion>4.5.25.0</AssemblyVersion>
         <AssemblyVersion>4.6.0.0</AssemblyVersion>
         <AssemblyVersion>4.6.1.0</AssemblyVersion>
         <AssemblyVersion>4.6.2.0</AssemblyVersion>
         <AssemblyVersion>4.6.3.0</AssemblyVersion>
+        <AssemblyVersion>4.6.4.0</AssemblyVersion>
+        <AssemblyVersion>4.6.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -377,10 +410,13 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
+        <AssemblyVersion>4.5.25.0</AssemblyVersion>
         <AssemblyVersion>4.6.0.0</AssemblyVersion>
         <AssemblyVersion>4.6.1.0</AssemblyVersion>
         <AssemblyVersion>4.6.2.0</AssemblyVersion>
         <AssemblyVersion>4.6.3.0</AssemblyVersion>
+        <AssemblyVersion>4.6.4.0</AssemblyVersion>
+        <AssemblyVersion>4.6.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>TOutput</ReturnType>
@@ -423,10 +459,13 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
+        <AssemblyVersion>4.5.25.0</AssemblyVersion>
         <AssemblyVersion>4.6.0.0</AssemblyVersion>
         <AssemblyVersion>4.6.1.0</AssemblyVersion>
         <AssemblyVersion>4.6.2.0</AssemblyVersion>
         <AssemblyVersion>4.6.3.0</AssemblyVersion>
+        <AssemblyVersion>4.6.4.0</AssemblyVersion>
+        <AssemblyVersion>4.6.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -464,10 +503,13 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
+        <AssemblyVersion>4.5.25.0</AssemblyVersion>
         <AssemblyVersion>4.6.0.0</AssemblyVersion>
         <AssemblyVersion>4.6.1.0</AssemblyVersion>
         <AssemblyVersion>4.6.2.0</AssemblyVersion>
         <AssemblyVersion>4.6.3.0</AssemblyVersion>
+        <AssemblyVersion>4.6.4.0</AssemblyVersion>
+        <AssemblyVersion>4.6.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -510,10 +552,13 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
+        <AssemblyVersion>4.5.25.0</AssemblyVersion>
         <AssemblyVersion>4.6.0.0</AssemblyVersion>
         <AssemblyVersion>4.6.1.0</AssemblyVersion>
         <AssemblyVersion>4.6.2.0</AssemblyVersion>
         <AssemblyVersion>4.6.3.0</AssemblyVersion>
+        <AssemblyVersion>4.6.4.0</AssemblyVersion>
+        <AssemblyVersion>4.6.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Dataflow.DataflowMessageStatus</ReturnType>
@@ -556,10 +601,13 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
+        <AssemblyVersion>4.5.25.0</AssemblyVersion>
         <AssemblyVersion>4.6.0.0</AssemblyVersion>
         <AssemblyVersion>4.6.1.0</AssemblyVersion>
         <AssemblyVersion>4.6.2.0</AssemblyVersion>
         <AssemblyVersion>4.6.3.0</AssemblyVersion>
+        <AssemblyVersion>4.6.4.0</AssemblyVersion>
+        <AssemblyVersion>4.6.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -584,17 +632,20 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Dataflow.TransformManyBlock`2.TryReceive(System.Predicate{`1},`1@)" />
       <MemberSignature Language="VB.NET" Value="Public Function TryReceive (filter As Predicate(Of TOutput), ByRef item As TOutput) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool TryReceive(Predicate&lt;TOutput&gt; ^ filter, [Runtime::InteropServices::Out] TOutput % item);" />
-      <MemberSignature Language="F#" Value="abstract member TryReceive : Predicate&lt;'Output&gt; *  -&gt; bool&#xA;override this.TryReceive : Predicate&lt;'Output&gt; *  -&gt; bool" Usage="transformManyBlock.TryReceive (filter, item)" />
+      <MemberSignature Language="F#" Value="abstract member TryReceive : Predicate&lt;'Output&gt; * 'Output -&gt; bool&#xA;override this.TryReceive : Predicate&lt;'Output&gt; * 'Output -&gt; bool" Usage="transformManyBlock.TryReceive (filter, item)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Threading.Tasks.Dataflow.IReceivableSourceBlock`1.TryReceive(System.Predicate{`0},`0@)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
+        <AssemblyVersion>4.5.25.0</AssemblyVersion>
         <AssemblyVersion>4.6.0.0</AssemblyVersion>
         <AssemblyVersion>4.6.1.0</AssemblyVersion>
         <AssemblyVersion>4.6.2.0</AssemblyVersion>
         <AssemblyVersion>4.6.3.0</AssemblyVersion>
+        <AssemblyVersion>4.6.4.0</AssemblyVersion>
+        <AssemblyVersion>4.6.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -627,17 +678,20 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Dataflow.TransformManyBlock`2.TryReceiveAll(System.Collections.Generic.IList{`1}@)" />
       <MemberSignature Language="VB.NET" Value="Public Function TryReceiveAll (ByRef items As IList(Of TOutput)) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool TryReceiveAll([Runtime::InteropServices::Out] System::Collections::Generic::IList&lt;TOutput&gt; ^ % items);" />
-      <MemberSignature Language="F#" Value="abstract member TryReceiveAll :  -&gt; bool&#xA;override this.TryReceiveAll :  -&gt; bool" Usage="transformManyBlock.TryReceiveAll items" />
+      <MemberSignature Language="F#" Value="abstract member TryReceiveAll : IList -&gt; bool&#xA;override this.TryReceiveAll : IList -&gt; bool" Usage="transformManyBlock.TryReceiveAll items" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Threading.Tasks.Dataflow.IReceivableSourceBlock`1.TryReceiveAll(System.Collections.Generic.IList{`0}@)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
+        <AssemblyVersion>4.5.25.0</AssemblyVersion>
         <AssemblyVersion>4.6.0.0</AssemblyVersion>
         <AssemblyVersion>4.6.1.0</AssemblyVersion>
         <AssemblyVersion>4.6.2.0</AssemblyVersion>
         <AssemblyVersion>4.6.3.0</AssemblyVersion>
+        <AssemblyVersion>4.6.4.0</AssemblyVersion>
+        <AssemblyVersion>4.6.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>

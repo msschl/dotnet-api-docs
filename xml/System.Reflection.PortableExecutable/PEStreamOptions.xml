@@ -1,4 +1,4 @@
-﻿<Type Name="PEStreamOptions" FullName="System.Reflection.PortableExecutable.PEStreamOptions">
+<Type Name="PEStreamOptions" FullName="System.Reflection.PortableExecutable.PEStreamOptions">
   <TypeSignature Language="C#" Value="public enum PEStreamOptions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PEStreamOptions extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Reflection.PortableExecutable.PEStreamOptions" />
@@ -7,21 +7,24 @@
   <TypeSignature Language="F#" Value="type PEStreamOptions = " />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Metadata</AssemblyName>
+    <AssemblyVersion>1.0.22.0</AssemblyVersion>
     <AssemblyVersion>1.3.0.0</AssemblyVersion>
     <AssemblyVersion>1.4.1.0</AssemblyVersion>
     <AssemblyVersion>1.4.2.0</AssemblyVersion>
     <AssemblyVersion>1.4.3.0</AssemblyVersion>
+    <AssemblyVersion>1.4.4.0</AssemblyVersion>
+    <AssemblyVersion>1.4.5.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Attributes>
-    <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2">
+    <Attribute>
       <AttributeName>System.Flags</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides options that specify how sections of a PE image are read from a stream.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -35,17 +38,20 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.0.22.0</AssemblyVersion>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
         <AssemblyVersion>1.4.1.0</AssemblyVersion>
         <AssemblyVersion>1.4.2.0</AssemblyVersion>
         <AssemblyVersion>1.4.3.0</AssemblyVersion>
+        <AssemblyVersion>1.4.4.0</AssemblyVersion>
+        <AssemblyVersion>1.4.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Reflection.PortableExecutable.PEStreamOptions</ReturnType>
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>By default, the stream is disposed when the <see cref="T:System.Reflection.PortableExecutable.PEReader" /> is disposed, and sections of the PE image are read lazily.</summary>
       </Docs>
     </Member>
     <Member MemberName="IsLoadedImage">
@@ -61,13 +67,15 @@
         <AssemblyVersion>1.4.1.0</AssemblyVersion>
         <AssemblyVersion>1.4.2.0</AssemblyVersion>
         <AssemblyVersion>1.4.3.0</AssemblyVersion>
+        <AssemblyVersion>1.4.4.0</AssemblyVersion>
+        <AssemblyVersion>1.4.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Reflection.PortableExecutable.PEStreamOptions</ReturnType>
       </ReturnValue>
       <MemberValue>8</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that the underlying PE image has been loaded into memory by the OS loader.</summary>
       </Docs>
     </Member>
     <Member MemberName="LeaveOpen">
@@ -80,17 +88,20 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.0.22.0</AssemblyVersion>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
         <AssemblyVersion>1.4.1.0</AssemblyVersion>
         <AssemblyVersion>1.4.2.0</AssemblyVersion>
         <AssemblyVersion>1.4.3.0</AssemblyVersion>
+        <AssemblyVersion>1.4.4.0</AssemblyVersion>
+        <AssemblyVersion>1.4.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Reflection.PortableExecutable.PEStreamOptions</ReturnType>
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Keeps the stream open when the <see cref="T:System.Reflection.PortableExecutable.PEReader" /> is disposed.</summary>
       </Docs>
     </Member>
     <Member MemberName="PrefetchEntireImage">
@@ -103,17 +114,20 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.0.22.0</AssemblyVersion>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
         <AssemblyVersion>1.4.1.0</AssemblyVersion>
         <AssemblyVersion>1.4.2.0</AssemblyVersion>
         <AssemblyVersion>1.4.3.0</AssemblyVersion>
+        <AssemblyVersion>1.4.4.0</AssemblyVersion>
+        <AssemblyVersion>1.4.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Reflection.PortableExecutable.PEStreamOptions</ReturnType>
       </ReturnValue>
       <MemberValue>4</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Reads the entire image into memory right away. <see cref="T:System.Reflection.PortableExecutable.PEReader" /> closes the stream automatically by the time the constructor returns unless <see cref="F:System.Reflection.PortableExecutable.PEStreamOptions.LeaveOpen" /> is specified.</summary>
       </Docs>
     </Member>
     <Member MemberName="PrefetchMetadata">
@@ -126,17 +140,25 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.0.22.0</AssemblyVersion>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
         <AssemblyVersion>1.4.1.0</AssemblyVersion>
         <AssemblyVersion>1.4.2.0</AssemblyVersion>
         <AssemblyVersion>1.4.3.0</AssemblyVersion>
+        <AssemblyVersion>1.4.4.0</AssemblyVersion>
+        <AssemblyVersion>1.4.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Reflection.PortableExecutable.PEStreamOptions</ReturnType>
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+          <para>Reads the metadata section into memory right away.</para>
+          <para>Reading from other sections of the file is not allowed (<see cref="T:System.InvalidOperationException" /> is thrown by the <see cref="T:System.Reflection.PortableExecutable.PEReader" />).</para>
+          <para>
+            <see cref="T:System.Reflection.PortableExecutable.PEReader" /> closes the stream automatically by the time the constructor returns unless <see cref="F:System.Reflection.PortableExecutable.PEStreamOptions.LeaveOpen" /> is specified. The underlying file may be closed and even deleted after <see cref="T:System.Reflection.PortableExecutable.PEReader" /> is constructed.</para>
+        </summary>
       </Docs>
     </Member>
   </Members>

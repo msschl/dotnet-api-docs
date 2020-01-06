@@ -1,4 +1,4 @@
-﻿<Type Name="SessionSecurityTokenHandler" FullName="System.IdentityModel.Tokens.SessionSecurityTokenHandler">
+<Type Name="SessionSecurityTokenHandler" FullName="System.IdentityModel.Tokens.SessionSecurityTokenHandler">
   <TypeSignature Language="C#" Value="public class SessionSecurityTokenHandler : System.IdentityModel.Tokens.SecurityTokenHandler" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SessionSecurityTokenHandler extends System.IdentityModel.Tokens.SecurityTokenHandler" />
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.SessionSecurityTokenHandler" />
@@ -24,7 +24,7 @@
  In passive scenarios, the <xref:System.IdentityModel.Services.WSFederationAuthenticationModule> calls into the <xref:System.IdentityModel.Services.SessionAuthenticationModule> (SAM) from the authentication pipeline to create a session token from the <xref:System.Security.Claims.ClaimsPrincipal> that represents the authenticated user. The SAM uses its configured <xref:System.IdentityModel.Tokens.SessionSecurityTokenHandler> to create the token and to serialize it into a cookie (and to deserialize the token from a cookie on subsequent requests). The SAM uses an instance of its configured <xref:System.IdentityModel.Services.CookieHandler> class to write the cookie back to the HTTP Response. This cookie is then returned to the client and on subsequent requests the client can present the cookie rather than making a round trip back to the identity provider to re-obtain a security token. For more information about how sessions operate with WIF, see [WIF Session Management](~/docs/framework/security/wif-session-management.md).  
   
 > [!NOTE]
->  The \<securityTokenHandlers> configuration element can be used to specify a <xref:System.IdentityModel.Tokens.SessionSecurityTokenHandler> that has the responsibility for securing the application's sessions. Developers should use caution when changing this configuration setting, as a misconfigured system could result in application compromise. For example, specifying a derived  HYPERLINK "http://msdn.microsoft.com/library/hh193426%28v=vs.110%29.aspx" \t "_blank" <xref:System.IdentityModel.Tokens.SessionSecurityTokenHandler> and passing an empty Transforms (CookieTransform) collection to the base, would result in the users identity being serialized into a cookie that was not protected. This could allow an attacker to modify the identity and therefore change access privileges.  
+>  The \<securityTokenHandlers> configuration element can be used to specify a <xref:System.IdentityModel.Tokens.SessionSecurityTokenHandler> that has the responsibility for securing the application's sessions. Developers should use caution when changing this configuration setting, as a misconfigured system could result in application compromise. For example, specifying a derived <xref:System.IdentityModel.Tokens.SessionSecurityTokenHandler> and passing an empty Transforms (CookieTransform) collection to the base, would result in the users identity being serialized into a cookie that was not protected. This could allow an attacker to modify the identity and therefore change access privileges.  
   
  If the session token is in reference mode, that is, its <xref:System.IdentityModel.Tokens.SessionSecurityToken.IsReferenceMode%2A?displayProperty=nameWithType> property is `true`, the session token handler only serializes properties of the session token that are needed to regenerate its key in the <xref:System.IdentityModel.Tokens.SessionSecurityTokenCache>. In the default case, the <xref:System.IdentityModel.Tokens.SessionSecurityTokenCacheKey> class is used to represent cache keys, and the token handler writes the <xref:System.IdentityModel.Tokens.SessionSecurityToken.ContextId%2A?displayProperty=nameWithType> and <xref:System.IdentityModel.Tokens.SessionSecurityToken.KeyGeneration%2A?displayProperty=nameWithType> properties of the token. If the session token is not in reference mode, that is, the <xref:System.IdentityModel.Tokens.SessionSecurityToken.IsReferenceMode%2A?displayProperty=nameWithType> property is `false`, then, in addition to the properties mentioned previously, the handler invokes the <xref:System.IdentityModel.Tokens.SessionSecurityTokenHandler.ApplyTransforms%2A> method on a byte array serialized from the token and stores the resulting value in the cookie as well. For more details about how the token is serialized, see the <xref:System.IdentityModel.Tokens.SessionSecurityTokenHandler.WriteToken%28System.Xml.XmlWriter%2CSystem.IdentityModel.Tokens.SecurityToken%29?displayProperty=nameWithType> method.  
   
@@ -313,7 +313,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the namespace for the cookie element.</summary>
-        <value>The namespace for the cookie element. The default namespace is "http://schemas.microsoft.com/ws/2006/05/security".</value>
+        <value>The namespace for the cookie element. The default namespace is <c>"http://schemas.microsoft.com/ws/2006/05/security"</c>.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -482,7 +482,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The following type URIs are supported: "http://schemas.microsoft.com/ws/2006/05/servicemodel/tokens/SecureConversation", "http://docs.oasis-open.org/ws-sx/ws-secureconversation/200512/sct", and "http://schemas.xmlsoap.org/ws/2005/02/sc/sct".  
+ The following type URIs are supported: 
+ 
+ - `http://schemas.microsoft.com/ws/2006/05/servicemodel/tokens/SecureConversation`
+ - `http://docs.oasis-open.org/ws-sx/ws-secureconversation/200512/sct`
+ - `http://schemas.xmlsoap.org/ws/2005/02/sc/sct`.  
   
  ]]></format>
         </remarks>

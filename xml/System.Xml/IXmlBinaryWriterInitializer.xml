@@ -1,4 +1,4 @@
-﻿<Type Name="IXmlBinaryWriterInitializer" FullName="System.Xml.IXmlBinaryWriterInitializer">
+<Type Name="IXmlBinaryWriterInitializer" FullName="System.Xml.IXmlBinaryWriterInitializer">
   <TypeSignature Language="C#" Value="public interface IXmlBinaryWriterInitializer" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IXmlBinaryWriterInitializer" />
   <TypeSignature Language="DocId" Value="T:System.Xml.IXmlBinaryWriterInitializer" />
@@ -14,11 +14,13 @@
   <AssemblyInfo>
     <AssemblyName>netstandard</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
     <AssemblyVersion>4.1.3.0</AssemblyVersion>
     <AssemblyVersion>4.1.4.0</AssemblyVersion>
+    <AssemblyVersion>4.1.5.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
   <Docs>
@@ -42,11 +44,13 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
         <AssemblyVersion>4.1.3.0</AssemblyVersion>
         <AssemblyVersion>4.1.4.0</AssemblyVersion>
+        <AssemblyVersion>4.1.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -61,7 +65,8 @@
         <param name="stream">The stream to write to.</param>
         <param name="dictionary">The <see cref="T:System.Xml.XmlDictionary" /> to use.</param>
         <param name="session">The <see cref="T:System.Xml.XmlBinaryWriterSession" /> to use.</param>
-        <param name="ownsStream"><see langword="true" /> to indicate the stream is closed by the writer when done; otherwise, <see langword="false" />.</param>
+        <param name="ownsStream">
+          <see langword="true" /> to indicate the stream is closed by the writer when done; otherwise, <see langword="false" />.</param>
         <summary>Specifies initialization requirements for XML binary writers that implement this method.</summary>
         <remarks>To be added.</remarks>
       </Docs>

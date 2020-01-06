@@ -1,4 +1,4 @@
-﻿<Type Name="UnicodeRanges" FullName="System.Text.Unicode.UnicodeRanges">
+<Type Name="UnicodeRanges" FullName="System.Text.Unicode.UnicodeRanges">
   <TypeSignature Language="C#" Value="public static class UnicodeRanges" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit UnicodeRanges extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Text.Unicode.UnicodeRanges" />
@@ -11,21 +11,25 @@
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
     <AssemblyVersion>4.0.2.0</AssemblyVersion>
     <AssemblyVersion>4.0.3.0</AssemblyVersion>
+    <AssemblyVersion>4.0.4.0</AssemblyVersion>
+    <AssemblyVersion>4.0.5.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides static properties that return predefined <see cref="System.Text.Unicode.UnicodeRange" /> instances that correspond to blocks from the Unicode specification.</summary>
+    <summary>Provides static properties that return predefined <see cref="T:System.Text.Unicode.UnicodeRange" /> instances that correspond to blocks from the Unicode specification.</summary>
     <remarks>
-      <format type="text/markdown"><![CDATA[  
+      <format type="text/markdown"><![CDATA[
+
 ## Remarks  
 
-You use <xref:System.Text.Unicode.UnicodeRanges> properties to retrieve Unicode named ranges, each of which consists of a contiguous block of Unicode code points. Some ranges include undefined code points. For example, in the **Armenian** Unicode block (U+0530-U+058F), U+0530, U+0557-U+0558, U+0560, U+0588, and U+058B-058C are undefined. One or more undefined code points can occur at the beginning of a range, at the end of a range, or anywhere in between. 
+You use <xref:System.Text.Unicode.UnicodeRanges> properties to retrieve Unicode named ranges, each of which consists of a contiguous block of Unicode code points. Some ranges include undefined code points. For example, in the **Armenian** Unicode block (U+0530-U+058F), U+0530, U+0557-U+0558, U+0560, U+0588, and U+058B-058C are undefined. One or more undefined code points can occur at the beginning of a range, at the end of a range, or anywhere in between.
 
-Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named ranges in the Basic Multilingual Plane (BMP), which extends from U+0000 to U+FFFF.   
-  ]]></format>
+Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named ranges in the Basic Multilingual Plane (BMP), which extends from U+0000 to U+FFFF.
+
+]]></format>
     </remarks>
   </Docs>
   <Members>
@@ -43,6 +47,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -67,6 +73,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -74,7 +82,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Alphabetic Presentation Forms Unicode block (U+FB00-U+FB4F).</summary>
         <value>The Alphabetic Presentation Forms Unicode block (U+FB00-U+FB4F).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - Alphabetic Presentation Forms](https://www.unicode.org/charts/PDF/UFB00.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Arabic">
@@ -91,6 +107,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -98,7 +116,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Arabic Unicode block (U+0600-U+06FF).</summary>
         <value>The Arabic Unicode block (U+0600-U+06FF).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - Arabic](https://www.unicode.org/charts/PDF/U0600.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ArabicExtendedA">
@@ -115,6 +141,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -122,7 +150,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Arabic Extended-A Unicode block (U+08A0-U+08FF).</summary>
         <value>The Arabic Extended-A Unicode block (U+08A0-U+08FF).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - Arabic Extended-A](https://www.unicode.org/charts/PDF/U08A0.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ArabicPresentationFormsA">
@@ -139,6 +175,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -146,7 +184,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Arabic Presentation Forms-A Unicode block (U+FB50-U+FDFF).</summary>
         <value>The Arabic Presentation Forms-A Unicode block (U+FB50-U+FDFF).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - Arabic Presentation Forms-A](https://www.unicode.org/charts/PDF/UFB50.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ArabicPresentationFormsB">
@@ -163,6 +209,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -170,7 +218,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Arabic Presentation Forms-B Unicode block (U+FE70-U+FEFF).</summary>
         <value>The Arabic Presentation Forms-B Unicode block (U+FE70-U+FEFF).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - Arabic Presentation Forms-B](https://www.unicode.org/charts/PDF/UFE70.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ArabicSupplement">
@@ -187,6 +243,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -194,7 +252,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Arabic Supplement Unicode block (U+0750-U+077F).</summary>
         <value>The Arabic Supplement Unicode block (U+0750-U+077F).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - Arabic Supplement](https://www.unicode.org/charts/PDF/U0750.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Armenian">
@@ -211,6 +277,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -218,7 +286,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Armenian Unicode block (U+0530-U+058F).</summary>
         <value>The Armenian Unicode block (U+0530-U+058F).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - Armenian](https://www.unicode.org/charts/PDF/U0530.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Arrows">
@@ -235,6 +311,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -242,7 +320,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Arrows Unicode block (U+2190-U+21FF).</summary>
         <value>The Arrows Unicode block (U+2190-U+21FF).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - Arrows](https://www.unicode.org/charts/PDF/U2190.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Balinese">
@@ -259,6 +345,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -266,7 +354,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Balinese Unicode block (U+1B00-U+1B7F).</summary>
         <value>The Balinese Unicode block (U+1B00-U+1B7F).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - Balinese](https://www.unicode.org/charts/PDF/U1B00.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Bamum">
@@ -283,6 +379,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -290,7 +388,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Bamum Unicode block (U+A6A0-U+A6FF).</summary>
         <value>The Bamum Unicode block (U+A6A0-U+A6FF).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - Bamum](https://www.unicode.org/charts/PDF/UA6A0.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="BasicLatin">
@@ -307,6 +413,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -314,7 +422,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Basic Latin Unicode block (U+0021-U+007F).</summary>
         <value>The Basic Latin Unicode block (U+0021-U+007F).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - C0 Controls and Basic Latin](https://www.unicode.org/charts/PDF/U0000.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Batak">
@@ -331,6 +447,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -338,7 +456,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Batak Unicode block (U+1BC0-U+1BFF).</summary>
         <value>The Batak Unicode block (U+1BC0-U+1BFF).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - Batak](https://www.unicode.org/charts/PDF/U1BC0.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Bengali">
@@ -355,6 +481,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -362,7 +490,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Bengali Unicode block (U+0980-U+09FF).</summary>
         <value>The Bengali Unicode block (U+0980-U+09FF).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - Bengali](https://www.unicode.org/charts/PDF/U0980.pdf).
+
+          ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="BlockElements">
@@ -379,6 +515,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -386,7 +524,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Block Elements Unicode block (U+2580-U+259F).</summary>
         <value>The Block Elements Unicode block (U+2580-U+259F).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - Block Elements](https://www.unicode.org/charts/PDF/U2580.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Bopomofo">
@@ -403,6 +549,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -410,7 +558,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Bopomofo Unicode block (U+3100-U+312F).</summary>
         <value>The Bopomofo Unicode block (U+3105-U+312F).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - Bopomofo](https://www.unicode.org/charts/PDF/U3100.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="BopomofoExtended">
@@ -427,6 +583,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -434,7 +592,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Bopomofo Extended Unicode block (U+31A0-U+31BF).</summary>
         <value>The Bopomofo Extended Unicode block (U+31A0-U+31BF).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - Bopomofo Extended](https://www.unicode.org/charts/PDF/U31A0.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="BoxDrawing">
@@ -451,6 +617,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -458,7 +626,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Box Drawing Unicode block (U+2500-U+257F).</summary>
         <value>The Box Drawing Unicode block (U+2500-U+257F).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - Box Drawing](https://www.unicode.org/charts/PDF/U2500.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="BraillePatterns">
@@ -475,6 +651,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -482,7 +660,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Braille Patterns Unicode block (U+2800-U+28FF).</summary>
         <value>The Braille Patterns Unicode block (U+2800-U+28FF).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - Braille Patterns](https://www.unicode.org/charts/PDF/U2800.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Buginese">
@@ -499,6 +685,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -506,7 +694,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Buginese Unicode block (U+1A00-U+1A1F).</summary>
         <value>The Buginese Unicode block (U+1A00-U+1A1F).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - Buginese](https://www.unicode.org/charts/PDF/U1A00.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Buhid">
@@ -523,6 +719,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -530,7 +728,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Buhid Unicode block (U+1740-U+175F).</summary>
         <value>The Buhid Unicode block (U+1740-U+175F).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - Buhid](https://www.unicode.org/charts/PDF/U1740.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Cham">
@@ -547,6 +753,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -554,7 +762,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Cham Unicode block (U+AA00-U+AA5F).</summary>
         <value>The Cham Unicode block (U+AA00-U+AA5F).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - Cham](https://www.unicode.org/charts/PDF/UAA00.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Cherokee">
@@ -571,6 +787,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -578,7 +796,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Cherokee Unicode block (U+13A0-U+13FF).</summary>
         <value>The Cherokee Unicode block (U+13A0-U+13FF).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - Cherokee](https://www.unicode.org/charts/PDF/U13A0.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CherokeeSupplement">
@@ -595,6 +821,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -602,7 +830,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Cherokee Supplement Unicode block (U+AB70-U+ABBF).</summary>
         <value>The Cherokee Supplement Unicode block (U+AB70-U+ABBF).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - Cherokee Supplement](https://www.unicode.org/charts/PDF/UAB70.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CjkCompatibility">
@@ -619,6 +855,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -626,7 +864,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the CJK Compatibility Unicode block (U+3300-U+33FF).</summary>
         <value>The CJK Compatibility Unicode block (U+3300-U+33FF).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - CJK Compatibility](https://www.unicode.org/charts/PDF/U3300.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CjkCompatibilityForms">
@@ -643,6 +889,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -650,7 +898,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the CJK Compatibility Forms Unicode block (U+FE30-U+FE4F).</summary>
         <value>The CJK Compatibility Forms Unicode block (U+FE30-U+FE4F).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - CJK Compatibility Forms](https://www.unicode.org/charts/PDF/UFE30.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CjkCompatibilityIdeographs">
@@ -667,6 +923,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -674,7 +932,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the CJK Compatibility Ideographs Unicode block (U+F900-U+FAD9).</summary>
         <value>The CJK Compatibility Ideographs Unicode block (U+F900-U+FAD9).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - CJK Compatibility Ideographs](https://www.unicode.org/charts/PDF/UF900.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CjkRadicalsSupplement">
@@ -691,6 +957,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -698,7 +966,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the CJK Radicals Supplement Unicode block (U+2E80-U+2EFF).</summary>
         <value>The CJK Radicals Supplement Unicode block (U+2E80-U+2EFF).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - CJK Radicals Supplement](https://www.unicode.org/charts/PDF/U2E80.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CjkStrokes">
@@ -715,6 +991,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -722,7 +1000,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the CJK Strokes Unicode block (U+31C0-U+31EF).</summary>
         <value>The CJK Strokes Unicode block (U+31C0-U+31EF).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - CJK Strokes](https://www.unicode.org/charts/PDF/U31C0.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CjkSymbolsandPunctuation">
@@ -739,6 +1025,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -746,7 +1034,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the CJK Symbols and Punctuation Unicode block (U+3000-U+303F).</summary>
         <value>The CJK Symbols and Punctuation Unicode block (U+3000-U+303F).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - CJK Symbols and Punctuation](https://www.unicode.org/charts/PDF/U3000.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CjkUnifiedIdeographs">
@@ -763,6 +1059,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -770,7 +1068,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the CJK Unified Ideographs Unicode block (U+4E00-U+9FCC).</summary>
         <value>The CJK Unified Ideographs Unicode block (U+4E00-U+9FCC).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - CJK Unified Ideographs](https://www.unicode.org/charts/PDF/U4E00.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CjkUnifiedIdeographsExtensionA">
@@ -787,6 +1093,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -794,7 +1102,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the CJK Unitied Ideographs Extension A Unicode block (U+3400-U+4DB5).</summary>
         <value>The CJK Unitied Ideographs Extension A Unicode block (U+3400-U+4DB5).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - CJK Unified Ideographs Extension A](https://www.unicode.org/charts/PDF/U3400.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CombiningDiacriticalMarks">
@@ -811,6 +1127,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -818,7 +1136,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Combining Diacritical Marks Unicode block (U+0300-U+036F).</summary>
         <value>The Combining Diacritical Marks Unicode block (U+0300-U+036F).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - Combining Diacritical Marks](https://www.unicode.org/charts/PDF/U0300.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CombiningDiacriticalMarksExtended">
@@ -835,6 +1161,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -842,7 +1170,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Combining Diacritical Marks Extended Unicode block (U+1AB0-U+1AFF).</summary>
         <value>The Combining Diacritical Marks Extended Unicode block (U+1AB0-U+1AFF).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - Combining Diacritical Marks Extended](https://www.unicode.org/charts/PDF/U1AB0.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CombiningDiacriticalMarksforSymbols">
@@ -859,6 +1195,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -866,7 +1204,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Combining Diacritical Marks for Symbols Unicode block (U+20D0-U+20FF).</summary>
         <value>The Combining Diacritical Marks for Symbols Unicode block (U+20D0-U+20FF).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - Combining Diacritical Marks for Symbols](https://www.unicode.org/charts/PDF/U20D0.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CombiningDiacriticalMarksSupplement">
@@ -883,6 +1229,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -890,7 +1238,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Combining Diacritical Marks Supplement Unicode block (U+1DC0-U+1DFF).</summary>
         <value>The Combining Diacritical Marks Supplement Unicode block (U+1DC0-U+1DFF).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - Combining Diacritical Marks Supplement](https://www.unicode.org/charts/PDF/U1DC0.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CombiningHalfMarks">
@@ -907,6 +1263,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -914,7 +1272,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Combining Half Marks Unicode block (U+FE20-U+FE2F).</summary>
         <value>The Combining Half Marks Unicode block (U+FE20-U+FE2F).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - Combining Half Marks](https://www.unicode.org/charts/PDF/UFE20.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CommonIndicNumberForms">
@@ -931,6 +1297,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -938,7 +1306,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Common Indic Number Forms Unicode block (U+A830-U+A83F).</summary>
         <value>The Common Indic Number Forms Unicode block (U+A830-U+A83F).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - Common Indic Number Forms](https://www.unicode.org/charts/PDF/UA830.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ControlPictures">
@@ -955,6 +1331,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -962,7 +1340,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Control Pictures Unicode block (U+2400-U+243F).</summary>
         <value>The Control Pictures Unicode block (U+2400-U+243F).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - Control Pictures](https://www.unicode.org/charts/PDF/U2400.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Coptic">
@@ -979,6 +1365,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -986,7 +1374,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Coptic Unicode block (U+2C80-U+2CFF).</summary>
         <value>The Coptic Unicode block (U+2C80-U+2CFF).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - Coptic](https://www.unicode.org/charts/PDF/U2C80.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CurrencySymbols">
@@ -1003,6 +1399,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -1010,7 +1408,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Currency Symbols Unicode block (U+20A0-U+20CF).</summary>
         <value>The Currency Symbols Unicode block (U+20A0-U+20CF).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - Currency Symbols](https://www.unicode.org/charts/PDF/U20A0.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Cyrillic">
@@ -1027,6 +1433,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -1034,7 +1442,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Cyrillic Unicode block (U+0400-U+04FF).</summary>
         <value>The Cyrillic Unicode block (U+0400-U+04FF).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - Cyrillic](https://www.unicode.org/charts/PDF/U0400.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CyrillicExtendedA">
@@ -1051,6 +1467,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -1058,7 +1476,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Cyrillic Extended-A Unicode block (U+2DE0-U+2DFF).</summary>
         <value>The Cyrillic Extended-A Unicode block (U+2DE0-U+2DFF).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - Cyrillic Extended-A](https://www.unicode.org/charts/PDF/U2DE0.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CyrillicExtendedB">
@@ -1075,6 +1501,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -1082,7 +1510,45 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Cyrillic Extended-B Unicode block (U+A640-U+A69F).</summary>
         <value>The Cyrillic Extended-B Unicode block (U+A640-U+A69F).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - Cyrillic Extended-B](https://www.unicode.org/charts/PDF/UA640.pdf).
+
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CyrillicExtendedC">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange CyrillicExtendedC { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange CyrillicExtendedC" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.CyrillicExtendedC" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CyrillicExtendedC As UnicodeRange" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ CyrillicExtendedC { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CyrillicExtendedC : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.CyrillicExtendedC" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A <see cref="T:System.Text.Unicode.UnicodeRange" /> corresponding to the 'Cyrillic Extended-C' Unicode block (U+1C80..U+1C8F).</summary>
+        <value>To be added.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - Cyrillic Extended-C](https://www.unicode.org/charts/PDF/U1C80.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CyrillicSupplement">
@@ -1099,6 +1565,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -1106,7 +1574,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Cyrillic Supplement Unicode block (U+0500-U+052F).</summary>
         <value>The Cyrillic Supplement Unicode block (U+0500-U+052F).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - Cyrillic Supplement](https://www.unicode.org/charts/PDF/U0500.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Devanagari">
@@ -1123,6 +1599,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -1130,7 +1608,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Devangari Unicode block (U+0900-U+097F).</summary>
         <value>The Devangari Unicode block (U+0900-U+097F).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - Devanagari](https://www.unicode.org/charts/PDF/U0900.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DevanagariExtended">
@@ -1147,6 +1633,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -1154,7 +1642,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Devanagari Extended Unicode block (U+A8E0-U+A8FF).</summary>
         <value>The Devanagari Extended Unicode block (U+A8E0-U+A8FF).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - Devanagari Extended](https://www.unicode.org/charts/PDF/UA8E0.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Dingbats">
@@ -1171,6 +1667,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -1178,7 +1676,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Dingbats Unicode block (U+2700-U+27BF).</summary>
         <value>The Dingbats Unicode block (U+2700-U+27BF).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - Dingbats](https://www.unicode.org/charts/PDF/U2700.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="EnclosedAlphanumerics">
@@ -1195,6 +1701,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -1202,7 +1710,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Enclosed Alphanumerics Unicode block (U+2460-U+24FF).</summary>
         <value>The Enclosed Alphanumerics Unicode block (U+2460-U+24FF).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - Enclosed Alphanumerics](https://www.unicode.org/charts/PDF/U2460.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="EnclosedCjkLettersandMonths">
@@ -1219,6 +1735,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -1226,7 +1744,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Enclosed CJK Letters and Months Unicode block (U+3200-U+32FF).</summary>
         <value>The Enclosed CJK Letters and Months Unicode block (U+3200-U+32FF).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - Enclosed CJK Letters and Months](https://www.unicode.org/charts/PDF/U3200.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Ethiopic">
@@ -1243,6 +1769,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -1250,7 +1778,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Ethiopic Unicode block (U+1200-U+137C).</summary>
         <value>The Ethiopic Unicode block (U+1200-U+137C).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - Ethiopic](https://www.unicode.org/charts/PDF/U1200.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="EthiopicExtended">
@@ -1267,6 +1803,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -1274,7 +1812,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Ethipic Extended Unicode block (U+2D80-U+2DDF).</summary>
         <value>The Ethipic Extended Unicode block (U+2D80-U+2DDF).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - Ethiopic Extended](https://www.unicode.org/charts/PDF/U2D80.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="EthiopicExtendedA">
@@ -1291,6 +1837,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -1298,7 +1846,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Ethiopic Extended-A Unicode block (U+AB00-U+AB2F).</summary>
         <value>The Ethiopic Extended-A Unicode block (U+AB00-U+AB2F).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - Ethiopic Extended-A](https://www.unicode.org/charts/PDF/UAB00.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="EthiopicSupplement">
@@ -1315,6 +1871,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -1322,7 +1880,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Ethiopic Supplement Unicode block (U+1380-U+1399).</summary>
         <value>The Ethiopic Supplement Unicode block (U+1380-U+1399).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - Ethiopic Supplement](https://www.unicode.org/charts/PDF/U1380.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GeneralPunctuation">
@@ -1339,6 +1905,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -1346,7 +1914,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the General Punctuation Unicode block (U+2000-U+206F).</summary>
         <value>The General Punctuation Unicode block (U+2000-U+206F).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - General Punctuation](https://www.unicode.org/charts/PDF/U2000.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GeometricShapes">
@@ -1363,6 +1939,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -1370,7 +1948,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Geometric Shapes Unicode block (U+25A0-U+25FF).</summary>
         <value>The Geometric Shapes Unicode block (U+25A0-U+25FF).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - Geometric Shapes](https://www.unicode.org/charts/PDF/U25A0.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Georgian">
@@ -1387,6 +1973,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -1394,7 +1982,45 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Georgian Unicode block (U+10A0-U+10FF).</summary>
         <value>The Georgian Unicode block (U+10A0-U+10FF).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - Georgian](https://www.unicode.org/charts/PDF/U10A0.pdf).
+
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GeorgianExtended">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange GeorgianExtended { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange GeorgianExtended" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.GeorgianExtended" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property GeorgianExtended As UnicodeRange" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ GeorgianExtended { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.GeorgianExtended : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.GeorgianExtended" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A <see cref="T:System.Text.Unicode.UnicodeRange" /> corresponding to the 'Georgian Extended' Unicode block (U+1C90..U+1CBF).</summary>
+        <value>To be added.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - Georgian Extended](https://www.unicode.org/charts/PDF/U1C90.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GeorgianSupplement">
@@ -1411,6 +2037,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -1418,7 +2046,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Georgian Supplement Unicode block (U+2D00-U+2D2F).</summary>
         <value>The Georgian Supplement Unicode block (U+2D00-U+2D2F).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - Georgian Supplement](https://www.unicode.org/charts/PDF/U2D00.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Glagolitic">
@@ -1435,6 +2071,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -1442,7 +2080,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Glagolitic Unicode block (U+2C00-U+2C5F).</summary>
         <value>The Glagolitic Unicode block (U+2C00-U+2C5F).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - Glagolitic](https://www.unicode.org/charts/PDF/U2C00.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GreekandCoptic">
@@ -1459,6 +2105,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -1466,7 +2114,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Greek and Coptic Unicode block (U+0370-U+03FF).</summary>
         <value>The Greek and Coptic Unicode block (U+0370-U+03FF).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - Greek and Coptic](https://www.unicode.org/charts/PDF/U0370.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GreekExtended">
@@ -1483,6 +2139,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -1490,7 +2148,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Greek Extended Unicode block (U+1F00-U+1FFF).</summary>
         <value>The Greek Extended Unicode block (U+1F00-U+1FFF).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - Greek Extended](https://www.unicode.org/charts/PDF/U1F00.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Gujarati">
@@ -1507,6 +2173,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -1514,7 +2182,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Gujarti Unicode block (U+0A81-U+0AFF).</summary>
         <value>The Gujarti Unicode block (U+0A81-U+0AFF).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - Gujarati](https://www.unicode.org/charts/PDF/U0A80.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Gurmukhi">
@@ -1531,6 +2207,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -1538,7 +2216,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Gurmukhi Unicode block (U+0A01-U+0A7F).</summary>
         <value>The Gurmukhi Unicode block (U+0A01-U+0A7F).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - Gurmukhi](https://www.unicode.org/charts/PDF/U0A00.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HalfwidthandFullwidthForms">
@@ -1555,6 +2241,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -1562,7 +2250,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Halfwidth and Fullwidth Forms Unicode block (U+FF00-U+FFEE).</summary>
         <value>The Halfwidth and Fullwidth Forms Unicode block (U+FF00-U+FFEE).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - Halfwidth and Fullwidth Forms](https://www.unicode.org/charts/PDF/UFF00.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HangulCompatibilityJamo">
@@ -1579,6 +2275,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -1586,7 +2284,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Hangul Compatibility Jamo Unicode block (U+3131-U+318F).</summary>
         <value>The Hangul Compatibility Jamo Unicode block (U+3131-U+318F).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - Hangul Compatibility Jamo](https://www.unicode.org/charts/PDF/U3130.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HangulJamo">
@@ -1603,6 +2309,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -1610,7 +2318,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Hangul Jamo Unicode block (U+1100-U+11FF).</summary>
         <value>The Hangul Jamo Unicode block (U+1100-U+11FF).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - Hangul Jamo](https://www.unicode.org/charts/PDF/U1100.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HangulJamoExtendedA">
@@ -1627,6 +2343,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -1634,7 +2352,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Hangul Jamo Extended-A Unicode block (U+A960-U+A9F).</summary>
         <value>The Hangul Jamo Extended-A Unicode block (U+A960-U+A97F).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - Hangul Jamo Extended-A](https://www.unicode.org/charts/PDF/UA960.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HangulJamoExtendedB">
@@ -1651,6 +2377,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -1658,7 +2386,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Hangul Jamo Extended-B Unicode block (U+D7B0-U+D7FF).</summary>
         <value>The Hangul Jamo Extended-B Unicode block (U+D7B0-U+D7FF).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - Hangul Jamo Extended-B](https://www.unicode.org/charts/PDF/UD7B0.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HangulSyllables">
@@ -1675,6 +2411,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -1682,7 +2420,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Hangul Syllables Unicode block (U+AC00-U+D7AF).</summary>
         <value>The Hangul Syllables Unicode block (U+AC00-U+D7AF).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - Hangul Syllables](https://www.unicode.org/charts/PDF/UAC00.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Hanunoo">
@@ -1699,6 +2445,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -1706,7 +2454,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Hanunoo Unicode block (U+1720-U+173F).</summary>
         <value>The Hanunoo Unicode block (U+1720-U+173F).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - Hanunoo](https://www.unicode.org/charts/PDF/U1720.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Hebrew">
@@ -1723,6 +2479,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -1730,7 +2488,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Hebrew Unicode block (U+0590-U+05FF).</summary>
         <value>The Hebrew Unicode block (U+0590-U+05FF).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - Hebrew](https://www.unicode.org/charts/PDF/U0590.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Hiragana">
@@ -1747,6 +2513,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -1754,7 +2522,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Hiragana Unicode block (U+3040-U+309F).</summary>
         <value>The Hiragana Unicode block (U+3040-U+309F).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - Hiragana](https://www.unicode.org/charts/PDF/U3040.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IdeographicDescriptionCharacters">
@@ -1771,6 +2547,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -1778,7 +2556,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Ideographic Description Characters Unicode block (U+2FF0-U+2FFF).</summary>
         <value>The Ideographic Description Characters Unicode block (U+2FF0-U+2FFF).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - Ideographic Description Characters](https://www.unicode.org/charts/PDF/U2FF0.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IpaExtensions">
@@ -1795,6 +2581,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -1802,7 +2590,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the IPA Extensions Unicode block (U+0250-U+02AF).</summary>
         <value>The IPA Extensions Unicode block (U+0250-U+02AF).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - IPA Extensions](https://www.unicode.org/charts/PDF/U0250.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Javanese">
@@ -1819,6 +2615,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -1826,7 +2624,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Javanese Unicode block (U+A980-U+A9DF).</summary>
         <value>The Javanese Unicode block (U+A980-U+A9DF).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - Javanese](https://www.unicode.org/charts/PDF/UA980.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Kanbun">
@@ -1843,6 +2649,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -1850,7 +2658,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Kanbun Unicode block (U+3190-U+319F).</summary>
         <value>The Kanbun Unicode block (U+3190-U+319F).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - Kanbun](https://www.unicode.org/charts/PDF/U3190.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="KangxiRadicals">
@@ -1867,6 +2683,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -1874,7 +2692,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Kangxi Radicals Supplement Unicode block (U+2F00-U+2FDF).</summary>
         <value>The Kangxi Radicals Supplement Unicode block (U+2F00-U+2FDF).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - Kangxi Radicals](https://www.unicode.org/charts/PDF/U2F00.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Kannada">
@@ -1891,6 +2717,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -1898,7 +2726,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Kannada Unicode block (U+0C81-U+0CFF).</summary>
         <value>The Kannada Unicode block (U+0C81-U+0CFF).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - Kannada](https://www.unicode.org/charts/PDF/U0C80.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Katakana">
@@ -1915,6 +2751,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -1922,7 +2760,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Katakana Unicode block (U+30A0-U+30FF).</summary>
         <value>The Katakana Unicode block (U+30A0-U+30FF).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - Katakana](https://www.unicode.org/charts/PDF/U30A0.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="KatakanaPhoneticExtensions">
@@ -1939,6 +2785,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -1946,7 +2794,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Katakana Phonetic Extensions Unicode block (U+31F0-U+31FF).</summary>
         <value>The Katakana Phonetic Extensions Unicode block (U+31F0-U+31FF).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - Katakana Phonetic Extensions](https://www.unicode.org/charts/PDF/U31F0.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="KayahLi">
@@ -1963,6 +2819,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -1970,7 +2828,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Kayah Li Unicode block (U+A900-U+A92F).</summary>
         <value>The Kayah Li Unicode block (U+A900-U+A92F).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - Kayah Li](https://www.unicode.org/charts/PDF/UA900.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Khmer">
@@ -1987,6 +2853,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -1994,7 +2862,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Khmer Unicode block (U+1780-U+17FF).</summary>
         <value>The Khmer Unicode block (U+1780-U+17FF).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - Khmer](https://www.unicode.org/charts/PDF/U1780.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="KhmerSymbols">
@@ -2011,6 +2887,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -2018,7 +2896,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Khmer Symbols Unicode block (U+19E0-U+19FF).</summary>
         <value>The Khmer Symbols Unicode block (U+19E0-U+19FF).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - Khmer Symbols](https://www.unicode.org/charts/PDF/U19E0.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Lao">
@@ -2035,6 +2921,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -2042,7 +2930,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Lao Unicode block (U+0E80-U+0EDF).</summary>
         <value>The Lao Unicode block (U+0E80-U+0EDF).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - Lao](https://www.unicode.org/charts/PDF/U0E80.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Latin1Supplement">
@@ -2059,6 +2955,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -2066,7 +2964,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Latin-1 Supplement Unicode block (U+00A1-U+00FF).</summary>
         <value>The Latin-1 Supplement Unicode block (U+00A1-U+00FF).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - C1 Controls and Latin-1 Supplement](https://www.unicode.org/charts/PDF/U0080.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="LatinExtendedA">
@@ -2083,6 +2989,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -2090,7 +2998,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Latin Extended-A Unicode block (U+0100-U+017F).</summary>
         <value>The Latin Extended-A Unicode block (U+0100-U+017F).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - Latin Extended-A](https://www.unicode.org/charts/PDF/U0100.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="LatinExtendedAdditional">
@@ -2107,6 +3023,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -2114,7 +3032,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Latin Extended Additional Unicode block (U+1E00-U+1EFF).</summary>
         <value>The Latin Extended Additional Unicode block (U+1E00-U+1EFF).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - Latin Extended Additional](https://www.unicode.org/charts/PDF/U1E00.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="LatinExtendedB">
@@ -2131,6 +3057,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -2138,7 +3066,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Latin Extended-B Unicode block (U+0180-U+024F).</summary>
         <value>The Latin Extended-B Unicode block (U+0180-U+024F).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - Latin Extended-B](https://www.unicode.org/charts/PDF/U0180.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="LatinExtendedC">
@@ -2155,6 +3091,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -2162,7 +3100,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Latin Extended-C Unicode block (U+2C60-U+2C7F).</summary>
         <value>The Latin Extended-C Unicode block (U+2C60-U+2C7F).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - Latin Extended-C](https://www.unicode.org/charts/PDF/U2C60.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="LatinExtendedD">
@@ -2179,6 +3125,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -2186,7 +3134,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Latin Extended-D Unicode block (U+A720-U+A7FF).</summary>
         <value>The Latin Extended-D Unicode block (U+A720-U+A7FF).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - Latin Extended-D](https://www.unicode.org/charts/PDF/UA720.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="LatinExtendedE">
@@ -2203,6 +3159,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -2210,7 +3168,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Latin Extended-E Unicode block (U+AB30-U+AB6F).</summary>
         <value>The Latin Extended-E Unicode block (U+AB30-U+AB6F).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - Latin Extended-E](https://www.unicode.org/charts/PDF/UAB30.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Lepcha">
@@ -2227,6 +3193,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -2234,7 +3202,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Lepcha Unicode block (U+1C00-U+1C4F).</summary>
         <value>The Lepcha Unicode block (U+1C00-U+1C4F).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - Lepcha](https://www.unicode.org/charts/PDF/U1C00.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="LetterlikeSymbols">
@@ -2251,6 +3227,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -2258,7 +3236,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Letterlike Symbols Unicode block (U+2100-U+214F).</summary>
         <value>The Letterlike Symbols Unicode block (U+2100-U+214F).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - Letterlike Symbols](https://www.unicode.org/charts/PDF/U2100.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Limbu">
@@ -2275,6 +3261,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -2282,7 +3270,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Limbu Unicode block (U+1900-U+194F).</summary>
         <value>The Limbu Unicode block (U+1900-U+194F).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - Limbu](https://www.unicode.org/charts/PDF/U1900.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Lisu">
@@ -2299,6 +3295,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -2306,7 +3304,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Lisu Unicode block (U+A4D0-U+A4FF).</summary>
         <value>The Lisu Unicode block (U+A4D0-U+A4FF).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - Lisu](https://www.unicode.org/charts/PDF/UA4D0.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Malayalam">
@@ -2323,6 +3329,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -2330,7 +3338,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Malayalam Unicode block (U+0D00-U+0D7F).</summary>
         <value>The Malayalam Unicode block (U+0D00-U+0D7F).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - Malayalam](https://www.unicode.org/charts/PDF/U0D00.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Mandaic">
@@ -2347,6 +3363,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -2354,7 +3372,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Mandaic Unicode block (U+0840-U+085F).</summary>
         <value>The Mandaic Unicode block (U+0840-U+085F).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - Mandaic](https://www.unicode.org/charts/PDF/U0840.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MathematicalOperators">
@@ -2371,6 +3397,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -2378,7 +3406,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Mathematical Operators Unicode block (U+2200-U+22FF).</summary>
         <value>The Mathematical Operators Unicode block (U+2200-U+22FF).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - Mathematical Operators](https://www.unicode.org/charts/PDF/U2200.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MeeteiMayek">
@@ -2395,6 +3431,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -2402,7 +3440,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Meetei Mayek Unicode block (U+ABC0-U+ABFF).</summary>
         <value>The Meetei Mayek Unicode block (U+ABC0-U+ABFF).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - Meetei Mayek](https://www.unicode.org/charts/PDF/UABC0.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MeeteiMayekExtensions">
@@ -2419,6 +3465,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -2426,7 +3474,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Meetei Mayek Extensions Unicode block (U+AAE0-U+AAFF).</summary>
         <value>The Meetei Mayek Extensions Unicode block (U+AAE0-U+AAFF).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - Meetei Mayek Extensions](https://www.unicode.org/charts/PDF/UAAE0.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MiscellaneousMathematicalSymbolsA">
@@ -2443,6 +3499,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -2450,7 +3508,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Miscellaneous Mathematical Symbols-A Unicode block (U+27C0-U+27EF).</summary>
         <value>The Miscellaneous Mathematical Symbols-A Unicode block (U+27C0-U+27EF).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - Miscellaneous Mathematical Symbols-A](https://www.unicode.org/charts/PDF/U27C0.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MiscellaneousMathematicalSymbolsB">
@@ -2467,6 +3533,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -2474,7 +3542,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Miscellaneous Mathematical Symbols-B Unicode block (U+2980-U+29FF).</summary>
         <value>The Miscellaneous Mathematical Symbols-B Unicode block (U+2980-U+29FF).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - Miscellaneous Mathematical Symbols-B](https://www.unicode.org/charts/PDF/U2980.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MiscellaneousSymbols">
@@ -2491,6 +3567,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -2498,7 +3576,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Miscellaneous Symbols Unicode block (U+2600-U+26FF).</summary>
         <value>The Miscellaneous Symbols Unicode block (U+2600-U+26FF).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - Miscellaneous Symbols](https://www.unicode.org/charts/PDF/U2600.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MiscellaneousSymbolsandArrows">
@@ -2515,6 +3601,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -2522,7 +3610,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Miscellaneous Symbols and Arrows Unicode block (U+2B00-U+2BFF).</summary>
         <value>The Miscellaneous Symbols and Arrows Unicode block (U+2B00-U+2BFF).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - Miscellaneous Symbols and Arrows](https://www.unicode.org/charts/PDF/U2B00.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MiscellaneousTechnical">
@@ -2539,6 +3635,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -2546,7 +3644,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Miscellaneous Technical Unicode block (U+2300-U+23FF).</summary>
         <value>The Miscellaneous Technical Unicode block (U+2300-U+23FF).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - Miscellaneous Technical](https://www.unicode.org/charts/PDF/U2300.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ModifierToneLetters">
@@ -2563,6 +3669,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -2570,7 +3678,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Modifier Tone Letters Unicode block (U+A700-U+A71F).</summary>
         <value>The Modifier Tone Letters Unicode block (U+A700-U+A71F).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - Modifier Tone Letters](https://www.unicode.org/charts/PDF/UA700.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Mongolian">
@@ -2587,6 +3703,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -2594,7 +3712,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Mongolian Unicode block (U+1800-U+18AF).</summary>
         <value>The Mongolian Unicode block (U+1800-U+18AF).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - Mongolian](https://www.unicode.org/charts/PDF/U1800.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Myanmar">
@@ -2611,6 +3737,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -2618,7 +3746,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Myanmar Unicode block (U+1000-U+109F).</summary>
         <value>The Myanmar Unicode block (U+1000-U+109F).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - Myanmar](https://www.unicode.org/charts/PDF/U1000.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MyanmarExtendedA">
@@ -2635,6 +3771,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -2642,7 +3780,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Myanmar Extended-A Unicode block (U+AA60-U+AA7F).</summary>
         <value>The Myanmar Extended-A Unicode block (U+AA60-U+AA7F).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - Myanmar Extended-A](https://www.unicode.org/charts/PDF/UAA60.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MyanmarExtendedB">
@@ -2659,6 +3805,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -2666,7 +3814,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Myanmar Extended-B Unicode block (U+A9E0-U+A9FF).</summary>
         <value>The Myanmar Extended-B Unicode block (U+A9E0-U+A9FF).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - Myanmar Extended-B](https://www.unicode.org/charts/PDF/UA9E0.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="NewTaiLue">
@@ -2683,6 +3839,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -2690,7 +3848,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the New Tai Lue Unicode block (U+1980-U+19DF).</summary>
         <value>The New Tai Lue Unicode block (U+1980-U+19DF).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - New Tai Lue](https://www.unicode.org/charts/PDF/U1980.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="NKo">
@@ -2707,6 +3873,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -2714,7 +3882,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the NKo Unicode block (U+07C0-U+07FF).</summary>
         <value>The NKo Unicode block (U+07C0-U+07FF).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - NKo](https://www.unicode.org/charts/PDF/U07C0.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -2731,6 +3907,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -2755,6 +3933,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -2762,7 +3942,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Number Forms Unicode block (U+2150-U+218F).</summary>
         <value>The Number Forms Unicode block (U+2150-U+218F).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - Number Forms](https://www.unicode.org/charts/PDF/U2150.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Ogham">
@@ -2779,6 +3967,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -2786,7 +3976,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Ogham Unicode block (U+1680-U+169F).</summary>
         <value>The Ogham Unicode block (U+1680-U+169F).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - Ogham](https://www.unicode.org/charts/PDF/U1680.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OlChiki">
@@ -2803,6 +4001,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -2810,7 +4010,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Ol Chiki Unicode block (U+1C50-U+1C7F).</summary>
         <value>The Ol Chiki Unicode block (U+1C50-U+1C7F).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - Ol Chiki](https://www.unicode.org/charts/PDF/U1C50.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OpticalCharacterRecognition">
@@ -2827,6 +4035,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -2834,7 +4044,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Optical Character Recognition Unicode block (U+2440-U+245F).</summary>
         <value>The Optical Character Recognition Unicode block (U+2440-U+245F).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - Optical Character Recognition](https://www.unicode.org/charts/PDF/U2440.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Oriya">
@@ -2851,6 +4069,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -2858,7 +4078,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Oriya Unicode block (U+0B00-U+0B7F).</summary>
         <value>The Oriya Unicode block (U+0B00-U+0B7F).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - Oriya](https://www.unicode.org/charts/PDF/U0B00.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Phagspa">
@@ -2875,6 +4103,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -2882,7 +4112,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Phags-pa Unicode block (U+A840-U+A87F).</summary>
         <value>The Phags-pa Unicode block (U+A840-U+A87F).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - Phags-pa](https://www.unicode.org/charts/PDF/UA840.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PhoneticExtensions">
@@ -2899,6 +4137,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -2906,7 +4146,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Phonetic Extensions Unicode block (U+1D00-U+1D7F).</summary>
         <value>The Phonetic Extensions Unicode block (U+1D00-U+1D7F).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - Phonetic Extensions](https://www.unicode.org/charts/PDF/U1D00.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PhoneticExtensionsSupplement">
@@ -2923,6 +4171,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -2930,7 +4180,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Phonetic Extensions Supplement Unicode block (U+1D80-U+1DBF).</summary>
         <value>The Phonetic Extensions Supplement Unicode block (U+1D80-U+1DBF).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - Phonetic Extensions Supplement](https://www.unicode.org/charts/PDF/U1D80.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Rejang">
@@ -2947,6 +4205,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -2954,7 +4214,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Rejang Unicode block (U+A930-U+A95F).</summary>
         <value>The Rejang Unicode block (U+A930-U+A95F).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - Rejang](https://www.unicode.org/charts/PDF/UA930.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Runic">
@@ -2971,6 +4239,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -2978,7 +4248,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Runic Unicode block (U+16A0-U+16FF).</summary>
         <value>The Runic Unicode block (U+16A0-U+16FF).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - Runic](https://www.unicode.org/charts/PDF/U16A0.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Samaritan">
@@ -2995,6 +4273,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -3002,7 +4282,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Samaritan Unicode block (U+0800-U+083F).</summary>
         <value>The Samaritan Unicode block (U+0800-U+083F).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - Samaritan](https://www.unicode.org/charts/PDF/U0800.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Saurashtra">
@@ -3019,6 +4307,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -3026,7 +4316,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Saurashtra Unicode block (U+A880-U+A8DF).</summary>
         <value>The Saurashtra Unicode block (U+A880-U+A8DF).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - Saurashtra](https://www.unicode.org/charts/PDF/UA880.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Sinhala">
@@ -3043,6 +4341,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -3050,7 +4350,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Sinhala Unicode block (U+0D80-U+0DFF).</summary>
         <value>The Sinhala Unicode block (U+0D80-U+0DFF).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - Sinhala](https://www.unicode.org/charts/PDF/U0D80.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SmallFormVariants">
@@ -3067,6 +4375,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -3074,7 +4384,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Small Form Variants Unicode block (U+FE50-U+FE6F).</summary>
         <value>The Small Form Variants Unicode block (U+FE50-U+FE6F).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - Small Form Variants](https://www.unicode.org/charts/PDF/UFE50.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SpacingModifierLetters">
@@ -3091,6 +4409,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -3098,7 +4418,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Spacing Modifier Letters Unicode block (U+02B0-U+02FF).</summary>
         <value>The Spacing Modifier Letters Unicode block (U+02B0-U+02FF).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - Spacing Modifier Letters](https://www.unicode.org/charts/PDF/U02B0.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Specials">
@@ -3115,6 +4443,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -3122,7 +4452,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Specials Unicode block (U+FFF0-U+FFFF).</summary>
         <value>The Specials Unicode block (U+FFF0-U+FFFF).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - Specials](https://www.unicode.org/charts/PDF/UFFF0.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Sundanese">
@@ -3139,6 +4477,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -3146,7 +4486,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Sundanese Unicode block (U+1B80-U+1BBF).</summary>
         <value>The Sundanese Unicode block (U+1B80-U+1BBF).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - Sundanese](https://www.unicode.org/charts/PDF/U1B80.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SundaneseSupplement">
@@ -3163,6 +4511,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -3170,7 +4520,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Sundanese Supplement Unicode block (U+1CC0-U+1CCF).</summary>
         <value>The Sundanese Supplement Unicode block (U+1CC0-U+1CCF).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - Sundanese Supplement](https://www.unicode.org/charts/PDF/U1CC0.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SuperscriptsandSubscripts">
@@ -3187,6 +4545,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -3194,7 +4554,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Superscripts and Subscripts Unicode block (U+2070-U+209F).</summary>
         <value>The Superscripts and Subscripts Unicode block (U+2070-U+209F).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - Superscripts and Subscripts](https://www.unicode.org/charts/PDF/U2070.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SupplementalArrowsA">
@@ -3211,6 +4579,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -3218,7 +4588,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Supplemental Arrows-A Unicode block (U+27F0-U+27FF).</summary>
         <value>The Supplemental Arrows-A Unicode block (U+27F0-U+27FF).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - Supplemental Arrows-A](https://www.unicode.org/charts/PDF/U27F0.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SupplementalArrowsB">
@@ -3235,6 +4613,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -3242,7 +4622,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Supplemental Arrows-B Unicode block (U+2900-U+297F).</summary>
         <value>The Supplemental Arrows-B Unicode block (U+2900-U+297F).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - Supplemental Arrows-B](https://www.unicode.org/charts/PDF/U2900.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SupplementalMathematicalOperators">
@@ -3259,6 +4647,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -3266,7 +4656,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Supplemental Mathematical Operators Unicode block (U+2A00-U+2AFF).</summary>
         <value>The Supplemental Mathematical Operators Unicode block (U+2A00-U+2AFF).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - Supplemental Mathematical Operators](https://www.unicode.org/charts/PDF/U2A00.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SupplementalPunctuation">
@@ -3283,6 +4681,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -3290,7 +4690,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Supplemental Punctuation Unicode block (U+2E00-U+2E7F).</summary>
         <value>The Supplemental Punctuation Unicode block (U+2E00-U+2E7F).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - Supplemental Punctuation](https://www.unicode.org/charts/PDF/U2E00.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SylotiNagri">
@@ -3307,6 +4715,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -3314,7 +4724,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Syloti Nagri Unicode block (U+A800-U+A82F).</summary>
         <value>The Syloti Nagri Unicode block (U+A800-U+A82F).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - Syloti Nagri](https://www.unicode.org/charts/PDF/UA800.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Syriac">
@@ -3331,6 +4749,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -3338,7 +4758,45 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Syriac Unicode block (U+0700-U+074F).</summary>
         <value>The Syriac Unicode block (U+0700-U+074F).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - Syriac](https://www.unicode.org/charts/PDF/U0700.pdf).
+
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SyriacSupplement">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange SyriacSupplement { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange SyriacSupplement" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.SyriacSupplement" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SyriacSupplement As UnicodeRange" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Unicode::UnicodeRange ^ SyriacSupplement { System::Text::Unicode::UnicodeRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SyriacSupplement : System.Text.Unicode.UnicodeRange" Usage="System.Text.Unicode.UnicodeRanges.SyriacSupplement" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A <see cref="T:System.Text.Unicode.UnicodeRange" /> corresponding to the 'Syriac Supplement' Unicode block (U+0860..U+086F).</summary>
+        <value>To be added.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - Syriac Supplement](https://www.unicode.org/charts/PDF/U0860.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Tagalog">
@@ -3355,6 +4813,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -3362,7 +4822,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Tagalog Unicode block (U+1700-U+171F).</summary>
         <value>The Tagalog Unicode block (U+1700-U+171F).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - Tagalog](https://www.unicode.org/charts/PDF/U1700.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Tagbanwa">
@@ -3379,6 +4847,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -3386,7 +4856,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Tagbanwa Unicode block (U+1760-U+177F).</summary>
         <value>The Tagbanwa Unicode block (U+1760-U+177F).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - Tagbanwa](https://www.unicode.org/charts/PDF/U1760.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TaiLe">
@@ -3403,6 +4881,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -3410,7 +4890,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Tai Le Unicode block (U+1950-U+197F).</summary>
         <value>The Tai Le Unicode block (U+1950-U+197F).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - Tai Le](https://www.unicode.org/charts/PDF/U1950.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TaiTham">
@@ -3427,6 +4915,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -3434,7 +4924,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Tai Tham Unicode block (U+1A20-U+1AAF).</summary>
         <value>The Tai Tham Unicode block (U+1A20-U+1AAF).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - Tai Tham](https://www.unicode.org/charts/PDF/U1A20.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TaiViet">
@@ -3451,6 +4949,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -3458,7 +4958,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Tai Viet Unicode block (U+AA80-U+AADF).</summary>
         <value>The Tai Viet Unicode block (U+AA80-U+AADF).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - Tai Viet](https://www.unicode.org/charts/PDF/UAA80.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Tamil">
@@ -3475,6 +4983,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -3482,7 +4992,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Tamil Unicode block (U+0B80-U+0BFF).</summary>
         <value>The Tamil Unicode block (U+0B82-U+0BFA).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - Tamil](https://www.unicode.org/charts/PDF/U0B80.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Telugu">
@@ -3499,6 +5017,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -3506,7 +5026,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Telugu Unicode block (U+0C00-U+0C7F).</summary>
         <value>The Telugu Unicode block (U+0C00-U+0C7F).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - Telugu](https://www.unicode.org/charts/PDF/U0C00.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Thaana">
@@ -3523,6 +5051,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -3530,7 +5060,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Thaana Unicode block (U+0780-U+07BF).</summary>
         <value>The Thaana Unicode block (U+0780-U+07BF).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - Thaana](https://www.unicode.org/charts/PDF/U0780.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Thai">
@@ -3547,6 +5085,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -3554,7 +5094,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Thai Unicode block (U+0E00-U+0E7F).</summary>
         <value>The Thai Unicode block (U+0E00-U+0E7F).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - Thai](https://www.unicode.org/charts/PDF/U0E00.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Tibetan">
@@ -3571,6 +5119,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -3578,7 +5128,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Tibetan Unicode block (U+0F00-U+0FFF).</summary>
         <value>The Tibetan Unicode block (U+0F00-U+0FFF).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - Tibetan](https://www.unicode.org/charts/PDF/U0F00.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Tifinagh">
@@ -3595,6 +5153,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -3602,7 +5162,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Tifinagh Unicode block (U+2D30-U+2D7F).</summary>
         <value>The Tifinagh Unicode block (U+2D30-U+2D7F).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - Tifinagh](https://www.unicode.org/charts/PDF/U2D30.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="UnifiedCanadianAboriginalSyllabics">
@@ -3619,6 +5187,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -3626,7 +5196,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Unified Canadian Aboriginal Syllabics Unicode block (U+1400-U+167F).</summary>
         <value>The Unified Canadian Aboriginal Syllabics Unicode block (U+1400-U+167F).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - Unified Canadian Aboriginal Syllabics](https://www.unicode.org/charts/PDF/U1400.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="UnifiedCanadianAboriginalSyllabicsExtended">
@@ -3643,6 +5221,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -3650,7 +5230,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Unified Canadian Aboriginal Syllabics Extended Unicode block (U+18B0-U+18FF).</summary>
         <value>The Unified Canadian Aboriginal Syllabics Extended Unicode block (U+18B0-U+18FF).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - Unified Canadian Aboriginal Syllabics Extended](https://www.unicode.org/charts/PDF/U18B0.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Vai">
@@ -3667,6 +5255,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -3674,7 +5264,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Vai Unicode block (U+A500-U+A63F).</summary>
         <value>The Vai Unicode block (U+A500-U+A63F).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - Vai](https://www.unicode.org/charts/PDF/UA500.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="VariationSelectors">
@@ -3691,6 +5289,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -3698,7 +5298,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Variation Selectors Unicode block (U+FE00-U+FE0F).</summary>
         <value>The Variation Selectors Unicode block (U+FE00-U+FE0F).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - Variation Selectors](https://www.unicode.org/charts/PDF/UFE00.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="VedicExtensions">
@@ -3715,6 +5323,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -3722,7 +5332,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Vedic Extensions Unicode block (U+1CD0-U+1CFF).</summary>
         <value>The Vedic Extensions Unicode block (U+1CD0-U+1CFF).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - Vedic Extensions](https://www.unicode.org/charts/PDF/U1CD0.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="VerticalForms">
@@ -3739,6 +5357,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -3746,7 +5366,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Vertical Forms Unicode block (U+FE10-U+FE1F).</summary>
         <value>The Vertical Forms Unicode block (U+FE10-U+FE1F).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - Vertical Forms](https://www.unicode.org/charts/PDF/UFE10.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="YijingHexagramSymbols">
@@ -3763,6 +5391,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -3770,7 +5400,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Yijing Hexagram Symbols Unicode block (U+4DC0-U+4DFF).</summary>
         <value>The Yijing Hexagram Symbols Unicode block (U+4DC0-U+4DFF).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - Yijing Hexagram Symbols](https://www.unicode.org/charts/PDF/U4DC0.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="YiRadicals">
@@ -3787,6 +5425,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -3794,7 +5434,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Yi Radicals Unicode block (U+A490-U+A4CF).</summary>
         <value>The Yi Radicals Unicode block (U+A490-U+A4CF).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - Yi Radicals](https://www.unicode.org/charts/PDF/UA490.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="YiSyllables">
@@ -3811,6 +5459,8 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
@@ -3818,7 +5468,15 @@ Currently, the <xref:System.Text.Unicode.UnicodeRange> class supports only named
       <Docs>
         <summary>Gets the Yi Syllables Unicode block (U+A000-U+A48F).</summary>
         <value>The Yi Syllables Unicode block (U+A000-U+A48F).</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+For the full set of characters in this block, see [The Unicode Standard, Version 12.1 - Yi Syllables](https://www.unicode.org/charts/PDF/UA000.pdf).
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

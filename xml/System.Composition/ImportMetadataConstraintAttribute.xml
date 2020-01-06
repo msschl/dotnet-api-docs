@@ -1,4 +1,4 @@
-﻿<Type Name="ImportMetadataConstraintAttribute" FullName="System.Composition.ImportMetadataConstraintAttribute">
+<Type Name="ImportMetadataConstraintAttribute" FullName="System.Composition.ImportMetadataConstraintAttribute">
   <TypeSignature Language="C#" Value="public sealed class ImportMetadataConstraintAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ImportMetadataConstraintAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Composition.ImportMetadataConstraintAttribute" />
@@ -10,19 +10,22 @@
     <AssemblyVersion>1.0.31.0</AssemblyVersion>
     <AssemblyVersion>1.0.32.0</AssemblyVersion>
     <AssemblyVersion>1.0.33.0</AssemblyVersion>
+    <AssemblyVersion>1.0.34.0</AssemblyVersion>
+    <AssemblyVersion>1.0.35.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Attribute</BaseTypeName>
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute FrameworkAlternate="netcore-1.1;netcore-2.0;dotnet-plat-ext-2.1;dotnet-plat-ext-2.2">
+    <Attribute FrameworkAlternate="netcore-1.1;netcore-2.0;dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;dotnet-plat-ext-3.1">
       <AttributeName>System.AttributeUsage(System.AttributeTargets.Property, Inherited=false)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
     <summary>Specifies that an import requires certain metadata values.</summary>
-    <remarks></remarks>
+    <remarks>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -38,6 +41,8 @@
         <AssemblyVersion>1.0.31.0</AssemblyVersion>
         <AssemblyVersion>1.0.32.0</AssemblyVersion>
         <AssemblyVersion>1.0.33.0</AssemblyVersion>
+        <AssemblyVersion>1.0.34.0</AssemblyVersion>
+        <AssemblyVersion>1.0.35.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="name" Type="System.String" />
@@ -47,7 +52,8 @@
         <param name="name">The metadata key to match.</param>
         <param name="value">The metadata value to match.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Composition.ImportMetadataConstraintAttribute" /> class.</summary>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -63,6 +69,8 @@
         <AssemblyVersion>1.0.31.0</AssemblyVersion>
         <AssemblyVersion>1.0.32.0</AssemblyVersion>
         <AssemblyVersion>1.0.33.0</AssemblyVersion>
+        <AssemblyVersion>1.0.34.0</AssemblyVersion>
+        <AssemblyVersion>1.0.35.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -70,7 +78,8 @@
       <Docs>
         <summary>Gets the metadata key to match.</summary>
         <value>The metadata key.</value>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Value">
@@ -86,6 +95,8 @@
         <AssemblyVersion>1.0.31.0</AssemblyVersion>
         <AssemblyVersion>1.0.32.0</AssemblyVersion>
         <AssemblyVersion>1.0.33.0</AssemblyVersion>
+        <AssemblyVersion>1.0.34.0</AssemblyVersion>
+        <AssemblyVersion>1.0.35.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
@@ -93,7 +104,8 @@
       <Docs>
         <summary>Gets the metadata value to match.</summary>
         <value>The metadata value.</value>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
   </Members>

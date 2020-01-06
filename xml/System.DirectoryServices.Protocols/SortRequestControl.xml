@@ -1,4 +1,4 @@
-﻿<Type Name="SortRequestControl" FullName="System.DirectoryServices.Protocols.SortRequestControl">
+<Type Name="SortRequestControl" FullName="System.DirectoryServices.Protocols.SortRequestControl">
   <TypeSignature Language="C#" Value="public class SortRequestControl : System.DirectoryServices.Protocols.DirectoryControl" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SortRequestControl extends System.DirectoryServices.Protocols.DirectoryControl" />
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.Protocols.SortRequestControl" />
@@ -47,7 +47,7 @@
       <Parameters>
         <Parameter Name="sortKeys" Type="System.DirectoryServices.Protocols.SortKey[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="dotnet-plat-ext-2.1">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>

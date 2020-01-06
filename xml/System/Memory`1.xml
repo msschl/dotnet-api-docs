@@ -1,16 +1,21 @@
-﻿<Type Name="Memory&lt;T&gt;" FullName="System.Memory&lt;T&gt;">
-  <TypeSignature Language="C#" Value="public struct Memory&lt;T&gt;" />
-  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit Memory`1&lt;T&gt; extends System.ValueType" />
+<Type Name="Memory&lt;T&gt;" FullName="System.Memory&lt;T&gt;">
+  <TypeSignature Language="C#" Value="public struct Memory&lt;T&gt; : IEquatable&lt;Memory&lt;T&gt;&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit Memory`1&lt;T&gt; extends System.ValueType implements class System.IEquatable`1&lt;valuetype System.Memory`1&lt;!T&gt;&gt;" />
   <TypeSignature Language="DocId" Value="T:System.Memory`1" />
-  <TypeSignature Language="VB.NET" Value="Public Structure Memory(Of T)" />
-  <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA;public value class Memory" />
+  <TypeSignature Language="VB.NET" Value="Public Structure Memory(Of T)&#xA;Implements IEquatable(Of Memory(Of T))" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA;public value class Memory : IEquatable&lt;Memory&lt;T&gt;&gt;" />
   <TypeSignature Language="F#" Value="type Memory&lt;'T&gt; = struct" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.2.1.0</AssemblyVersion>
+    <AssemblyVersion>4.2.2.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System.Memory</AssemblyName>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="T" />
@@ -18,9 +23,13 @@
   <Base>
     <BaseTypeName>System.ValueType</BaseTypeName>
   </Base>
-  <Interfaces />
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IEquatable&lt;System.Memory&lt;T&gt;&gt;</InterfaceName>
+    </Interface>
+  </Interfaces>
   <Attributes>
-    <Attribute FrameworkAlternate="netcore-2.1;netcore-2.2">
+    <Attribute FrameworkAlternate="netcore-2.2;netcore-2.1;netcore-3.0;netstandard-2.1;netcore-3.1">
       <AttributeName>System.Runtime.CompilerServices.IsReadOnly</AttributeName>
     </Attribute>
   </Attributes>
@@ -55,9 +64,14 @@ In addition to `Memory<T>`, you can use <xref:System.ReadOnlyMemory%601?displayP
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="array" Type="T[]" />
@@ -91,9 +105,14 @@ The array is <see href="~/docs/csharp/programming-guide/concepts/covariance-cont
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="array" Type="T[]" />
@@ -139,9 +158,14 @@ If `array` is `null`, this constructor returns a  <xref:System.Memory%601> objec
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -150,7 +174,7 @@ If `array` is `null`, this constructor returns a  <xref:System.Memory%601> objec
         <Parameter Name="destination" Type="System.Memory&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <param name="destination">The destination .</param>
+        <param name="destination">The destination <see cref="T:System.Memory`1" /> object.</param>
         <summary>Copies the contents of a <see cref="T:System.Memory`1" /> object into a destination <see cref="T:System.Memory`1" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -173,9 +197,14 @@ This method copies all of the contents of the current <xref:System.Memory%601> i
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Memory&lt;T&gt;</ReturnType>
@@ -188,18 +217,28 @@ This method copies all of the contents of the current <xref:System.Memory%601> i
     </Member>
     <Member MemberName="Equals">
       <MemberSignature Language="C#" Value="public bool Equals (Memory&lt;T&gt; other);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Equals(valuetype System.Memory`1&lt;!T&gt; other) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Equals(valuetype System.Memory`1&lt;!T&gt; other) cil managed" FrameworkAlternate="netcore-2.1;netcore-2.2" />
       <MemberSignature Language="DocId" Value="M:System.Memory`1.Equals(System.Memory{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Function Equals (other As Memory(Of T)) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Equals(Memory&lt;T&gt; other);" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Equals(Memory&lt;T&gt; other);" FrameworkAlternate="netcore-2.1;netcore-2.2" />
       <MemberSignature Language="F#" Value="override this.Equals : Memory&lt;'T&gt; -&gt; bool" Usage="memory.Equals other" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Equals(valuetype System.Memory`1&lt;!T&gt; other) cil managed" FrameworkAlternate="netcore-3.0;netcore-3.1;netstandard-2.1" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Equals(Memory&lt;T&gt; other);" FrameworkAlternate="netcore-3.0;netcore-3.1;netstandard-2.1" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IEquatable`1.Equals(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -211,7 +250,7 @@ This method copies all of the contents of the current <xref:System.Memory%601> i
         <param name="other">The object to compare with the current instance.</param>
         <summary>Determines whether the specified <see cref="T:System.Memory`1" /> object is equal to the current object.</summary>
         <returns>
-          <see langword="true" /> if the current instance and <paramref name="other" /> are equal; otherwise, <see langword="false" />. </returns>
+          <see langword="true" /> if the current instance and <paramref name="other" /> are equal; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
 
@@ -238,12 +277,17 @@ The `Equals(Memory<T>)` method performs a test for reference equality; it does n
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netcore-2.1;netcore-2.2">
+        <Attribute FrameworkAlternate="netcore-2.2;netcore-2.1;netcore-3.0;netstandard-2.1;netcore-3.1">
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
@@ -257,7 +301,7 @@ The `Equals(Memory<T>)` method performs a test for reference equality; it does n
         <param name="obj">The object to compare with the current instance.</param>
         <summary>Determines whether the specified object is equal to the current object.</summary>
         <returns>
-          <see langword="true" /> if the current instance and <paramref name="obj" /> are equal; otherwise, <see langword="false" />. </returns>
+          <see langword="true" /> if the current instance and <paramref name="obj" /> are equal; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
 
@@ -278,12 +322,17 @@ Two <xref:System.Memory%601> objects are equal if both objects point to the same
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netcore-2.1;netcore-2.2">
+        <Attribute FrameworkAlternate="netcore-2.2;netcore-2.1;netcore-3.0;netstandard-2.1;netcore-3.1">
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
@@ -308,9 +357,14 @@ Two <xref:System.Memory%601> objects are equal if both objects point to the same
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -333,9 +387,14 @@ Two <xref:System.Memory%601> objects are equal if both objects point to the same
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -357,9 +416,14 @@ Two <xref:System.Memory%601> objects are equal if both objects point to the same
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Memory&lt;T&gt;</ReturnType>
@@ -385,9 +449,14 @@ Two <xref:System.Memory%601> objects are equal if both objects point to the same
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ReadOnlyMemory&lt;T&gt;</ReturnType>
@@ -413,9 +482,14 @@ Two <xref:System.Memory%601> objects are equal if both objects point to the same
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Memory&lt;T&gt;</ReturnType>
@@ -441,9 +515,14 @@ Two <xref:System.Memory%601> objects are equal if both objects point to the same
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Buffers.MemoryHandle</ReturnType>
@@ -479,9 +558,14 @@ The garbage collector will not move the memory until the returned <xref:System.B
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Memory&lt;T&gt;</ReturnType>
@@ -492,10 +576,10 @@ The garbage collector will not move the memory until the returned <xref:System.B
       <Docs>
         <param name="start">The index at which to begin the slice.</param>
         <summary>Forms a slice out of the current memory that begins at a specified index.</summary>
-        <returns>An object that contains all elements of the current instance from <paramref name="start" /> to the end of the instance. </returns>
+        <returns>An object that contains all elements of the current instance from <paramref name="start" /> to the end of the instance.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentOutOfRangeExceptionException">
-          <paramref name="start" /> is less than zero or greater than or equal to <see cref="P:System.Memory`1.Length" />. </exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="start" /> is less than zero or greater than <see cref="P:System.Memory`1.Length" />. </exception>
       </Docs>
     </Member>
     <Member MemberName="Slice">
@@ -509,9 +593,14 @@ The garbage collector will not move the memory until the returned <xref:System.B
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Memory&lt;T&gt;</ReturnType>
@@ -524,10 +613,10 @@ The garbage collector will not move the memory until the returned <xref:System.B
         <param name="start">The index at which to begin the slice.</param>
         <param name="length">The number of elements to include in the slice.</param>
         <summary>Forms a slice out of the current memory starting at a specified index for a specified length.</summary>
-        <returns>An object that contains <paramref name="length" /> elements from the current instance starting at <paramref name="start" />. </returns>
+        <returns>An object that contains <paramref name="length" /> elements from the current instance starting at <paramref name="start" />.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentOutOfRangeExceptionException">
-          <paramref name="start" /> is less than zero or greater than or equal to <see cref="P:System.Memory`1.Length" />.
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="start" /> is less than zero or greater than <see cref="P:System.Memory`1.Length" />.
 
 -or-
 
@@ -545,9 +634,14 @@ The garbage collector will not move the memory until the returned <xref:System.B
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Span&lt;T&gt;</ReturnType>
@@ -569,9 +663,14 @@ The garbage collector will not move the memory until the returned <xref:System.B
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T[]</ReturnType>
@@ -583,7 +682,7 @@ The garbage collector will not move the memory until the returned <xref:System.B
         <remarks>
           <format type="text/markdown"><![CDATA[  
 
-Because a call to the <xref=System.Memory%601.ToArray%2A> method performs a heap allocation, it should generally be avoided. However, it is sometimes necessary to take advantage of functionality that is only available for arrays.
+Because a call to the `ToArray` method performs a heap allocation, it should generally be avoided. However, it is sometimes necessary to take advantage of functionality that is only available for arrays.
 
 Each call to the `ToArray` method returns a new array. 
 
@@ -602,9 +701,14 @@ Each call to the `ToArray` method returns a new array.
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -633,9 +737,14 @@ For a `Memory<Char>`, the `ToString` method returns a <xref:System.String> that 
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -644,7 +753,7 @@ For a `Memory<Char>`, the `ToString` method returns a <xref:System.String> that 
         <Parameter Name="destination" Type="System.Memory&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <param name="destination">To be added.</param>
+        <param name="destination">The destination <see cref="T:System.Memory`1" /> object.</param>
         <summary>Copies the contents of the memory into a destination <see cref="T:System.Memory`1" /> instance.</summary>
         <returns>
           <see langword="true" /> if the copy operation succeeds; otherwise, <see langword="false" />.</returns>

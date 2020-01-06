@@ -1,4 +1,4 @@
-﻿<Type Name="ChannelReader&lt;T&gt;" FullName="System.Threading.Channels.ChannelReader&lt;T&gt;">
+<Type Name="ChannelReader&lt;T&gt;" FullName="System.Threading.Channels.ChannelReader&lt;T&gt;">
   <TypeSignature Language="C#" Value="public abstract class ChannelReader&lt;T&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ChannelReader`1&lt;T&gt; extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Threading.Channels.ChannelReader`1" />
@@ -8,6 +8,8 @@
   <AssemblyInfo>
     <AssemblyName>System.Threading.Channels</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.1.0</AssemblyVersion>
+    <AssemblyVersion>4.0.2.0</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="T" />
@@ -32,10 +34,12 @@
       <AssemblyInfo>
         <AssemblyName>System.Threading.Channels</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes an instance of the <see cref="T:System.Threading.Channels.ChannelReader`1" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -50,6 +54,8 @@
       <AssemblyInfo>
         <AssemblyName>System.Threading.Channels</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -61,6 +67,38 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="ReadAllAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Collections.Generic.IAsyncEnumerable&lt;T&gt; ReadAllAsync (System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IAsyncEnumerable`1&lt;!T&gt; ReadAllAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Threading.Channels.ChannelReader`1.ReadAllAsync(System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member ReadAllAsync : System.Threading.CancellationToken -&gt; System.Collections.Generic.IAsyncEnumerable&lt;'T&gt;&#xA;override this.ReadAllAsync : System.Threading.CancellationToken -&gt; System.Collections.Generic.IAsyncEnumerable&lt;'T&gt;" Usage="channelReader.ReadAllAsync cancellationToken" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Channels</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IAsyncEnumerable&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0;netcore-3.0;netcore-3.1" />
+      </Parameters>
+      <Docs>
+        <param name="cancellationToken">The cancellation token to use to cancel the enumeration.</param>
+        <summary>Creates an <see cref="T:System.Collections.Generic.IAsyncEnumerable`1" /> that enables reading all of the data from the channel.</summary>
+        <returns>The created async enumerable.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+          
+Each <xref:System.Collections.Generic.IAsyncEnumerator%601.MoveNextAsync> call that returns `true` will read the next item out of the channel.
+
+<xref:System.Collections.Generic.IAsyncEnumerator%601.MoveNextAsync> returns `false` once no more data is or will ever be available to read.
+
+          ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
     <Member MemberName="ReadAsync">
       <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.ValueTask&lt;T&gt; ReadAsync (System.Threading.CancellationToken cancellationToken = null);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Threading.Tasks.ValueTask`1&lt;!T&gt; ReadAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
@@ -70,6 +108,8 @@
       <AssemblyInfo>
         <AssemblyName>System.Threading.Channels</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.ValueTask&lt;T&gt;</ReturnType>
@@ -90,11 +130,13 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Channels.ChannelReader`1.TryRead(`0@)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function TryRead (ByRef item As T) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool TryRead([Runtime::InteropServices::Out] T % item);" />
-      <MemberSignature Language="F#" Value="abstract member TryRead :  -&gt; bool" Usage="channelReader.TryRead item" />
+      <MemberSignature Language="F#" Value="abstract member TryRead : 'T -&gt; bool" Usage="channelReader.TryRead item" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Channels</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -119,6 +161,8 @@
       <AssemblyInfo>
         <AssemblyName>System.Threading.Channels</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.ValueTask&lt;System.Boolean&gt;</ReturnType>
@@ -128,9 +172,12 @@
       </Parameters>
       <Docs>
         <param name="cancellationToken">A <see cref="T:System.Threading.CancellationToken" /> used to cancel the wait operation.</param>
-        <summary>Returns a <see cref="T:System.Threading.Tasks.Task`1" /> that will complete when data is available to read.</summary>
-        <returns>A <see cref="T:System.Threading.Tasks.Task`1" /> that will complete with a <see langword="true" /> result when data is available to read
-            or with a <see langword="false" /> result when no further data will ever be available to be read.</returns>
+        <summary>Returns a <see cref="T:System.Threading.Tasks.ValueTask`1" /> that will complete when data is available to read.</summary>
+        <returns>
+          <para>A <see cref="T:System.Threading.Tasks.ValueTask`1" /> that will complete with a <see langword="true" /> result when data is available to read
+            or with a <see langword="false" /> result when no further data will ever be available to be read due to the channel completing successfully.</para>
+          <para>If the channel completes with an exception, the task will also complete with an exception.</para>
+      .</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,4 +1,4 @@
-﻿<Type Name="ActiveDirectorySchemaClass" FullName="System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaClass">
+<Type Name="ActiveDirectorySchemaClass" FullName="System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaClass">
   <TypeSignature Language="C#" Value="public class ActiveDirectorySchemaClass : IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ActiveDirectorySchemaClass extends System.Object implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaClass" />
@@ -396,10 +396,11 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the ldapDisplayName of the <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaClass" /> object. For more information, see the topic [LDAP-Display-Name](https://msdn.microsoft.com/library/default.asp?url=/library/adschema/adschema/a_ldapdisplayname.asp) in the MSDN Library at [http://msdn.microsoft.com](https://msdn.microsoft.com/).</summary>
-        <value>A <see cref="T:System.String" /> that contains the ldapDisplayName of the <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaClass" /> object. For more information, see the topic [LDAP-Display-Name](https://msdn.microsoft.com/library/default.asp?url=/library/adschema/adschema/a_ldapdisplayname.asp) in the MSDN Library at [http://msdn.microsoft.com](https://msdn.microsoft.com/).</value>
+        <summary>Gets the ldapDisplayName of the <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaClass" /> object.</summary>
+        <value>A string that contains the ldapDisplayName of the <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaClass" /> object.</value>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaClass.Save" />
+        <related type="Article" href="/windows/win32/adschema/a-ldapdisplayname">LDAP-Display-Name attribute</related>
       </Docs>
     </Member>
     <Member MemberName="Oid">
@@ -554,13 +555,15 @@
         <ReturnType>System.Guid</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the schemaIDGUID for the <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaClass" /> object. For more information, see the topic "schemaIDGUID" or "Schema-ID-GUID" in the MSDN Library at [http://msdn.microsoft.com/library](https://msdn.microsoft.com/library).</summary>
-        <value>A <see cref="T:System.Guid" /> object that contains the schemaIDGUID for the <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaClass" /> object. For more information, see the topic "schemaIDGUID" or "Schema-ID-GUID" in the MSDN Library at [http://msdn.microsoft.com/library](https://msdn.microsoft.com/library).</value>
+        <summary>Gets or sets the schemaIDGUID for the <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaClass" /> object.</summary>
+        <value>A <see cref="T:System.Guid" /> object that contains the schemaIDGUID for the <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaClass" /> object..</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  The <xref:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaClass.SchemaGuid%2A> is used in many Active Directory Domain Services configuration operations, such as managing extended rights.  
+
+ For more information, see [schemaIDGUID](https://docs.microsoft.com/openspecs/windows_protocols/ms-tail/5038cdbe-b665-429c-a36e-36a45f576b81) or [Schema-ID-GUID](/windows/desktop/adschema/a-schemaidguid).
   
  ]]></format>
         </remarks>

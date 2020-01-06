@@ -1,4 +1,4 @@
-﻿<Type Name="InstrumentedAttribute" FullName="System.Management.Instrumentation.InstrumentedAttribute">
+<Type Name="InstrumentedAttribute" FullName="System.Management.Instrumentation.InstrumentedAttribute">
   <TypeSignature Language="C#" Value="public class InstrumentedAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit InstrumentedAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Management.Instrumentation.InstrumentedAttribute" />
@@ -16,7 +16,7 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+    <Attribute>
       <AttributeName>System.AttributeUsage(System.AttributeTargets.Assembly)</AttributeName>
     </Attribute>
   </Attributes>
@@ -51,7 +51,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Management.Instrumentation.InstrumentedAttribute" /> class that is set for the root\default namespace. This is the default constructor.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Management.Instrumentation.InstrumentedAttribute" /> class that is set for the root\default namespace. This is the parameterless constructor.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

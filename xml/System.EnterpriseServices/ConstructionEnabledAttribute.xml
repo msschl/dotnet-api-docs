@@ -1,4 +1,4 @@
-﻿<Type Name="ConstructionEnabledAttribute" FullName="System.EnterpriseServices.ConstructionEnabledAttribute">
+<Type Name="ConstructionEnabledAttribute" FullName="System.EnterpriseServices.ConstructionEnabledAttribute">
   <TypeSignature Language="C#" Value="public sealed class ConstructionEnabledAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ConstructionEnabledAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.ConstructionEnabledAttribute" />
@@ -16,10 +16,10 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+    <Attribute>
       <AttributeName>System.AttributeUsage(System.AttributeTargets.Class, Inherited=true)</AttributeName>
     </Attribute>
-    <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+    <Attribute>
       <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
     </Attribute>
   </Attributes>
@@ -129,7 +129,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets a default value for the constructor string.</summary>
-        <value>The value to be used for the default constructor string. The default is an empty string ("").</value>
+        <value>The value to be used for the parameterless constructor string. The default is an empty string ("").</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

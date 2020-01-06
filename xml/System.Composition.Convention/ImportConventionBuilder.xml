@@ -1,4 +1,4 @@
-﻿<Type Name="ImportConventionBuilder" FullName="System.Composition.Convention.ImportConventionBuilder">
+<Type Name="ImportConventionBuilder" FullName="System.Composition.Convention.ImportConventionBuilder">
   <TypeSignature Language="C#" Value="public sealed class ImportConventionBuilder" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ImportConventionBuilder extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Composition.Convention.ImportConventionBuilder" />
@@ -10,6 +10,8 @@
     <AssemblyVersion>1.0.31.0</AssemblyVersion>
     <AssemblyVersion>1.0.32.0</AssemblyVersion>
     <AssemblyVersion>1.0.33.0</AssemblyVersion>
+    <AssemblyVersion>1.0.34.0</AssemblyVersion>
+    <AssemblyVersion>1.0.35.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -17,7 +19,8 @@
   <Interfaces />
   <Docs>
     <summary>Configures an import that is associated with a part.</summary>
-    <remarks></remarks>
+    <remarks>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="AddMetadataConstraint">
@@ -33,6 +36,8 @@
         <AssemblyVersion>1.0.31.0</AssemblyVersion>
         <AssemblyVersion>1.0.32.0</AssemblyVersion>
         <AssemblyVersion>1.0.33.0</AssemblyVersion>
+        <AssemblyVersion>1.0.34.0</AssemblyVersion>
+        <AssemblyVersion>1.0.35.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Composition.Convention.ImportConventionBuilder</ReturnType>
@@ -46,7 +51,8 @@
         <param name="getConstraintValueFromPartType">A function that provides the required metadata value.</param>
         <summary>Adds a constraint to the import requiring the specified metadata name and the value provided by the specified function on the part type.</summary>
         <returns>An import builder containing the constraint that allows for further configuration.</returns>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AddMetadataConstraint">
@@ -62,6 +68,8 @@
         <AssemblyVersion>1.0.31.0</AssemblyVersion>
         <AssemblyVersion>1.0.32.0</AssemblyVersion>
         <AssemblyVersion>1.0.33.0</AssemblyVersion>
+        <AssemblyVersion>1.0.34.0</AssemblyVersion>
+        <AssemblyVersion>1.0.35.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Composition.Convention.ImportConventionBuilder</ReturnType>
@@ -75,7 +83,8 @@
         <param name="value">The required metadata value.</param>
         <summary>Adds a constraint to the import requiring the specified metadata name and value.</summary>
         <returns>An import builder containing the constraint that allows for further configuration.</returns>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AllowDefault">
@@ -91,6 +100,8 @@
         <AssemblyVersion>1.0.31.0</AssemblyVersion>
         <AssemblyVersion>1.0.32.0</AssemblyVersion>
         <AssemblyVersion>1.0.33.0</AssemblyVersion>
+        <AssemblyVersion>1.0.34.0</AssemblyVersion>
+        <AssemblyVersion>1.0.35.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Composition.Convention.ImportConventionBuilder</ReturnType>
@@ -99,7 +110,8 @@
       <Docs>
         <summary>Allows the import to receive the default value for its type if the contract cannot be supplied by another part.</summary>
         <returns>An import builder that allows default values and can be further configured.</returns>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AsContractName">
@@ -115,6 +127,8 @@
         <AssemblyVersion>1.0.31.0</AssemblyVersion>
         <AssemblyVersion>1.0.32.0</AssemblyVersion>
         <AssemblyVersion>1.0.33.0</AssemblyVersion>
+        <AssemblyVersion>1.0.34.0</AssemblyVersion>
+        <AssemblyVersion>1.0.35.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Composition.Convention.ImportConventionBuilder</ReturnType>
@@ -126,7 +140,8 @@
         <param name="getContractNameFromPartType">A function that provides the contract name of the import.</param>
         <summary>Sets the contract name of the import to the value provided by the specified function on the part type.</summary>
         <returns>An import builder containing the contract name that allows for further configuration.</returns>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AsContractName">
@@ -142,6 +157,8 @@
         <AssemblyVersion>1.0.31.0</AssemblyVersion>
         <AssemblyVersion>1.0.32.0</AssemblyVersion>
         <AssemblyVersion>1.0.33.0</AssemblyVersion>
+        <AssemblyVersion>1.0.34.0</AssemblyVersion>
+        <AssemblyVersion>1.0.35.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Composition.Convention.ImportConventionBuilder</ReturnType>
@@ -153,7 +170,8 @@
         <param name="contractName">The contract name of the import.</param>
         <summary>Sets the contract name of the import to the specified string.</summary>
         <returns>An import builder containing the contract name that allows for further configuration.</returns>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AsMany">
@@ -169,6 +187,8 @@
         <AssemblyVersion>1.0.31.0</AssemblyVersion>
         <AssemblyVersion>1.0.32.0</AssemblyVersion>
         <AssemblyVersion>1.0.33.0</AssemblyVersion>
+        <AssemblyVersion>1.0.34.0</AssemblyVersion>
+        <AssemblyVersion>1.0.35.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Composition.Convention.ImportConventionBuilder</ReturnType>
@@ -177,7 +197,8 @@
       <Docs>
         <summary>Configures the import to receive a collection of exports.</summary>
         <returns>An import builder that can receive a collection of exports and allows for further configuration.</returns>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AsMany">
@@ -193,6 +214,8 @@
         <AssemblyVersion>1.0.31.0</AssemblyVersion>
         <AssemblyVersion>1.0.32.0</AssemblyVersion>
         <AssemblyVersion>1.0.33.0</AssemblyVersion>
+        <AssemblyVersion>1.0.34.0</AssemblyVersion>
+        <AssemblyVersion>1.0.35.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Composition.Convention.ImportConventionBuilder</ReturnType>
@@ -205,7 +228,8 @@
           <see langword="true" /> to provide all available matching exports; otherwise, <see langword="false" />.</param>
         <summary>Configures the import to receive a collection of exports, possibly representing all available matching exports.</summary>
         <returns>An import builder that can receive a collection of exports and allows for further configuration.</returns>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
   </Members>

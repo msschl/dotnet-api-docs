@@ -1,4 +1,4 @@
-﻿<Type Name="IAuthorizationPolicy" FullName="System.IdentityModel.Policy.IAuthorizationPolicy">
+<Type Name="IAuthorizationPolicy" FullName="System.IdentityModel.Policy.IAuthorizationPolicy">
   <TypeSignature Language="C#" Value="public interface IAuthorizationPolicy : System.IdentityModel.Policy.IAuthorizationComponent" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IAuthorizationPolicy implements class System.IdentityModel.Policy.IAuthorizationComponent" />
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Policy.IAuthorizationPolicy" />
@@ -9,6 +9,10 @@
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel.Security</AssemblyName>
+    <AssemblyVersion>4.7.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces>
     <Interface>
@@ -41,7 +45,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Evaluate(class System.IdentityModel.Policy.EvaluationContext evaluationContext, object&amp; state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Policy.IAuthorizationPolicy.Evaluate(System.IdentityModel.Policy.EvaluationContext,System.Object@)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Evaluate(System::IdentityModel::Policy::EvaluationContext ^ evaluationContext, System::Object ^ % state);" />
-      <MemberSignature Language="F#" Value="abstract member Evaluate : System.IdentityModel.Policy.EvaluationContext *  -&gt; bool" Usage="iAuthorizationPolicy.Evaluate (evaluationContext, state)" />
+      <MemberSignature Language="F#" Value="abstract member Evaluate : System.IdentityModel.Policy.EvaluationContext * obj -&gt; bool" Usage="iAuthorizationPolicy.Evaluate (evaluationContext, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -52,8 +56,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="evaluationContext" Type="System.IdentityModel.Policy.EvaluationContext" />
-        <Parameter Name="state" Type="System.Object" RefType="ref" />
+        <Parameter Name="evaluationContext" Type="System.IdentityModel.Policy.EvaluationContext" Index="0" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0" />
+        <Parameter Name="state" Type="System.Object" RefType="ref" Index="1" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="evaluationContext">An <see cref="T:System.IdentityModel.Policy.EvaluationContext" /> that contains the claim set that the authorization policy evaluates.</param>

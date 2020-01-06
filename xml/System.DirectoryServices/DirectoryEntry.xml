@@ -1,4 +1,4 @@
-﻿<Type Name="DirectoryEntry" FullName="System.DirectoryServices.DirectoryEntry">
+<Type Name="DirectoryEntry" FullName="System.DirectoryServices.DirectoryEntry">
   <TypeSignature Language="C#" Value="public class DirectoryEntry : System.ComponentModel.Component" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DirectoryEntry extends System.ComponentModel.Component" />
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.DirectoryEntry" />
@@ -22,6 +22,9 @@
     </Attribute>
     <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
       <AttributeName>System.DirectoryServices.DSDescription("DirectoryEntryDesc")</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="dotnet-plat-ext-3.0;netcore-3.0;dotnet-plat-ext-3.1;netcore-3.1">
+      <AttributeName>System.ComponentModel.TypeConverter(typeof(System.DirectoryServices.DirectoryEntryConverter))</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -110,7 +113,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This constructor enables a program to use the methods and properties of the <xref:System.DirectoryServices.DirectoryEntry> class on a native Active Directory Domain Services object that implements the IADs interface through a native API. For more information about the IADs interface, see the topic [IADs](https://msdn.microsoft.com/library/default.asp?url=/library/adsi/adsi/iads.asp) in the MSDN Library at [http://msdn.microsoft.com/library](https://msdn.microsoft.com/library).  
+ This constructor enables a program to use the methods and properties of the <xref:System.DirectoryServices.DirectoryEntry> class on a native Active Directory Domain Services object that implements the IADs interface through a native API. For more information about the IADs interface, see the [IADs](/windows/desktop/api/iads/nn-iads-iads) article.  
   
  ]]></format>
         </remarks>
@@ -169,7 +172,6 @@ Public Class PrintChildren
         Next objChildDE  
     End Sub 'Main  
 End Class 'PrintChildren  
-  
 ```  
   
 ```csharp  
@@ -187,10 +189,9 @@ public class PrintChildren{
         Console.WriteLine(objChildDE.Path);  
    }  
  }  
-  
 ```  
   
-```cpp#  
+```cpp  
 int main()  
 {  
     String^ args[] = Environment::GetCommandLineArgs();  
@@ -211,7 +212,6 @@ int main()
         Console::WriteLine(objChildDE->Path);  
     }  
 }  
-  
 ```  
   
  ]]></format>
@@ -306,7 +306,7 @@ int main()
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netcore-2.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;dotnet-plat-ext-2.1;dotnet-plat-ext-2.2">
+        <Attribute FrameworkAlternate="netcore-2.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;netcore-3.0;dotnet-plat-ext-3.1;netcore-3.1">
           <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
@@ -599,7 +599,8 @@ int main()
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.DirectoryEntry.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
-      <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="directoryEntry.Dispose disposing" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="directoryEntry.Dispose disposing" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;dotnet-plat-ext-3.1;netcore-3.0;netcore-3.1" />
+      <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="directoryEntry.Dispose disposing" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -677,7 +678,6 @@ If DirectoryEntry.Exists(myADSPath) Then
 Else  
    Console.WriteLine("The path {0} is invalid",myADSPath)  
 End If  
-  
 ```  
   
 ```csharp  
@@ -692,10 +692,9 @@ if (DirectoryEntry.Exists(myADSPath))
 {  
     Console.WriteLine("The path {0} is invalid",myADSPath);  
 }  
-  
 ```  
   
-```cpp#  
+```cpp
 String^ myADSPath = "LDAP://onecity/CN=Users,DC=onecity,DC=corp,DC=fabrikam,DC=com";  
 // Determine whether the given path is correct for the DirectoryEntry.  
 if (DirectoryEntry::Exists(myADSPath))   
@@ -706,7 +705,6 @@ else
 {  
     Console::WriteLine("The path {0} is invalid", myADSPath);  
 }  
-  
 ```  
   
  ]]></format>
@@ -763,7 +761,6 @@ Dim myDirectoryEntry As New DirectoryEntry(myADSPath)
 ' Display the Guid and NativeGuid.  
 Console.WriteLine("The GUID of the ADS object:" + myDirectoryEntry.Guid.ToString)  
 Console.WriteLine("The Native GUID of the ADS" + "object:" + myDirectoryEntry.NativeGuid)  
-  
 ```  
   
 ```csharp  
@@ -775,10 +772,9 @@ Console.WriteLine("The GUID of the ADS object:"+
                   myDirectoryEntry.Guid);  
 Console.WriteLine("The Native GUID of the ADS"+  
                   "object:"+myDirectoryEntry.NativeGuid);  
-  
 ```  
   
-```cpp#  
+```cpp
 String^ myADSPath = "LDAP://onecity/CN=Users,DC=onecity,DC=corp,DC=fabrikam,DC=com";  
 DirectoryEntry^ myDirectoryEntry = gcnew DirectoryEntry(myADSPath);  
   
@@ -786,7 +782,6 @@ DirectoryEntry^ myDirectoryEntry = gcnew DirectoryEntry(myADSPath);
 Console::WriteLine("The GUID of the ADS object: {0}", myDirectoryEntry->Guid);  
 Console::WriteLine("The Native GUID of the ADS object: {0}",  
                    myDirectoryEntry->NativeGuid);  
-  
 ```  
   
  ]]></format>
@@ -816,7 +811,7 @@ Console::WriteLine("The Native GUID of the ADS object: {0}",
         <Parameter Name="methodName" Type="System.String" />
         <Parameter Name="args" Type="System.Object[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="dotnet-plat-ext-2.1">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -831,7 +826,7 @@ Console::WriteLine("The Native GUID of the ADS object: {0}",
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the return value of the native method implements the IADs interface, a corresponding <xref:System.DirectoryServices.DirectoryEntry> is returned. For more information about the IADs interface, see the topic [IADs](https://msdn.microsoft.com/library/default.asp?url=/library/adsi/adsi/iads.asp) in the MSDN Library at [http://msdn.microsoft.com/library](https://msdn.microsoft.com/library/default.asp?url=/library/adsi/adsi/iads.asp).  
+ If the return value of the native method implements the IADs interface, a corresponding <xref:System.DirectoryServices.DirectoryEntry> is returned. For more information about the IADs interface, see the [IADs](/windows/desktop/api/iads/nn-iads-iads) article.
   
  ]]></format>
         </remarks>
@@ -863,7 +858,7 @@ Console::WriteLine("The Native GUID of the ADS object: {0}",
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="propertyName" Type="System.String" />
+        <Parameter Name="propertyName" Type="System.String" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;dotnet-plat-ext-3.1;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="propertyName">The name of the property to get.</param>
@@ -904,10 +899,10 @@ Console::WriteLine("The Native GUID of the ADS object: {0}",
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="propertyName" Type="System.String" />
-        <Parameter Name="args" Type="System.Object[]">
+        <Parameter Name="propertyName" Type="System.String" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;dotnet-plat-ext-3.1;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="args" Type="System.Object[]" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;dotnet-plat-ext-3.1;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="dotnet-plat-ext-2.1">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -1088,10 +1083,9 @@ foreach(DirectoryEntry myDirectoryEntryChild in
 {  
    Console.WriteLine(myDirectoryEntryChild.Path);  
 }  
-  
 ```  
   
-```cpp#  
+```cpp
 String^ myADSPath = "LDAP://onecity/CN=Users,DC=onecity,DC=corp,DC=fabrikam,DC=com";  
 DirectoryEntry^ myDirectoryEntry = gcnew DirectoryEntry(myADSPath);  
   
@@ -1178,10 +1172,9 @@ Console.WriteLine("The GUID of the ADS object:"+
                   myDirectoryEntry.Guid);  
 Console.WriteLine("The Native GUID of the ADS"+  
                   "object:"+myDirectoryEntry.NativeGuid);  
-  
 ```  
   
-```cpp#  
+```cpp
 String^ myADSPath = "LDAP://onecity/CN=Users,DC=onecity,DC=corp,DC=fabrikam,DC=com";  
 DirectoryEntry^ myDirectoryEntry = gcnew DirectoryEntry(myADSPath);  
   
@@ -1232,7 +1225,7 @@ Console::WriteLine("The Native GUID of the ADS object: {0}",
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use this property to cast the native Active Directory Domain Services object, which implements the IADs interface, when you want to use a COM interface. For more information about the IADs interface, see the topic [IADs](https://msdn.microsoft.com/library/default.asp?url=/library/adsi/adsi/iads.asp) in the MSDN Library at [http://msdn.microsoft.com/library](https://msdn.microsoft.com/library/default.asp?url=/library/adsi/adsi/iads.asp).  
+ Use this property to cast the native Active Directory Domain Services object, which implements the IADs interface, when you want to use a COM interface. For more information about the IADs interface, see the [IADs](/windows/desktop/api/iads/nn-iads-iads) article.
   
  This object is for advanced scenarios that cannot be accomplished with the <xref:System.DirectoryServices?displayProperty=nameWithType> classes alone. To use it, you need to import one of the COM interfaces from the IADs family, then cast this property to that interface.  
   
@@ -1359,7 +1352,6 @@ Dim myADSPath As String = _
 Dim myDirectoryEntry As New DirectoryEntry(myADSPath, UserName, SecurelyStoredPassword)  
   
 Console.WriteLine("Parent is :" + myDirectoryEntry.Parent.Path)  
-  
 ```  
   
 ```csharp  
@@ -1369,12 +1361,11 @@ DirectoryEntry myDirectoryEntry=new DirectoryEntry(myADSPath, UserName, Securely
 Console.WriteLine("Parent is :"+myDirectoryEntry.Parent.Path);  
 ```  
   
-```cpp#  
+```cpp  
 String^ myADSPath = "LDAP://onecity/CN=user,CN=Users,DC=onecity,DC=corp,DC=fabrikam,DC=com";  
 DirectoryEntry^ myDirectoryEntry = gcnew DirectoryEntry(myADSPath, UserName, SecurelyStoredPassword);  
   
 Console::WriteLine("Parent is :{0}", myDirectoryEntry->Parent->Path);  
-  
 ```  
   
  ]]></format>
@@ -1383,12 +1374,15 @@ Console::WriteLine("Parent is :{0}", myDirectoryEntry->Parent->Path);
       </Docs>
     </Member>
     <Member MemberName="Password">
-      <MemberSignature Language="C#" Value="public string Password { set; }" />
+      <MemberSignature Language="C#" Value="public string Password { set; }" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;dotnet-plat-ext-3.1;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       <MemberSignature Language="ILAsm" Value=".property instance string Password" />
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.DirectoryEntry.Password" />
       <MemberSignature Language="VB.NET" Value="Public Property Password As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Password {  void set(System::String ^ value); };" />
-      <MemberSignature Language="F#" Value="member this.Password : string" Usage="System.DirectoryServices.DirectoryEntry.Password" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Password {  void set(System::String ^ value); };" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;dotnet-plat-ext-3.1;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+      <MemberSignature Language="F#" Value="member this.Password : string" Usage="System.DirectoryServices.DirectoryEntry.Password" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;dotnet-plat-ext-3.1;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+      <MemberSignature Language="C#" Value="public string Password { get; set; }" FrameworkAlternate="netframework-1.1" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Password { System::String ^ get(); void set(System::String ^ value); };" FrameworkAlternate="netframework-1.1" />
+      <MemberSignature Language="F#" Value="member this.Password : string with get, set" Usage="System.DirectoryServices.DirectoryEntry.Password" FrameworkAlternate="netframework-1.1" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -1401,7 +1395,7 @@ Console::WriteLine("Parent is :{0}", myDirectoryEntry->Parent->Path);
         <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netcore-2.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;dotnet-plat-ext-2.1;dotnet-plat-ext-2.2">
+        <Attribute FrameworkAlternate="netcore-2.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;netcore-3.0;dotnet-plat-ext-3.1;netcore-3.1">
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
@@ -1455,10 +1449,9 @@ myDirectoryEntry.Password = SecurelyStoredPassword;
 Console.WriteLine("The Child ADS objects are:");  
 foreach(DirectoryEntry myChildDirectoryEntry in myDirectoryEntry.Children)  
    Console.WriteLine(myChildDirectoryEntry.Path);  
-  
 ```  
   
-```cpp#  
+```cpp
 String^ myADSPath = "LDAP://onecity/CN=Users,DC=onecity,DC=corp,DC=fabrikam,DC=com";  
   
 // Create an Instance of DirectoryEntry.  
@@ -1475,7 +1468,6 @@ while (myEnum->MoveNext())
              (myEnum->Current);  
     Console::WriteLine(myChildDirectoryEntry->Path);  
 }  
-  
 ```  
   
  ]]></format>
@@ -1499,7 +1491,7 @@ while (myEnum->MoveNext())
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netcore-2.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;dotnet-plat-ext-2.1;dotnet-plat-ext-2.2">
+        <Attribute FrameworkAlternate="netcore-2.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;netcore-3.0;dotnet-plat-ext-3.1;netcore-3.1">
           <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
@@ -1571,7 +1563,7 @@ String str = ent.Properties["defaultNamingContext"][0];
 DirectoryEntry domain = new DirectoryEntry("LDAP://" + str);  
 ```  
   
- For more information, see the documentation for your provider and the topic [Using Active Directory Service Interfaces](https://msdn.microsoft.com/library/default.asp?url=/library/adsi/adsi/using_adsi.asp) in the MSDN Library at [http://msdn.microsoft.com/library](https://msdn.microsoft.com/library).  
+ For more information, see the documentation for your provider and the [Using Active Directory Service Interfaces](/windows/desktop/adsi/using-adsi) article.  
   
  ]]></format>
         </remarks>
@@ -1613,7 +1605,7 @@ DirectoryEntry domain = new DirectoryEntry("LDAP://" + str);
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the property is not initialized, <xref:System.DirectoryServices.DirectoryEntry.Properties%2A> calls the ADSI interface [IADs::Get](http://msdn2.microsoft.com/library/aa746347.aspx) method to retrieve the value from the cache. If the underling cache has not been loaded, [IADs::Get](http://msdn2.microsoft.com/library/aa746347.aspx) implicitly calls [IADs::GetInfo](http://msdn2.microsoft.com/library/aa746349.aspx). This method loads the values of the supported properties that have not been set in the cache from the underlying directory store. Subsequent calls to <xref:System.DirectoryServices.DirectoryEntry.Properties%2A> retrieves the property values in the cache only. To control property cache loading, call <xref:System.DirectoryServices.DirectoryEntry.RefreshCache%2A>.  
+ If the property is not initialized, <xref:System.DirectoryServices.DirectoryEntry.Properties%2A> calls the ADSI interface [IADs::Get](/windows/desktop/api/iads/nf-iads-iads-get) method to retrieve the value from the cache. If the underling cache has not been loaded, [IADs::Get](/windows/desktop/api/iads/nf-iads-iads-get) implicitly calls [IADs::GetInfo](/windows/desktop/api/iads/nf-iads-iads-getinfo). This method loads the values of the supported properties that have not been set in the cache from the underlying directory store. Subsequent calls to <xref:System.DirectoryServices.DirectoryEntry.Properties%2A> retrieves the property values in the cache only. To control property cache loading, call <xref:System.DirectoryServices.DirectoryEntry.RefreshCache%2A>.  
   
  **Note** The <xref:System.DirectoryServices.DirectoryEntry.Properties%2A> property is not supported for use with the Active Directory Client Extension (DSClient) for [!INCLUDE[WinNt4Family](~/includes/winnt4family-md.md)].  
   
@@ -1827,10 +1819,9 @@ if (string.Compare(mySchemaEntry.Name, "container") == 0)
    foreach(DirectoryEntry myChildDirectoryEntry in myDirectoryEntry.Children)  
       Console.WriteLine(myChildDirectoryEntry.Path);  
 }  
-  
 ```  
   
-```cpp#  
+```cpp
 String^ myADSPath = "LDAP://onecity/CN=Users,DC=onecity,DC=corp,DC=fabrikam,DC=com";  
   
 // Creates an Instance of DirectoryEntry.  
@@ -1851,7 +1842,6 @@ if (!String::Compare(mySchemaEntry->Name, "container"))
         Console::WriteLine(myChildDirectoryEntry->Path);  
     }  
 }  
-  
 ```  
   
  ]]></format>
@@ -1944,7 +1934,7 @@ if (string.Compare(mySchemaEntry.Name,"container") == 0)
   
 ```  
   
-```cpp#  
+```cpp
 String^ myADSPath = "LDAP://onecity/CN=Users,DC=onecity,DC=corp,DC=fabrikam,DC=com";  
   
 // Creates an Instance of DirectoryEntry.  
@@ -1965,7 +1955,6 @@ if (!String::Compare(mySchemaEntry->Name, S"container"))
         Console::WriteLine(myChildDirectoryEntry->Path);  
     }  
 }  
-  
 ```  
   
  ]]></format>
@@ -1990,7 +1979,7 @@ if (!String::Compare(mySchemaEntry->Name, S"container"))
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netcore-2.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;dotnet-plat-ext-2.1;dotnet-plat-ext-2.2">
+        <Attribute FrameworkAlternate="netcore-2.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;netcore-3.0;dotnet-plat-ext-3.1;netcore-3.1">
           <AttributeName>System.ComponentModel.DefaultValue(true)</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
@@ -2043,7 +2032,7 @@ if (!String::Compare(mySchemaEntry->Name, S"container"))
         <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netcore-2.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;dotnet-plat-ext-2.1;dotnet-plat-ext-2.2">
+        <Attribute FrameworkAlternate="netcore-2.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;netcore-3.0;dotnet-plat-ext-3.1;netcore-3.1">
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
@@ -2105,10 +2094,9 @@ myDirectoryEntry.Password = SecurelyStoredPassword;
 Console.WriteLine("The Child ADS objects are:");  
 foreach(DirectoryEntry myChildDirectoryEntry in myDirectoryEntry.Children)  
    Console.WriteLine(myChildDirectoryEntry.Path);  
-  
 ```  
   
-```cpp#  
+```cpp
 String^ myADSPath = "LDAP://onecity/CN=Users,DC=onecity,DC=corp,DC=fabrikam,DC=com";  
   
 // Create an Instance of DirectoryEntry.  
@@ -2124,7 +2112,6 @@ while (myEnum->MoveNext())
     DirectoryEntry^ myChildDirectoryEntry = safe_cast<DirectoryEntry^>(myEnum->Current);  
     Console::WriteLine(myChildDirectoryEntry->Path);  
 }  
-  
 ```  
   
  ]]></format>

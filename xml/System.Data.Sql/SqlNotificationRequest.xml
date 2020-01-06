@@ -1,4 +1,4 @@
-﻿<Type Name="SqlNotificationRequest" FullName="System.Data.Sql.SqlNotificationRequest">
+<Type Name="SqlNotificationRequest" FullName="System.Data.Sql.SqlNotificationRequest">
   <TypeSignature Language="C#" Value="public sealed class SqlNotificationRequest" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SqlNotificationRequest extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Data.Sql.SqlNotificationRequest" />
@@ -15,6 +15,8 @@
     <AssemblyName>System.Data.SqlClient</AssemblyName>
     <AssemblyVersion>4.4.0.0</AssemblyVersion>
     <AssemblyVersion>4.5.0.0</AssemblyVersion>
+    <AssemblyVersion>4.6.0.0</AssemblyVersion>
+    <AssemblyVersion>4.6.1.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -60,6 +62,8 @@
         <AssemblyName>System.Data.SqlClient</AssemblyName>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.6.0.0</AssemblyVersion>
+        <AssemblyVersion>4.6.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -68,7 +72,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the default constructor is used to create a <xref:System.Data.Sql.SqlNotificationRequest> object, that instance must have its <xref:System.Data.Sql.SqlNotificationRequest.UserData%2A> and <xref:System.Data.Sql.SqlNotificationRequest.Options%2A> properties initialized before assigning the object to a <xref:System.Data.SqlClient.SqlCommand> object's <xref:System.Data.SqlClient.SqlCommand.Notification%2A> property. The default values used by the constructor are NULL (`Nothing` in Visual Basic) for the <xref:System.Data.Sql.SqlNotificationRequest.UserData%2A>, an empty string for the <xref:System.Data.Sql.SqlNotificationRequest.Options%2A>, and zero for the <xref:System.Data.Sql.SqlNotificationRequest.Timeout%2A>.  
+ If the parameterless constructor is used to create a <xref:System.Data.Sql.SqlNotificationRequest> object, that instance must have its <xref:System.Data.Sql.SqlNotificationRequest.UserData%2A> and <xref:System.Data.Sql.SqlNotificationRequest.Options%2A> properties initialized before assigning the object to a <xref:System.Data.SqlClient.SqlCommand> object's <xref:System.Data.SqlClient.SqlCommand.Notification%2A> property. The default values used by the constructor are NULL (`Nothing` in Visual Basic) for the <xref:System.Data.Sql.SqlNotificationRequest.UserData%2A>, an empty string for the <xref:System.Data.Sql.SqlNotificationRequest.Options%2A>, and zero for the <xref:System.Data.Sql.SqlNotificationRequest.Timeout%2A>.  
   
  ]]></format>
         </remarks>
@@ -93,6 +97,8 @@
         <AssemblyName>System.Data.SqlClient</AssemblyName>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.6.0.0</AssemblyVersion>
+        <AssemblyVersion>4.6.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="userData" Type="System.String" />
@@ -137,6 +143,8 @@
         <AssemblyName>System.Data.SqlClient</AssemblyName>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.6.0.0</AssemblyVersion>
+        <AssemblyVersion>4.6.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -184,6 +192,8 @@
         <AssemblyName>System.Data.SqlClient</AssemblyName>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.6.0.0</AssemblyVersion>
+        <AssemblyVersion>4.6.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -221,6 +231,8 @@
         <AssemblyName>System.Data.SqlClient</AssemblyName>
         <AssemblyVersion>4.4.0.0</AssemblyVersion>
         <AssemblyVersion>4.5.0.0</AssemblyVersion>
+        <AssemblyVersion>4.6.0.0</AssemblyVersion>
+        <AssemblyVersion>4.6.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>

@@ -1,4 +1,4 @@
-﻿<Type Name="SyndicationFeed" FullName="System.ServiceModel.Syndication.SyndicationFeed">
+<Type Name="SyndicationFeed" FullName="System.ServiceModel.Syndication.SyndicationFeed">
   <TypeSignature Language="C#" Value="public class SyndicationFeed" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SyndicationFeed extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Syndication.SyndicationFeed" />
@@ -17,6 +17,8 @@
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Syndication</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.1.0</AssemblyVersion>
+    <AssemblyVersion>4.0.2.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -33,45 +35,45 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When serialized to Atom 1.0, a <xref:System.ServiceModel.Syndication.SyndicationFeed> instance is written to a <`feed`> element. The following table shows how each property defined in the <xref:System.ServiceModel.Syndication.SyndicationFeed> class is serialized to Atom 1.0.  
+ When serialized to Atom 1.0, a <xref:System.ServiceModel.Syndication.SyndicationFeed> instance is written to a `<feed>` element. The following table shows how each property defined in the <xref:System.ServiceModel.Syndication.SyndicationFeed> class is serialized to Atom 1.0.  
   
 |SyndicationFeed property|Serialized form|  
 |------------------------------|---------------------|  
-|`AttributeExtensions`|An attribute in the <`feed`> element for each attribute in the collection.|  
-|`Authors`|An <`author`> element for each <xref:System.ServiceModel.Syndication.SyndicationPerson> in the collection.|  
-|`Categories`|A <`category`> element for each <xref:System.ServiceModel.Syndication.SyndicationCategory> in the collection.|  
-|`Contributors`|A <`contributor`> element for each <xref:System.ServiceModel.Syndication.SyndicationPerson> in the collection.|  
-|`Copyright`|A <`rights`> element.|  
-|`Description`|A <`subtitle`> element.|  
-|`ElementExtensions`|Each element in the collection is written within the <`feed`> element.|  
-|`Generator`|A <`generator`> element.|  
-|`Id`|An <`id`>element.|  
-|`ImageUri`|A <`logo`> element.|  
-|`Items`|An <`entry`> element for each <xref:System.ServiceModel.Syndication.SyndicationItem> in the collection.|  
+|`AttributeExtensions`|An attribute in the `<feed>` element for each attribute in the collection.|  
+|`Authors`|An `<author>` element for each <xref:System.ServiceModel.Syndication.SyndicationPerson> in the collection.|  
+|`Categories`|A `<category>` element for each <xref:System.ServiceModel.Syndication.SyndicationCategory> in the collection.|  
+|`Contributors`|A `<contributor>` element for each <xref:System.ServiceModel.Syndication.SyndicationPerson> in the collection.|  
+|`Copyright`|A `<rights>` element.|  
+|`Description`|A `<subtitle>` element.|  
+|`ElementExtensions`|Each element in the collection is written within the `<feed>` element.|  
+|`Generator`|A `<generator>` element.|  
+|`Id`|An `<id>`element.|  
+|`ImageUri`|A `<logo>` element.|  
+|`Items`|An `<entry>` element for each <xref:System.ServiceModel.Syndication.SyndicationItem> in the collection.|  
 |`Language`|Not serialized.|  
-|`LastUpdatedTime`|An <`updated`> element.|  
-|`Links`|A <`link`> element for each <xref:System.ServiceModel.Syndication.SyndicationLink> in the collection.|  
-|`Title`|A <`title`> element.|  
+|`LastUpdatedTime`|An `<updated>` element.|  
+|`Links`|A `<link>` element for each <xref:System.ServiceModel.Syndication.SyndicationLink> in the collection.|  
+|`Title`|A `<title>` element.|  
   
- When serialized to RSS 2.0, a <xref:System.ServiceModel.Syndication.SyndicationFeed> instance is written to an <`rss`> element. The following table shows how each property defined in the <xref:System.ServiceModel.Syndication.SyndicationFeed> class is serialized to RSS 2.0.  
+ When serialized to RSS 2.0, a <xref:System.ServiceModel.Syndication.SyndicationFeed> instance is written to an `<rss>` element. The following table shows how each property defined in the <xref:System.ServiceModel.Syndication.SyndicationFeed> class is serialized to RSS 2.0.  
   
 |SyndicationFeed property|Serialized form|  
 |------------------------------|---------------------|  
-|`AttributeExtensions`|An attribute in the <`channel`> element for each attribute in the collection.|  
-|`Authors`|A <`managingEditor`> element if only one <xref:System.ServiceModel.Syndication.SyndicationPerson> is in the collection; otherwise, an <`a10:author`> element for each <xref:System.ServiceModel.Syndication.SyndicationPerson> in the collection.|  
-|`Categories`|A <`category`> element for each <xref:System.ServiceModel.Syndication.SyndicationCategory> in the collection.|  
-|`Contributors`|An <`a10:contributor`> element for each <xref:System.ServiceModel.Syndication.SyndicationPerson> in the collection.|  
-|`Copyright`|A <`copyright`> element.|  
-|`Description`|A <`description`> element.|  
-|`ElementExtensions`|Each element in the collection is written within the <`channel`> element.|  
-|`Generator`|A <`generator`> element.|  
-|`Id`|An <`a10:id`> element.|  
-|`ImageUri`|An <`image`> element.|  
-|`Items`|An <`item`> element for each <xref:System.ServiceModel.Syndication.SyndicationItem> in the collection.|  
-|`Language`|A <`language`> element.|  
-|`LastUpdatedTime`|A <`lastBuildDate`> element.|  
-|`Links`|An <`a10:link`> element for each <xref:System.ServiceModel.Syndication.SyndicationLink> in the collection.|  
-|`Title`|A <`title`> element.|  
+|`AttributeExtensions`|An attribute in the `<channel>` element for each attribute in the collection.|  
+|`Authors`|A `<managingEditor>` element if only one <xref:System.ServiceModel.Syndication.SyndicationPerson> is in the collection; otherwise, an `<a10:author>` element for each <xref:System.ServiceModel.Syndication.SyndicationPerson> in the collection.|  
+|`Categories`|A `<category>` element for each <xref:System.ServiceModel.Syndication.SyndicationCategory> in the collection.|  
+|`Contributors`|An `<a10:contributor>` element for each <xref:System.ServiceModel.Syndication.SyndicationPerson> in the collection.|  
+|`Copyright`|A `<copyright>` element.|  
+|`Description`|A `<description>` element.|  
+|`ElementExtensions`|Each element in the collection is written within the `<channel>` element.|  
+|`Generator`|A `<generator>` element.|  
+|`Id`|An `<a10:id>` element.|  
+|`ImageUri`|An `<image>` element.|  
+|`Items`|An `<item>` element for each <xref:System.ServiceModel.Syndication.SyndicationItem> in the collection.|  
+|`Language`|A `<language>` element.|  
+|`LastUpdatedTime`|A `<lastBuildDate>` element.|  
+|`Links`|An `<a10:link>` element for each <xref:System.ServiceModel.Syndication.SyndicationLink> in the collection.|  
+|`Title`|A `<title>` element.|  
   
    
   
@@ -121,6 +123,8 @@
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Syndication</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
@@ -153,6 +157,8 @@
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Syndication</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
@@ -203,6 +209,8 @@
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Syndication</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="source" Type="System.ServiceModel.Syndication.SyndicationFeed" />
@@ -242,6 +250,8 @@
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Syndication</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
@@ -291,6 +301,8 @@
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Syndication</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="title" Type="System.String" />
@@ -337,6 +349,8 @@
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Syndication</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
@@ -390,6 +404,8 @@
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Syndication</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="title" Type="System.String" />
@@ -443,6 +459,8 @@
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Syndication</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.Dictionary&lt;System.Xml.XmlQualifiedName,System.String&gt;</ReturnType>
@@ -454,7 +472,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- An attribute extension is a valid XML attribute that is not specified in either the Atom 1.0 or RSS 2.0 specifications. When serialized to Atom 1.0, each custom attribute in the collection is written to the <`atom`> element. When serialized to RSS 2.0, each custom attribute is written to the <`channel`> element. For an example of adding an attribute extension, see the [Loosely-Typed Extensions](~/docs/framework/wcf/samples/loosely-typed-extensions-sample.md) sample.  
+ An attribute extension is a valid XML attribute that is not specified in either the Atom 1.0 or RSS 2.0 specifications. When serialized to Atom 1.0, each custom attribute in the collection is written to the `<atom>` element. When serialized to RSS 2.0, each custom attribute is written to the `<channel>` element. For an example of adding an attribute extension, see the [Loosely-Typed Extensions](~/docs/framework/wcf/samples/loosely-typed-extensions-sample.md) sample.  
   
    
   
@@ -496,6 +514,8 @@
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Syndication</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Syndication.SyndicationPerson&gt;</ReturnType>
@@ -507,7 +527,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When serialized to Atom 1.0, each <xref:System.ServiceModel.Syndication.SyndicationPerson> in the collection is written to an <`author`> element. When serialized to RSS 2.0, if only a single <xref:System.ServiceModel.Syndication.SyndicationPerson> exists in the collection, it is written to a <`managingEditor`> element. Otherwise, each <xref:System.ServiceModel.Syndication.SyndicationPerson> is written to an <`a10:author`> element.  
+ When serialized to Atom 1.0, each <xref:System.ServiceModel.Syndication.SyndicationPerson> in the collection is written to an `<author>` element. When serialized to RSS 2.0, if only a single <xref:System.ServiceModel.Syndication.SyndicationPerson> exists in the collection, it is written to a `<managingEditor>` element. Otherwise, each <xref:System.ServiceModel.Syndication.SyndicationPerson> is written to an `<a10:author>` element.  
   
    
   
@@ -549,6 +569,8 @@
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Syndication</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
@@ -597,6 +619,8 @@
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Syndication</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Syndication.SyndicationCategory&gt;</ReturnType>
@@ -608,9 +632,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When serialized to Atom 1.0, each <xref:System.ServiceModel.Syndication.SyndicationCategory> in the collection is written to a <`category`> element.  
+ When serialized to Atom 1.0, each <xref:System.ServiceModel.Syndication.SyndicationCategory> in the collection is written to a `<category>` element.  
   
- When serialized to RSS 2.0, each <xref:System.ServiceModel.Syndication.SyndicationCategory> in the collection is written to a <`category`> element.  
+ When serialized to RSS 2.0, each <xref:System.ServiceModel.Syndication.SyndicationCategory> in the collection is written to a `<category>` element.  
   
    
   
@@ -652,6 +676,8 @@
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Syndication</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Syndication.SyndicationFeed</ReturnType>
@@ -701,6 +727,8 @@
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Syndication</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Syndication.SyndicationPerson&gt;</ReturnType>
@@ -712,9 +740,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When serialized to Atom 1.0, each <xref:System.ServiceModel.Syndication.SyndicationPerson> in the collection is written to a <`contributor`> element.  
+ When serialized to Atom 1.0, each <xref:System.ServiceModel.Syndication.SyndicationPerson> in the collection is written to a `<contributor>` element.  
   
- When serialized to RSS 2.0, each <xref:System.ServiceModel.Syndication.SyndicationPerson> in the collection is written to an <`a10:contributor`> element.  
+ When serialized to RSS 2.0, each <xref:System.ServiceModel.Syndication.SyndicationPerson> in the collection is written to an `<a10:contributor>` element.  
   
    
   
@@ -756,6 +784,8 @@
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Syndication</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
@@ -775,9 +805,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When serialized to Atom 1.0, the <xref:System.ServiceModel.Syndication.SyndicationFeed.Copyright%2A> is written to a <`rights`> element.  
+ When serialized to Atom 1.0, the <xref:System.ServiceModel.Syndication.SyndicationFeed.Copyright%2A> is written to a `<rights>` element.  
   
- When serialized to RSS 2.0, the <xref:System.ServiceModel.Syndication.SyndicationFeed.Copyright%2A> is written to a <`copyright`> element.  
+ When serialized to RSS 2.0, the <xref:System.ServiceModel.Syndication.SyndicationFeed.Copyright%2A> is written to a `<copyright>` element.  
   
    
   
@@ -823,6 +853,8 @@
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Syndication</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Syndication.SyndicationCategory</ReturnType>
@@ -861,6 +893,8 @@
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Syndication</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Syndication.SyndicationItem</ReturnType>
@@ -899,6 +933,8 @@
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Syndication</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Syndication.SyndicationLink</ReturnType>
@@ -937,6 +973,8 @@
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Syndication</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Syndication.SyndicationPerson</ReturnType>
@@ -975,6 +1013,8 @@
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Syndication</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
@@ -994,9 +1034,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When serialized to Atom 1.0, <xref:System.ServiceModel.Syndication.SyndicationFeed.Description%2A> is written to a <`subtitle`> element.  
+ When serialized to Atom 1.0, <xref:System.ServiceModel.Syndication.SyndicationFeed.Description%2A> is written to a `<subtitle>` element.  
   
- When serialized to RSS 2.0, <xref:System.ServiceModel.Syndication.SyndicationFeed.Description%2A> is written to a <`description`> element.  
+ When serialized to RSS 2.0, <xref:System.ServiceModel.Syndication.SyndicationFeed.Description%2A> is written to a `<description>` element.  
   
    
   
@@ -1029,6 +1069,8 @@
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Syndication</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -1068,6 +1110,8 @@
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Syndication</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Syndication.SyndicationElementExtensionCollection</ReturnType>
@@ -1117,6 +1161,8 @@
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Syndication</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
@@ -1136,7 +1182,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When serialized to Atom 1.0 and RSS 2.0, the <xref:System.ServiceModel.Syndication.SyndicationFeed.Generator%2A> is written to a <`generator`> element.  
+ When serialized to Atom 1.0 and RSS 2.0, the <xref:System.ServiceModel.Syndication.SyndicationFeed.Generator%2A> is written to a `<generator>` element.  
   
    
   
@@ -1175,6 +1221,8 @@
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Syndication</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Syndication.Atom10FeedFormatter</ReturnType>
@@ -1215,6 +1263,8 @@
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Syndication</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
@@ -1251,6 +1301,8 @@
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Syndication</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Syndication.Rss20FeedFormatter</ReturnType>
@@ -1292,6 +1344,8 @@
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Syndication</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
@@ -1311,9 +1365,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When serialized to Atom 1.0, the <xref:System.ServiceModel.Syndication.SyndicationFeed.Id%2A> is written to an <`id`> element.  
+ When serialized to Atom 1.0, the <xref:System.ServiceModel.Syndication.SyndicationFeed.Id%2A> is written to an `<id>` element.  
   
- When serialized to RSS 2.0, the <xref:System.ServiceModel.Syndication.SyndicationFeed.Id%2A> is written to an <`a10:id`> element.  
+ When serialized to RSS 2.0, the <xref:System.ServiceModel.Syndication.SyndicationFeed.Id%2A> is written to an `<a10:id>` element.  
   
    
   
@@ -1355,6 +1409,8 @@
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Syndication</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
@@ -1374,9 +1430,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When serialized to Atom 1.0, the <xref:System.ServiceModel.Syndication.SyndicationFeed.ImageUrl%2A> property is written to a <`logo`> element.  
+ When serialized to Atom 1.0, the <xref:System.ServiceModel.Syndication.SyndicationFeed.ImageUrl%2A> property is written to a `<logo>` element.  
   
- When serialized to RSS 2.0, the <xref:System.ServiceModel.Syndication.SyndicationFeed.ImageUrl%2A> property is written to an <`image`> element.  
+ When serialized to RSS 2.0, the <xref:System.ServiceModel.Syndication.SyndicationFeed.ImageUrl%2A> property is written to an `<image>` element.  
   
    
   
@@ -1418,6 +1474,8 @@
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Syndication</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerable&lt;System.ServiceModel.Syndication.SyndicationItem&gt;</ReturnType>
@@ -1429,9 +1487,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When serialized to Atom 1.0, the <xref:System.ServiceModel.Syndication.SyndicationFeed.Items%2A> collection is written to <`entry`> elements.  
+ When serialized to Atom 1.0, the <xref:System.ServiceModel.Syndication.SyndicationFeed.Items%2A> collection is written to `<entry>` elements.  
   
- When serialized to Atom 1.0, the <xref:System.ServiceModel.Syndication.SyndicationFeed.Items%2A> collection is written to <`item`> elements.  
+ When serialized to Atom 1.0, the <xref:System.ServiceModel.Syndication.SyndicationFeed.Items%2A> collection is written to `<item>` elements.  
   
    
   
@@ -1473,6 +1531,8 @@
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Syndication</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
@@ -1492,9 +1552,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When serialized to Atom 1.0, the <xref:System.ServiceModel.Syndication.SyndicationFeed.Language%2A> property is written to the `lang` attribute in the <`feed`> element.  
+ When serialized to Atom 1.0, the <xref:System.ServiceModel.Syndication.SyndicationFeed.Language%2A> property is written to the `lang` attribute in the `<feed>` element.  
   
- When serialized to RSS 2.0, the <xref:System.ServiceModel.Syndication.SyndicationFeed.Language%2A> property is written to the <`language`> element.  
+ When serialized to RSS 2.0, the <xref:System.ServiceModel.Syndication.SyndicationFeed.Language%2A> property is written to the `<language>` element.  
   
    
   
@@ -1536,6 +1596,8 @@
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Syndication</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
@@ -1555,9 +1617,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When serialized to Atom 1.0, the <xref:System.ServiceModel.Syndication.SyndicationFeed.LastUpdatedTime%2A> property is written to an <`updated`>element.  
+ When serialized to Atom 1.0, the <xref:System.ServiceModel.Syndication.SyndicationFeed.LastUpdatedTime%2A> property is written to an `<updated>`element.  
   
- When serialized to RSS 2.0, the <xref:System.ServiceModel.Syndication.SyndicationFeed.LastUpdatedTime%2A> property is written to a <`lastBuildDate`> element.  
+ When serialized to RSS 2.0, the <xref:System.ServiceModel.Syndication.SyndicationFeed.LastUpdatedTime%2A> property is written to a `<lastBuildDate>` element.  
   
    
   
@@ -1599,6 +1661,8 @@
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Syndication</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Syndication.SyndicationLink&gt;</ReturnType>
@@ -1610,9 +1674,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When serialized to Atom 1.0, the <xref:System.ServiceModel.Syndication.SyndicationFeed.Links%2A> collection is written to a number of <`link`> elements.  
+ When serialized to Atom 1.0, the <xref:System.ServiceModel.Syndication.SyndicationFeed.Links%2A> collection is written to a number of `<link>` elements.  
   
- When serialized to RSS 2.0, the <xref:System.ServiceModel.Syndication.SyndicationFeed.Links%2A> collection is written to a number of <`a10:link`> elements.  
+ When serialized to RSS 2.0, the <xref:System.ServiceModel.Syndication.SyndicationFeed.Links%2A> collection is written to a number of `<a10:link>` elements.  
   
    
   
@@ -1654,6 +1718,8 @@
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Syndication</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
@@ -1703,6 +1769,8 @@
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Syndication</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>TSyndicationFeed</ReturnType>
@@ -1762,6 +1830,8 @@
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Syndication</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1805,6 +1875,8 @@
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Syndication</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1839,6 +1911,8 @@
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Syndication</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -1866,6 +1940,8 @@
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Syndication</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -1893,6 +1969,8 @@
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Syndication</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -1920,6 +1998,8 @@
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Syndication</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -1956,6 +2036,8 @@
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Syndication</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
@@ -1975,7 +2057,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When serialized to Atom 1.0 and RSS 2.0, the <xref:System.ServiceModel.Syndication.SyndicationFeed.Title%2A> property is written to a <`title`> element.  
+ When serialized to Atom 1.0 and RSS 2.0, the <xref:System.ServiceModel.Syndication.SyndicationFeed.Title%2A> property is written to a `<title>` element.  
   
    
   
@@ -2019,6 +2101,8 @@
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Syndication</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -2040,7 +2124,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Attribute extensions are custom attributes that are not defined by the Atom 1.0 or RSS 2.0 specifications. They are serialized as an attribute of the <`feed`> (for Atom 1.0) or <`rss`> (for RSS 1.0) element, which depends upon the syndication version being used. This method is an extension point that allows you to handle the deserialization of a custom attribute extension. To do this, you must derive a class from <xref:System.ServiceModel.Syndication.SyndicationFeed> and override this method. This method is called for all unrecognized attribute extensions.  
+ Attribute extensions are custom attributes that are not defined by the Atom 1.0 or RSS 2.0 specifications. They are serialized as an attribute of the `<feed>` (for Atom 1.0) or `<rss>` (for RSS 1.0) element, which depends upon the syndication version being used. This method is an extension point that allows you to handle the deserialization of a custom attribute extension. To do this, you must derive a class from <xref:System.ServiceModel.Syndication.SyndicationFeed> and override this method. This method is called for all unrecognized attribute extensions.  
   
  ]]></format>
         </remarks>
@@ -2067,6 +2151,8 @@
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Syndication</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -2111,6 +2197,8 @@
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Syndication</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -2127,7 +2215,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Attribute extensions are custom attributes that are not defined by the Atom 1.0 or RSS 2.0 specifications. They are serialized as an attribute of the <`feed`> (for Atom 1.0) or <`rss`> (for RSS 1.0) element, which depends upon the syndication version being used. This method is an extension point that allows you to handle the serialization of custom attribute extensions. To do this, you must derive a class from <xref:System.ServiceModel.Syndication.SyndicationFeed> and override this method. This method is called for all unrecognized attribute extensions.  
+ Attribute extensions are custom attributes that are not defined by the Atom 1.0 or RSS 2.0 specifications. They are serialized as an attribute of the `<feed>` (for Atom 1.0) or `<rss>` (for RSS 1.0) element, which depends upon the syndication version being used. This method is an extension point that allows you to handle the serialization of custom attribute extensions. To do this, you must derive a class from <xref:System.ServiceModel.Syndication.SyndicationFeed> and override this method. This method is called for all unrecognized attribute extensions.  
   
  ]]></format>
         </remarks>
@@ -2153,6 +2241,8 @@
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Syndication</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

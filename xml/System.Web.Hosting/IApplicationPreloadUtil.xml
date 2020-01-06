@@ -1,4 +1,4 @@
-﻿<Type Name="IApplicationPreloadUtil" FullName="System.Web.Hosting.IApplicationPreloadUtil">
+<Type Name="IApplicationPreloadUtil" FullName="System.Web.Hosting.IApplicationPreloadUtil">
   <TypeSignature Language="C#" Value="public interface IApplicationPreloadUtil" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IApplicationPreloadUtil" />
   <TypeSignature Language="DocId" Value="T:System.Web.Hosting.IApplicationPreloadUtil" />
@@ -11,10 +11,10 @@
   </AssemblyInfo>
   <Interfaces />
   <Attributes>
-    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+    <Attribute>
       <AttributeName>System.Runtime.InteropServices.Guid("940D8ADD-9E40-4475-9A67-2CDCDF57995C")</AttributeName>
     </Attribute>
-    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+    <Attribute>
       <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
     </Attribute>
   </Attributes>
@@ -30,7 +30,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.IApplicationPreloadUtil.GetApplicationPreloadInfo(System.String,System.Boolean@,System.String@,System.String[]@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetApplicationPreloadInfo (context As String, ByRef enabled As Boolean, ByRef startupObjType As String, ByRef parametersForStartupObj As String())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetApplicationPreloadInfo(System::String ^ context, [Runtime::InteropServices::Out] bool % enabled, [Runtime::InteropServices::Out] System::String ^ % startupObjType, [Runtime::InteropServices::Out] cli::array &lt;System::String ^&gt; ^ % parametersForStartupObj);" />
-      <MemberSignature Language="F#" Value="abstract member GetApplicationPreloadInfo : string *  *  *  -&gt; unit" Usage="iApplicationPreloadUtil.GetApplicationPreloadInfo (context, enabled, startupObjType, parametersForStartupObj)" />
+      <MemberSignature Language="F#" Value="abstract member GetApplicationPreloadInfo : string * bool * string * String[] -&gt; unit" Usage="iApplicationPreloadUtil.GetApplicationPreloadInfo (context, enabled, startupObjType, parametersForStartupObj)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

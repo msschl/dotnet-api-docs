@@ -1,4 +1,4 @@
-﻿<Type Name="IServicedComponentInfo" FullName="System.EnterpriseServices.IServicedComponentInfo">
+<Type Name="IServicedComponentInfo" FullName="System.EnterpriseServices.IServicedComponentInfo">
   <TypeSignature Language="C#" Value="public interface IServicedComponentInfo" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IServicedComponentInfo" />
   <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.IServicedComponentInfo" />
@@ -13,10 +13,10 @@
   </AssemblyInfo>
   <Interfaces />
   <Attributes>
-    <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+    <Attribute>
       <AttributeName>System.Runtime.InteropServices.Guid("8165B19E-8D3A-4d0b-80C8-97DE310DB583")</AttributeName>
     </Attribute>
-    <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+    <Attribute>
       <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
     </Attribute>
   </Attributes>
@@ -42,7 +42,7 @@
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.IServicedComponentInfo.GetComponentInfo(System.Int32@,System.String[]@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetComponentInfo (ByRef infoMask As Integer, ByRef infoArray As String())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetComponentInfo(int % infoMask, [Runtime::InteropServices::Out] cli::array &lt;System::String ^&gt; ^ % infoArray);" />
-      <MemberSignature Language="F#" Value="abstract member GetComponentInfo :  *  -&gt; unit" Usage="iServicedComponentInfo.GetComponentInfo (infoMask, infoArray)" />
+      <MemberSignature Language="F#" Value="abstract member GetComponentInfo : int * String[] -&gt; unit" Usage="iServicedComponentInfo.GetComponentInfo (infoMask, infoArray)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>

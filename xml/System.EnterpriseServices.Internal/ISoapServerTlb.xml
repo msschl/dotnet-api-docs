@@ -1,4 +1,4 @@
-﻿<Type Name="ISoapServerTlb" FullName="System.EnterpriseServices.Internal.ISoapServerTlb">
+<Type Name="ISoapServerTlb" FullName="System.EnterpriseServices.Internal.ISoapServerTlb">
   <TypeSignature Language="C#" Value="public interface ISoapServerTlb" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ISoapServerTlb" />
   <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.Internal.ISoapServerTlb" />
@@ -13,7 +13,7 @@
   </AssemblyInfo>
   <Interfaces />
   <Attributes>
-    <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+    <Attribute>
       <AttributeName>System.Runtime.InteropServices.Guid("1E7BA9F7-21DB-4482-929E-21BDE2DFE51C")</AttributeName>
     </Attribute>
   </Attributes>
@@ -37,7 +37,7 @@
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.Internal.ISoapServerTlb.AddServerTlb(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String@,System.String@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddServerTlb (progId As String, classId As String, interfaceId As String, srcTlbPath As String, rootWebServer As String, baseUrl As String, virtualRoot As String, clientActivated As String, wellKnown As String, discoFile As String, operation As String, ByRef assemblyName As String, ByRef typeName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddServerTlb(System::String ^ progId, System::String ^ classId, System::String ^ interfaceId, System::String ^ srcTlbPath, System::String ^ rootWebServer, System::String ^ baseUrl, System::String ^ virtualRoot, System::String ^ clientActivated, System::String ^ wellKnown, System::String ^ discoFile, System::String ^ operation, [Runtime::InteropServices::Out] System::String ^ % assemblyName, [Runtime::InteropServices::Out] System::String ^ % typeName);" />
-      <MemberSignature Language="F#" Value="abstract member AddServerTlb : string * string * string * string * string * string * string * string * string * string * string *  *  -&gt; unit" Usage="iSoapServerTlb.AddServerTlb (progId, classId, interfaceId, srcTlbPath, rootWebServer, baseUrl, virtualRoot, clientActivated, wellKnown, discoFile, operation, assemblyName, typeName)" />
+      <MemberSignature Language="F#" Value="abstract member AddServerTlb : string * string * string * string * string * string * string * string * string * string * string * string * string -&gt; unit" Usage="iSoapServerTlb.AddServerTlb (progId, classId, interfaceId, srcTlbPath, rootWebServer, baseUrl, virtualRoot, clientActivated, wellKnown, discoFile, operation, assemblyName, typeName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -46,7 +46,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.Runtime.InteropServices.DispId(1)</AttributeName>
         </Attribute>
       </Attributes>
@@ -107,7 +107,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.Runtime.InteropServices.DispId(2)</AttributeName>
         </Attribute>
       </Attributes>
